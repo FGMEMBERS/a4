@@ -58,15 +58,15 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
  <instrument include="../Instruments/clock.xml">
    <name>Chronometer</name>
-   <x>240</x>
-   <y>275</y>
-   <w>100</w>
-   <h>100</h>
+   <x>270</x>
+   <y>425</y>
+   <w>70</w>
+   <h>70</h>
   </instrument>
 
 <!-- sacred six -->
 
-  <instrument include="../Instruments/asi-260-knot.xml">
+  <instrument include="../Instruments/asi-590-knot-a4c.xml">
    <name>Airspeed Indicator</name>
    <x>347</x>
    <y>342</y>
@@ -92,8 +92,8 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
   <instrument include="../Instruments/altimeter.xml">
    <name>Altimeter</name>
-   <x>677</x>
-   <y>342</y>
+   <x>627</x>
+   <y>225</y>
    <w>110</w>
    <h>110</h>
   </instrument>
@@ -109,8 +109,8 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
   <instrument include="../Instruments/vertical-speed-6kfpm.xml">
    <name>Vertical Velocity Indicator</name>
-   <x>627</x>
-   <y>225</y>
+   <x>677</x>
+   <y>342</y>
    <w>110</w>
    <h>110</h>
   </instrument>
@@ -251,6 +251,8 @@ override those by providing <w>..</w> and <h>..</h> properties with the
  </instruments>
 
 </PropertyList>
+
+
 
 
 
