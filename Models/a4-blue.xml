@@ -76,7 +76,7 @@
   <object-name>LeftSlats</object-name>
   <condition>
    <equals>
-    <property>/controls/slats</property>
+    <property>/controls/flight/slats</property>
     <value>1</value>
    </equals>
   </condition>
