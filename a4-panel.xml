@@ -114,12 +114,6 @@
    <w>50</w>
    <h>75</h>
   </instrument>
-
-  <instrument include="../Instruments/magcompass.xml">
-   <name>Magnetic Compass</name>
-   <x>512</x>
-   <y>500</y>
-  </instrument>
  </instruments>
 
 </PropertyList>
