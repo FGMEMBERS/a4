@@ -43,6 +43,8 @@
    <h>110</h>
   </instrument>
 
+  <!-- Taken out, to make room for the 3D attitude ball -->
+  <!--
   <instrument include="../Instruments/attitude-indicator.xml">
    <name>Attitude Indicator</name>
    <x>512</x>
@@ -50,6 +52,7 @@
    <w>145</w>
    <h>145</h>
   </instrument>
+  -->
 
   <instrument include="../Instruments/altimeter.xml">
    <name>Altimeter</name>
