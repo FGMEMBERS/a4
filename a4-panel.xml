@@ -43,8 +43,8 @@
    <h>110</h>
   </instrument>
   
-  <instrument include="../Instruments/turn.xml">
-   <name>Turn Coordinator</name>
+  <instrument include="fuel-gauge.xml">
+   <name>Fuel Gauge</name>
    <x>590</x>
    <y>140</y>
    <w>110</w>
