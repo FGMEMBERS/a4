@@ -5,7 +5,7 @@
  <name>A4 Panel</name>
  <background>Aircraft/a4/transparent-bg.rgb</background>
  <w>1024</w>
- <h>530</h>
+ <h>580</h>
  <y-offset>0</y-offset>
  <view-height>450</view-height>
 
@@ -22,7 +22,7 @@
   <instrument include="../Instruments/aoa.xml">
    <name>Angle of Attack</name>
    <x>320</x>
-   <y>380</y>
+   <y>360</y>
    <w>100</w>
    <h>100</h>
   </instrument>
@@ -37,8 +37,8 @@
 
   <instrument include="../Instruments/asi-590-knot-a4c.xml">
    <name>Airspeed Indicator</name>
-   <x>200</x>
-   <y>240</y>
+   <x>160</x>
+   <y>260</y>
    <w>110</w>
    <h>110</h>
   </instrument>
@@ -46,7 +46,7 @@
   <instrument include="../Instruments/turn.xml">
    <name>Turn Coordinator</name>
    <x>590</x>
-   <y>120</y>
+   <y>140</y>
    <w>110</w>
    <h>110</h>
   </instrument>
@@ -55,24 +55,24 @@
 
   <instrument include="../Instruments/altimeter.xml">
    <name>Altimeter</name>
-   <x>200</x>
-   <y>0</y>
+   <x>160</x>
+   <y>20</y>
    <w>110</w>
    <h>110</h>
   </instrument>
 
   <instrument include="../Instruments/hsi.xml">
    <name>Horizontal Situation Indicator</name>
-   <x>322</x>
-   <y>0</y>
+   <x>590</x>
+   <y>20</y>
    <w>110</w>
    <h>110</h>
   </instrument>
 
   <instrument include="../Instruments/vertical-speed-6kfpm.xml">
    <name>Vertical Velocity Indicator</name>
-   <x>200</x>
-   <y>120</y>
+   <x>160</x>
+   <y>140</y>
    <w>110</w>
    <h>110</h>
   </instrument>
@@ -123,4 +123,6 @@
  </instruments>
 
 </PropertyList>
+
+
 
