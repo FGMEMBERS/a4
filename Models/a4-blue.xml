@@ -64,7 +64,7 @@
    <not>
    <equals>
     <property>/sim/current-view/y-offset-m</property>
-    <value>0.77</value>
+    <value>0.82</value>
    </equals>
    </not>
   </condition>
@@ -325,6 +325,7 @@
  </animation>
 
 </PropertyList>
+
 
 
 
