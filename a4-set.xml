@@ -12,6 +12,7 @@ the flight data model, instrument panel, and external 3D model.
  <sim>
 
   <description>Douglas A4 Skyhawk (YASim)</description>
+  <author>Lewis Magruder, Dean Baunton, Jim Wilson, Andy Ross</author>
 
   <virtual-cockpit archive="y">true</virtual-cockpit>
 
