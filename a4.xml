@@ -108,15 +108,15 @@
 <!-- The early A-4's had five pylons.  One 3500lbs center for a tank,
      two inboard pylons holding 2250lbs, and two 1000lbs outboard
      pylons. -->
-<weight x="-0.39" y="0" z="-1.33" size="1.5" 
-        mass-prop="/yasim/a4/weights/center-lbs"/>
-<weight x="-0.79" y="2" z="-1.33" size="1" 
-        mass-prop="/yasim/a4/weights/left-inboard-lbs"/>
-<weight x="-0.79" y="-2" z="-1.33" size="1" 
-        mass-prop="/yasim/a4/weights/right-inboard-lbs"/>
 <weight x="-1.39" y="3" z="-1.33" size="1" 
-        mass-prop="/yasim/a4/weights/left-outboard-lbs"/>
+        mass-prop="/sim/weight[0]/weight-lb"/>
+<weight x="-0.79" y="2" z="-1.33" size="1" 
+        mass-prop="/sim/weight[1]/weight-lb"/>
+<weight x="-0.39" y="0" z="-1.33" size="1.5" 
+        mass-prop="/sim/weight[2]/weight-lb"/>
+<weight x="-0.79" y="-2" z="-1.33" size="1" 
+        mass-prop="/sim/weight[3]/weight-lb"/>
 <weight x="-1.39" y="-3" z="-1.33" size="1" 
-        mass-prop="/yasim/a4/weights/right-outboard-lbs"/>
+        mass-prop="/sim/weight[4]/weight-lb"/>
 
 </airplane>
