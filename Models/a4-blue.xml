@@ -14,6 +14,26 @@
   </offsets>
  </model>
 
+ <!-- test code -->
+ <panel>
+  <path>Aircraft/a4/a4-panel.xml</path>
+  <bottom-left>
+   <x-m>-3.21</x-m>
+   <y-m>-0.24</y-m>
+   <z-m> 0.44</z-m>
+  </bottom-left>
+  <bottom-right>
+   <x-m>-3.21</x-m>
+   <y-m> 0.24</y-m>
+   <z-m> 0.44</z-m>
+  </bottom-right>
+  <top-left>
+   <x-m>-3.21</x-m>
+   <y-m>-0.24</y-m>
+   <z-m> 0.69</z-m>
+  </top-left>
+ </panel>
+
  <!-- Object Selection -->
 
  <animation>
