@@ -14,23 +14,23 @@
   </offsets>
  </model>
 
- <!-- test code -->
+ <!-- Front panel -->
  <panel>
   <path>Aircraft/a4/a4-panel.xml</path>
   <bottom-left>
-   <x-m>-3.21</x-m>
+   <x-m>-3.23</x-m>
    <y-m>-0.24</y-m>
-   <z-m> 0.44</z-m>
+   <z-m> 0.474</z-m>
   </bottom-left>
   <bottom-right>
-   <x-m>-3.21</x-m>
+   <x-m>-3.23</x-m>
    <y-m> 0.24</y-m>
-   <z-m> 0.44</z-m>
+   <z-m> 0.474</z-m>
   </bottom-right>
   <top-left>
-   <x-m>-3.21</x-m>
+   <x-m>-3.23</x-m>
    <y-m>-0.24</y-m>
-   <z-m> 0.69</z-m>
+   <z-m> 0.724</z-m>
   </top-left>
  </panel>
 
