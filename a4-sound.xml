@@ -3,7 +3,7 @@
 <PropertyList>
 
  <fx>
- 
+
   <engine>
    <name>engine</name>
    <path>Sounds/jet.wav</path>
@@ -11,15 +11,9 @@
    <property>/engines/engine/running</property>
    <volume>
     <property>/engines/engine/prop-thrust</property>
-    <type>ln</type>
-    <factor>0.15</factor>
+    <type>lin</type>
+    <factor>0.0002353</factor> <!-- Scales to 0-2 for 8500lb engine -->
    </volume>
-   <pitch>
-    <property>/engines/engine/prop-thrust</property>
-    <type>log</type>
-    <factor>0.12</factor>
-    <offset>0.9</offset>
-   </pitch>
   </engine>
 
   <engine>
@@ -27,18 +21,16 @@
    <path>Sounds/whine.wav</path>
    <mode>looped</mode>
    <property>/engines/engine/running</property>
-   <volume>
-    <property>/engines/engine/prop-thrust</property>
-    <type>sqrt</type>
-    <factor>-0.004</factor>
-    <offset>0.5</offset>
-   </volume>
    <pitch>
-    <property>/engines/engine/prop-thrust</property>
-    <type>ln</type>
-    <factor>-0.027</factor>
-    <offset>2.0</offset>
+    <property>/engines/engine/n1</property>
+    <type>lin</type>
+    <factor>.008</factor>
    </pitch>
+   <volume>
+    <property>/engines/engine/n1</property>
+    <type>log</type>
+    <factor>0.1</factor> <!-- 10-100% rpm == 0.1 - 1 factor -->
+   </volume>
   </engine>
 
   <rumble>
@@ -54,8 +46,8 @@
    </condition>
    <volume>
     <property>/velocities/airspeed-kt</property>
-    <type>log</type>
-    <factor>0.5</factor>
+    <type>lin</type>
+    <factor>.012</factor>
    </volume>
   </rumble>
 
@@ -75,18 +67,11 @@
    <name>gear-lock</name>
    <path>Sounds/gear-lck.wav</path>
    <condition>
-    <greather-than>
+    <equals>
      <property>/gear/gear[0]/position-norm</property>
-     <value>0.01</value>
-    </greather-than>
-    <less-than>
-     <property>/gear/gear[0]/position-norm</property>
-     <value>0.1</value>
-    </less-than>
+     <value>0</value>
+    </equals>
    </condition>
-   <volume>
-    <offset>0.3</offset>
-   </volume>
   </gear>
 
   <squeal>
@@ -153,7 +138,7 @@
     <offset>1.25</offset>
    </pitch>
   </wind>
- 
+
   <stall>
    <name>stall</name>
    <path>Sounds/stall.wav</path>
