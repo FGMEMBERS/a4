@@ -36,15 +36,19 @@ May 18, 2003 Michael Selig, http://www.uiuc.edu/~m-selig
   <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
 
 <!-- setup for first 2D panel, 'P' toggles on/off.  Starts in 'off' mode -->
+<!-- the 2D panel seems to have been removed in recent builds
   <panel>
    <path>Aircraft/a4/Panels/a4-trans-mini-panel.xml</path>
    <visibility>false</visibility>
   </panel>
+-->
 
 <!-- setup for second 2D panel, 's' toggles two panels. -->
+<!-- the 2D panel seems to have been removed in recent builds
   <panel_2>
    <path>Aircraft/a4/Panels/a4-trans-mini-panel.xml</path>
   </panel_2>
+-->
 
 <!-- setup for 3D cockpit, 'c' toggles on/off.  Starts in 'on' mode -->
    <view n="0">
