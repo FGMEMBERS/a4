@@ -110,6 +110,18 @@
   </condition>
  </animation>
 
+ <animation>
+  <type>select</type>
+  <object-name>RightFlap</object-name>
+  <object-name>LeftFlap</object-name>
+  <condition>
+   <greater-than>
+    <property>/surface-positions/flap-pos-norm</property>
+    <value>0.01</value>
+   </greater-than>
+  </condition>
+ </animation>
+
  <!-- Object Movement -->
 
  <animation>
@@ -117,7 +129,7 @@
   <object-name>LeftGear</object-name>
   <property>/gear/gear[1]/position-norm</property>
   <factor>-120</factor>
-  <offset-deg>-1</offset-deg>
+  <offset-deg>120</offset-deg>
   <min-deg>0</min-deg>
   <max-deg>90</max-deg>
   <center>
@@ -138,7 +150,7 @@
   <object-name>LeftGear</object-name>
   <property>/gear/gear[1]/position-norm</property>
   <factor>-120</factor>
-  <offset-deg>-1</offset-deg>
+  <offset-deg>120</offset-deg>
   <min-deg>0</min-deg>
   <max-deg>90</max-deg>
   <center>
@@ -159,7 +171,7 @@
   <object-name>LeftGearStrut</object-name>
   <property>/gear/gear[1]/position-norm</property>
   <factor>45</factor>
-  <offset-deg>-1</offset-deg>
+  <offset-deg>-45</offset-deg>
   <center>
    <x-m>-0.20</x-m>
    <y-m>-1.0</y-m>
@@ -177,7 +189,7 @@
   <object-name>LeftGearDoor</object-name>
   <property>/gear/gear[1]/position-norm</property>
   <factor>-360</factor>
-  <offset-deg>-0.25</offset-deg>
+  <offset-deg>90</offset-deg>
   <min-deg>0</min-deg>
   <max-deg>90</max-deg>
   <center>
@@ -197,7 +209,7 @@
   <object-name>RightGear</object-name>
   <property>/gear/gear[1]/position-norm</property>
   <factor>-120</factor>
-  <offset-deg>-1</offset-deg>
+  <offset-deg>120</offset-deg>
   <min-deg>0</min-deg>
   <max-deg>90</max-deg>
   <center>
@@ -217,7 +229,7 @@
   <object-name>RightGear</object-name>
   <property>/gear/gear[1]/position-norm</property>
   <factor>-120</factor>
-  <offset-deg>-1</offset-deg>
+  <offset-deg>120</offset-deg>
   <min-deg>0</min-deg>
   <max-deg>90</max-deg>
   <center>
@@ -237,7 +249,7 @@
   <object-name>RightGearStrut</object-name>
   <property>/gear/gear[1]/position-norm</property>
   <factor>45</factor>
-  <offset-deg>-1</offset-deg>
+  <offset-deg>-45</offset-deg>
   <center>
    <x-m>-0.20</x-m>
    <y-m>1.0</y-m>
@@ -255,7 +267,7 @@
   <object-name>RightGearDoor</object-name>
   <property>/gear/gear[1]/position-norm</property>
   <factor>-360</factor>
-  <offset-deg>-0.25</offset-deg>
+  <offset-deg>90</offset-deg>
   <min-deg>0</min-deg>
   <max-deg>90</max-deg>
   <center>
@@ -275,13 +287,13 @@
   <object-name>NoseGear</object-name>
   <property>/gear/gear[1]/position-norm</property>
   <factor>-150</factor>
-  <offset-deg>-1</offset-deg>
+  <offset-deg>150</offset-deg>
   <min-deg>0</min-deg>
   <max-deg>105</max-deg>
   <center>
    <x-m>-2.60</x-m>
    <y-m>0.0</y-m>
-   <z-m>-0.66</z-m>
+   <z-m>-0.60</z-m>
   </center>
   <axis>
    <x>0</x>
@@ -295,7 +307,7 @@
   <object-name>NoseGearStrut</object-name>
   <property>/gear/gear[1]/position-norm</property>
   <factor>-45</factor>
-  <offset-deg>-1</offset-deg>
+  <offset-deg>45</offset-deg>
   <center>
    <x-m>-1.80</x-m>
    <y-m>0.0</y-m>
@@ -313,7 +325,7 @@
   <object-name>NoseGearDoor</object-name>
   <property>/gear/gear[1]/position-norm</property>
   <factor>-360</factor>
-  <offset-deg>-0.25</offset-deg>
+  <offset-deg>90</offset-deg>
   <min-deg>0</min-deg>
   <max-deg>90</max-deg>
   <center>
@@ -333,7 +345,7 @@
   <object-name>RightFlap</object-name>
   <property>/surface-positions/flap-pos-norm</property>
   <factor>45</factor> <!-- check -->
-  <offset-deg>-1</offset-deg>
+  <offset-deg>-45</offset-deg>
   <center>
    <x-m>1.74</x-m>
    <y-m>1.44</y-m>
@@ -351,7 +363,7 @@
   <object-name>LeftFlap</object-name>
   <property>/surface-positions/flap-pos-norm</property>
   <factor>45</factor> <!-- check -->
-  <offset-deg>-1</offset-deg>
+  <offset-deg>-45</offset-deg>
   <center>
    <x-m>1.74</x-m>
    <y-m>-1.44</y-m>
