@@ -8,9 +8,9 @@
  <model>
   <path>Aircraft/a4/Models/attitude.xml</path>
   <offsets>
-   <x-m>-3.15</x-m>
-   <y-m> -0.055</y-m>
-   <z-m> 0.57</z-m>
+   <x-m>-3.25</x-m>
+   <y-m> -0.058</y-m>
+   <z-m> 0.54</z-m>
   </offsets>
  </model>
 
@@ -284,3 +284,5 @@
  </animation>
 
 </PropertyList>
+
+
