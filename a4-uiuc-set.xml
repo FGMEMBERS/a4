@@ -28,7 +28,6 @@ May 18, 2003 Michael Selig, http://www.uiuc.edu/~m-selig
   </systems> 
   
   <sound>
-   <audible>true</audible>
    <path>Aircraft/a4/Sounds/uiuc/a4-sound-uiuc.xml</path>
   </sound>
 

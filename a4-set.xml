@@ -26,7 +26,6 @@ the flight data model, instrument panel, and external 3D model.
   </systems> 
  
   <sound>
-   <audible>true</audible>
    <path>Aircraft/a4/a4-sound.xml</path>
   </sound>
 
