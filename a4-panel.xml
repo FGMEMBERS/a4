@@ -1,0 +1,258 @@
+<?xml version="1.0"?>
+
+<!--
+a4 panel - barely started
+June 2002
+Jim Wilson <jimw@kelcomaine.com>
+partly based on c310 panel by
+November 2001
+John Check <j4strngs@rockfish.net>
+_______________________________________________________________________
+
+This is a panel configuration file for the open-source flight
+simulator FlightGear (www.flightgear.org).  The file is an XML-encoded
+FlightGear property list defining the panel's background texture and
+the location (and optionally, size) of the instruments that will
+appear on the panel.
+
+Each instrument is, itself, defined in an XML-encoded property list
+in a separate file.
+
+Co-ordinates are relative to the *bottom* left corner of the screen
+(as in OpenGL).  The total FlightGear window is always considered to
+be 1024x768, whatever its actual display size on the screen.  All
+paths are relative to $FG_ROOT.
+
+Note that the name of the element defining each instrument must be
+different, or else instrument definitions will be overwritten:
+that's not particularly XML-ish, but that's how property lists
+work in FlightGear right now.
+
+Each instrument has its own preferred width and height, but you can
+override those by providing <w>..</w> and <h>..</h> properties with the
+<x>-115</x>
+-->
+
+<!DOCTYPE PropertyList SYSTEM "panel.dtd">
+
+<PropertyList>
+
+ <name>A4 Panel</name>
+ <background>Aircraft/a4/transparent-bg.rgb</background>
+ <w>1024</w>
+ <h>640</h>
+ <y-offset>0</y-offset>
+ <view-height>450</view-height>
+
+ <instruments>
+
+<!--
+  <instrument include="../Instruments/dme.xml">
+   <name>DME Display</name>
+   <x>935</x>
+   <y>540</y>
+   <w>100</w>
+   <h>50</h>
+  </instrument>
+-->
+
+ <instrument include="../Instruments/clock.xml">
+   <name>Chronometer</name>
+   <x>240</x>
+   <y>275</y>
+   <w>100</w>
+   <h>100</h>
+  </instrument>
+
+<!-- sacred six -->
+
+  <instrument include="../Instruments/asi-260-knot.xml">
+   <name>Airspeed Indicator</name>
+   <x>347</x>
+   <y>342</y>
+   <w>110</w>
+   <h>110</h>
+  </instrument>
+  
+  <instrument include="../Instruments/turn.xml">
+   <name>Turn Coordinator</name>
+   <x>397</x>
+   <y>225</y>
+   <w>110</w>
+   <h>110</h>
+  </instrument>
+
+  <instrument include="../Instruments/attitude-indicator.xml">
+   <name>Attitude Indicator</name>
+   <x>512</x>
+   <y>382</y>
+   <w>145</w>
+   <h>145</h>
+  </instrument>
+
+  <instrument include="../Instruments/altimeter.xml">
+   <name>Altimeter</name>
+   <x>677</x>
+   <y>342</y>
+   <w>110</w>
+   <h>110</h>
+  </instrument>
+
+
+  <instrument include="../Instruments/hsi.xml">
+   <name>Horizontal Situation Indicator</name>
+   <x>512</x>
+   <y>225</y>
+   <w>110</w>
+   <h>110</h>
+  </instrument>
+
+  <instrument include="../Instruments/vertical-speed-6kfpm.xml">
+   <name>Vertical Velocity Indicator</name>
+   <x>627</x>
+   <y>225</y>
+   <w>110</w>
+   <h>110</h>
+  </instrument>
+
+<!-- end sacred six -->
+
+
+<!-- engine gauges cluster -->  
+
+  <instrument include="../Instruments/fuel.xml">
+   <name>Fuel Gauge</name>
+   <x>790</x>
+   <y>285</y>
+   <w>100</w>
+   <h>100</h>
+  </instrument>
+
+
+<!-- end engine guages cluster -->
+
+  
+<!-- controls visual feedback cluster -->  
+
+  <instrument include="../Instruments/gear-indicator.xml">
+   <name>Gear Indicator Light</name>
+   <x>780</x>
+   <y>409</y>
+   <w>40</w>
+   <h>17</h>
+  </instrument>
+  
+  <instrument include="../Instruments/brakes.xml">
+   <name>Brake Indicator Light</name>
+   <x>780</x>
+   <y>389</y>
+   <w>40</w>
+   <h>17</h>
+  </instrument>
+
+<!-- end controls visual feedback cluster -->
+
+<!-- radio nav instruments  -->
+<!--
+  <instrument include="../Instruments/nav1.xml">
+   <name>VOR 2 Gauge</name>
+   <params>
+    <nav-to-flag>/radios/nav[1]/to-flag</nav-to-flag>
+    <nav-from-flag>/radios/nav[1]/from-flag</nav-from-flag>
+    <nav-radial-selected>/radios/nav[1]/radials/selected-deg</nav-radial-selected>
+    <nav-gs-needle-deflection>/radios/nav[1]/gs-needle-deflection</nav-gs-needle-deflection>
+    <nav-heading-needle-deflection>/radios/nav[1]/heading-needle-deflection</nav-heading-needle-deflection>
+    <nav-has-gs-needle>/sim/instrument-options/nav[1]/has-gs-needle</nav-has-gs-needle>
+    <nav-needles-pivot>/sim/instrument-options/nav[1]/needles-pivot</nav-needles-pivot>
+   </params>
+   <x>365</x>
+   <y>365</y>
+   <w>110</w>
+   <h>110</h>
+  </instrument>
+-->
+
+<!-- end radio nav instruments -->
+<!--
+  <instrument include="../Instruments/gyro.xml">
+   <name>Directional Gauge</name>
+   <x>365</x>
+   <y>250</y>
+   <w>110</w>
+   <h>110</h>
+  </instrument>
+-->
+<!-- radio stack -->
+
+<!--      
+  
+  <instrument include="../Instruments/markerbeacon.xml">
+   <name>Marker Beacon Indicators</name>
+   <x>812</x>
+   <y>539</y>
+   <w>70</w>
+   <h>22</h>
+  </instrument>
+  
+  <instrument include="../Instruments/navcom-kx155.xml">
+   <name>NavCom 1 Radio</name>
+   <x>896</x>
+   <y>472</y>
+  </instrument>
+
+  <instrument include="../Instruments/navcom-kx155.xml">
+   <name>NavCom 2 Radio</name>
+   <params>
+    <comm-freq-selected-prop>/radios/comm[1]/frequencies/selected-mhz</comm-freq-selected-prop>
+    <comm-freq-standby-prop>/radios/comm[1]/frequencies/standby-mhz</comm-freq-standby-prop>
+    <nav-freq-selected-prop>/radios/nav[1]/frequencies/selected-mhz</nav-freq-selected-prop>
+    <nav-freq-standby-prop>/radios/nav[1]/frequencies/standby-mhz</nav-freq-standby-prop>
+    <nav-morse-id-volume-prop>/radios/nav[1]/volume</nav-morse-id-volume-prop>
+    <nav-morse-ident-toggle-prop>/radios/nav[1]/ident</nav-morse-ident-toggle-prop>
+   </params>
+   <x>896</x>
+   <y>384</y>
+  </instrument>
+  
+  <instrument include="../Instruments/adf-radio.xml">
+   <name>ADF Radio</name>
+   <x>896</x>
+   <y>307</y>
+  </instrument>
+
+  <instrument include="../Instruments/autopilot.xml">
+   <name>Autopilot</name>
+   <x>896</x>
+   <y>257v</y>
+  </instrument>
+-->
+<!-- end radio stack -->
+  
+
+  <instrument include="../Instruments/throttle-knob.xml">
+  <name>Throttle quadrant</name>
+  <x>885</x>
+  <y>40</y>
+  </instrument>
+
+  <instrument include="../Instruments/flap.xml">
+   <name>Flaps Control</name>
+   <x>797</x>
+   <y>40</y>
+   <w>50</w>
+   <h>75</h>
+  </instrument>
+
+  <instrument include="../Instruments/magcompass.xml">
+   <name>Magnetic Compass</name>
+   <x>512</x>
+   <y>500</y>
+  </instrument>
+ </instruments>
+
+</PropertyList>
+
+
+
+
+
