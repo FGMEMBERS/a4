@@ -18,6 +18,7 @@ May 18, 2003 Michael Selig, http://www.uiuc.edu/~m-selig
 
   <flight-model>larcsim</flight-model>
   <aero>uiuc</aero>
+  <author>Michael Selig</author>
   <uiuc-type>uiuc-jet</uiuc-type>
   <aircraft-dir>Aircraft/UIUC/a4-v1-nl</aircraft-dir>
 
