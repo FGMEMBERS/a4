@@ -22,7 +22,7 @@
   <instrument include="../Instruments/aoa.xml">
    <name>Angle of Attack</name>
    <x>320</x>
-   <y>360</y>
+   <y>380</y>
    <w>100</w>
    <h>100</h>
   </instrument>
@@ -45,7 +45,7 @@
   
   <instrument include="../Instruments/turn.xml">
    <name>Turn Coordinator</name>
-   <x>570</x>
+   <x>590</x>
    <y>120</y>
    <w>110</w>
    <h>110</h>
@@ -123,3 +123,4 @@
  </instruments>
 
 </PropertyList>
+
