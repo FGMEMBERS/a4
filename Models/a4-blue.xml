@@ -1,0 +1,269 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>a4-blue.ac</path>
+
+ <!-- Object Selection -->
+
+ <animation>
+  <type>select</type>
+  <object-name>Pilot</object-name>
+  <condition>
+   <not>
+   <equals>
+    <property>/sim/current-view/y-offset-m</property>
+    <value>0.76</value>
+   </equals>
+   </not>
+  </condition>
+ </animation>
+
+ <!-- Object Movement -->
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftGear</object-name>
+  <property>/gear/gear[1]/position-norm</property>
+  <factor>-90</factor>
+  <offset-deg>-1</offset-deg>
+  <min-deg>0</min-deg>
+  <max-deg>90</max-deg>
+  <center>
+   <x-m>0.76</x-m>
+   <y-m>-1.05</y-m>
+   <z-m>-0.68</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftGear</object-name>
+  <property>/gear/gear[1]/position-norm</property>
+  <factor>-90</factor>
+  <offset-deg>-1</offset-deg>
+  <min-deg>0</min-deg>
+  <max-deg>90</max-deg>
+  <center>
+   <x-m>0.76</x-m>
+   <y-m>-1.05</y-m>
+   <z-m>-0.68</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>-1</z>
+  </axis>
+ </animation>
+
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftGearStrut</object-name>
+  <property>/gear/gear[1]/position-norm</property>
+  <factor>45</factor>
+  <offset-deg>-1</offset-deg>
+  <center>
+   <x-m>-0.20</x-m>
+   <y-m>-1.0</y-m>
+   <z-m>-0.69</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftGearDoor</object-name>
+  <property>/gear/gear[1]/position-norm</property>
+  <factor>-90</factor>
+  <offset-deg>-1</offset-deg>
+  <center>
+   <x-m>-0.20</x-m>
+   <y-m>-1.20</y-m>
+   <z-m>-0.69</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RightGear</object-name>
+  <property>/gear/gear[1]/position-norm</property>
+  <factor>-90</factor>
+  <offset-deg>-1</offset-deg>
+  <min-deg>0</min-deg>
+  <max-deg>90</max-deg>
+  <center>
+   <x-m>0.76</x-m>
+   <y-m>1.05</y-m>
+   <z-m>-0.68</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RightGear</object-name>
+  <property>/gear/gear[1]/position-norm</property>
+  <factor>-90</factor>
+  <offset-deg>-1</offset-deg>
+  <min-deg>0</min-deg>
+  <max-deg>90</max-deg>
+  <center>
+   <x-m>0.76</x-m>
+   <y-m>1.05</y-m>
+   <z-m>-0.68</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RightGearStrut</object-name>
+  <property>/gear/gear[1]/position-norm</property>
+  <factor>45</factor>
+  <offset-deg>-1</offset-deg>
+  <center>
+   <x-m>-0.20</x-m>
+   <y-m>1.0</y-m>
+   <z-m>-0.69</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RightGearDoor</object-name>
+  <property>/gear/gear[1]/position-norm</property>
+  <factor>-90</factor>
+  <offset-deg>-1</offset-deg>
+  <center>
+   <x-m>-0.20</x-m>
+   <y-m>1.20</y-m>
+   <z-m>-0.69</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>NoseGear</object-name>
+  <property>/gear/gear[1]/position-norm</property>
+  <factor>-105</factor>
+  <offset-deg>-1</offset-deg>
+  <center>
+   <x-m>-2.60</x-m>
+   <y-m>0.0</y-m>
+   <z-m>-0.66</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>NoseGearStrut</object-name>
+  <property>/gear/gear[1]/position-norm</property>
+  <factor>-45</factor>
+  <offset-deg>-1</offset-deg>
+  <center>
+   <x-m>-1.80</x-m>
+   <y-m>0.0</y-m>
+   <z-m>-0.66</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>NoseGearDoor</object-name>
+  <property>/gear/gear[1]/position-norm</property>
+  <factor>-90</factor>
+  <offset-deg>-1</offset-deg>
+  <center>
+   <x-m>-3.28</x-m>
+   <y-m>-0.11</y-m>
+   <z-m>-0.66</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0.05</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RightFlap</object-name>
+  <property>/surface-positions/flap-pos-norm</property>
+  <factor>45</factor> <!-- check -->
+  <offset-deg>-1</offset-deg>
+  <center>
+   <x-m>1.74</x-m>
+   <y-m>1.44</y-m>
+   <z-m>-0.59</z-m>
+  </center>
+  <axis>
+   <x>-0.05</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftFlap</object-name>
+  <property>/surface-positions/flap-pos-norm</property>
+  <factor>45</factor> <!-- check -->
+  <offset-deg>-1</offset-deg>
+  <center>
+   <x-m>1.74</x-m>
+   <y-m>-1.44</y-m>
+   <z-m>-0.59</z-m>
+  </center>
+  <axis>
+   <x>0.05</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+</PropertyList>
+

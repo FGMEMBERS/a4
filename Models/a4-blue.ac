@@ -1,0 +1,12413 @@
+AC3Db
+MATERIAL "ac3dmat0" rgb 0 0 0  amb 0.2 0.2 0.2  emis 0 0 0  spec 0.5 0.5 0.5  shi 10  trans 0
+MATERIAL "ac3dmat1" rgb 1 1 1  amb 0.2 0.2 0.2  emis 0 0 0  spec 0.5 0.5 0.5  shi 10  trans 0
+MATERIAL "ac3dmat13" rgb 0.533333 0.533333 0.533333  amb 0.2 0.2 0.2  emis 0 0 0  spec 0.5 0.5 0.5  shi 10  trans 0
+MATERIAL "Bodyblue" rgb 0 0.2733 0.4766  amb 0.2 0.2 0.2  emis 0 0 0  spec 0.5 0.5 0.5  shi 50  trans 0
+MATERIAL "NoName" rgb 0.827451 0.827451 0.827451  amb 0.827451 0.827451 0.827451  emis 0 0 0  spec 1 1 1  shi 50  trans 0
+MATERIAL "NoName" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 1 1 1  shi 50  trans 0
+MATERIAL "NoName" rgb 0.34902 0.34902 0.34902  amb 0.34902 0.34902 0.34902  emis 0 0 0  spec 1 1 1  shi 50  trans 0
+MATERIAL "NoName" rgb 0 0.392157 0  amb 0 0.392157 0  emis 0 0 0  spec 1 1 1  shi 50  trans 0
+MATERIAL "NoName" rgb 0.207843 0.278431 0.066667  amb 0.207843 0.278431 0.066667  emis 0 0 0  spec 1 1 1  shi 50  trans 0
+MATERIAL "NoName" rgb 0 0 0  amb 0 0 0  emis 0 0 0  spec 1 1 1  shi 50  trans 0
+MATERIAL "NoName" rgb 1 0 0  amb 1 0 0  emis 0 0 0  spec 1 1 1  shi 50  trans 0
+OBJECT world
+kids 477
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+1.74023 -0.609375 -1.14062
+1.74023 -0.701172 -1.14062
+1.74023 -0.712891 -0.960938
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.160784 0.580392
+2 0.109804 0.580392
+0 0.160784 0.580392
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+1.74023 -0.609375 -1.14062
+1.74023 -0.712891 -0.960938
+1.74023 -0.623047 -0.960938
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.109804 0.580392
+2 0.109804 0.580392
+0 0.160784 0.580392
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+-1.16992 -0.527344 -1.05078
+-0.810547 -0.605469 -1.19922
+-0.810547 -0.626953 -0.900391
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.176471 0.882353
+2 0.0941176 0.882353
+0 0.133333 0.92549
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+-1.16992 -0.527344 -1.05078
+-0.810547 -0.626953 -0.900391
+-0.810547 -0.748047 -0.900391
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.0941176 0.882353
+2 0.0941176 0.882353
+0 0.133333 0.92549
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+-1.16992 -0.527344 -1.05078
+-0.810547 -0.748047 -0.900391
+-0.810547 -0.726562 -1.19922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.0941176 0.380392
+2 0.176471 0.380392
+0 0.133333 0.423529
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+-1.16992 -0.527344 -1.05078
+-0.810547 -0.726562 -1.19922
+-0.810547 -0.605469 -1.19922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.176471 0.882353
+2 0.176471 0.882353
+0 0.133333 0.92549
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+-0.810547 -0.605469 -1.19922
+1.43945 -0.605469 -1.19922
+1.43945 -0.626953 -0.900391
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.176471 0.882353
+1 0.176471 0.615686
+2 0.0941176 0.615686
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+-0.810547 -0.605469 -1.19922
+1.43945 -0.626953 -0.900391
+-0.810547 -0.626953 -0.900391
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.176471 0.882353
+1 0.0941176 0.615686
+2 0.0941176 0.882353
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+-0.810547 -0.626953 -0.900391
+1.43945 -0.626953 -0.900391
+1.43945 -0.748047 -0.900391
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.0941176 0.882353
+1 0.0941176 0.615686
+2 0.0941176 0.615686
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+-0.810547 -0.626953 -0.900391
+1.43945 -0.748047 -0.900391
+-0.810547 -0.748047 -0.900391
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.0941176 0.882353
+1 0.0941176 0.615686
+2 0.0941176 0.882353
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+-0.810547 -0.748047 -0.900391
+1.43945 -0.748047 -0.900391
+1.43945 -0.726562 -1.19922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+2 0.176471 0.113725
+1 0.0941176 0.113725
+0 0.0941176 0.380392
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+-0.810547 -0.748047 -0.900391
+1.43945 -0.726562 -1.19922
+-0.810547 -0.726562 -1.19922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+2 0.176471 0.380392
+1 0.176471 0.113725
+0 0.0941176 0.380392
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+-0.810547 -0.726562 -1.19922
+1.43945 -0.726562 -1.19922
+1.43945 -0.605469 -1.19922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.176471 0.882353
+1 0.176471 0.615686
+2 0.176471 0.615686
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+-0.810547 -0.726562 -1.19922
+1.43945 -0.605469 -1.19922
+-0.810547 -0.605469 -1.19922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.176471 0.882353
+1 0.176471 0.615686
+2 0.176471 0.882353
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+1.43945 -0.605469 -1.19922
+1.74023 -0.609375 -1.14062
+1.74023 -0.623047 -0.960938
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.160784 0.580392
+2 0.109804 0.580392
+0 0.176471 0.615686
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+1.43945 -0.605469 -1.19922
+1.74023 -0.623047 -0.960938
+1.43945 -0.626953 -0.900391
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.109804 0.580392
+2 0.0941176 0.615686
+0 0.176471 0.615686
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+1.43945 -0.626953 -0.900391
+1.74023 -0.623047 -0.960938
+1.74023 -0.712891 -0.960938
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.109804 0.580392
+2 0.109804 0.580392
+0 0.0941176 0.615686
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+1.43945 -0.626953 -0.900391
+1.74023 -0.712891 -0.960938
+1.43945 -0.748047 -0.900391
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.109804 0.580392
+2 0.0941176 0.615686
+0 0.0941176 0.615686
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+1.43945 -0.748047 -0.900391
+1.74023 -0.712891 -0.960938
+1.74023 -0.701172 -1.14062
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.0941176 0.113725
+2 0.160784 0.0784314
+1 0.109804 0.0784314
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+1.43945 -0.748047 -0.900391
+1.74023 -0.701172 -1.14062
+1.43945 -0.726562 -1.19922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.0941176 0.113725
+2 0.176471 0.113725
+1 0.160784 0.0784314
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+1.43945 -0.726562 -1.19922
+1.74023 -0.701172 -1.14062
+1.74023 -0.609375 -1.14062
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.160784 0.580392
+2 0.160784 0.580392
+0 0.176471 0.615686
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+1.43945 -0.726562 -1.19922
+1.74023 -0.609375 -1.14062
+1.43945 -0.605469 -1.19922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.160784 0.580392
+2 0.176471 0.615686
+0 0.176471 0.615686
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+3.11914 -0.720703 0
+4.98047 -0.539062 0
+4.98047 -0.449219 0
+numsurf 1
+SURF 0x0
+mat 8
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+3.11914 -0.720703 0
+4.98047 -0.449219 0
+5.00977 -0.539062 0
+numsurf 1
+SURF 0x0
+mat 8
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+3.11914 -0.720703 0
+5.00977 -0.539062 0
+5.07031 -0.509766 0
+numsurf 1
+SURF 0x0
+mat 8
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+3.11914 -0.720703 0
+5.07031 -0.509766 0
+5.16016 -0.509766 0
+numsurf 1
+SURF 0x0
+mat 8
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+3.11914 -0.720703 0
+5.16016 -0.509766 0
+5.18945 -0.539062 0
+numsurf 1
+SURF 0x0
+mat 8
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+3.11914 -0.720703 0
+5.18945 -0.539062 0
+5.13086 -0.599609 0
+numsurf 1
+SURF 0x0
+mat 8
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+3.11914 -0.720703 0
+5.13086 -0.599609 0
+5.16016 -0.539062 0
+numsurf 1
+SURF 0x0
+mat 8
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+3.11914 -0.720703 0
+5.16016 -0.539062 0
+5.09961 -0.539062 0
+numsurf 1
+SURF 0x0
+mat 8
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+3.11914 -0.720703 0
+5.09961 -0.539062 0
+5.03906 -0.570312 0
+numsurf 1
+SURF 0x0
+mat 8
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+3.11914 -0.720703 0
+5.03906 -0.570312 0
+3.11914 -0.75 0
+numsurf 1
+SURF 0x0
+mat 8
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+3.11914 -0.720703 0
+4.98047 -0.539062 0
+4.98047 -0.449219 0
+numsurf 1
+SURF 0x0
+mat 8
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+3.11914 -0.720703 0
+4.98047 -0.449219 0
+5.00977 -0.539062 0
+numsurf 1
+SURF 0x0
+mat 8
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+3.11914 -0.720703 0
+5.00977 -0.539062 0
+5.07031 -0.509766 0
+numsurf 1
+SURF 0x0
+mat 8
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+3.11914 -0.720703 0
+5.07031 -0.509766 0
+5.16016 -0.509766 0
+numsurf 1
+SURF 0x0
+mat 8
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+3.11914 -0.720703 0
+5.16016 -0.509766 0
+5.18945 -0.539062 0
+numsurf 1
+SURF 0x0
+mat 8
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+3.11914 -0.720703 0
+5.18945 -0.539062 0
+5.13086 -0.599609 0
+numsurf 1
+SURF 0x0
+mat 8
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+3.11914 -0.720703 0
+5.13086 -0.599609 0
+5.16016 -0.539062 0
+numsurf 1
+SURF 0x0
+mat 8
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+3.11914 -0.720703 0
+5.16016 -0.539062 0
+5.09961 -0.539062 0
+numsurf 1
+SURF 0x0
+mat 8
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+3.11914 -0.720703 0
+5.09961 -0.539062 0
+5.03906 -0.570312 0
+numsurf 1
+SURF 0x0
+mat 8
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+3.11914 -0.720703 0
+5.03906 -0.570312 0
+3.11914 -0.75 0
+numsurf 1
+SURF 0x0
+mat 8
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+5.13086 -0.449219 0
+5.69922 -0.539062 0
+5.69922 -0.359375 -0.0605469
+numsurf 1
+SURF 0x0
+mat 8
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+5.13086 -0.449219 0
+5.69922 -0.539062 0
+5.69922 -0.359375 0.0605469
+numsurf 1
+SURF 0x0
+mat 8
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+5.69922 -0.359375 -0.0605469
+5.69922 -0.539062 0
+5.69922 -0.359375 0.0605469
+numsurf 1
+SURF 0x0
+mat 8
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+5.69922 -0.539062 0
+5.75977 -0.539062 0
+5.78906 -0.509766 0
+numsurf 1
+SURF 0x0
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+5.69922 -0.539062 0
+5.78906 -0.509766 0
+5.78906 -0.480469 0
+numsurf 1
+SURF 0x0
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+5.69922 -0.539062 0
+5.78906 -0.480469 0
+5.75977 -0.449219 0
+numsurf 1
+SURF 0x0
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+5.69922 -0.539062 0
+5.75977 -0.449219 0
+5.69922 -0.449219 0
+numsurf 1
+SURF 0x0
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+5.69922 -0.539062 0
+5.75977 -0.539062 0
+5.78906 -0.509766 0
+numsurf 1
+SURF 0x0
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+5.69922 -0.539062 0
+5.78906 -0.509766 0
+5.78906 -0.480469 0
+numsurf 1
+SURF 0x0
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+5.69922 -0.539062 0
+5.78906 -0.480469 0
+5.75977 -0.449219 0
+numsurf 1
+SURF 0x0
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+5.69922 -0.539062 0
+5.75977 -0.449219 0
+5.69922 -0.449219 0
+numsurf 1
+SURF 0x0
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+2.78906 -0.689453 0
+3.11914 -0.779297 0
+3.11914 -0.660156 0
+numsurf 1
+SURF 0x0
+mat 8
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+2.78906 -0.689453 0
+3.11914 -0.779297 0
+3.11914 -0.660156 0
+numsurf 1
+SURF 0x0
+mat 8
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-1.rgb"
+numvert 3
+6.26953 0.810547 0
+6.26953 0.871094 -1.74023
+5.03906 0.873047 -0.0898438
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 1 0.501961
+2 0.52549 0.807843
+0 0.501961 0.501961
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-1.rgb"
+numvert 3
+6.26953 0.871094 -1.74023
+5.03906 0.873047 -0.0898438
+5.91016 0.871094 -1.74023
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 1 0.501961
+2 1 0.592157
+1 0.52549 0.807843
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-1.rgb"
+numvert 3
+5.69922 0.867188 -1.65039
+5.03906 0.873047 -0.0898438
+5.91016 0.871094 -1.74023
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.52549 0.807843
+2 1 0.592157
+0 0.972549 0.643137
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-1.rgb"
+numvert 3
+5.69922 0.867188 -1.65039
+5.03906 0.873047 -0.0898438
+4.25977 0.8125 -0.0898438
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.972549 0.643137
+2 0.52549 1
+1 0.52549 0.807843
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-1.rgb"
+numvert 3
+5.69922 0.867188 -1.65039
+5.03906 0.753906 -0.0898438
+4.25977 0.8125 -0.0898438
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.52549 0.305882
+2 0.52549 0.498039
+0 0.972549 0.141176
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-1.rgb"
+numvert 3
+5.69922 0.867188 -1.65039
+5.03906 0.753906 -0.0898438
+5.91016 0.871094 -1.74023
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.972549 0.141176
+2 1 0.0901961
+1 0.52549 0.305882
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-1.rgb"
+numvert 3
+6.26953 0.871094 -1.74023
+5.03906 0.753906 -0.0898438
+5.91016 0.871094 -1.74023
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.52549 0.305882
+2 1 0.0901961
+0 1 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-1.rgb"
+numvert 3
+6.26953 0.810547 0
+6.26953 0.871094 -1.74023
+5.03906 0.753906 -0.0898438
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.501961 0
+2 0.52549 0.305882
+1 1 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+4.89062 2.00977 -0.0292969
+5.42969 2.00977 -0.0292969
+5.42969 2.00977 -0.240234
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+4.89062 2.00977 -0.0292969
+5.42969 2.00977 -0.240234
+5.09961 2.00977 -0.240234
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+4.89062 2.00977 -0.0292969
+5.42969 2.00977 -0.0292969
+5.42969 2.00977 -0.240234
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+4.89062 2.00977 -0.0292969
+5.42969 2.00977 -0.240234
+5.09961 2.00977 -0.240234
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-6.rgb"
+numvert 3
+4.89062 0.390625 -0.119141
+6.24023 0.419922 0
+6.57031 2.75977 0
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.501961 0.552941
+2 1 0
+1 0.509804 0.109804
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-6.rgb"
+numvert 3
+4.89062 0.390625 0.119141
+6.24023 0.419922 0
+6.57031 2.75977 0
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.00784314 0.109804
+2 0.498039 0
+0 0 0.552941
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-6.rgb"
+numvert 3
+4.89062 0.390625 -0.119141
+6.06055 2.75977 0
+6.57031 2.75977 0
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 1 0.168627
+2 1 0
+0 0.501961 0.552941
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-6.rgb"
+numvert 3
+4.89062 0.390625 0.119141
+6.06055 2.75977 0
+6.57031 2.75977 0
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0 0.552941
+2 0.498039 0
+1 0.498039 0.168627
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-6.rgb"
+numvert 3
+4.89062 0.390625 -0.119141
+6.06055 2.75977 0
+5.88086 2.73047 0
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.501961 0.552941
+2 0.992157 0.227451
+1 1 0.168627
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-6.rgb"
+numvert 3
+4.89062 0.390625 0.119141
+6.06055 2.75977 0
+5.88086 2.73047 0
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.498039 0.168627
+2 0.490196 0.227451
+0 0 0.552941
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-6.rgb"
+numvert 3
+4.89062 0.390625 -0.119141
+5.64062 2.60938 0
+5.88086 2.73047 0
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.968627 0.305882
+2 0.992157 0.227451
+0 0.501961 0.552941
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-6.rgb"
+numvert 3
+4.89062 0.390625 0.119141
+5.64062 2.60938 0
+5.88086 2.73047 0
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0 0.552941
+2 0.490196 0.227451
+1 0.466667 0.305882
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-6.rgb"
+numvert 3
+4.89062 0.390625 -0.119141
+5.64062 2.60938 0
+4.10938 1.4707 0
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.501961 0.552941
+2 0.729412 0.811765
+1 0.968627 0.305882
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-6.rgb"
+numvert 3
+4.89062 0.390625 0.119141
+5.64062 2.60938 0
+4.10938 1.4707 0
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.466667 0.305882
+2 0.227451 0.811765
+0 0 0.552941
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-6.rgb"
+numvert 3
+4.89062 0.390625 -0.119141
+3.53906 1.14062 0
+4.10938 1.4707 0
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.658824 1
+2 0.729412 0.811765
+0 0.501961 0.552941
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-6.rgb"
+numvert 3
+4.89062 0.390625 0.119141
+3.53906 1.14062 0
+4.10938 1.4707 0
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0 0.552941
+2 0.227451 0.811765
+1 0.156863 1
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-6.rgb"
+numvert 3
+6.33008 1.08008 0
+6.39062 1.08008 0
+6.41992 1.28906 0
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.145098 0.0588235
+2 0.188235 0.0509804
+0 0.145098 0.0784314
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-6.rgb"
+numvert 3
+6.33008 1.08008 0
+6.41992 1.28906 0
+6.35938 1.28906 0
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.188235 0.0509804
+2 0.188235 0.0705882
+0 0.145098 0.0784314
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+2.40039 -0.650391 -0.570312
+2.40039 -0.400391 -4.14062
+0.839844 -0.460938 -0.689453
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0 0.501961
+1 1 0.501961
+2 0.0352941 0.686275
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+-1.10938 -0.347656 -0.599609
+2.40039 -0.400391 -4.14062
+0.839844 -0.460938 -0.689453
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.00784314 0.917647
+2 0.0352941 0.686275
+1 1 0.501961
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+-1.10938 -0.347656 -0.599609
+2.40039 -0.400391 -4.14062
+1.80078 -0.400391 -4.14062
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+2 1 0.572549
+0 0.00784314 0.917647
+1 1 0.501961
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+-1.10938 -0.347656 -0.599609
+1.28906 -0.414062 -3.96094
+1.80078 -0.400391 -4.14062
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.00784314 0.917647
+2 1 0.572549
+1 0.94902 0.635294
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+-1.10938 -0.347656 -0.599609
+1.28906 -0.414062 -3.96094
+0.990234 -0.427734 -3.75
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+2 0.890196 0.670588
+0 0.00784314 0.917647
+1 0.94902 0.635294
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+-1.10938 -0.347656 -0.599609
+-1.25977 -0.521484 -1.10938
+0.990234 -0.427734 -3.75
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.152941 0.937255
+0 0.00784314 0.917647
+2 0.890196 0.670588
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+-1.10938 -0.347656 -0.599609
+-1.25977 -0.521484 -1.10938
+-1.80078 -0.548828 -0.720703
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.152941 0.937255
+2 0.0431373 1
+0 0.00784314 0.917647
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+-1.10938 -0.648438 -0.599609
+-1.25977 -0.521484 -1.10938
+-1.80078 -0.548828 -0.720703
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.152941 0.435294
+0 0.00784314 0.415686
+2 0.0431373 0.498039
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+-1.10938 -0.648438 -0.599609
+-1.25977 -0.521484 -1.10938
+0.990234 -0.427734 -3.75
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.00784314 0.415686
+1 0.152941 0.435294
+2 0.890196 0.168627
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+2.40039 -0.650391 -0.570312
+2.40039 -0.400391 -4.14062
+1.80078 -0.400391 -4.14062
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+2 1 0.0705882
+1 1 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+2.40039 -0.650391 -0.570312
+1.80078 -0.400391 -4.14062
+1.28906 -0.414062 -3.96094
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+2 0.94902 0.133333
+1 1 0.0705882
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+2.40039 -0.650391 -0.570312
+1.28906 -0.414062 -3.96094
+0.990234 -0.427734 -3.75
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0 0
+2 0.890196 0.168627
+1 0.94902 0.133333
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+2.40039 -0.650391 -0.570312
+0.990234 -0.427734 -3.75
+-1.10938 -0.648438 -0.599609
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0 0
+2 0.00784314 0.415686
+1 0.890196 0.168627
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-7.rgb"
+numvert 3
+-2.00977 0.660156 -0.330078
+-2.00977 0.570312 -0.720703
+-2.00977 0.330078 -0.869141
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.439216 0.431373
+2 0.278431 0.501961
+0 0.498039 0.25098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-7.rgb"
+numvert 3
+-2.00977 0.660156 -0.330078
+-2.00977 0.330078 -0.869141
+-2.00977 0.0292969 -0.779297
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.278431 0.501961
+2 0.0784314 0.458824
+0 0.498039 0.25098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-7.rgb"
+numvert 3
+-2.00977 0.660156 -0.330078
+-2.00977 0.0292969 -0.779297
+-2.00977 -0.0898438 -0.539062
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.0784314 0.458824
+2 0 0.34902
+0 0.498039 0.25098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+-0.539062 -0.341797 -1.56055
+-1.08008 -0.640625 -1.56055
+0.839844 -0.455078 -3.7793
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.278431 0.913725
+0 0.278431 0.85098
+2 0.898039 0.686275
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-2.rgb"
+numvert 3
+-0.539062 -0.341797 -1.56055
+0.839844 -0.455078 -3.7793
+0.960938 -0.400391 -3.7207
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.898039 0.686275
+0 0.278431 0.85098
+2 0.882353 0.67451
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.00977 -0.330078 -0.539062
+-4.41016 -0.330078 -0.539062
+-4.43945 -0.330078 -0.480469
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.00977 -0.330078 -0.539062
+-4.43945 -0.330078 -0.480469
+-2.91016 -0.330078 -0.480469
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.00977 -0.330078 -0.539062
+-4.41016 -0.330078 -0.539062
+-4.43945 -0.330078 -0.480469
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.00977 -0.330078 -0.539062
+-4.43945 -0.330078 -0.480469
+-2.91016 -0.330078 -0.480469
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.00977 -0.269531 -0.539062
+-4.41016 -0.269531 -0.539062
+-4.43945 -0.269531 -0.480469
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.00977 -0.269531 -0.539062
+-4.43945 -0.269531 -0.480469
+-2.91016 -0.269531 -0.480469
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.00977 -0.269531 -0.539062
+-4.41016 -0.269531 -0.539062
+-4.43945 -0.269531 -0.480469
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.00977 -0.269531 -0.539062
+-4.43945 -0.269531 -0.480469
+-2.91016 -0.269531 -0.480469
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.91016 -0.330078 -0.480469
+-2.91016 -0.269531 -0.480469
+-4.43945 -0.269531 -0.480469
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.91016 -0.330078 -0.480469
+-4.43945 -0.269531 -0.480469
+-4.43945 -0.330078 -0.480469
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.91016 -0.330078 -0.480469
+-2.91016 -0.269531 -0.480469
+-4.43945 -0.269531 -0.480469
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.91016 -0.330078 -0.480469
+-4.43945 -0.269531 -0.480469
+-4.43945 -0.330078 -0.480469
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.89062 -0.330078 -0.75
+-4.89062 -0.269531 -0.75
+-4.43945 -0.269531 -0.480469
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.89062 -0.330078 -0.75
+-4.43945 -0.269531 -0.480469
+-4.43945 -0.330078 -0.480469
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.89062 -0.330078 -0.75
+-4.89062 -0.269531 -0.75
+-4.43945 -0.269531 -0.480469
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.89062 -0.330078 -0.75
+-4.43945 -0.269531 -0.480469
+-4.43945 -0.330078 -0.480469
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.89062 -0.330078 -0.75
+-4.89062 -0.269531 -0.75
+-5.16016 -0.269531 -0.75
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.89062 -0.330078 -0.75
+-5.16016 -0.269531 -0.75
+-5.16016 -0.330078 -0.75
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.89062 -0.330078 -0.75
+-4.89062 -0.269531 -0.75
+-5.16016 -0.269531 -0.75
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.89062 -0.330078 -0.75
+-5.16016 -0.269531 -0.75
+-5.16016 -0.330078 -0.75
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.85938 -0.330078 -0.810547
+-4.85938 -0.269531 -0.810547
+-5.16016 -0.269531 -0.810547
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.85938 -0.330078 -0.810547
+-5.16016 -0.269531 -0.810547
+-5.16016 -0.330078 -0.810547
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.85938 -0.330078 -0.810547
+-4.85938 -0.269531 -0.810547
+-5.16016 -0.269531 -0.810547
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.85938 -0.330078 -0.810547
+-5.16016 -0.269531 -0.810547
+-5.16016 -0.330078 -0.810547
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.85938 -0.330078 -0.810547
+-4.85938 -0.269531 -0.810547
+-4.41016 -0.269531 -0.539062
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.85938 -0.330078 -0.810547
+-4.41016 -0.269531 -0.539062
+-4.41016 -0.330078 -0.539062
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.85938 -0.330078 -0.810547
+-4.85938 -0.269531 -0.810547
+-4.41016 -0.269531 -0.539062
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.85938 -0.330078 -0.810547
+-4.41016 -0.269531 -0.539062
+-4.41016 -0.330078 -0.539062
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.00977 -0.330078 -0.539062
+-2.00977 -0.269531 -0.539062
+-4.41016 -0.269531 -0.539062
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.00977 -0.330078 -0.539062
+-4.41016 -0.269531 -0.539062
+-4.41016 -0.330078 -0.539062
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.00977 -0.330078 -0.539062
+-2.00977 -0.269531 -0.539062
+-4.41016 -0.269531 -0.539062
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.00977 -0.330078 -0.539062
+-4.41016 -0.269531 -0.539062
+-4.41016 -0.330078 -0.539062
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.85938 -0.330078 -0.810547
+-5.16016 -0.330078 -0.810547
+-5.16016 -0.330078 -0.75
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.85938 -0.330078 -0.810547
+-5.16016 -0.330078 -0.75
+-4.89062 -0.330078 -0.75
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.85938 -0.330078 -0.810547
+-5.16016 -0.330078 -0.810547
+-5.16016 -0.330078 -0.75
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.85938 -0.330078 -0.810547
+-5.16016 -0.330078 -0.75
+-4.89062 -0.330078 -0.75
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.41016 -0.330078 -0.539062
+-4.85938 -0.330078 -0.810547
+-4.89062 -0.330078 -0.75
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.41016 -0.330078 -0.539062
+-4.89062 -0.330078 -0.75
+-4.43945 -0.330078 -0.480469
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.41016 -0.330078 -0.539062
+-4.85938 -0.330078 -0.810547
+-4.89062 -0.330078 -0.75
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.41016 -0.330078 -0.539062
+-4.89062 -0.330078 -0.75
+-4.43945 -0.330078 -0.480469
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.85938 -0.269531 -0.810547
+-5.16016 -0.269531 -0.810547
+-5.16016 -0.269531 -0.75
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.85938 -0.269531 -0.810547
+-5.16016 -0.269531 -0.75
+-4.89062 -0.269531 -0.75
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.85938 -0.269531 -0.810547
+-5.16016 -0.269531 -0.810547
+-5.16016 -0.269531 -0.75
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.85938 -0.269531 -0.810547
+-5.16016 -0.269531 -0.75
+-4.89062 -0.269531 -0.75
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.41016 -0.269531 -0.539062
+-4.85938 -0.269531 -0.810547
+-4.89062 -0.269531 -0.75
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.41016 -0.269531 -0.539062
+-4.89062 -0.269531 -0.75
+-4.43945 -0.269531 -0.480469
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.41016 -0.269531 -0.539062
+-4.85938 -0.269531 -0.810547
+-4.89062 -0.269531 -0.75
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-4.41016 -0.269531 -0.539062
+-4.89062 -0.269531 -0.75
+-4.43945 -0.269531 -0.480469
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.31055 -0.269531 -0.810547
+-5.16016 -0.269531 -0.810547
+-5.16016 -0.269531 -0.75
+numsurf 1
+SURF 0x20
+mat 8
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.31055 -0.269531 -0.810547
+-5.16016 -0.269531 -0.75
+-5.31055 -0.269531 -0.75
+numsurf 1
+SURF 0x20
+mat 8
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.31055 -0.269531 -0.75
+-5.16016 -0.269531 -0.75
+-5.16016 -0.330078 -0.75
+numsurf 1
+SURF 0x20
+mat 8
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.31055 -0.269531 -0.75
+-5.16016 -0.330078 -0.75
+-5.31055 -0.330078 -0.75
+numsurf 1
+SURF 0x20
+mat 8
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.31055 -0.330078 -0.75
+-5.16016 -0.330078 -0.75
+-5.16016 -0.330078 -0.810547
+numsurf 1
+SURF 0x20
+mat 8
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.31055 -0.330078 -0.75
+-5.16016 -0.330078 -0.810547
+-5.31055 -0.330078 -0.810547
+numsurf 1
+SURF 0x20
+mat 8
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.31055 -0.330078 -0.810547
+-5.16016 -0.330078 -0.810547
+-5.16016 -0.269531 -0.810547
+numsurf 1
+SURF 0x20
+mat 8
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.31055 -0.330078 -0.810547
+-5.16016 -0.269531 -0.810547
+-5.31055 -0.269531 -0.810547
+numsurf 1
+SURF 0x20
+mat 8
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-3.75 0.419922 -0.0898438
+-3.75 0.419922 0.0898438
+-5.00977 0 0
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.823529 0.784314
+0 0.823529 0.784314
+2 0.701961 1
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-3.75 0.419922 -0.0898438
+-3.50977 0.390625 -0.269531
+-5.00977 0 0
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.815686 0.745098
+2 0.701961 1
+0 0.823529 0.784314
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-3.75 0.419922 0.0898438
+-3.50977 0.390625 0.269531
+-5.00977 0 0
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.313726 0.745098
+0 0.321569 0.784314
+2 0.2 1
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-5.00977 -0.0292969 -0.150391
+-3.50977 0.390625 -0.269531
+-5.00977 0 0
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.815686 0.745098
+0 0.694118 1
+2 0.701961 1
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-5.00977 -0.0292969 0.150391
+-3.50977 0.390625 0.269531
+-5.00977 0 0
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.313726 0.745098
+2 0.2 1
+0 0.192157 1
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-5.00977 -0.0292969 -0.150391
+-3.50977 0.390625 -0.269531
+-3.50977 -0.0898438 -0.419922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.815686 0.745098
+2 0.678431 0.745098
+0 0.694118 1
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-5.00977 -0.0292969 0.150391
+-3.50977 0.390625 0.269531
+-3.50977 -0.0898438 0.419922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.313726 0.745098
+0 0.192157 1
+2 0.176471 0.745098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-5.00977 -0.0292969 -0.150391
+-5.00977 -0.179688 -0.240234
+-3.50977 -0.0898438 -0.419922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.65098 1
+0 0.694118 1
+2 0.678431 0.745098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-5.00977 -0.0292969 0.150391
+-5.00977 -0.179688 0.240234
+-3.50977 -0.0898438 0.419922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.14902 1
+2 0.176471 0.745098
+0 0.192157 1
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-5.00977 -0.449219 -0.240234
+-5.00977 -0.179688 -0.240234
+-3.50977 -0.0898438 -0.419922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.65098 1
+2 0.678431 0.745098
+0 0.572549 1
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-5.00977 -0.449219 -0.240234
+-3.50977 -0.0898438 -0.419922
+-3.50977 -0.539062 -0.419922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.678431 0.745098
+2 0.545098 0.745098
+0 0.572549 1
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-5.00977 -0.449219 0.240234
+-5.00977 -0.179688 0.240234
+-3.50977 -0.0898438 0.419922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.14902 1
+0 0.0705882 1
+2 0.176471 0.745098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-5.00977 -0.449219 0.240234
+-3.50977 -0.0898438 0.419922
+-3.50977 -0.539062 0.419922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.176471 0.745098
+0 0.0705882 1
+2 0.0431373 0.745098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-5.00977 -0.449219 -0.240234
+-5.00977 -0.570312 -0.119141
+-3.50977 -0.660156 -0.300781
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.537255 1
+0 0.572549 1
+2 0.509804 0.745098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-5.00977 -0.449219 -0.240234
+-3.50977 -0.660156 -0.300781
+-3.50977 -0.539062 -0.419922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.509804 0.745098
+0 0.572549 1
+2 0.545098 0.745098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-5.00977 -0.449219 0.240234
+-5.00977 -0.570312 0.119141
+-3.50977 -0.660156 0.300781
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.0352941 1
+2 0.00784314 0.745098
+0 0.0705882 1
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-5.00977 -0.449219 0.240234
+-3.50977 -0.660156 0.300781
+-3.50977 -0.539062 0.419922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.00784314 0.745098
+2 0.0431373 0.745098
+0 0.0705882 1
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-5.00977 -0.570312 -0.119141
+-5.00977 -0.570312 0.119141
+-3.50977 -0.660156 0.300781
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.537255 1
+0 0.537255 1
+2 0.509804 0.745098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-5.00977 -0.570312 -0.119141
+-3.50977 -0.660156 0.300781
+-3.50977 -0.660156 -0.300781
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.509804 0.745098
+0 0.537255 1
+2 0.509804 0.745098
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.00977 0 0
+-5.46094 -0.240234 -0.119141
+-5.46094 -0.179688 0
+numsurf 1
+SURF 0x0
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.60938 -0.330078 0
+-5.46094 -0.480469 -0.0605469
+-5.46094 -0.480469 0.0605469
+numsurf 1
+SURF 0x0
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.00977 0 0
+-5.46094 -0.240234 0.119141
+-5.46094 -0.179688 0
+numsurf 1
+SURF 0x0
+mat 3
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.00977 0 0
+-5.46094 -0.240234 -0.119141
+-5.00977 -0.0292969 -0.150391
+numsurf 1
+SURF 0x0
+mat 3
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.00977 0 0
+-5.46094 -0.240234 0.119141
+-5.00977 -0.0292969 0.150391
+numsurf 1
+SURF 0x0
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.00977 -0.179688 -0.240234
+-5.46094 -0.240234 -0.119141
+-5.00977 -0.0292969 -0.150391
+numsurf 1
+SURF 0x0
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.00977 -0.179688 0.240234
+-5.46094 -0.240234 0.119141
+-5.00977 -0.0292969 0.150391
+numsurf 1
+SURF 0x0
+mat 3
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.00977 -0.179688 -0.240234
+-5.46094 -0.240234 -0.119141
+-5.46094 -0.419922 -0.119141
+numsurf 1
+SURF 0x0
+mat 3
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.00977 -0.179688 -0.240234
+-5.46094 -0.419922 -0.119141
+-5.00977 -0.449219 -0.240234
+numsurf 1
+SURF 0x0
+mat 3
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.00977 -0.179688 0.240234
+-5.46094 -0.240234 0.119141
+-5.46094 -0.419922 0.119141
+numsurf 1
+SURF 0x0
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.00977 -0.179688 0.240234
+-5.46094 -0.419922 0.119141
+-5.00977 -0.449219 0.240234
+numsurf 1
+SURF 0x0
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.00977 -0.570312 -0.119141
+-5.46094 -0.480469 -0.0605469
+-5.46094 -0.419922 -0.119141
+numsurf 1
+SURF 0x0
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.00977 -0.570312 -0.119141
+-5.46094 -0.419922 -0.119141
+-5.00977 -0.449219 -0.240234
+numsurf 1
+SURF 0x0
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.00977 -0.570312 0.119141
+-5.46094 -0.480469 0.0605469
+-5.46094 -0.419922 0.119141
+numsurf 1
+SURF 0x0
+mat 3
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.00977 -0.570312 0.119141
+-5.46094 -0.419922 0.119141
+-5.00977 -0.449219 0.240234
+numsurf 1
+SURF 0x0
+mat 3
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.00977 -0.570312 -0.119141
+-5.46094 -0.480469 -0.0605469
+-5.46094 -0.480469 0.0605469
+numsurf 1
+SURF 0x0
+mat 3
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.00977 -0.570312 -0.119141
+-5.46094 -0.480469 0.0605469
+-5.00977 -0.570312 0.119141
+numsurf 1
+SURF 0x0
+mat 3
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.60938 -0.330078 0
+-5.46094 -0.240234 -0.119141
+-5.46094 -0.179688 0
+numsurf 1
+SURF 0x0
+mat 3
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.60938 -0.330078 0
+-5.46094 -0.240234 0.119141
+-5.46094 -0.179688 0
+numsurf 1
+SURF 0x0
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.60938 -0.330078 0
+-5.46094 -0.240234 -0.119141
+-5.46094 -0.419922 -0.119141
+numsurf 1
+SURF 0x0
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.60938 -0.330078 0
+-5.46094 -0.240234 0.119141
+-5.46094 -0.419922 0.119141
+numsurf 1
+SURF 0x0
+mat 3
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.60938 -0.330078 0
+-5.46094 -0.480469 -0.0605469
+-5.46094 -0.419922 -0.119141
+numsurf 1
+SURF 0x0
+mat 3
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-5.60938 -0.330078 0
+-5.46094 -0.480469 0.0605469
+-5.46094 -0.419922 0.119141
+numsurf 1
+SURF 0x0
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.00977 0.660156 0.330078
+-2.00977 0.570312 0.720703
+-1.10938 0.75 0.150391
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.368627 0.486275
+2 0.419608 0.333333
+0 0.392157 0.486275
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 0.660156 0.689453
+-2.00977 0.570312 0.720703
+-1.10938 0.75 0.150391
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.368627 0.486275
+0 0.392157 0.333333
+2 0.419608 0.333333
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 0.330078 0.869141
+-2.00977 0.570312 0.720703
+-1.10938 0.660156 0.689453
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.368627 0.486275
+0 0.298039 0.333333
+2 0.392157 0.333333
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 0.330078 0.869141
+-2.00977 0.570312 0.720703
+-2.00977 0.330078 0.869141
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.368627 0.486275
+2 0.298039 0.486275
+0 0.298039 0.333333
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 0.330078 0.869141
+-1.10938 0.0292969 0.779297
+-2.00977 0.0292969 0.779297
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.207843 0.333333
+0 0.298039 0.333333
+2 0.207843 0.486275
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 0.330078 0.869141
+-2.00977 0.0292969 0.779297
+-2.00977 0.330078 0.869141
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.207843 0.486275
+0 0.298039 0.333333
+2 0.298039 0.486275
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 -0.179688 0.599609
+-1.10938 0.0292969 0.779297
+-2.00977 0.0292969 0.779297
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.207843 0.333333
+2 0.207843 0.486275
+0 0.14902 0.333333
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 -0.179688 0.599609
+-2.00977 -0.0898438 0.539062
+-2.00977 0.0292969 0.779297
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.176471 0.486275
+0 0.14902 0.333333
+2 0.207843 0.486275
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.00977 0.660156 0.330078
+-1.10938 0.75 0.150391
+-1.10938 0.75 0
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.921569 0.333333
+2 0.921569 0.333333
+0 0.894118 0.486275
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 -0.347656 0.599609
+-2.00977 -0.441406 0.539062
+-1.80078 -0.548828 0.720703
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.0705882 0.486275
+2 0.0392157 0.45098
+0 0.0980392 0.333333
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.46094 -0.564453 0.509766
+-2.00977 -0.441406 0.539062
+-1.80078 -0.548828 0.720703
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.0705882 0.486275
+0 0.0352941 0.564706
+2 0.0392157 0.45098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.46094 -0.564453 0.509766
+-2.00977 -0.652344 0.539062
+-1.80078 -0.548828 0.720703
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.0117647 0.486275
+2 0.0392157 0.45098
+0 0.0352941 0.564706
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 -0.648438 0.599609
+-2.00977 -0.652344 0.539062
+-1.80078 -0.548828 0.720703
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.0117647 0.486275
+0 0.0117647 0.333333
+2 0.0392157 0.45098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.00977 0.660156 -0.330078
+-2.00977 0.570312 -0.720703
+-1.10938 0.75 -0.150391
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.870588 0.486275
+0 0.894118 0.486275
+2 0.921569 0.333333
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 0.660156 -0.689453
+-2.00977 0.570312 -0.720703
+-1.10938 0.75 -0.150391
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.870588 0.486275
+2 0.921569 0.333333
+0 0.894118 0.333333
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 0.330078 -0.869141
+-2.00977 0.570312 -0.720703
+-1.10938 0.660156 -0.689453
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.870588 0.486275
+2 0.894118 0.333333
+0 0.8 0.333333
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 0.330078 -0.869141
+-2.00977 0.570312 -0.720703
+-2.00977 0.330078 -0.869141
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.870588 0.486275
+0 0.8 0.333333
+2 0.8 0.486275
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 0.330078 -0.869141
+-1.10938 0.0292969 -0.779297
+-2.00977 0.0292969 -0.779297
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.709804 0.333333
+2 0.709804 0.486275
+0 0.8 0.333333
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 0.330078 -0.869141
+-2.00977 0.0292969 -0.779297
+-2.00977 0.330078 -0.869141
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.709804 0.486275
+2 0.8 0.486275
+0 0.8 0.333333
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 -0.179688 -0.599609
+-1.10938 0.0292969 -0.779297
+-2.00977 0.0292969 -0.779297
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.709804 0.333333
+0 0.65098 0.333333
+2 0.709804 0.486275
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 -0.179688 -0.599609
+-2.00977 -0.0898438 -0.539062
+-2.00977 0.0292969 -0.779297
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.678431 0.486275
+2 0.709804 0.486275
+0 0.65098 0.333333
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.00977 0.660156 -0.330078
+-1.10938 0.75 -0.150391
+-1.10938 0.75 0
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.921569 0.333333
+0 0.894118 0.486275
+2 0.921569 0.333333
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 -0.347656 -0.599609
+-2.00977 -0.441406 -0.539062
+-1.80078 -0.548828 -0.720703
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.572549 0.486275
+0 0.6 0.333333
+2 0.541176 0.45098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.46094 -0.564453 -0.509766
+-2.00977 -0.441406 -0.539062
+-1.80078 -0.548828 -0.720703
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.572549 0.486275
+2 0.541176 0.45098
+0 0.537255 0.564706
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.46094 -0.564453 -0.509766
+-2.00977 -0.652344 -0.539062
+-1.80078 -0.548828 -0.720703
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.513726 0.486275
+0 0.537255 0.564706
+2 0.541176 0.45098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 -0.648438 -0.599609
+-2.00977 -0.652344 -0.539062
+-1.80078 -0.548828 -0.720703
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.513726 0.486275
+2 0.541176 0.45098
+0 0.513726 0.333333
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-3.50977 -0.539062 -0.419922
+-2.00977 -0.689453 -0.539062
+-2.00977 -0.0898438 -0.539062
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.501961 0.486275
+0 0.545098 0.745098
+2 0.678431 0.486275
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-3.50977 -0.539062 -0.419922
+-2.00977 -0.0898438 -0.539062
+-3.50977 -0.0898438 -0.419922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.678431 0.486275
+0 0.545098 0.745098
+2 0.678431 0.745098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-3.50977 -0.539062 0.419922
+-2.00977 -0.689453 0.539062
+-2.00977 -0.0898438 0.539062
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0 0.486275
+2 0.176471 0.486275
+0 0.0431373 0.745098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-3.50977 -0.539062 0.419922
+-2.00977 -0.0898438 0.539062
+-3.50977 -0.0898438 0.419922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.176471 0.486275
+2 0.176471 0.745098
+0 0.0431373 0.745098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-3.50977 0.390625 -0.269531
+-3.0293 0.480469 -0.330078
+-3.50977 -0.0898438 -0.419922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.843137 0.662745
+2 0.678431 0.745098
+0 0.815686 0.745098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-3.50977 0.390625 0.269531
+-3.0293 0.480469 0.330078
+-3.50977 -0.0898438 0.419922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.341176 0.662745
+0 0.313726 0.745098
+2 0.176471 0.745098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.64062 0.599609 -0.330078
+-3.0293 0.480469 -0.330078
+-3.50977 -0.0898438 -0.419922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.843137 0.662745
+0 0.878431 0.596078
+2 0.678431 0.745098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.64062 0.599609 0.330078
+-3.0293 0.480469 0.330078
+-3.50977 -0.0898438 0.419922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.341176 0.662745
+2 0.176471 0.745098
+0 0.376471 0.596078
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.64062 0.599609 -0.330078
+-2.00977 -0.0898438 -0.539062
+-3.50977 -0.0898438 -0.419922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.678431 0.486275
+2 0.678431 0.745098
+0 0.878431 0.596078
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.64062 0.599609 0.330078
+-2.00977 -0.0898438 0.539062
+-3.50977 -0.0898438 0.419922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.176471 0.486275
+0 0.376471 0.596078
+2 0.176471 0.745098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.64062 0.599609 -0.330078
+-2.00977 -0.0898438 -0.539062
+-2.00977 0.660156 -0.330078
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.678431 0.486275
+0 0.878431 0.596078
+2 0.894118 0.486275
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.64062 0.599609 0.330078
+-2.00977 -0.0898438 0.539062
+-2.00977 0.660156 0.330078
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.176471 0.486275
+2 0.392157 0.486275
+0 0.376471 0.596078
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-3.50977 -0.660156 -0.300781
+-3.50977 -0.660156 0.300781
+-2.00977 -0.689453 0.539062
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.509804 0.745098
+0 0.509804 0.745098
+2 0.501961 0.486275
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-3.50977 -0.660156 -0.300781
+-2.00977 -0.689453 0.539062
+-2.00977 -0.689453 -0.539062
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.501961 0.486275
+0 0.509804 0.745098
+2 0.501961 0.486275
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-3.50977 -0.539062 -0.419922
+-3.50977 -0.660156 -0.300781
+-2.00977 -0.689453 -0.539062
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.509804 0.745098
+0 0.545098 0.745098
+2 0.501961 0.486275
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-3.50977 -0.539062 0.419922
+-3.50977 -0.660156 0.300781
+-2.00977 -0.689453 0.539062
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.00784314 0.745098
+2 0 0.486275
+0 0.0431373 0.745098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 -0.689453 0.599609
+-1.10938 -0.179688 0.599609
+-2.00977 -0.0898438 0.539062
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.14902 0.333333
+2 0.176471 0.486275
+0 0 0.333333
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 -0.689453 0.599609
+-2.00977 -0.0898438 0.539062
+-2.00977 -0.689453 0.539062
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.176471 0.486275
+2 0 0.486275
+0 0 0.333333
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 -0.689453 -0.599609
+-1.10938 -0.179688 -0.599609
+-2.00977 -0.0898438 -0.539062
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.65098 0.333333
+0 0.501961 0.333333
+2 0.678431 0.486275
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 -0.689453 -0.599609
+-2.00977 -0.0898438 -0.539062
+-2.00977 -0.689453 -0.539062
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.678431 0.486275
+0 0.501961 0.333333
+2 0.501961 0.486275
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.00977 -0.689453 -0.539062
+-1.10938 -0.689453 -0.599609
+-1.10938 -0.689453 0.599609
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.501961 0.333333
+2 0.501961 0.333333
+0 0.501961 0.486275
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.00977 -0.689453 -0.539062
+-1.10938 -0.689453 0.599609
+-2.00977 -0.689453 0.539062
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.501961 0.333333
+2 0.501961 0.486275
+0 0.501961 0.486275
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 0.75 0.150391
+-1.10938 0.75 -0.150391
+0.839844 0.720703 0
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.921569 0.333333
+0 0.921569 0.333333
+2 0.913725 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 0.75 -0.150391
+-1.10938 0.660156 -0.689453
+0.839844 0.660156 -0.359375
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.894118 0.333333
+0 0.921569 0.333333
+2 0.894118 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 0.75 -0.150391
+0.839844 0.660156 -0.359375
+0.839844 0.720703 0
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.894118 0
+0 0.921569 0.333333
+2 0.913725 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 0.75 0.150391
+-1.10938 0.660156 0.689453
+0.839844 0.660156 0.359375
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.392157 0.333333
+2 0.392157 0
+0 0.419608 0.333333
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 0.75 0.150391
+0.839844 0.660156 0.359375
+0.839844 0.720703 0
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.392157 0
+2 0.411765 0
+0 0.419608 0.333333
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 0.660156 -0.689453
+0.839844 0.660156 -0.359375
+0.839844 0.330078 -0.599609
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.894118 0
+2 0.8 0
+0 0.894118 0.333333
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 0.660156 0.689453
+0.839844 0.660156 0.359375
+0.839844 0.330078 0.599609
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.392157 0
+0 0.392157 0.333333
+2 0.298039 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 0.660156 -0.689453
+-1.10938 0.330078 -0.869141
+0.839844 0.330078 -0.599609
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.8 0.333333
+0 0.894118 0.333333
+2 0.8 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 0.660156 0.689453
+-1.10938 0.330078 0.869141
+0.839844 0.330078 0.599609
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.298039 0.333333
+2 0.298039 0
+0 0.392157 0.333333
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+0.839844 0.0292969 -0.689453
+-1.10938 0.330078 -0.869141
+0.839844 0.330078 -0.599609
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.8 0.333333
+2 0.8 0
+0 0.709804 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+0.839844 0.0292969 0.689453
+-1.10938 0.330078 0.869141
+0.839844 0.330078 0.599609
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.298039 0.333333
+0 0.207843 0
+2 0.298039 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+0.839844 0.0292969 -0.689453
+-1.10938 0.330078 -0.869141
+-1.10938 0.0292969 -0.779297
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.8 0.333333
+0 0.709804 0
+2 0.709804 0.333333
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+0.839844 0.0292969 0.689453
+-1.10938 0.330078 0.869141
+-1.10938 0.0292969 0.779297
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.298039 0.333333
+2 0.207843 0.333333
+0 0.207843 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+0.839844 0.0292969 -0.689453
+0.839844 -0.179688 -0.689453
+-1.10938 0.0292969 -0.779297
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.65098 0
+2 0.709804 0.333333
+0 0.709804 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 -0.179688 -0.599609
+0.839844 -0.179688 -0.689453
+-1.10938 0.0292969 -0.779297
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.65098 0
+0 0.65098 0.333333
+2 0.709804 0.333333
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+0.839844 0.0292969 0.689453
+0.839844 -0.179688 0.689453
+-1.10938 0.0292969 0.779297
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.14902 0
+0 0.207843 0
+2 0.207843 0.333333
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 -0.179688 0.599609
+0.839844 -0.179688 0.689453
+-1.10938 0.0292969 0.779297
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.14902 0
+2 0.207843 0.333333
+0 0.14902 0.333333
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 -0.179688 -0.599609
+0.839844 -0.179688 -0.689453
+0.839844 -0.689453 -0.689453
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.65098 0
+2 0.501961 0
+0 0.65098 0.333333
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 -0.179688 -0.599609
+0.839844 -0.689453 -0.689453
+-1.10938 -0.689453 -0.599609
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.501961 0
+2 0.501961 0.333333
+0 0.65098 0.333333
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 -0.179688 0.599609
+0.839844 -0.179688 0.689453
+0.839844 -0.689453 0.689453
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.14902 0
+0 0.14902 0.333333
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 -0.179688 0.599609
+0.839844 -0.689453 0.689453
+-1.10938 -0.689453 0.599609
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0 0
+0 0.14902 0.333333
+2 0 0.333333
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+0.839844 -0.689453 -0.689453
+0.839844 -0.689453 0.689453
+-1.10938 -0.689453 0.599609
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.501961 0
+2 0.501961 0.333333
+0 0.501961 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+0.839844 -0.689453 -0.689453
+-1.10938 -0.689453 0.599609
+-1.10938 -0.689453 -0.599609
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.501961 0.333333
+2 0.501961 0.333333
+0 0.501961 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+0.810547 0.720703 0
+0.720703 0.779297 0
+0.660156 0.779297 0
+numsurf 1
+SURF 0x20
+mat 10
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+0.810547 0.720703 0
+0.660156 0.779297 0
+0.630859 0.720703 0
+numsurf 1
+SURF 0x20
+mat 10
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+0.810547 0.720703 0
+0.720703 0.779297 0
+0.660156 0.779297 0
+numsurf 1
+SURF 0x20
+mat 10
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+0.810547 0.720703 0
+0.660156 0.779297 0
+0.630859 0.720703 0
+numsurf 1
+SURF 0x20
+mat 10
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+5.91016 -0.359375 0
+5.91016 -0.269531 0.210938
+5.91016 -0.0605469 0.300781
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+5.91016 -0.359375 0
+5.91016 -0.0605469 0.300781
+5.91016 0.0898438 0.240234
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+5.91016 -0.359375 0
+5.91016 0.0898438 0.240234
+5.91016 0.0898438 -0.240234
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+5.91016 -0.359375 0
+5.91016 0.0898438 -0.240234
+5.91016 -0.0605469 -0.300781
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+5.91016 -0.359375 0
+5.91016 -0.0605469 -0.300781
+5.91016 -0.269531 -0.210938
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+5.91016 -0.359375 0
+5.91016 -0.269531 0.210938
+5.91016 -0.0605469 0.300781
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+5.91016 -0.359375 0
+5.91016 -0.0605469 0.300781
+5.91016 0.0898438 0.240234
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+5.91016 -0.359375 0
+5.91016 0.0898438 0.240234
+5.91016 0.0898438 -0.240234
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+5.91016 -0.359375 0
+5.91016 0.0898438 -0.240234
+5.91016 -0.0605469 -0.300781
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+5.91016 -0.359375 0
+5.91016 -0.0605469 -0.300781
+5.91016 -0.269531 -0.210938
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+6.24023 0.419922 0
+6.17969 0.359375 0.150391
+6.0293 0.210938 0.240234
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+6.24023 0.419922 0
+6.0293 0.210938 0.240234
+5.91016 0.0898438 0.240234
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+6.24023 0.419922 0
+5.91016 0.0898438 0.240234
+5.91016 0.0898438 -0.240234
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+6.24023 0.419922 0
+5.91016 0.0898438 -0.240234
+6.0293 0.210938 -0.240234
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+6.24023 0.419922 0
+6.0293 0.210938 -0.240234
+6.17969 0.359375 -0.150391
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+6.24023 0.419922 0
+6.17969 0.359375 0.150391
+6.0293 0.210938 0.240234
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+6.24023 0.419922 0
+6.0293 0.210938 0.240234
+5.91016 0.0898438 0.240234
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+6.24023 0.419922 0
+5.91016 0.0898438 0.240234
+5.91016 0.0898438 -0.240234
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+6.24023 0.419922 0
+5.91016 0.0898438 -0.240234
+6.0293 0.210938 -0.240234
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+6.24023 0.419922 0
+6.0293 0.210938 -0.240234
+6.17969 0.359375 -0.150391
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+4.89062 0.390625 -0.119141
+0.839844 0.720703 0
+0.839844 0.660156 -0.359375
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.886275 1
+0 0.796078 0.25098
+2 0.870588 1
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+4.89062 0.390625 0.119141
+0.839844 0.720703 0
+0.839844 0.660156 0.359375
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.384314 1
+2 0.368627 1
+0 0.294118 0.25098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+4.89062 0.390625 -0.119141
+5.91016 0.0898438 -0.240234
+0.839844 0.660156 -0.359375
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.713726 0.0627451
+2 0.870588 1
+0 0.796078 0.25098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+4.89062 0.390625 0.119141
+5.91016 0.0898438 0.240234
+0.839844 0.660156 0.359375
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.211765 0.0627451
+0 0.294118 0.25098
+2 0.368627 1
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+0.839844 0.330078 -0.599609
+5.91016 0.0898438 -0.240234
+0.839844 0.660156 -0.359375
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.713726 0.0627451
+0 0.780392 1
+2 0.870588 1
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+0.839844 0.330078 0.599609
+5.91016 0.0898438 0.240234
+0.839844 0.660156 0.359375
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.211765 0.0627451
+2 0.368627 1
+0 0.278431 1
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+0.839844 0.330078 -0.599609
+5.91016 0.0898438 -0.240234
+5.91016 -0.0605469 -0.300781
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.713726 0.0627451
+2 0.67451 0.0627451
+0 0.780392 1
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+0.839844 0.330078 0.599609
+5.91016 0.0898438 0.240234
+5.91016 -0.0605469 0.300781
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.211765 0.0627451
+0 0.278431 1
+2 0.172549 0.0627451
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+0.839844 0.330078 -0.599609
+0.839844 0.0292969 -0.689453
+5.91016 -0.0605469 -0.300781
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.698039 1
+0 0.780392 1
+2 0.67451 0.0627451
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+0.839844 0.330078 0.599609
+0.839844 0.0292969 0.689453
+5.91016 -0.0605469 0.300781
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.196078 1
+2 0.172549 0.0627451
+0 0.278431 1
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+0.839844 0.0292969 -0.689453
+5.91016 -0.0605469 -0.300781
+2.78906 -0.689453 -0.539062
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.67451 0.0627451
+2 0.501961 0.639216
+0 0.698039 1
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+0.839844 0.0292969 -0.689453
+2.78906 -0.689453 -0.539062
+0.839844 -0.689453 -0.689453
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.501961 0.639216
+2 0.501961 1
+0 0.698039 1
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+0.839844 0.0292969 0.689453
+5.91016 -0.0605469 0.300781
+2.78906 -0.689453 0.539062
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.172549 0.0627451
+0 0.196078 1
+2 0 0.639216
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+0.839844 0.0292969 0.689453
+2.78906 -0.689453 0.539062
+0.839844 -0.689453 0.689453
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0 0.639216
+0 0.196078 1
+2 0 1
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+2.78906 -0.689453 -0.539062
+5.91016 -0.0605469 -0.300781
+5.91016 -0.269531 -0.210938
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.67451 0.0627451
+2 0.615686 0.0627451
+0 0.501961 0.639216
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+2.78906 -0.689453 0.539062
+5.91016 -0.0605469 0.300781
+5.91016 -0.269531 0.210938
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.172549 0.0627451
+0 0 0.639216
+2 0.113725 0.0627451
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+2.78906 -0.689453 -0.539062
+5.91016 -0.359375 0
+5.91016 -0.269531 -0.210938
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.592157 0.0627451
+0 0.501961 0.639216
+2 0.615686 0.0627451
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+2.78906 -0.689453 0.539062
+5.91016 -0.359375 0
+5.91016 -0.269531 0.210938
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.0901961 0.0627451
+2 0.113725 0.0627451
+0 0 0.639216
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+2.78906 -0.689453 -0.539062
+5.91016 -0.359375 0
+2.78906 -0.689453 0.539062
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.592157 0.0627451
+2 0.501961 0.639216
+0 0.501961 0.639216
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+4.89062 0.390625 -0.119141
+3.53906 1.14062 0
+3 0.990234 0
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.796078 0.25098
+2 0.960784 0.6
+1 1 0.501961
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+4.89062 0.390625 0.119141
+3.53906 1.14062 0
+3 0.990234 0
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.498039 0.501961
+2 0.458824 0.6
+0 0.294118 0.25098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+4.89062 0.390625 -0.119141
+0.839844 0.720703 0
+3 0.990234 0
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.886275 1
+2 0.960784 0.6
+0 0.796078 0.25098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+4.89062 0.390625 0.119141
+0.839844 0.720703 0
+3 0.990234 0
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.384314 1
+0 0.294118 0.25098
+2 0.458824 0.6
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+0.839844 -0.689453 -0.689453
+0.839844 -0.689453 0.689453
+2.78906 -0.689453 0.539062
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.501961 1
+0 0.501961 1
+2 0.501961 0.639216
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+0.839844 -0.689453 -0.689453
+2.78906 -0.689453 0.539062
+2.78906 -0.689453 -0.539062
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.501961 0.639216
+0 0.501961 1
+2 0.501961 0.639216
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+4.89062 0.390625 -0.119141
+5.91016 0.0898438 -0.240234
+6.0293 0.210938 -0.240234
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.796078 0.25098
+2 0.745098 0.0392157
+1 0.713726 0.0627451
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+4.89062 0.390625 0.119141
+5.91016 0.0898438 0.240234
+6.0293 0.210938 0.240234
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.211765 0.0627451
+2 0.243137 0.0392157
+0 0.294118 0.25098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+4.89062 0.390625 -0.119141
+6.17969 0.359375 -0.150391
+6.0293 0.210938 -0.240234
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.788235 0.0117647
+2 0.745098 0.0392157
+0 0.796078 0.25098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+4.89062 0.390625 0.119141
+6.17969 0.359375 0.150391
+6.0293 0.210938 0.240234
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.294118 0.25098
+2 0.243137 0.0392157
+1 0.286275 0.0117647
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+4.89062 0.390625 -0.119141
+6.17969 0.359375 -0.150391
+6.24023 0.419922 0
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.796078 0.25098
+2 0.803922 0
+1 0.788235 0.0117647
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-0.rgb"
+numvert 3
+4.89062 0.390625 0.119141
+6.17969 0.359375 0.150391
+6.24023 0.419922 0
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.286275 0.0117647
+2 0.301961 0
+0 0.294118 0.25098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-1.rgb"
+numvert 3
+6.26953 0.810547 0
+6.26953 0.871094 1.74023
+5.03906 0.873047 0.0898438
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+2 0.47451 0.807843
+1 0 0.501961
+0 0.501961 0.501961
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-1.rgb"
+numvert 3
+6.26953 0.871094 1.74023
+5.03906 0.873047 0.0898438
+5.91016 0.871094 1.74023
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+2 0 0.592157
+0 0 0.501961
+1 0.47451 0.807843
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-1.rgb"
+numvert 3
+5.69922 0.867188 1.65039
+5.03906 0.873047 0.0898438
+5.91016 0.871094 1.74023
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+2 0 0.592157
+1 0.47451 0.807843
+0 0.027451 0.643137
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-1.rgb"
+numvert 3
+5.69922 0.867188 1.65039
+5.03906 0.873047 0.0898438
+4.25977 0.8125 0.0898438
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+2 0.47451 1
+0 0.027451 0.643137
+1 0.47451 0.807843
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-1.rgb"
+numvert 3
+5.69922 0.867188 1.65039
+5.03906 0.753906 0.0898438
+4.25977 0.8125 0.0898438
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+2 0.47451 0.498039
+1 0.47451 0.305882
+0 0.027451 0.141176
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-1.rgb"
+numvert 3
+5.69922 0.867188 1.65039
+5.03906 0.753906 0.0898438
+5.91016 0.871094 1.74023
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+2 0 0.0901961
+0 0.027451 0.141176
+1 0.47451 0.305882
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-1.rgb"
+numvert 3
+6.26953 0.871094 1.74023
+5.03906 0.753906 0.0898438
+5.91016 0.871094 1.74023
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+2 0 0.0901961
+1 0.47451 0.305882
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-1.rgb"
+numvert 3
+6.26953 0.810547 0
+6.26953 0.871094 1.74023
+5.03906 0.753906 0.0898438
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+2 0.47451 0.305882
+0 0.501961 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+4.89062 2.00977 0.0292969
+5.42969 2.00977 0.0292969
+5.42969 2.00977 0.240234
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+4.89062 2.00977 0.0292969
+5.42969 2.00977 0.240234
+5.09961 2.00977 0.240234
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+4.89062 2.00977 0.0292969
+5.42969 2.00977 0.0292969
+5.42969 2.00977 0.240234
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+4.89062 2.00977 0.0292969
+5.42969 2.00977 0.240234
+5.09961 2.00977 0.240234
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+1.74023 -0.623047 0.960938
+1.74023 -0.712891 0.960938
+1.74023 -0.701172 1.14062
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.890196 0.580392
+2 0.839216 0.580392
+0 0.890196 0.580392
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+1.74023 -0.623047 0.960938
+1.74023 -0.701172 1.14062
+1.74023 -0.609375 1.14062
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.890196 0.580392
+2 0.839216 0.580392
+1 0.839216 0.580392
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+-0.810547 -0.626953 0.900391
+-0.810547 -0.605469 1.19922
+-1.16992 -0.527344 1.05078
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.823529 0.882353
+2 0.866667 0.92549
+0 0.905882 0.882353
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+-0.810547 -0.748047 0.900391
+-0.810547 -0.626953 0.900391
+-1.16992 -0.527344 1.05078
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.905882 0.882353
+2 0.866667 0.92549
+0 0.905882 0.882353
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+-0.810547 -0.726562 1.19922
+-0.810547 -0.748047 0.900391
+-1.16992 -0.527344 1.05078
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.905882 0.380392
+2 0.866667 0.423529
+0 0.823529 0.380392
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+-0.810547 -0.605469 1.19922
+-0.810547 -0.726562 1.19922
+-1.16992 -0.527344 1.05078
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.823529 0.882353
+2 0.866667 0.92549
+0 0.823529 0.882353
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+-0.810547 -0.626953 0.900391
+1.43945 -0.626953 0.900391
+1.43945 -0.605469 1.19922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.905882 0.882353
+1 0.905882 0.615686
+2 0.823529 0.615686
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+-0.810547 -0.626953 0.900391
+1.43945 -0.605469 1.19922
+-0.810547 -0.605469 1.19922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.905882 0.882353
+1 0.823529 0.615686
+2 0.823529 0.882353
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+-0.810547 -0.748047 0.900391
+1.43945 -0.748047 0.900391
+1.43945 -0.626953 0.900391
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.905882 0.882353
+1 0.905882 0.615686
+2 0.905882 0.615686
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+-0.810547 -0.748047 0.900391
+1.43945 -0.626953 0.900391
+-0.810547 -0.626953 0.900391
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.905882 0.882353
+1 0.905882 0.615686
+2 0.905882 0.882353
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+-0.810547 -0.726562 1.19922
+1.43945 -0.726562 1.19922
+1.43945 -0.748047 0.900391
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+2 0.905882 0.113725
+1 0.823529 0.113725
+0 0.823529 0.380392
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+-0.810547 -0.726562 1.19922
+1.43945 -0.748047 0.900391
+-0.810547 -0.748047 0.900391
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+2 0.905882 0.380392
+1 0.905882 0.113725
+0 0.823529 0.380392
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+-0.810547 -0.605469 1.19922
+1.43945 -0.605469 1.19922
+1.43945 -0.726562 1.19922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.823529 0.882353
+1 0.823529 0.615686
+2 0.823529 0.615686
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+-0.810547 -0.605469 1.19922
+1.43945 -0.726562 1.19922
+-0.810547 -0.726562 1.19922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.823529 0.882353
+1 0.823529 0.615686
+2 0.823529 0.882353
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+1.43945 -0.626953 0.900391
+1.74023 -0.623047 0.960938
+1.74023 -0.609375 1.14062
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.890196 0.580392
+2 0.839216 0.580392
+0 0.905882 0.615686
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+1.43945 -0.626953 0.900391
+1.74023 -0.609375 1.14062
+1.43945 -0.605469 1.19922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.839216 0.580392
+2 0.823529 0.615686
+0 0.905882 0.615686
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+1.43945 -0.748047 0.900391
+1.74023 -0.712891 0.960938
+1.74023 -0.623047 0.960938
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.890196 0.580392
+2 0.890196 0.580392
+0 0.905882 0.615686
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+1.43945 -0.748047 0.900391
+1.74023 -0.623047 0.960938
+1.43945 -0.626953 0.900391
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.890196 0.580392
+2 0.905882 0.615686
+0 0.905882 0.615686
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+1.43945 -0.726562 1.19922
+1.74023 -0.701172 1.14062
+1.74023 -0.712891 0.960938
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.823529 0.113725
+2 0.890196 0.0784314
+1 0.839216 0.0784314
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+1.43945 -0.726562 1.19922
+1.74023 -0.712891 0.960938
+1.43945 -0.748047 0.900391
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.823529 0.113725
+2 0.905882 0.113725
+1 0.890196 0.0784314
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+1.43945 -0.605469 1.19922
+1.74023 -0.609375 1.14062
+1.74023 -0.701172 1.14062
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.839216 0.580392
+2 0.839216 0.580392
+0 0.823529 0.615686
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+1.43945 -0.605469 1.19922
+1.74023 -0.701172 1.14062
+1.43945 -0.726562 1.19922
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.839216 0.580392
+2 0.823529 0.615686
+0 0.823529 0.615686
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+2.40039 -0.650391 0.570312
+2.40039 -0.400391 4.14062
+0.839844 -0.460938 0.689453
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 1 0.501961
+2 0.964706 0.686275
+1 0 0.501961
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+-1.10938 -0.347656 0.599609
+2.40039 -0.400391 4.14062
+0.839844 -0.460938 0.689453
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.992157 0.917647
+1 0 0.501961
+2 0.964706 0.686275
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+-1.10938 -0.347656 0.599609
+2.40039 -0.400391 4.14062
+1.80078 -0.400391 4.14062
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+2 0 0.572549
+1 0 0.501961
+0 0.992157 0.917647
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+-1.10938 -0.347656 0.599609
+1.28906 -0.414062 3.96094
+1.80078 -0.400391 4.14062
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.992157 0.917647
+1 0.0509804 0.635294
+2 0 0.572549
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+-1.10938 -0.347656 0.599609
+1.28906 -0.414062 3.96094
+0.990234 -0.427734 3.75
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+2 0.109804 0.670588
+1 0.0509804 0.635294
+0 0.992157 0.917647
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+-1.10938 -0.347656 0.599609
+-1.25977 -0.521484 1.10938
+0.990234 -0.427734 3.75
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.847059 0.937255
+2 0.109804 0.670588
+0 0.992157 0.917647
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+-1.10938 -0.347656 0.599609
+-1.25977 -0.521484 1.10938
+-1.80078 -0.548828 0.720703
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.847059 0.937255
+0 0.992157 0.917647
+2 0.956863 1
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+-1.10938 -0.648438 0.599609
+-1.25977 -0.521484 1.10938
+-1.80078 -0.548828 0.720703
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.847059 0.435294
+2 0.956863 0.498039
+0 0.992157 0.415686
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+-1.10938 -0.648438 0.599609
+-1.25977 -0.521484 1.10938
+0.990234 -0.427734 3.75
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.992157 0.415686
+2 0.109804 0.168627
+1 0.847059 0.435294
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+2.40039 -0.650391 0.570312
+2.40039 -0.400391 4.14062
+1.80078 -0.400391 4.14062
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0 0
+2 0 0.0705882
+0 1 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+2.40039 -0.650391 0.570312
+1.80078 -0.400391 4.14062
+1.28906 -0.414062 3.96094
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0 0.0705882
+2 0.0509804 0.133333
+0 1 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+2.40039 -0.650391 0.570312
+1.28906 -0.414062 3.96094
+0.990234 -0.427734 3.75
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.0509804 0.133333
+2 0.109804 0.168627
+0 1 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+2.40039 -0.650391 0.570312
+0.990234 -0.427734 3.75
+-1.10938 -0.648438 0.599609
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 1 0
+1 0.109804 0.168627
+2 0.992157 0.415686
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-7.rgb"
+numvert 3
+-2.00977 0.660156 0.330078
+-2.00977 0.570312 0.720703
+-2.00977 0.330078 0.869141
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.439216 0.0705882
+0 0.498039 0.25098
+2 0.278431 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-7.rgb"
+numvert 3
+-2.00977 0.660156 0.330078
+-2.00977 0.330078 0.869141
+-2.00977 0.0292969 0.779297
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.278431 0
+0 0.498039 0.25098
+2 0.0784314 0.0431373
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-7.rgb"
+numvert 3
+-2.00977 0.660156 0.330078
+-2.00977 0.0292969 0.779297
+-2.00977 -0.0898438 0.539062
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.0784314 0.0431373
+0 0.498039 0.25098
+2 0 0.152941
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+-0.539062 -0.341797 1.56055
+-1.08008 -0.640625 1.56055
+0.839844 -0.455078 3.7793
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.721569 0.913725
+2 0.101961 0.686275
+0 0.721569 0.85098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-3.rgb"
+numvert 3
+-0.539062 -0.341797 1.56055
+0.839844 -0.455078 3.7793
+0.960938 -0.400391 3.7207
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.101961 0.686275
+2 0.117647 0.67451
+0 0.721569 0.85098
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.0293 0.480469 -0.330078
+-2.9707 0.480469 -0.330078
+-3 0.630859 -0.300781
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.0293 0.480469 -0.330078
+-3 0.630859 -0.300781
+-3.06055 0.599609 -0.300781
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.0293 0.480469 -0.330078
+-2.9707 0.480469 -0.330078
+-3 0.630859 -0.300781
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.0293 0.480469 -0.330078
+-3 0.630859 -0.300781
+-3.06055 0.599609 -0.300781
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.08984 0.720703 -0.240234
+-3.0293 0.75 -0.240234
+-3 0.630859 -0.300781
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.08984 0.720703 -0.240234
+-3 0.630859 -0.300781
+-3.06055 0.599609 -0.300781
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.08984 0.720703 -0.240234
+-3.0293 0.75 -0.240234
+-3 0.630859 -0.300781
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.08984 0.720703 -0.240234
+-3 0.630859 -0.300781
+-3.06055 0.599609 -0.300781
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.0293 0.480469 0.330078
+-2.9707 0.480469 0.330078
+-3 0.630859 0.300781
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.0293 0.480469 0.330078
+-3 0.630859 0.300781
+-3.06055 0.599609 0.300781
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.0293 0.480469 0.330078
+-2.9707 0.480469 0.330078
+-3 0.630859 0.300781
+numsurf 1
+SURF 0x20
+mat 0
+refs 3
+2 0 0
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.0293 0.480469 0.330078
+-3 0.630859 0.300781
+-3.06055 0.599609 0.300781
+numsurf 1
+SURF 0x20
+mat 0
+refs 3
+2 0 0
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.08984 0.720703 0.240234
+-3.0293 0.75 0.240234
+-3 0.630859 0.300781
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.08984 0.720703 0.240234
+-3 0.630859 0.300781
+-3.06055 0.599609 0.300781
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.08984 0.720703 0.240234
+-3.0293 0.75 0.240234
+-3 0.630859 0.300781
+numsurf 1
+SURF 0x20
+mat 0
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.08984 0.720703 0.240234
+-3 0.630859 0.300781
+-3.06055 0.599609 0.300781
+numsurf 1
+SURF 0x20
+mat 0
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.08984 0.720703 0.240234
+-3.0293 0.75 0.240234
+-3.06055 0.869141 0.0898438
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.08984 0.720703 0.240234
+-3.06055 0.869141 0.0898438
+-3.11914 0.839844 0.0898438
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.08984 0.720703 0.240234
+-3.0293 0.75 0.240234
+-3.06055 0.869141 0.0898438
+numsurf 1
+SURF 0x20
+mat 0
+refs 3
+2 0 0
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.08984 0.720703 0.240234
+-3.06055 0.869141 0.0898438
+-3.11914 0.839844 0.0898438
+numsurf 1
+SURF 0x20
+mat 0
+refs 3
+2 0 0
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.08984 0.720703 -0.240234
+-3.0293 0.75 -0.240234
+-3.06055 0.869141 -0.0898438
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.08984 0.720703 -0.240234
+-3.06055 0.869141 -0.0898438
+-3.11914 0.839844 -0.0898438
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.08984 0.720703 -0.240234
+-3.0293 0.75 -0.240234
+-3.06055 0.869141 -0.0898438
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.08984 0.720703 -0.240234
+-3.06055 0.869141 -0.0898438
+-3.11914 0.839844 -0.0898438
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.11914 0.839844 0.0898438
+-3.06055 0.869141 0.0898438
+-3.06055 0.869141 -0.0898438
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.11914 0.839844 0.0898438
+-3.06055 0.869141 -0.0898438
+-3.11914 0.839844 -0.0898438
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.11914 0.839844 0.0898438
+-3.06055 0.869141 0.0898438
+-3.06055 0.869141 -0.0898438
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.11914 0.839844 0.0898438
+-3.06055 0.869141 -0.0898438
+-3.11914 0.839844 -0.0898438
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-1.4707 0.839844 0
+-1.23047 1.08008 0
+-1.32031 1.08008 0
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-1.4707 0.839844 0
+-1.32031 1.08008 0
+-1.71094 0.900391 0
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-1.4707 0.839844 0
+-1.23047 1.08008 0
+-1.32031 1.08008 0
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-1.4707 0.839844 0
+-1.32031 1.08008 0
+-1.71094 0.900391 0
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.33984 1.01953 -0.0898438
+-2.33984 1.01953 0.0898438
+-2.33984 0.929688 0.179688
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 1 0.545098
+0 1 0.545098
+2 0.972549 0.545098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.33984 1.01953 -0.0898438
+-2.33984 0.929688 0.179688
+-2.33984 0.929688 -0.179688
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.972549 0.545098
+0 1 0.545098
+2 0.972549 0.545098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.42969 0.779297 -0.269531
+-2.42969 0.779297 0.269531
+-2.33984 0.929688 0.179688
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.929412 0.560784
+2 0.972549 0.545098
+0 0.929412 0.560784
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.42969 0.779297 -0.269531
+-2.33984 0.929688 0.179688
+-2.33984 0.929688 -0.179688
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.972549 0.545098
+2 0.972549 0.545098
+0 0.929412 0.560784
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.42969 0.779297 -0.269531
+-2.42969 0.779297 0.269531
+-2.64062 0.599609 0.330078
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.929412 0.560784
+0 0.929412 0.560784
+2 0.878431 0.596078
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.42969 0.779297 -0.269531
+-2.64062 0.599609 0.330078
+-2.64062 0.599609 -0.330078
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.878431 0.596078
+0 0.929412 0.560784
+2 0.878431 0.596078
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.33984 0.929688 -0.179688
+-2.00977 0.660156 -0.330078
+-2.00977 0.960938 -0.0898438
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.894118 0.486275
+0 0.972549 0.545098
+2 0.984314 0.486275
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.33984 0.929688 0.179688
+-2.00977 0.660156 0.330078
+-2.00977 0.960938 0.0898438
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.392157 0.486275
+2 0.482353 0.486275
+0 0.470588 0.545098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.33984 0.929688 -0.179688
+-2.33984 1.01953 -0.0898438
+-2.00977 0.960938 -0.0898438
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 1 0.545098
+2 0.984314 0.486275
+0 0.972549 0.545098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.33984 0.929688 0.179688
+-2.33984 1.01953 0.0898438
+-2.00977 0.960938 0.0898438
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.498039 0.545098
+0 0.470588 0.545098
+2 0.482353 0.486275
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.33984 1.01953 0.0898438
+-2.33984 1.01953 -0.0898438
+-2.00977 0.960938 -0.0898438
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 1 0.545098
+0 1 0.545098
+2 0.984314 0.486275
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.33984 1.01953 0.0898438
+-2.00977 0.960938 -0.0898438
+-2.00977 0.960938 0.0898438
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.984314 0.486275
+0 1 0.545098
+2 0.984314 0.486275
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 0.75 0
+-2.00977 0.660156 -0.330078
+-2.00977 0.960938 -0.0898438
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.894118 0.486275
+2 0.984314 0.486275
+0 0.921569 0.333333
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 0.75 0
+-2.00977 0.660156 0.330078
+-2.00977 0.960938 0.0898438
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.392157 0.486275
+0 0.419608 0.333333
+2 0.482353 0.486275
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-1.10938 0.75 0
+-2.00977 0.960938 -0.0898438
+-2.00977 0.960938 0.0898438
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.984314 0.486275
+2 0.984314 0.486275
+0 0.921569 0.333333
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.64062 0.599609 -0.330078
+-2.00977 0.660156 -0.330078
+-2.42969 0.779297 -0.269531
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.894118 0.486275
+0 0.878431 0.596078
+2 0.929412 0.560784
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.64062 0.599609 0.330078
+-2.00977 0.660156 0.330078
+-2.42969 0.779297 0.269531
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.392157 0.486275
+2 0.427451 0.560784
+0 0.376471 0.596078
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.33984 0.929688 0.179688
+-2.00977 0.660156 0.330078
+-2.42969 0.779297 0.269531
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.392157 0.486275
+0 0.470588 0.545098
+2 0.427451 0.560784
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-4.rgb"
+numvert 3
+-2.33984 0.929688 -0.179688
+-2.00977 0.660156 -0.330078
+-2.42969 0.779297 -0.269531
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.894118 0.486275
+2 0.929412 0.560784
+0 0.972549 0.545098
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.33984 0.929688 0.119141
+-2.46094 0.929688 0.119141
+-2.49023 0.720703 0.179688
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.33984 0.929688 0.119141
+-2.49023 0.720703 0.179688
+-2.42969 0.779297 0.179688
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.33984 0.929688 -0.119141
+-2.46094 0.929688 -0.119141
+-2.49023 0.720703 -0.179688
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.33984 0.929688 -0.119141
+-2.49023 0.720703 -0.179688
+-2.42969 0.779297 -0.179688
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.33984 0.929688 -0.119141
+-2.46094 0.929688 -0.119141
+-2.46094 0.929688 0.119141
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.33984 0.929688 -0.119141
+-2.46094 0.929688 0.119141
+-2.33984 0.929688 0.119141
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.46094 0.929688 -0.119141
+-2.49023 0.720703 -0.179688
+-2.49023 0.720703 0.179688
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.46094 0.929688 -0.119141
+-2.49023 0.720703 0.179688
+-2.46094 0.929688 0.119141
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.75 0.419922 -0.0292969
+-3.66016 0.480469 -0.0898438
+-3.57031 0.539062 -0.119141
+numsurf 1
+SURF 0x0
+mat 6
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.75 0.419922 -0.0292969
+-3.57031 0.539062 -0.119141
+-3.30078 0.720703 -0.119141
+numsurf 1
+SURF 0x0
+mat 6
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.75 0.419922 -0.0292969
+-3.30078 0.720703 -0.119141
+-3.21094 0.779297 -0.0898438
+numsurf 1
+SURF 0x0
+mat 6
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.75 0.419922 -0.0292969
+-3.21094 0.779297 -0.0898438
+-3.11914 0.839844 -0.0292969
+numsurf 1
+SURF 0x0
+mat 6
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.75 0.419922 -0.0292969
+-3.11914 0.839844 -0.0292969
+-3.11914 0.839844 -0.0605469
+numsurf 1
+SURF 0x0
+mat 6
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.75 0.419922 -0.0292969
+-3.11914 0.839844 -0.0605469
+-3.21094 0.779297 -0.119141
+numsurf 1
+SURF 0x0
+mat 6
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.75 0.419922 -0.0292969
+-3.21094 0.779297 -0.119141
+-3.30078 0.720703 -0.150391
+numsurf 1
+SURF 0x0
+mat 6
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.75 0.419922 -0.0292969
+-3.30078 0.720703 -0.150391
+-3.57031 0.539062 -0.150391
+numsurf 1
+SURF 0x0
+mat 6
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.75 0.419922 -0.0292969
+-3.57031 0.539062 -0.150391
+-3.66016 0.480469 -0.119141
+numsurf 1
+SURF 0x0
+mat 6
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.75 0.419922 -0.0292969
+-3.66016 0.480469 -0.119141
+-3.75 0.419922 -0.0605469
+numsurf 1
+SURF 0x0
+mat 6
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.75 0.419922 -0.0292969
+-3.75 0.419922 -0.0605469
+-3.75 0.419922 0.0605469
+numsurf 1
+SURF 0x0
+mat 6
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.75 0.419922 -0.0292969
+-3.75 0.419922 0.0605469
+-3.66016 0.480469 0.119141
+numsurf 1
+SURF 0x0
+mat 6
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.75 0.419922 -0.0292969
+-3.66016 0.480469 0.119141
+-3.57031 0.539062 0.150391
+numsurf 1
+SURF 0x0
+mat 6
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.75 0.419922 -0.0292969
+-3.57031 0.539062 0.150391
+-3.30078 0.720703 0.150391
+numsurf 1
+SURF 0x0
+mat 6
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.75 0.419922 -0.0292969
+-3.30078 0.720703 0.150391
+-3.21094 0.779297 0.119141
+numsurf 1
+SURF 0x0
+mat 6
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.75 0.419922 -0.0292969
+-3.21094 0.779297 0.119141
+-3.11914 0.839844 0.0605469
+numsurf 1
+SURF 0x0
+mat 6
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.75 0.419922 -0.0292969
+-3.11914 0.839844 0.0605469
+-3.11914 0.839844 0.0292969
+numsurf 1
+SURF 0x0
+mat 6
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.75 0.419922 -0.0292969
+-3.11914 0.839844 0.0292969
+-3.21094 0.779297 0.0898438
+numsurf 1
+SURF 0x0
+mat 6
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.75 0.419922 -0.0292969
+-3.21094 0.779297 0.0898438
+-3.30078 0.720703 0.119141
+numsurf 1
+SURF 0x0
+mat 6
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.75 0.419922 -0.0292969
+-3.30078 0.720703 0.119141
+-3.57031 0.539062 0.119141
+numsurf 1
+SURF 0x0
+mat 6
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.75 0.419922 -0.0292969
+-3.57031 0.539062 0.119141
+-3.66016 0.480469 0.0898438
+numsurf 1
+SURF 0x0
+mat 6
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-3.75 0.419922 -0.0292969
+-3.66016 0.480469 0.0898438
+-3.75 0.419922 0.0292969
+numsurf 1
+SURF 0x0
+mat 6
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "RightFlap"
+loc 1.96484 -0.801758 -1.41015
+numvert 12
+-0.22461 0.266602 -0.810545
+0.22461 -0.15332 -0.810545
+0.22461 -0.266602 0.810546
+-0.22461 0.266602 -0.810545
+0.22461 -0.15332 -0.810545
+0.22461 -0.266602 0.810546
+-0.22461 0.266602 -0.810545
+0.22461 -0.266602 0.810546
+-0.22461 0.15332 0.810546
+-0.22461 0.266602 -0.810545
+0.22461 -0.266602 0.810546
+-0.22461 0.15332 0.810546
+numsurf 4
+SURF 0x0
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+SURF 0x0
+mat 3
+refs 3
+2 0 0
+8 0 0
+0 0 0
+SURF 0x20
+mat 3
+refs 3
+2 0 0
+8 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "LeftFlap"
+loc 1.96484 -0.801758 1.41015
+numvert 12
+-0.22461 0.266602 0.810545
+0.22461 -0.15332 0.810545
+0.22461 -0.266602 -0.810546
+-0.22461 0.266602 0.810545
+0.22461 -0.266602 -0.810546
+-0.22461 0.15332 -0.810546
+-0.22461 0.266602 0.810545
+0.22461 -0.15332 0.810545
+0.22461 -0.266602 -0.810546
+-0.22461 0.266602 0.810545
+0.22461 -0.266602 -0.810546
+-0.22461 0.15332 -0.810546
+numsurf 4
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+SURF 0x20
+mat 3
+refs 3
+2 0 0
+5 0 0
+0 0 0
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+SURF 0x20
+mat 3
+refs 3
+2 0 0
+5 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "LeftGearStrut"
+loc 0.270508 -0.974612 0.990234
+numvert 12
+0.540039 -0.224608 0
+0.508789 -0.285159 0
+-0.540039 0.285159 0
+0.540039 -0.224608 0
+-0.540039 0.285159 0
+-0.389649 0.285159 0
+0.540039 -0.224608 0
+0.508789 -0.285159 0
+-0.540039 0.285159 0
+0.540039 -0.224608 0
+-0.540039 0.285159 0
+-0.389649 0.285159 0
+numsurf 4
+SURF 0x20
+mat 5
+refs 3
+1 0 0
+2 0 0
+0 0 0
+SURF 0x20
+mat 5
+refs 3
+2 0 0
+5 0 0
+0 0 0
+SURF 0x20
+mat 5
+refs 3
+1 0 0
+2 0 0
+0 0 0
+SURF 0x20
+mat 5
+refs 3
+2 0 0
+5 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "RightGearStrut"
+loc 0.270508 -0.974612 -0.990234
+numvert 12
+0.540039 -0.224608 0
+0.508789 -0.285159 0
+-0.540039 0.285159 0
+0.540039 -0.224608 0
+-0.540039 0.285159 0
+-0.389649 0.285159 0
+0.540039 -0.224608 0
+0.508789 -0.285159 0
+-0.540039 0.285159 0
+0.540039 -0.224608 0
+-0.540039 0.285159 0
+-0.389649 0.285159 0
+numsurf 4
+SURF 0x20
+mat 5
+refs 3
+1 0 0
+2 0 0
+0 0 0
+SURF 0x20
+mat 5
+refs 3
+2 0 0
+5 0 0
+0 0 0
+SURF 0x20
+mat 5
+refs 3
+1 0 0
+2 0 0
+0 0 0
+SURF 0x20
+mat 5
+refs 3
+2 0 0
+5 0 0
+0 0 0
+kids 0
+OBJECT group
+name "RightGearDoor"
+kids 48
+OBJECT poly
+name "NoName"
+numvert 3
+0.869141 -0.720703 -1.19922
+0.869141 -1.05078 -1.19922
+-0.330078 -1.05078 -1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+0.869141 -0.720703 -1.19922
+-0.330078 -1.05078 -1.19922
+-0.330078 -0.720703 -1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+0.869141 -0.720703 -1.19922
+0.869141 -1.05078 -1.19922
+-0.330078 -1.05078 -1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+0.869141 -0.720703 -1.19922
+-0.330078 -1.05078 -1.19922
+-0.330078 -0.720703 -1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.330078 -0.720703 -1.19922
+-0.330078 -0.900391 -1.19922
+-0.810547 -0.900391 -1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.330078 -0.720703 -1.19922
+-0.810547 -0.900391 -1.19922
+-0.689453 -0.720703 -1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.330078 -0.720703 -1.19922
+-0.330078 -0.900391 -1.19922
+-0.810547 -0.900391 -1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.330078 -0.720703 -1.19922
+-0.810547 -0.900391 -1.19922
+-0.689453 -0.720703 -1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.330078 -0.900391 -1.32031
+-0.330078 -0.900391 -1.19922
+-0.810547 -0.900391 -1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.330078 -0.900391 -1.32031
+-0.810547 -0.900391 -1.19922
+-0.810547 -0.900391 -1.32031
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.330078 -0.900391 -1.32031
+-0.330078 -0.900391 -1.19922
+-0.810547 -0.900391 -1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.330078 -0.900391 -1.32031
+-0.810547 -0.900391 -1.19922
+-0.810547 -0.900391 -1.32031
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.810547 -0.900391 -1.32031
+-0.929688 -1.08008 -1.32031
+-0.330078 -1.08008 -1.32031
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.810547 -0.900391 -1.32031
+-0.330078 -1.08008 -1.32031
+-0.330078 -0.900391 -1.32031
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.810547 -0.900391 -1.32031
+-0.929688 -1.08008 -1.32031
+-0.330078 -1.08008 -1.32031
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.810547 -0.900391 -1.32031
+-0.330078 -1.08008 -1.32031
+-0.330078 -0.900391 -1.32031
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.929688 -1.08008 -1.19922
+-0.929688 -1.08008 -1.32031
+-0.330078 -1.08008 -1.32031
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.929688 -1.08008 -1.19922
+-0.330078 -1.08008 -1.32031
+-0.330078 -1.08008 -1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.929688 -1.08008 -1.19922
+-0.929688 -1.08008 -1.32031
+-0.330078 -1.08008 -1.32031
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.929688 -1.08008 -1.19922
+-0.330078 -1.08008 -1.32031
+-0.330078 -1.08008 -1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.929688 -1.08008 -1.19922
+-1.05078 -1.25977 -1.19922
+-0.330078 -1.25977 -1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.929688 -1.08008 -1.19922
+-0.330078 -1.25977 -1.19922
+-0.330078 -1.08008 -1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.929688 -1.08008 -1.19922
+-1.05078 -1.25977 -1.19922
+-0.330078 -1.25977 -1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.929688 -1.08008 -1.19922
+-0.330078 -1.25977 -1.19922
+-0.330078 -1.08008 -1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.689453 -0.720703 -1.16992
+-0.689453 -0.720703 -1.19922
+-0.810547 -0.900391 -1.19922
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.689453 -0.720703 -1.16992
+-0.810547 -0.900391 -1.19922
+-0.810547 -0.900391 -1.32031
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.689453 -0.720703 -1.16992
+-0.810547 -0.900391 -1.32031
+-0.929688 -1.08008 -1.32031
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.689453 -0.720703 -1.16992
+-0.929688 -1.08008 -1.32031
+-0.929688 -1.08008 -1.19922
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.689453 -0.720703 -1.16992
+-0.929688 -1.08008 -1.19922
+-1.05078 -1.25977 -1.19922
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.689453 -0.720703 -1.16992
+-1.05078 -1.25977 -1.19922
+-1.05078 -1.25977 -1.16992
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.689453 -0.720703 -1.16992
+-0.689453 -0.720703 -1.19922
+-0.810547 -0.900391 -1.19922
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.689453 -0.720703 -1.16992
+-0.810547 -0.900391 -1.19922
+-0.810547 -0.900391 -1.32031
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.689453 -0.720703 -1.16992
+-0.810547 -0.900391 -1.32031
+-0.929688 -1.08008 -1.32031
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.689453 -0.720703 -1.16992
+-0.929688 -1.08008 -1.32031
+-0.929688 -1.08008 -1.19922
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.689453 -0.720703 -1.16992
+-0.929688 -1.08008 -1.19922
+-1.05078 -1.25977 -1.19922
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.689453 -0.720703 -1.16992
+-1.05078 -1.25977 -1.19922
+-1.05078 -1.25977 -1.16992
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.929688 -1.19922 -1.05078
+-0.929688 -1.14062 -1.05078
+-0.929688 -1.10938 -1.08008
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.929688 -1.19922 -1.05078
+-0.929688 -1.10938 -1.08008
+-0.929688 -1.10938 -1.14062
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.929688 -1.19922 -1.05078
+-0.929688 -1.10938 -1.14062
+-0.929688 -1.14062 -1.16992
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.929688 -1.19922 -1.05078
+-0.929688 -1.14062 -1.16992
+-0.929688 -1.19922 -1.16992
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.929688 -1.19922 -1.05078
+-0.929688 -1.19922 -1.16992
+-0.929688 -1.23047 -1.14062
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.929688 -1.19922 -1.05078
+-0.929688 -1.23047 -1.14062
+-0.929688 -1.23047 -1.08008
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.929688 -1.19922 -1.05078
+-0.929688 -1.14062 -1.05078
+-0.929688 -1.10938 -1.08008
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.929688 -1.19922 -1.05078
+-0.929688 -1.10938 -1.08008
+-0.929688 -1.10938 -1.14062
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.929688 -1.19922 -1.05078
+-0.929688 -1.10938 -1.14062
+-0.929688 -1.14062 -1.16992
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.929688 -1.19922 -1.05078
+-0.929688 -1.14062 -1.16992
+-0.929688 -1.19922 -1.16992
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.929688 -1.19922 -1.05078
+-0.929688 -1.19922 -1.16992
+-0.929688 -1.23047 -1.14062
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.929688 -1.19922 -1.05078
+-0.929688 -1.23047 -1.14062
+-0.929688 -1.23047 -1.08008
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoseGearStrut"
+loc -2.12988 -0.959961 0
+numvert 36
+0.38965 0.270508 -0.0605469
+0.38965 0.270508 0.0605469
+-0.12012 -0.0908186 0.0605469
+0.38965 0.270508 -0.0605469
+-0.12012 -0.0908186 0.0605469
+-0.12012 -0.0908186 -0.0605469
+0.38965 0.270508 -0.0605469
+0.38965 0.270508 0.0605469
+-0.12012 -0.0908186 0.0605469
+0.38965 0.270508 -0.0605469
+-0.12012 -0.0908186 0.0605469
+-0.12012 -0.0908186 -0.0605469
+0.38965 0.270508 0
+-0.38965 -0.270508 0
+-0.38965 -0.239258 0
+0.38965 0.270508 0
+-0.38965 -0.239258 0
+-0.23926 -0.120119 0
+0.38965 0.270508 0
+-0.23926 -0.120119 0
+-0.23926 -0.0908186 0
+0.38965 0.270508 0
+-0.23926 -0.0908186 0
+0.2998 0.270508 0
+0.38965 0.270508 0
+-0.38965 -0.270508 0
+-0.38965 -0.239258 0
+0.38965 0.270508 0
+-0.38965 -0.239258 0
+-0.23926 -0.120119 0
+0.38965 0.270508 0
+-0.23926 -0.120119 0
+-0.23926 -0.0908186 0
+0.38965 0.270508 0
+-0.23926 -0.0908186 0
+0.2998 0.270508 0
+numsurf 12
+SURF 0x0
+mat 7
+refs 3
+1 0 0
+2 0 0
+0 0 0
+SURF 0x0
+mat 7
+refs 3
+2 0 0
+5 0 0
+0 0 0
+SURF 0x20
+mat 7
+refs 3
+1 0 0
+2 0 0
+0 0 0
+SURF 0x20
+mat 7
+refs 3
+2 0 0
+5 0 0
+0 0 0
+SURF 0x20
+mat 5
+refs 3
+13 0 0
+14 0 0
+12 0 0
+SURF 0x20
+mat 5
+refs 3
+14 0 0
+17 0 0
+12 0 0
+SURF 0x0
+mat 5
+refs 3
+17 0 0
+20 0 0
+12 0 0
+SURF 0x0
+mat 5
+refs 3
+20 0 0
+23 0 0
+12 0 0
+SURF 0x20
+mat 5
+refs 3
+13 0 0
+14 0 0
+12 0 0
+SURF 0x20
+mat 5
+refs 3
+14 0 0
+17 0 0
+12 0 0
+SURF 0x0
+mat 5
+refs 3
+17 0 0
+20 0 0
+12 0 0
+SURF 0x0
+mat 5
+refs 3
+20 0 0
+23 0 0
+12 0 0
+kids 0
+OBJECT poly
+name "NoseGearDoor"
+loc -3.24023 -0.810547 0.119141
+numvert 18
+0.75 0.121094 0
+0.75 -0.150391 0
+-0.62891 -0.119141 0
+0.75 0.121094 0
+-0.62891 -0.119141 0
+-0.75 0.03125 0
+0.75 0.121094 0
+-0.75 0.03125 0
+-0.62891 0.150391 0
+0.75 0.121094 0
+0.75 -0.150391 0
+-0.62891 -0.119141 0
+0.75 0.121094 0
+-0.62891 -0.119141 0
+-0.75 0.03125 0
+0.75 0.121094 0
+-0.75 0.03125 0
+-0.62891 0.150391 0
+numsurf 6
+SURF 0x0
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+SURF 0x0
+mat 3
+refs 3
+2 0 0
+5 0 0
+0 0 0
+SURF 0x0
+mat 3
+refs 3
+5 0 0
+8 0 0
+0 0 0
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+SURF 0x20
+mat 3
+refs 3
+2 0 0
+5 0 0
+0 0 0
+SURF 0x20
+mat 3
+refs 3
+5 0 0
+8 0 0
+0 0 0
+kids 0
+OBJECT group
+name "NoseGear"
+kids 72
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+-2.55078 -1.85938 -0.0605469
+-2.40039 -1.91992 -0.0605469
+-2.33984 -2.07031 -0.0605469
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.929412 0.572549
+2 0.74902 0.501961
+0 1 0.752941
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+-2.55078 -1.85938 -0.0605469
+-2.33984 -2.07031 -0.0605469
+-2.40039 -2.2207 -0.0605469
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.74902 0.501961
+2 0.572549 0.572549
+0 1 0.752941
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+-2.55078 -1.85938 -0.0605469
+-2.40039 -2.2207 -0.0605469
+-2.55078 -2.2793 -0.0605469
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.572549 0.572549
+2 0.501961 0.752941
+0 1 0.752941
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+-2.55078 -1.85938 -0.0605469
+-2.55078 -2.2793 -0.0605469
+-2.69922 -2.2207 -0.0605469
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.501961 0.752941
+2 0.572549 0.929412
+0 1 0.752941
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+-2.55078 -1.85938 -0.0605469
+-2.69922 -2.2207 -0.0605469
+-2.75977 -2.07031 -0.0605469
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.572549 0.929412
+2 0.74902 1
+0 1 0.752941
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+-2.55078 -1.85938 -0.0605469
+-2.75977 -2.07031 -0.0605469
+-2.69922 -1.91992 -0.0605469
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+1 0.74902 1
+2 0.929412 0.929412
+0 1 0.752941
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+-2.55078 -1.85938 0.0605469
+-2.40039 -1.91992 0.0605469
+-2.33984 -2.07031 0.0605469
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.498039 0.752941
+2 0.247059 0.501961
+1 0.427451 0.572549
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+-2.55078 -1.85938 0.0605469
+-2.33984 -2.07031 0.0605469
+-2.40039 -2.2207 0.0605469
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.498039 0.752941
+2 0.0705882 0.572549
+1 0.247059 0.501961
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+-2.55078 -1.85938 0.0605469
+-2.40039 -2.2207 0.0605469
+-2.55078 -2.2793 0.0605469
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.498039 0.752941
+2 0 0.752941
+1 0.0705882 0.572549
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+-2.55078 -1.85938 0.0605469
+-2.55078 -2.2793 0.0605469
+-2.69922 -2.2207 0.0605469
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.498039 0.752941
+2 0.0705882 0.929412
+1 0 0.752941
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+-2.55078 -1.85938 0.0605469
+-2.69922 -2.2207 0.0605469
+-2.75977 -2.07031 0.0605469
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.498039 0.752941
+2 0.247059 1
+1 0.0705882 0.929412
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+-2.55078 -1.85938 0.0605469
+-2.75977 -2.07031 0.0605469
+-2.69922 -1.91992 0.0605469
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.498039 0.752941
+2 0.427451 0.929412
+1 0.247059 1
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+-2.55078 -1.85938 0.0605469
+-2.55078 -1.85938 -0.0605469
+-2.40039 -1.91992 -0.0605469
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 1 0.752941
+2 0.929412 0.572549
+1 1 0.752941
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+-2.55078 -1.85938 0.0605469
+-2.40039 -1.91992 -0.0605469
+-2.40039 -1.91992 0.0605469
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 1 0.752941
+2 0.929412 0.572549
+1 0.929412 0.572549
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+-2.40039 -1.91992 0.0605469
+-2.40039 -1.91992 -0.0605469
+-2.33984 -2.07031 -0.0605469
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.929412 0.572549
+2 0.74902 0.501961
+1 0.929412 0.572549
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+-2.40039 -1.91992 0.0605469
+-2.33984 -2.07031 -0.0605469
+-2.33984 -2.07031 0.0605469
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.929412 0.572549
+2 0.74902 0.501961
+1 0.74902 0.501961
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+-2.33984 -2.07031 0.0605469
+-2.33984 -2.07031 -0.0605469
+-2.40039 -2.2207 -0.0605469
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.74902 0.501961
+2 0.572549 0.572549
+1 0.74902 0.501961
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+-2.33984 -2.07031 0.0605469
+-2.40039 -2.2207 -0.0605469
+-2.40039 -2.2207 0.0605469
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.74902 0.501961
+2 0.572549 0.572549
+1 0.572549 0.572549
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+-2.40039 -2.2207 0.0605469
+-2.40039 -2.2207 -0.0605469
+-2.55078 -2.2793 -0.0605469
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.572549 0.572549
+2 0.501961 0.752941
+1 0.572549 0.572549
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+-2.40039 -2.2207 0.0605469
+-2.55078 -2.2793 -0.0605469
+-2.55078 -2.2793 0.0605469
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.572549 0.572549
+2 0.501961 0.752941
+1 0.501961 0.752941
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+-2.55078 -2.2793 0.0605469
+-2.55078 -2.2793 -0.0605469
+-2.69922 -2.2207 -0.0605469
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.501961 0.752941
+2 0.572549 0.929412
+1 0.501961 0.752941
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+-2.55078 -2.2793 0.0605469
+-2.69922 -2.2207 -0.0605469
+-2.69922 -2.2207 0.0605469
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.501961 0.752941
+2 0.572549 0.929412
+1 0.572549 0.929412
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+-2.69922 -2.2207 0.0605469
+-2.69922 -2.2207 -0.0605469
+-2.75977 -2.07031 -0.0605469
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.572549 0.929412
+2 0.74902 1
+1 0.572549 0.929412
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+-2.69922 -2.2207 0.0605469
+-2.75977 -2.07031 -0.0605469
+-2.75977 -2.07031 0.0605469
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.572549 0.929412
+2 0.74902 1
+1 0.74902 1
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+-2.75977 -2.07031 0.0605469
+-2.75977 -2.07031 -0.0605469
+-2.69922 -1.91992 -0.0605469
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.74902 1
+2 0.929412 0.929412
+1 0.74902 1
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+-2.75977 -2.07031 0.0605469
+-2.69922 -1.91992 -0.0605469
+-2.69922 -1.91992 0.0605469
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.74902 1
+2 0.929412 0.929412
+1 0.929412 0.929412
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+-2.69922 -1.91992 0.0605469
+-2.69922 -1.91992 -0.0605469
+-2.55078 -1.85938 -0.0605469
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.929412 0.929412
+2 1 0.752941
+1 0.929412 0.929412
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+-2.69922 -1.91992 0.0605469
+-2.55078 -1.85938 -0.0605469
+-2.55078 -1.85938 0.0605469
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0.929412 0.929412
+2 1 0.752941
+1 1 0.752941
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.58008 -1.85938 0.0605469
+-2.66992 -1.74023 0.0605469
+-2.75977 -1.76953 0.0605469
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.58008 -1.85938 0.0605469
+-2.75977 -1.76953 0.0605469
+-2.66992 -1.89062 0.0605469
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.58008 -1.85938 0.0605469
+-2.66992 -1.74023 0.0605469
+-2.75977 -1.76953 0.0605469
+numsurf 1
+SURF 0x20
+mat 1
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.58008 -1.85938 0.0605469
+-2.75977 -1.76953 0.0605469
+-2.66992 -1.89062 0.0605469
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.66992 -1.74023 -0.0605469
+-2.66992 -1.74023 0.0605469
+-2.75977 -1.76953 0.0605469
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.66992 -1.74023 -0.0605469
+-2.75977 -1.76953 0.0605469
+-2.75977 -1.76953 -0.0605469
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.66992 -1.74023 -0.0605469
+-2.66992 -1.74023 0.0605469
+-2.75977 -1.76953 0.0605469
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.66992 -1.74023 -0.0605469
+-2.75977 -1.76953 0.0605469
+-2.75977 -1.76953 -0.0605469
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.58008 -1.85938 -0.0605469
+-2.66992 -1.74023 -0.0605469
+-2.75977 -1.76953 -0.0605469
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.58008 -1.85938 -0.0605469
+-2.75977 -1.76953 -0.0605469
+-2.66992 -1.89062 -0.0605469
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.58008 -1.85938 -0.0605469
+-2.66992 -1.74023 -0.0605469
+-2.75977 -1.76953 -0.0605469
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.58008 -1.85938 -0.0605469
+-2.75977 -1.76953 -0.0605469
+-2.66992 -1.89062 -0.0605469
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.66992 -1.89062 -0.0605469
+-2.75977 -1.76953 -0.0605469
+-2.75977 -1.76953 0.0605469
+numsurf 1
+SURF 0x20
+mat 6
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.66992 -1.89062 -0.0605469
+-2.75977 -1.76953 0.0605469
+-2.66992 -1.89062 0.0605469
+numsurf 1
+SURF 0x20
+mat 6
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.66992 -1.89062 -0.0605469
+-2.75977 -1.76953 -0.0605469
+-2.75977 -1.76953 0.0605469
+numsurf 1
+SURF 0x20
+mat 6
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.66992 -1.89062 -0.0605469
+-2.75977 -1.76953 0.0605469
+-2.66992 -1.89062 0.0605469
+numsurf 1
+SURF 0x20
+mat 6
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.75977 -1.61914 0.0292969
+-2.75977 -1.76953 0.0292969
+-2.75977 -1.76953 -0.0292969
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.75977 -1.61914 0.0292969
+-2.75977 -1.76953 -0.0292969
+-2.75977 -1.61914 -0.0292969
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.55078 -1.61914 -0.0292969
+-2.55078 -1.71094 -0.0292969
+-2.55078 -1.71094 0.0292969
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.55078 -1.61914 -0.0292969
+-2.55078 -1.71094 0.0292969
+-2.55078 -1.61914 0.0292969
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.75977 -1.61914 -0.0292969
+-2.55078 -1.61914 -0.0292969
+-2.55078 -1.61914 0.0292969
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.75977 -1.61914 -0.0292969
+-2.55078 -1.61914 0.0292969
+-2.75977 -1.61914 0.0292969
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.75977 -1.61914 0.0292969
+-2.55078 -1.61914 0.0292969
+-2.55078 -1.71094 0.0292969
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.75977 -1.61914 0.0292969
+-2.55078 -1.71094 0.0292969
+-2.75977 -1.76953 0.0292969
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.75977 -1.76953 0.0292969
+-2.55078 -1.71094 0.0292969
+-2.55078 -1.71094 -0.0292969
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.75977 -1.76953 0.0292969
+-2.55078 -1.71094 -0.0292969
+-2.75977 -1.76953 -0.0292969
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.75977 -1.76953 -0.0292969
+-2.55078 -1.71094 -0.0292969
+-2.55078 -1.61914 -0.0292969
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.75977 -1.76953 -0.0292969
+-2.55078 -1.61914 -0.0292969
+-2.75977 -1.61914 -0.0292969
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.60938 -1.28906 0.0292969
+-2.60938 -1.61914 0.0292969
+-2.60938 -1.61914 -0.0292969
+numsurf 1
+SURF 0x0
+mat 4
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.60938 -1.28906 0.0292969
+-2.60938 -1.61914 -0.0292969
+-2.60938 -1.28906 -0.0292969
+numsurf 1
+SURF 0x0
+mat 4
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.60938 -1.28906 -0.0292969
+-2.55078 -1.28906 0
+-2.60938 -1.28906 0.0292969
+numsurf 1
+SURF 0x0
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.60938 -1.28906 0.0292969
+-2.55078 -1.28906 0
+-2.55078 -1.61914 0
+numsurf 1
+SURF 0x0
+mat 4
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.60938 -1.28906 0.0292969
+-2.55078 -1.61914 0
+-2.60938 -1.61914 0.0292969
+numsurf 1
+SURF 0x0
+mat 4
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.60938 -1.61914 0.0292969
+-2.55078 -1.61914 0
+-2.60938 -1.61914 -0.0292969
+numsurf 1
+SURF 0x0
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.60938 -1.61914 -0.0292969
+-2.55078 -1.61914 0
+-2.55078 -1.28906 0
+numsurf 1
+SURF 0x0
+mat 4
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.60938 -1.61914 -0.0292969
+-2.55078 -1.28906 0
+-2.60938 -1.28906 -0.0292969
+numsurf 1
+SURF 0x0
+mat 4
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.60938 -0.689453 0.0292969
+-2.60938 -1.28906 0.0292969
+-2.60938 -1.28906 -0.0292969
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.60938 -0.689453 0.0292969
+-2.60938 -1.28906 -0.0292969
+-2.60938 -0.689453 -0.0292969
+numsurf 1
+SURF 0x0
+mat 5
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.60938 -0.689453 -0.0292969
+-2.51953 -0.689453 0
+-2.60938 -0.689453 0.0292969
+numsurf 1
+SURF 0x0
+mat 4
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.60938 -0.689453 0.0292969
+-2.51953 -0.689453 0
+-2.51953 -1.28906 0
+numsurf 1
+SURF 0x0
+mat 4
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.60938 -0.689453 0.0292969
+-2.51953 -1.28906 0
+-2.60938 -1.28906 0.0292969
+numsurf 1
+SURF 0x0
+mat 4
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.60938 -1.28906 0.0292969
+-2.51953 -1.28906 0
+-2.60938 -1.28906 -0.0292969
+numsurf 1
+SURF 0x0
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.60938 -1.28906 -0.0292969
+-2.51953 -1.28906 0
+-2.51953 -0.689453 0
+numsurf 1
+SURF 0x0
+mat 4
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-2.60938 -1.28906 -0.0292969
+-2.51953 -0.689453 0
+-2.60938 -0.689453 -0.0292969
+numsurf 1
+SURF 0x0
+mat 4
+refs 3
+0 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT group
+name "RightGear"
+loc 0.780274 -1.51514 -1.10987
+kids 2
+OBJECT poly
+name "GearRight"
+loc -5.36442e-07 0.255369 0.060059
+numvert 48
+-0.0302735 -0.0292934 -0.030273
+-0.0302735 -0.570313 -0.030273
+0.0302735 -0.0292934 -0.000972986
+0.0302735 -0.0292934 -0.000972986
+-0.0302735 -0.570313 -0.030273
+0.0302735 -0.570313 -0.000972986
+-0.0302735 -0.570313 -0.030273
+-0.0302735 -0.570313 0.030277
+0.0302735 -0.570313 -0.000972986
+-0.0302735 -0.570313 0.030277
+-0.0302735 -0.0292934 0.030277
+0.0302735 -0.570313 -0.000972986
+0.0302735 -0.570313 -0.000972986
+-0.0302735 -0.0292934 0.030277
+0.0302735 -0.0292934 -0.000972986
+-0.0302735 -0.0292934 0.030277
+-0.0302735 -0.0292934 -0.030273
+0.0302735 -0.0292934 -0.000972986
+-0.0302735 -0.0292934 -0.030273
+-0.0302735 -0.0292934 0.030277
+-0.0302735 -0.570313 -0.030273
+-0.0302735 -0.570313 -0.030273
+-0.0302735 -0.0292934 0.030277
+-0.0302735 -0.570313 0.030277
+0.0595705 0.570314 -0.000972986
+-0.0595705 0.570314 -0.0595729
+-0.0595705 -0.0292934 -0.0595729
+0.0595705 -0.0292934 -0.000972986
+0.0595705 0.570314 -0.000972986
+-0.0595705 -0.0292934 -0.0595729
+0.0595705 -0.0292934 -0.000972986
+-0.0595705 -0.0292934 -0.0595729
+-0.0595705 -0.0292934 0.0595731
+0.0595705 -0.0292934 -0.000972986
+-0.0595705 -0.0292934 0.0595731
+-0.0595705 0.570314 0.0595731
+0.0595705 0.570314 -0.000972986
+0.0595705 -0.0292934 -0.000972986
+-0.0595705 0.570314 0.0595731
+0.0595705 0.570314 -0.000972986
+-0.0595705 0.570314 0.0595731
+-0.0595705 0.570314 -0.0595729
+-0.0595705 -0.0292934 -0.0595729
+-0.0595705 0.570314 -0.0595729
+-0.0595705 0.570314 0.0595731
+-0.0595705 -0.0292934 0.0595731
+-0.0595705 -0.0292934 -0.0595729
+-0.0595705 0.570314 0.0595731
+numsurf 16
+SURF 0x20
+mat 4
+refs 3
+0 0 0
+1 0 0
+2 0 0
+SURF 0x20
+mat 4
+refs 3
+2 0 0
+1 0 0
+5 0 0
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+7 0 0
+5 0 0
+SURF 0x20
+mat 4
+refs 3
+7 0 0
+10 0 0
+5 0 0
+SURF 0x20
+mat 4
+refs 3
+5 0 0
+10 0 0
+2 0 0
+SURF 0x20
+mat 4
+refs 3
+10 0 0
+0 0 0
+2 0 0
+SURF 0x20
+mat 4
+refs 3
+0 0 0
+10 0 0
+1 0 0
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+10 0 0
+7 0 0
+SURF 0x20
+mat 4
+refs 3
+24 0 0
+25 0 0
+26 0 0
+SURF 0x20
+mat 4
+refs 3
+27 0 0
+24 0 0
+26 0 0
+SURF 0x20
+mat 4
+refs 3
+27 0 0
+26 0 0
+32 0 0
+SURF 0x20
+mat 4
+refs 3
+27 0 0
+32 0 0
+35 0 0
+SURF 0x20
+mat 4
+refs 3
+24 0 0
+27 0 0
+35 0 0
+SURF 0x0
+mat 4
+refs 3
+24 0 0
+35 0 0
+25 0 0
+SURF 0x20
+mat 4
+refs 3
+26 0 0
+25 0 0
+35 0 0
+SURF 0x20
+mat 4
+refs 3
+32 0 0
+26 0 0
+35 0 0
+kids 0
+OBJECT poly
+name "GearRight"
+loc 4.76837e-07 -0.255369 -0.060059
+texture "a4-blue-5.rgb"
+numvert 84
+-0.209962 0.209955 0.060545
+-0.299806 0.000975013 0.060545
+-0.000977516 0.299805 0.060545
+-0.299806 0.000975013 0.060545
+-0.209962 -0.209965 0.060545
+-0.000977516 0.299805 0.060545
+-0.209962 -0.209965 0.060545
+-0.000977516 -0.299805 0.060545
+-0.000977516 0.299805 0.060545
+0.20996 -0.209965 0.060545
+-0.000977516 0.299805 0.060545
+-0.000977516 -0.299805 0.060545
+0.299806 0.000975013 0.060545
+-0.000977516 0.299805 0.060545
+0.20996 -0.209965 0.060545
+0.20996 0.209955 0.060545
+-0.000977516 0.299805 0.060545
+0.299806 0.000975013 0.060545
+0.20996 0.209955 0.060545
+-0.000977516 0.299805 -0.060545
+-0.000977516 0.299805 0.060545
+0.20996 0.209955 -0.060545
+-0.000977516 0.299805 -0.060545
+0.20996 0.209955 0.060545
+-0.000977516 0.299805 0.060545
+-0.209962 0.209955 0.060545
+-0.000977516 0.299805 -0.060545
+-0.209962 0.209955 0.060545
+-0.209962 0.209955 -0.060545
+-0.000977516 0.299805 -0.060545
+-0.299806 0.000975013 0.060545
+-0.209962 0.209955 0.060545
+-0.299806 0.000975013 -0.060545
+-0.209962 0.209955 0.060545
+-0.209962 0.209955 -0.060545
+-0.299806 0.000975013 -0.060545
+-0.299806 0.000975013 0.060545
+-0.209962 -0.209965 0.060545
+-0.299806 0.000975013 -0.060545
+-0.209962 -0.209965 0.060545
+-0.209962 -0.209965 -0.060545
+-0.299806 0.000975013 -0.060545
+-0.000977516 -0.299805 0.060545
+-0.209962 -0.209965 0.060545
+-0.000977516 -0.299805 -0.060545
+-0.209962 -0.209965 0.060545
+-0.209962 -0.209965 -0.060545
+-0.000977516 -0.299805 -0.060545
+0.20996 -0.209965 0.060545
+-0.000977516 -0.299805 -0.060545
+-0.000977516 -0.299805 0.060545
+0.20996 -0.209965 -0.060545
+-0.000977516 -0.299805 -0.060545
+0.20996 -0.209965 0.060545
+0.20996 -0.209965 0.060545
+0.299806 0.000975013 -0.060545
+0.299806 0.000975013 0.060545
+0.20996 -0.209965 -0.060545
+0.299806 0.000975013 -0.060545
+0.20996 -0.209965 0.060545
+0.20996 0.209955 0.060545
+0.299806 0.000975013 -0.060545
+0.299806 0.000975013 0.060545
+0.20996 0.209955 -0.060545
+0.299806 0.000975013 -0.060545
+0.20996 0.209955 0.060545
+-0.209962 0.209955 -0.060545
+-0.299806 0.000975013 -0.060545
+-0.000977516 0.299805 -0.060545
+-0.299806 0.000975013 -0.060545
+-0.209962 -0.209965 -0.060545
+-0.000977516 0.299805 -0.060545
+-0.209962 -0.209965 -0.060545
+-0.000977516 -0.299805 -0.060545
+-0.000977516 0.299805 -0.060545
+0.20996 -0.209965 -0.060545
+-0.000977516 0.299805 -0.060545
+-0.000977516 -0.299805 -0.060545
+0.299806 0.000975013 -0.060545
+-0.000977516 0.299805 -0.060545
+0.20996 -0.209965 -0.060545
+0.20996 0.209955 -0.060545
+-0.000977516 0.299805 -0.060545
+0.299806 0.000975013 -0.060545
+numsurf 28
+SURF 0x20
+mat 5
+refs 3
+0 0.423529 0.423529
+1 0.25098 0.501961
+2 0.498039 0.25098
+SURF 0x20
+mat 5
+refs 3
+1 0.25098 0.501961
+4 0.0745098 0.423529
+2 0.498039 0.25098
+SURF 0x20
+mat 5
+refs 3
+4 0.0745098 0.423529
+7 0 0.25098
+2 0.498039 0.25098
+SURF 0x20
+mat 5
+refs 3
+9 0.0745098 0.0745098
+2 0.498039 0.25098
+7 0 0.25098
+SURF 0x20
+mat 5
+refs 3
+12 0.25098 0
+2 0.498039 0.25098
+9 0.0745098 0.0745098
+SURF 0x20
+mat 5
+refs 3
+15 0.423529 0.0745098
+2 0.498039 0.25098
+12 0.25098 0
+SURF 0x20
+mat 5
+refs 3
+15 0.92549 0.0745098
+19 1 0.25098
+2 1 0.25098
+SURF 0x20
+mat 5
+refs 3
+21 0.92549 0.0745098
+19 1 0.25098
+15 0.92549 0.0745098
+SURF 0x20
+mat 5
+refs 3
+2 1 0.25098
+0 0.92549 0.423529
+19 1 0.25098
+SURF 0x20
+mat 5
+refs 3
+0 0.92549 0.423529
+28 0.92549 0.423529
+19 1 0.25098
+SURF 0x20
+mat 5
+refs 3
+1 0.752941 0.501961
+0 0.92549 0.423529
+32 0.752941 0.501961
+SURF 0x20
+mat 5
+refs 3
+0 0.92549 0.423529
+28 0.92549 0.423529
+32 0.752941 0.501961
+SURF 0x20
+mat 5
+refs 3
+1 0.752941 0.501961
+4 0.576471 0.423529
+32 0.752941 0.501961
+SURF 0x20
+mat 5
+refs 3
+4 0.576471 0.423529
+40 0.576471 0.423529
+32 0.752941 0.501961
+SURF 0x20
+mat 5
+refs 3
+7 0.501961 0.25098
+4 0.576471 0.423529
+44 0.501961 0.25098
+SURF 0x20
+mat 5
+refs 3
+4 0.576471 0.423529
+40 0.576471 0.423529
+44 0.501961 0.25098
+SURF 0x20
+mat 5
+refs 3
+9 0.576471 0.0745098
+44 0.501961 0.25098
+7 0.501961 0.25098
+SURF 0x20
+mat 5
+refs 3
+51 0.576471 0.0745098
+44 0.501961 0.25098
+9 0.576471 0.0745098
+SURF 0x20
+mat 5
+refs 3
+9 0.576471 0.0745098
+55 0.752941 0
+12 0.752941 0
+SURF 0x20
+mat 5
+refs 3
+51 0.576471 0.0745098
+55 0.752941 0
+9 0.576471 0.0745098
+SURF 0x20
+mat 5
+refs 3
+15 0.92549 0.0745098
+55 0.752941 0
+12 0.752941 0
+SURF 0x20
+mat 5
+refs 3
+21 0.92549 0.0745098
+55 0.752941 0
+15 0.92549 0.0745098
+SURF 0x20
+mat 5
+refs 3
+28 0.92549 0.423529
+32 0.752941 0.501961
+19 1 0.25098
+SURF 0x20
+mat 5
+refs 3
+32 0.752941 0.501961
+40 0.576471 0.423529
+19 1 0.25098
+SURF 0x20
+mat 5
+refs 3
+40 0.576471 0.423529
+44 0.501961 0.25098
+19 1 0.25098
+SURF 0x20
+mat 5
+refs 3
+51 0.576471 0.0745098
+19 1 0.25098
+44 0.501961 0.25098
+SURF 0x20
+mat 5
+refs 3
+55 0.752941 0
+19 1 0.25098
+51 0.576471 0.0745098
+SURF 0x20
+mat 5
+refs 3
+21 0.92549 0.0745098
+19 1 0.25098
+55 0.752941 0
+kids 0
+OBJECT group
+name "LeftGear"
+kids 44
+OBJECT poly
+name "NoName"
+numvert 3
+0.720703 -0.689453 1.10938
+0.720703 -1.28906 1.10938
+0.720703 -1.28906 0.990234
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+0.720703 -0.689453 1.10938
+0.720703 -1.28906 0.990234
+0.720703 -0.689453 0.990234
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+0.720703 -0.689453 0.990234
+0.839844 -0.689453 1.05078
+0.720703 -0.689453 1.10938
+numsurf 1
+SURF 0x0
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+0.720703 -1.28906 0.990234
+0.839844 -1.28906 1.05078
+0.839844 -0.689453 1.05078
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+0.720703 -1.28906 0.990234
+0.839844 -0.689453 1.05078
+0.720703 -0.689453 0.990234
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+0.720703 -1.28906 1.10938
+0.839844 -1.28906 1.05078
+0.720703 -1.28906 0.990234
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+0.720703 -0.689453 1.10938
+0.839844 -0.689453 1.05078
+0.839844 -1.28906 1.05078
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+0.720703 -0.689453 1.10938
+0.839844 -1.28906 1.05078
+0.720703 -1.28906 1.10938
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+0.779297 -1.4707 1.10938
+0.570312 -1.56055 1.10938
+0.480469 -1.76953 1.10938
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+1 0.92549 0.423529
+2 0.752941 0.501961
+0 1 0.25098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+0.779297 -1.4707 1.10938
+0.480469 -1.76953 1.10938
+0.570312 -1.98047 1.10938
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+1 0.752941 0.501961
+2 0.576471 0.423529
+0 1 0.25098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+0.779297 -1.4707 1.10938
+0.570312 -1.98047 1.10938
+0.779297 -2.07031 1.10938
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+1 0.576471 0.423529
+2 0.501961 0.25098
+0 1 0.25098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+0.779297 -1.4707 1.10938
+0.779297 -2.07031 1.10938
+0.990234 -1.98047 1.10938
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+2 0.576471 0.0745098
+0 1 0.25098
+1 0.501961 0.25098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+0.779297 -1.4707 1.10938
+0.990234 -1.98047 1.10938
+1.08008 -1.76953 1.10938
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+2 0.752941 0
+0 1 0.25098
+1 0.576471 0.0745098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+0.779297 -1.4707 1.10938
+1.08008 -1.76953 1.10938
+0.990234 -1.56055 1.10938
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+2 0.92549 0.0745098
+0 1 0.25098
+1 0.752941 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+0.779297 -1.4707 1.23047
+0.779297 -1.4707 1.10938
+0.990234 -1.56055 1.10938
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+2 0.92549 0.0745098
+0 1 0.25098
+1 1 0.25098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+0.779297 -1.4707 1.23047
+0.990234 -1.56055 1.10938
+0.990234 -1.56055 1.23047
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+2 0.92549 0.0745098
+0 1 0.25098
+1 0.92549 0.0745098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+0.779297 -1.4707 1.23047
+0.779297 -1.4707 1.10938
+0.570312 -1.56055 1.10938
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+1 1 0.25098
+2 0.92549 0.423529
+0 1 0.25098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+0.779297 -1.4707 1.23047
+0.570312 -1.56055 1.10938
+0.570312 -1.56055 1.23047
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+1 0.92549 0.423529
+2 0.92549 0.423529
+0 1 0.25098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+0.480469 -1.76953 1.23047
+0.480469 -1.76953 1.10938
+0.570312 -1.56055 1.10938
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+1 0.752941 0.501961
+2 0.92549 0.423529
+0 0.752941 0.501961
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+0.480469 -1.76953 1.23047
+0.570312 -1.56055 1.10938
+0.570312 -1.56055 1.23047
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+1 0.92549 0.423529
+2 0.92549 0.423529
+0 0.752941 0.501961
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+0.480469 -1.76953 1.23047
+0.480469 -1.76953 1.10938
+0.570312 -1.98047 1.10938
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+1 0.752941 0.501961
+2 0.576471 0.423529
+0 0.752941 0.501961
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+0.480469 -1.76953 1.23047
+0.570312 -1.98047 1.10938
+0.570312 -1.98047 1.23047
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+1 0.576471 0.423529
+2 0.576471 0.423529
+0 0.752941 0.501961
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+0.779297 -2.07031 1.23047
+0.779297 -2.07031 1.10938
+0.570312 -1.98047 1.10938
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+1 0.501961 0.25098
+2 0.576471 0.423529
+0 0.501961 0.25098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+0.779297 -2.07031 1.23047
+0.570312 -1.98047 1.10938
+0.570312 -1.98047 1.23047
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+1 0.576471 0.423529
+2 0.576471 0.423529
+0 0.501961 0.25098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+0.779297 -2.07031 1.23047
+0.779297 -2.07031 1.10938
+0.990234 -1.98047 1.10938
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+2 0.576471 0.0745098
+0 0.501961 0.25098
+1 0.501961 0.25098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+0.779297 -2.07031 1.23047
+0.990234 -1.98047 1.10938
+0.990234 -1.98047 1.23047
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+2 0.576471 0.0745098
+0 0.501961 0.25098
+1 0.576471 0.0745098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+1.08008 -1.76953 1.23047
+1.08008 -1.76953 1.10938
+0.990234 -1.98047 1.10938
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+2 0.576471 0.0745098
+0 0.752941 0
+1 0.752941 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+1.08008 -1.76953 1.23047
+0.990234 -1.98047 1.10938
+0.990234 -1.98047 1.23047
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+2 0.576471 0.0745098
+0 0.752941 0
+1 0.576471 0.0745098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+1.08008 -1.76953 1.23047
+1.08008 -1.76953 1.10938
+0.990234 -1.56055 1.10938
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+2 0.92549 0.0745098
+0 0.752941 0
+1 0.752941 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+1.08008 -1.76953 1.23047
+0.990234 -1.56055 1.10938
+0.990234 -1.56055 1.23047
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+2 0.92549 0.0745098
+0 0.752941 0
+1 0.92549 0.0745098
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+0.75 -1.28906 1.08008
+0.75 -1.83008 1.08008
+0.75 -1.83008 1.01953
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+2 0 0
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+0.75 -1.28906 1.08008
+0.75 -1.83008 1.01953
+0.75 -1.28906 1.01953
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+2 0 0
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+0.75 -1.28906 1.01953
+0.810547 -1.28906 1.05078
+0.75 -1.28906 1.08008
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+2 0 0
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+0.75 -1.83008 1.01953
+0.810547 -1.83008 1.05078
+0.810547 -1.28906 1.05078
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+2 0 0
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+0.75 -1.83008 1.01953
+0.810547 -1.28906 1.05078
+0.75 -1.28906 1.01953
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+2 0 0
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+0.75 -1.83008 1.08008
+0.810547 -1.83008 1.05078
+0.75 -1.83008 1.01953
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+2 0 0
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+0.75 -1.28906 1.08008
+0.810547 -1.28906 1.05078
+0.810547 -1.83008 1.05078
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+2 0 0
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+0.75 -1.28906 1.08008
+0.810547 -1.83008 1.05078
+0.75 -1.83008 1.08008
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+2 0 0
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+0.779297 -1.4707 1.23047
+0.570312 -1.56055 1.23047
+0.480469 -1.76953 1.23047
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+1 0.423529 0.423529
+2 0.25098 0.501961
+0 0.498039 0.25098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+0.779297 -1.4707 1.23047
+0.480469 -1.76953 1.23047
+0.570312 -1.98047 1.23047
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+1 0.25098 0.501961
+2 0.0745098 0.423529
+0 0.498039 0.25098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+0.779297 -1.4707 1.23047
+0.570312 -1.98047 1.23047
+0.779297 -2.07031 1.23047
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+1 0.0745098 0.423529
+2 0 0.25098
+0 0.498039 0.25098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+0.779297 -1.4707 1.23047
+0.779297 -2.07031 1.23047
+0.990234 -1.98047 1.23047
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+2 0.0745098 0.0745098
+0 0.498039 0.25098
+1 0 0.25098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+0.779297 -1.4707 1.23047
+0.990234 -1.98047 1.23047
+1.08008 -1.76953 1.23047
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+2 0.25098 0
+0 0.498039 0.25098
+1 0.0745098 0.0745098
+kids 0
+OBJECT poly
+name "NoName"
+texture "a4-blue-5.rgb"
+numvert 3
+0.779297 -1.4707 1.23047
+1.08008 -1.76953 1.23047
+0.990234 -1.56055 1.23047
+numsurf 1
+SURF 0x20
+mat 5
+refs 3
+2 0.423529 0.0745098
+0 0.498039 0.25098
+1 0.25098 0
+kids 0
+OBJECT group
+name "LeftGearDoor"
+kids 34
+OBJECT poly
+name "NoName"
+numvert 3
+-0.689453 -0.720703 1.16992
+-0.810547 -0.900391 1.32031
+-0.929688 -1.08008 1.32031
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.689453 -0.720703 1.16992
+-0.929688 -1.08008 1.32031
+-0.929688 -1.08008 1.19922
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.689453 -0.720703 1.16992
+-0.929688 -1.08008 1.19922
+-1.05078 -1.25977 1.19922
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.689453 -0.720703 1.16992
+-1.05078 -1.25977 1.19922
+-1.05078 -1.25977 1.16992
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.689453 -0.720703 1.16992
+-0.689453 -0.720703 1.19922
+-0.810547 -0.900391 1.19922
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.689453 -0.720703 1.16992
+-0.810547 -0.900391 1.19922
+-0.810547 -0.900391 1.32031
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.689453 -0.720703 1.16992
+-0.810547 -0.900391 1.32031
+-0.929688 -1.08008 1.32031
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.689453 -0.720703 1.16992
+-0.929688 -1.08008 1.32031
+-0.929688 -1.08008 1.19922
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.689453 -0.720703 1.16992
+-0.929688 -1.08008 1.19922
+-1.05078 -1.25977 1.19922
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.689453 -0.720703 1.16992
+-1.05078 -1.25977 1.19922
+-1.05078 -1.25977 1.16992
+numsurf 1
+SURF 0x20
+mat 4
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.330078 -0.720703 1.19922
+-0.330078 -0.900391 1.19922
+-0.810547 -0.900391 1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.330078 -0.720703 1.19922
+-0.810547 -0.900391 1.19922
+-0.689453 -0.720703 1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.330078 -0.720703 1.19922
+-0.330078 -0.900391 1.19922
+-0.810547 -0.900391 1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.330078 -0.720703 1.19922
+-0.810547 -0.900391 1.19922
+-0.689453 -0.720703 1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.330078 -0.900391 1.32031
+-0.330078 -0.900391 1.19922
+-0.810547 -0.900391 1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.330078 -0.900391 1.32031
+-0.810547 -0.900391 1.19922
+-0.810547 -0.900391 1.32031
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.330078 -0.900391 1.32031
+-0.330078 -0.900391 1.19922
+-0.810547 -0.900391 1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.330078 -0.900391 1.32031
+-0.810547 -0.900391 1.19922
+-0.810547 -0.900391 1.32031
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.810547 -0.900391 1.32031
+-0.929688 -1.08008 1.32031
+-0.330078 -1.08008 1.32031
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.810547 -0.900391 1.32031
+-0.330078 -1.08008 1.32031
+-0.330078 -0.900391 1.32031
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.810547 -0.900391 1.32031
+-0.929688 -1.08008 1.32031
+-0.330078 -1.08008 1.32031
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.810547 -0.900391 1.32031
+-0.330078 -1.08008 1.32031
+-0.330078 -0.900391 1.32031
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.929688 -1.08008 1.19922
+-0.929688 -1.08008 1.32031
+-0.330078 -1.08008 1.32031
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.929688 -1.08008 1.19922
+-0.330078 -1.08008 1.32031
+-0.330078 -1.08008 1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.929688 -1.08008 1.19922
+-0.929688 -1.08008 1.32031
+-0.330078 -1.08008 1.32031
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.929688 -1.08008 1.19922
+-0.330078 -1.08008 1.32031
+-0.330078 -1.08008 1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.929688 -1.08008 1.19922
+-1.05078 -1.25977 1.19922
+-0.330078 -1.25977 1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.929688 -1.08008 1.19922
+-0.330078 -1.25977 1.19922
+-0.330078 -1.08008 1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.929688 -1.08008 1.19922
+-1.05078 -1.25977 1.19922
+-0.330078 -1.25977 1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+-0.929688 -1.08008 1.19922
+-0.330078 -1.25977 1.19922
+-0.330078 -1.08008 1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+0.869141 -0.720703 1.19922
+0.869141 -1.05078 1.19922
+-0.330078 -1.05078 1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+0.869141 -0.720703 1.19922
+-0.330078 -1.05078 1.19922
+-0.330078 -0.720703 1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+0.869141 -0.720703 1.19922
+0.869141 -1.05078 1.19922
+-0.330078 -1.05078 1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+numvert 3
+0.869141 -0.720703 1.19922
+-0.330078 -1.05078 1.19922
+-0.330078 -0.720703 1.19922
+numsurf 1
+SURF 0x20
+mat 3
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "Panel"
+loc -3.13737 0.441651 -0.00425577
+numvert 8
+-0.0295057 0.110958 -0.24065
+-0.054296 0.187823 0.144787
+-0.054296 0.187823 -0.144787
+-0.0295057 0.110958 0.24065
+-0.0295057 0.110958 -0.24065
+0.054296 -0.187823 -0.24065
+0.054296 -0.187823 0.24065
+-0.0295057 0.110958 0.24065
+numsurf 4
+SURF 0x0
+mat 2
+refs 3
+0 0 0
+2 0 0
+1 0 0
+SURF 0x0
+mat 2
+refs 3
+0 0 0
+1 0 0
+3 0 0
+SURF 0x20
+mat 2
+refs 3
+6 1 0
+5 1 1
+3 0 0
+SURF 0x20
+mat 2
+refs 3
+5 1 1
+0 0 1
+3 0 0
+kids 0
+OBJECT poly
+name "CockpitRear"
+loc -2.63375 0.381018 -0.00374657
+numvert 4
+-0.0108821 0.215542 -0.338754
+-0.0102096 0.215542 0.332619
+-0.082381 -0.376947 0.332619
+-0.0830536 -0.376947 -0.338754
+numsurf 2
+SURF 0x0
+mat 2
+refs 3
+1 1 1
+0 0 1
+2 1 0
+SURF 0x0
+mat 2
+refs 3
+0 0 1
+3 0 0
+2 1 0
+kids 0
+OBJECT poly
+name "CockpitFloor"
+loc -3.08667 -0.00711995 -0.0085102
+numvert 4
+-0.437804 0 -0.267737
+0.431347 0 -0.33399
+0.432006 0 0.337383
+-0.437804 0 0.267737
+numsurf 2
+SURF 0x20
+mat 2
+refs 3
+0 0 1
+3 0 0
+1 1 1
+SURF 0x20
+mat 2
+refs 3
+2 1 0
+1 1 1
+3 0 0
+kids 0
+OBJECT poly
+name "CockpitRightConsole"
+loc -2.88992 0.126316 -0.213327
+numvert 8
+-0.235774 -0.124599 -0.0864746
+-0.235774 0.124599 -0.0864746
+0.234595 0.0996789 -0.129173
+0.234595 -0.124599 -0.129173
+-0.235774 -0.124599 0.0427844
+-0.235774 0.124599 0.0427844
+0.241034 0.0996789 0.00862199
+0.241034 -0.124599 0.00862199
+numsurf 3
+SURF 0x0
+mat 0
+refs 4
+7 1 0
+6 1 1
+5 0 1
+4 0 0
+SURF 0x0
+mat 0
+refs 4
+1 0 0
+5 1 0
+6 1 1
+2 0 1
+SURF 0x0
+mat 0
+refs 4
+4 0 0
+0 1 0
+3 1 1
+7 0 1
+kids 0
+OBJECT poly
+name "CockpitLeftConsole"
+loc -2.88812 0.126316 0.246967
+numvert 8
+-0.235774 -0.124599 -0.0864746
+-0.235774 0.124599 -0.0864746
+0.239236 0.0996789 -0.0531694
+0.239236 -0.124599 -0.0531694
+-0.235774 -0.124599 0.0427845
+-0.235774 0.124599 0.0427845
+0.233457 0.0996789 0.0819058
+0.233457 -0.124599 0.0819058
+numsurf 3
+SURF 0x0
+mat 0
+refs 4
+0 1 0
+1 1 1
+2 0 1
+3 0 0
+SURF 0x0
+mat 0
+refs 4
+1 0 0
+5 1 0
+6 1 1
+2 0 1
+SURF 0x0
+mat 0
+refs 4
+4 0 0
+0 1 0
+3 1 1
+7 0 1
+kids 0
+OBJECT poly
+name "CockpitSeat"
+loc -2.75218 0.0560633 0.162711
+numvert 48
+-0.211817 0.0390971 -0.03289
+-0.176 0.0517285 0
+0.0706058 0.0517285 0
+-0.211817 0.0172428 -0.03289
+-0.176 0.0172428 0
+0.0706058 0.0172428 0
+-0.211817 -0.0172428 -0.03289
+-0.176 -0.0172428 0
+0.0706058 -0.0172428 0
+-0.211817 -0.0517285 -0.03289
+-0.176 -0.0517285 0
+0.0706058 -0.0517285 0
+-0.211818 0.0390971 -0.11385
+-0.176 0.0517285 -0.11385
+0.0706058 0.0517285 -0.11385
+-0.211818 0.0172428 -0.11385
+-0.176 0.0172428 -0.11385
+0.0706058 0.0172428 -0.11385
+-0.211818 -0.0172428 -0.11385
+-0.176 -0.0172428 -0.11385
+0.0706058 -0.0172428 -0.11385
+-0.211818 -0.0517285 -0.11385
+-0.176 -0.0517285 -0.11385
+0.0706058 -0.0517285 -0.11385
+-0.211818 0.0390971 -0.2277
+-0.176 0.0517285 -0.2277
+0.0706058 0.0517285 -0.2277
+-0.211818 0.0172428 -0.2277
+-0.176 0.0172428 -0.2277
+0.0706058 0.0172428 -0.2277
+-0.211818 -0.0172428 -0.2277
+-0.176 -0.0172428 -0.2277
+0.0706058 -0.0172428 -0.2277
+-0.211818 -0.0517285 -0.2277
+-0.176 -0.0517285 -0.2277
+0.0706058 -0.0517285 -0.2277
+-0.211818 0.0390971 -0.31878
+-0.176 0.0517285 -0.34155
+0.0706058 0.0517285 -0.34155
+-0.211818 0.0172428 -0.31878
+-0.176 0.0172428 -0.34155
+0.0706058 0.0172428 -0.34155
+-0.211818 -0.0172428 -0.31878
+-0.176 -0.0172428 -0.34155
+0.0706058 -0.0172428 -0.34155
+-0.211818 -0.0517285 -0.31878
+-0.176 -0.0517285 -0.34155
+0.0706058 -0.0517285 -0.34155
+numsurf 171
+SURF 0x30
+mat 0
+refs 3
+0 0 1
+3 0 0.666667
+4 0.333333 0.666667
+SURF 0x30
+mat 0
+refs 3
+0 0 1
+4 0.333333 0.666667
+1 0.333333 1
+SURF 0x30
+mat 1
+refs 3
+1 0.333333 1
+4 0.333333 0.666667
+2 0.666667 1
+SURF 0x30
+mat 1
+refs 3
+2 0.666667 1
+4 0.333333 0.666667
+5 0.666667 0.666667
+SURF 0x30
+mat 0
+refs 2
+2 0.666667 1
+5 0.666667 0.666667
+SURF 0x30
+mat 0
+refs 1
+2 0.666667 1
+SURF 0x30
+mat 1
+refs 3
+3 0 0.666667
+6 0 0.333333
+4 0.333333 0.666667
+SURF 0x30
+mat 1
+refs 3
+4 0.333333 0.666667
+6 0 0.333333
+7 0.333333 0.333333
+SURF 0x30
+mat 0
+refs 3
+4 0.333333 0.666667
+7 0.333333 0.333333
+8 0.666667 0.333333
+SURF 0x30
+mat 0
+refs 3
+4 0.333333 0.666667
+8 0.666667 0.333333
+5 0.666667 0.666667
+SURF 0x30
+mat 1
+refs 2
+5 0.666667 0.666667
+8 0.666667 0.333333
+SURF 0x30
+mat 1
+refs 1
+8 0.666667 0.333333
+SURF 0x30
+mat 0
+refs 3
+6 0 0.333333
+9 0 0
+10 0.333333 0
+SURF 0x30
+mat 0
+refs 3
+6 0 0.333333
+10 0.333333 0
+7 0.333333 0.333333
+SURF 0x30
+mat 1
+refs 3
+7 0.333333 0.333333
+10 0.333333 0
+8 0.666667 0.333333
+SURF 0x30
+mat 1
+refs 3
+8 0.666667 0.333333
+10 0.333333 0
+11 0.666667 0
+SURF 0x30
+mat 0
+refs 2
+8 0.666667 0.333333
+11 0.666667 0
+SURF 0x30
+mat 0
+refs 1
+8 0.666667 0.333333
+SURF 0x20
+mat 0
+refs 4
+0 0 0
+12 0 0
+15 0 0
+3 0 0
+SURF 0x20
+mat 0
+refs 4
+3 0 0
+15 0 0
+16 0 0
+4 0 0
+SURF 0x20
+mat 0
+refs 4
+4 0 0
+16 0 0
+12 0 0
+0 0 0
+SURF 0x20
+mat 0
+refs 4
+0 0 0
+12 0 0
+16 0 0
+4 0 0
+SURF 0x20
+mat 0
+refs 4
+4 0 0
+16 0 0
+13 0 0
+1 0 0
+SURF 0x20
+mat 0
+refs 4
+1 0 0
+13 0 0
+12 0 0
+0 0 0
+SURF 0x20
+mat 1
+refs 4
+1 0 0
+13 0 0
+16 0 0
+4 0 0
+SURF 0x20
+mat 1
+refs 4
+4 0 0
+16 0 0
+14 0 0
+2 0 0
+SURF 0x20
+mat 1
+refs 4
+2 0 0
+14 0 0
+13 0 0
+1 0 0
+SURF 0x20
+mat 1
+refs 4
+2 0 0
+14 0 0
+16 0 0
+4 0 0
+SURF 0x20
+mat 1
+refs 4
+4 0 0
+16 0 0
+17 0 0
+5 0 0
+SURF 0x20
+mat 1
+refs 4
+5 0 0
+17 0 0
+14 0 0
+2 0 0
+SURF 0x20
+mat 0
+refs 4
+2 0 0
+14 0 0
+17 0 0
+5 0 0
+SURF 0x20
+mat 0
+refs 4
+5 0 0
+17 0 0
+14 0 0
+2 0 0
+SURF 0x20
+mat 0
+refs 4
+2 0 0
+14 0 0
+14 0 0
+2 0 0
+SURF 0x20
+mat 1
+refs 4
+3 0 0
+15 0 0
+18 0 0
+6 0 0
+SURF 0x20
+mat 1
+refs 4
+6 0 0
+18 0 0
+16 0 0
+4 0 0
+SURF 0x20
+mat 1
+refs 4
+4 0 0
+16 0 0
+15 0 0
+3 0 0
+SURF 0x20
+mat 1
+refs 4
+4 0 0
+16 0 0
+18 0 0
+6 0 0
+SURF 0x20
+mat 1
+refs 4
+6 0 0
+18 0 0
+19 0 0
+7 0 0
+SURF 0x20
+mat 1
+refs 4
+7 0 0
+19 0 0
+16 0 0
+4 0 0
+SURF 0x20
+mat 0
+refs 4
+4 0 0
+16 0 0
+19 0 0
+7 0 0
+SURF 0x20
+mat 0
+refs 4
+7 0 0
+19 0 0
+20 0 0
+8 0 0
+SURF 0x20
+mat 0
+refs 4
+8 0 0
+20 0 0
+16 0 0
+4 0 0
+SURF 0x20
+mat 0
+refs 4
+4 0 0
+16 0 0
+20 0 0
+8 0 0
+SURF 0x20
+mat 0
+refs 4
+8 0 0
+20 0 0
+17 0 0
+5 0 0
+SURF 0x20
+mat 0
+refs 4
+5 0 0
+17 0 0
+16 0 0
+4 0 0
+SURF 0x20
+mat 1
+refs 4
+5 0 0
+17 0 0
+20 0 0
+8 0 0
+SURF 0x20
+mat 1
+refs 4
+8 0 0
+20 0 0
+17 0 0
+5 0 0
+SURF 0x20
+mat 1
+refs 4
+8 0 0
+20 0 0
+20 0 0
+8 0 0
+SURF 0x20
+mat 0
+refs 4
+6 0 0
+18 0 0
+21 0 0
+9 0 0
+SURF 0x20
+mat 0
+refs 4
+9 0 0
+21 0 0
+22 0 0
+10 0 0
+SURF 0x20
+mat 0
+refs 4
+10 0 0
+22 0 0
+18 0 0
+6 0 0
+SURF 0x20
+mat 0
+refs 4
+6 0 0
+18 0 0
+22 0 0
+10 0 0
+SURF 0x20
+mat 0
+refs 4
+10 0 0
+22 0 0
+19 0 0
+7 0 0
+SURF 0x20
+mat 0
+refs 4
+7 0 0
+19 0 0
+18 0 0
+6 0 0
+SURF 0x20
+mat 1
+refs 4
+7 0 0
+19 0 0
+22 0 0
+10 0 0
+SURF 0x20
+mat 1
+refs 4
+10 0 0
+22 0 0
+20 0 0
+8 0 0
+SURF 0x20
+mat 1
+refs 4
+8 0 0
+20 0 0
+19 0 0
+7 0 0
+SURF 0x20
+mat 1
+refs 4
+8 0 0
+20 0 0
+22 0 0
+10 0 0
+SURF 0x20
+mat 1
+refs 4
+10 0 0
+22 0 0
+23 0 0
+11 0 0
+SURF 0x20
+mat 1
+refs 4
+11 0 0
+23 0 0
+20 0 0
+8 0 0
+SURF 0x20
+mat 0
+refs 4
+8 0 0
+20 0 0
+23 0 0
+11 0 0
+SURF 0x20
+mat 0
+refs 4
+11 0 0
+23 0 0
+20 0 0
+8 0 0
+SURF 0x20
+mat 0
+refs 4
+8 0 0
+20 0 0
+20 0 0
+8 0 0
+SURF 0x20
+mat 0
+refs 4
+12 0 0
+24 0 0
+27 0 0
+15 0 0
+SURF 0x20
+mat 0
+refs 4
+15 0 0
+27 0 0
+28 0 0
+16 0 0
+SURF 0x20
+mat 0
+refs 4
+16 0 0
+28 0 0
+24 0 0
+12 0 0
+SURF 0x20
+mat 0
+refs 4
+12 0 0
+24 0 0
+28 0 0
+16 0 0
+SURF 0x20
+mat 0
+refs 4
+16 0 0
+28 0 0
+25 0 0
+13 0 0
+SURF 0x20
+mat 0
+refs 4
+13 0 0
+25 0 0
+24 0 0
+12 0 0
+SURF 0x20
+mat 1
+refs 4
+13 0 0
+25 0 0
+28 0 0
+16 0 0
+SURF 0x20
+mat 1
+refs 4
+16 0 0
+28 0 0
+26 0 0
+14 0 0
+SURF 0x20
+mat 1
+refs 4
+14 0 0
+26 0 0
+25 0 0
+13 0 0
+SURF 0x20
+mat 1
+refs 4
+14 0 0
+26 0 0
+28 0 0
+16 0 0
+SURF 0x20
+mat 1
+refs 4
+16 0 0
+28 0 0
+29 0 0
+17 0 0
+SURF 0x20
+mat 1
+refs 4
+17 0 0
+29 0 0
+26 0 0
+14 0 0
+SURF 0x20
+mat 0
+refs 4
+14 0 0
+26 0 0
+29 0 0
+17 0 0
+SURF 0x20
+mat 0
+refs 4
+17 0 0
+29 0 0
+26 0 0
+14 0 0
+SURF 0x20
+mat 0
+refs 4
+14 0 0
+26 0 0
+26 0 0
+14 0 0
+SURF 0x20
+mat 1
+refs 4
+15 0 0
+27 0 0
+30 0 0
+18 0 0
+SURF 0x20
+mat 1
+refs 4
+18 0 0
+30 0 0
+28 0 0
+16 0 0
+SURF 0x20
+mat 1
+refs 4
+16 0 0
+28 0 0
+27 0 0
+15 0 0
+SURF 0x20
+mat 1
+refs 4
+16 0 0
+28 0 0
+30 0 0
+18 0 0
+SURF 0x20
+mat 1
+refs 4
+18 0 0
+30 0 0
+31 0 0
+19 0 0
+SURF 0x20
+mat 1
+refs 4
+19 0 0
+31 0 0
+28 0 0
+16 0 0
+SURF 0x20
+mat 0
+refs 4
+16 0 0
+28 0 0
+31 0 0
+19 0 0
+SURF 0x20
+mat 0
+refs 4
+19 0 0
+31 0 0
+32 0 0
+20 0 0
+SURF 0x20
+mat 0
+refs 4
+20 0 0
+32 0 0
+28 0 0
+16 0 0
+SURF 0x20
+mat 0
+refs 4
+16 0 0
+28 0 0
+32 0 0
+20 0 0
+SURF 0x20
+mat 0
+refs 4
+20 0 0
+32 0 0
+29 0 0
+17 0 0
+SURF 0x20
+mat 0
+refs 4
+17 0 0
+29 0 0
+28 0 0
+16 0 0
+SURF 0x20
+mat 1
+refs 4
+17 0 0
+29 0 0
+32 0 0
+20 0 0
+SURF 0x20
+mat 1
+refs 4
+20 0 0
+32 0 0
+29 0 0
+17 0 0
+SURF 0x20
+mat 1
+refs 4
+20 0 0
+32 0 0
+32 0 0
+20 0 0
+SURF 0x20
+mat 0
+refs 4
+18 0 0
+30 0 0
+33 0 0
+21 0 0
+SURF 0x20
+mat 0
+refs 4
+21 0 0
+33 0 0
+34 0 0
+22 0 0
+SURF 0x20
+mat 0
+refs 4
+22 0 0
+34 0 0
+30 0 0
+18 0 0
+SURF 0x20
+mat 0
+refs 4
+18 0 0
+30 0 0
+34 0 0
+22 0 0
+SURF 0x20
+mat 0
+refs 4
+22 0 0
+34 0 0
+31 0 0
+19 0 0
+SURF 0x20
+mat 0
+refs 4
+19 0 0
+31 0 0
+30 0 0
+18 0 0
+SURF 0x20
+mat 1
+refs 4
+19 0 0
+31 0 0
+34 0 0
+22 0 0
+SURF 0x20
+mat 1
+refs 4
+22 0 0
+34 0 0
+32 0 0
+20 0 0
+SURF 0x20
+mat 1
+refs 4
+20 0 0
+32 0 0
+31 0 0
+19 0 0
+SURF 0x20
+mat 1
+refs 4
+20 0 0
+32 0 0
+34 0 0
+22 0 0
+SURF 0x20
+mat 1
+refs 4
+22 0 0
+34 0 0
+35 0 0
+23 0 0
+SURF 0x20
+mat 1
+refs 4
+23 0 0
+35 0 0
+32 0 0
+20 0 0
+SURF 0x20
+mat 0
+refs 4
+20 0 0
+32 0 0
+35 0 0
+23 0 0
+SURF 0x20
+mat 0
+refs 4
+23 0 0
+35 0 0
+32 0 0
+20 0 0
+SURF 0x20
+mat 0
+refs 4
+20 0 0
+32 0 0
+32 0 0
+20 0 0
+SURF 0x30
+mat 0
+refs 3
+40 0 0
+39 0 0
+36 0 0
+SURF 0x30
+mat 0
+refs 3
+37 0 0
+40 0 0
+36 0 0
+SURF 0x30
+mat 1
+refs 3
+38 0 0
+40 0 0
+37 0 0
+SURF 0x30
+mat 1
+refs 3
+41 0 0
+40 0 0
+38 0 0
+SURF 0x30
+mat 0
+refs 2
+41 0 0
+38 0 0
+SURF 0x30
+mat 0
+refs 1
+38 0 0
+SURF 0x30
+mat 1
+refs 3
+40 0 0
+42 0 0
+39 0 0
+SURF 0x30
+mat 1
+refs 3
+43 0 0
+42 0 0
+40 0 0
+SURF 0x30
+mat 0
+refs 3
+44 0 0
+43 0 0
+40 0 0
+SURF 0x30
+mat 0
+refs 3
+41 0 0
+44 0 0
+40 0 0
+SURF 0x30
+mat 1
+refs 2
+44 0 0
+41 0 0
+SURF 0x30
+mat 1
+refs 1
+44 0 0
+SURF 0x30
+mat 0
+refs 3
+46 0 0
+45 0 0
+42 0 0
+SURF 0x30
+mat 0
+refs 3
+43 0 0
+46 0 0
+42 0 0
+SURF 0x30
+mat 1
+refs 3
+44 0 0
+46 0 0
+43 0 0
+SURF 0x30
+mat 1
+refs 3
+47 0 0
+46 0 0
+44 0 0
+SURF 0x30
+mat 0
+refs 2
+47 0 0
+44 0 0
+SURF 0x30
+mat 0
+refs 1
+44 0 0
+SURF 0x20
+mat 0
+refs 4
+24 0 0
+36 0 0
+39 0 0
+27 0 0
+SURF 0x20
+mat 0
+refs 4
+27 0 0
+39 0 0
+40 0 0
+28 0 0
+SURF 0x20
+mat 0
+refs 4
+28 0 0
+40 0 0
+36 0 0
+24 0 0
+SURF 0x20
+mat 0
+refs 4
+24 0 0
+36 0 0
+40 0 0
+28 0 0
+SURF 0x20
+mat 0
+refs 4
+28 0 0
+40 0 0
+37 0 0
+25 0 0
+SURF 0x20
+mat 0
+refs 4
+25 0 0
+37 0 0
+36 0 0
+24 0 0
+SURF 0x20
+mat 1
+refs 4
+25 0 0
+37 0 0
+40 0 0
+28 0 0
+SURF 0x20
+mat 1
+refs 4
+28 0 0
+40 0 0
+38 0 0
+26 0 0
+SURF 0x20
+mat 1
+refs 4
+26 0 0
+38 0 0
+37 0 0
+25 0 0
+SURF 0x20
+mat 1
+refs 4
+26 0 0
+38 0 0
+40 0 0
+28 0 0
+SURF 0x20
+mat 1
+refs 4
+28 0 0
+40 0 0
+41 0 0
+29 0 0
+SURF 0x20
+mat 1
+refs 4
+29 0 0
+41 0 0
+38 0 0
+26 0 0
+SURF 0x20
+mat 0
+refs 4
+26 0 0
+38 0 0
+41 0 0
+29 0 0
+SURF 0x20
+mat 0
+refs 4
+29 0 0
+41 0 0
+38 0 0
+26 0 0
+SURF 0x20
+mat 0
+refs 4
+26 0 0
+38 0 0
+38 0 0
+26 0 0
+SURF 0x20
+mat 1
+refs 4
+27 0 0
+39 0 0
+42 0 0
+30 0 0
+SURF 0x20
+mat 1
+refs 4
+30 0 0
+42 0 0
+40 0 0
+28 0 0
+SURF 0x20
+mat 1
+refs 4
+28 0 0
+40 0 0
+39 0 0
+27 0 0
+SURF 0x20
+mat 1
+refs 4
+28 0 0
+40 0 0
+42 0 0
+30 0 0
+SURF 0x20
+mat 1
+refs 4
+30 0 0
+42 0 0
+43 0 0
+31 0 0
+SURF 0x20
+mat 1
+refs 4
+31 0 0
+43 0 0
+40 0 0
+28 0 0
+SURF 0x20
+mat 0
+refs 4
+28 0 0
+40 0 0
+43 0 0
+31 0 0
+SURF 0x20
+mat 0
+refs 4
+31 0 0
+43 0 0
+44 0 0
+32 0 0
+SURF 0x20
+mat 0
+refs 4
+32 0 0
+44 0 0
+40 0 0
+28 0 0
+SURF 0x20
+mat 0
+refs 4
+28 0 0
+40 0 0
+44 0 0
+32 0 0
+SURF 0x20
+mat 0
+refs 4
+32 0 0
+44 0 0
+41 0 0
+29 0 0
+SURF 0x20
+mat 0
+refs 4
+29 0 0
+41 0 0
+40 0 0
+28 0 0
+SURF 0x20
+mat 1
+refs 4
+29 0 0
+41 0 0
+44 0 0
+32 0 0
+SURF 0x20
+mat 1
+refs 4
+32 0 0
+44 0 0
+41 0 0
+29 0 0
+SURF 0x20
+mat 1
+refs 4
+32 0 0
+44 0 0
+44 0 0
+32 0 0
+SURF 0x20
+mat 0
+refs 4
+30 0 0
+42 0 0
+45 0 0
+33 0 0
+SURF 0x20
+mat 0
+refs 4
+33 0 0
+45 0 0
+46 0 0
+34 0 0
+SURF 0x20
+mat 0
+refs 4
+34 0 0
+46 0 0
+42 0 0
+30 0 0
+SURF 0x20
+mat 0
+refs 4
+30 0 0
+42 0 0
+46 0 0
+34 0 0
+SURF 0x20
+mat 0
+refs 4
+34 0 0
+46 0 0
+43 0 0
+31 0 0
+SURF 0x20
+mat 0
+refs 4
+31 0 0
+43 0 0
+42 0 0
+30 0 0
+SURF 0x20
+mat 1
+refs 4
+31 0 0
+43 0 0
+46 0 0
+34 0 0
+SURF 0x20
+mat 1
+refs 4
+34 0 0
+46 0 0
+44 0 0
+32 0 0
+SURF 0x20
+mat 1
+refs 4
+32 0 0
+44 0 0
+43 0 0
+31 0 0
+SURF 0x20
+mat 1
+refs 4
+32 0 0
+44 0 0
+46 0 0
+34 0 0
+SURF 0x20
+mat 1
+refs 4
+34 0 0
+46 0 0
+47 0 0
+35 0 0
+SURF 0x20
+mat 1
+refs 4
+35 0 0
+47 0 0
+44 0 0
+32 0 0
+SURF 0x20
+mat 0
+refs 4
+32 0 0
+44 0 0
+47 0 0
+35 0 0
+SURF 0x20
+mat 0
+refs 4
+35 0 0
+47 0 0
+44 0 0
+32 0 0
+SURF 0x20
+mat 0
+refs 4
+32 0 0
+44 0 0
+44 0 0
+32 0 0
+kids 0
+OBJECT poly
+name "CockpitRight"
+loc -2.90069 0.296243 -0.304622
+numvert 6
+-0.132077 0.213648 0.0247404
+0.256057 0.303184 -0.0378778
+0.256057 -0.297675 -0.0378778
+-0.123423 -0.303184 0.00455216
+-0.302993 0.185308 0.0705556
+-0.302679 -0.303184 0.0705556
+numsurf 4
+SURF 0x0
+mat 2
+refs 3
+3 0 0
+2 1 0
+0 0 1
+SURF 0x0
+mat 2
+refs 3
+2 1 0
+1 1 1
+0 0 1
+SURF 0x0
+mat 2
+refs 3
+5 0 0
+3 1 0
+4 0 1
+SURF 0x0
+mat 2
+refs 3
+3 1 0
+0 1 1
+4 0 1
+kids 0
+OBJECT poly
+name "CockpitLeft"
+loc -2.89411 0.293109 0.291276
+numvert 7
+-0.137989 0.209777 -0.0171929
+0.250145 0.303317 0.0375963
+0.250145 -0.297543 0.0375963
+-0.129335 -0.297543 0.00299531
+-0.309577 0.188442 -0.0644175
+-0.129335 -0.297543 0.00299531
+-0.309264 -0.297543 -0.063008
+numsurf 4
+SURF 0x0
+mat 2
+refs 3
+0 0 1
+2 1 0
+3 0 0
+SURF 0x0
+mat 2
+refs 3
+0 0 1
+1 1 1
+2 1 0
+SURF 0x0
+mat 2
+refs 3
+5 1 0
+6 0 0
+4 0 1
+SURF 0x0
+mat 2
+refs 3
+0 1 1
+5 1 0
+4 0 1
+kids 0
+OBJECT poly
+name "CockpitDash"
+loc -3.37357 0.516323 0
+numvert 26
+-0.376431 -0.0964013 0.0898438
+-0.140197 -0.125698 0.269531
+0.214451 0.131532 0.150391
+0.235258 0.0663961 0.246625
+-0.140197 -0.125698 0.269531
+0.214451 0.131532 0.150391
+-0.376431 -0.0964013 -0.0898438
+0.214451 0.131532 0.150391
+0.214451 0.131532 -0.150391
+0.235258 0.0663961 -0.246625
+-0.140197 -0.125698 -0.269531
+0.214451 0.131532 -0.150391
+-0.376431 -0.0964013 -0.0898438
+-0.376431 -0.0964013 0.0898438
+0.214451 0.131532 0.150391
+-0.376431 -0.0964013 -0.0898438
+-0.140197 -0.125698 -0.269531
+0.214451 0.131532 -0.150391
+-0.140197 -0.125698 0.269531
+0.233981 0.0663212 0.246625
+0.291485 -0.137682 0.323189
+0.0334241 -0.143833 0.267871
+-0.140197 -0.125698 -0.269531
+0.235895 0.0663213 -0.246625
+0.293399 -0.137682 -0.319068
+0.0353386 -0.143833 -0.26375
+numsurf 10
+SURF 0x20
+mat 0
+refs 3
+1 0 0
+2 0 0
+0 0 0
+SURF 0x20
+mat 0
+refs 3
+1 0 0
+3 0 0
+2 0 0
+SURF 0x20
+mat 0
+refs 3
+2 0 0
+8 0 0
+6 0 0
+SURF 0x20
+mat 0
+refs 3
+10 0 0
+8 0 0
+9 0 0
+SURF 0x20
+mat 0
+refs 3
+0 0 0
+2 0 0
+6 0 0
+SURF 0x20
+mat 0
+refs 3
+10 0 0
+6 0 0
+8 0 0
+SURF 0x20
+mat 0
+refs 3
+21 0 0
+20 1 0
+18 0 1
+SURF 0x20
+mat 0
+refs 3
+20 1 0
+19 1 1
+18 0 1
+SURF 0x20
+mat 0
+refs 3
+22 0 1
+24 1 0
+25 0 0
+SURF 0x20
+mat 0
+refs 3
+22 0 1
+23 1 1
+24 1 0
+kids 0
+OBJECT group
+name "Pilot"
+loc -0.364036 0.0955811 0
+kids 8
+OBJECT poly
+name "NoName"
+loc 0.364036 -0.0955811 0
+numvert 3
+-2.84961 0.689453 0
+-2.64062 0.59961 0
+-2.88086 0.63086 0
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+0 0 0
+1 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "Helmet"
+loc -2.35178 0.669068 0
+texture "a4-blue-7.rgb"
+numvert 180
+0.0752001 0.0556635 -0.150391
+0.16504 0.0751955 -0.0195312
+0.0752001 0.165039 -0.0507812
+0.0752001 0.0556635 -0.150391
+0.16504 0.0244135 -0.0605469
+0.16504 0.0751955 -0.0195312
+0.0752001 -0.0537105 -0.150391
+0.16504 0.0244135 -0.0605469
+0.0752001 0.0556635 -0.150391
+0.0752001 -0.0537105 -0.150391
+0.16504 -0.0244145 -0.0605469
+0.16504 0.0244135 -0.0605469
+0.0752001 -0.165039 -0.0507812
+0.16504 -0.0244145 -0.0605469
+0.0752001 -0.0537105 -0.150391
+0.0752001 -0.165039 -0.0507812
+0.16504 -0.0751955 -0.0195312
+0.16504 -0.0244145 -0.0605469
+0.0752001 -0.165039 0.0507812
+0.16504 -0.0751955 -0.0195312
+0.0752001 -0.165039 -0.0507812
+0.0752001 -0.165039 0.0507812
+0.16504 -0.0751955 0.0195312
+0.16504 -0.0751955 -0.0195312
+0.0752001 -0.0537105 0.150391
+0.16504 -0.0751955 0.0195312
+0.0752001 -0.165039 0.0507812
+0.0752001 -0.0537105 0.150391
+0.16504 -0.0244145 0.0605469
+0.16504 -0.0751955 0.0195312
+0.0752001 0.0556635 0.150391
+0.16504 -0.0244145 0.0605469
+0.0752001 -0.0537105 0.150391
+0.0752001 0.0556635 0.150391
+0.16504 0.0244135 0.0605469
+0.16504 -0.0244145 0.0605469
+0.0752001 0.165039 0.0507812
+0.16504 0.0244135 0.0605469
+0.0752001 0.0556635 0.150391
+0.0752001 0.165039 0.0507812
+0.16504 0.0751955 0.0195312
+0.16504 0.0244135 0.0605469
+0.0752001 0.165039 -0.0507812
+0.16504 0.0751955 0.0195312
+0.0752001 0.165039 0.0507812
+0.0752001 0.165039 -0.0507812
+0.16504 0.0751955 -0.0195312
+0.16504 0.0751955 0.0195312
+-0.0439498 0.0556635 -0.150391
+0.0752001 0.165039 -0.0507812
+-0.0439498 0.165039 -0.0507812
+-0.0439498 0.0556635 -0.150391
+0.0752001 0.0556635 -0.150391
+0.0752001 0.165039 -0.0507812
+-0.0439498 -0.0537105 -0.150391
+0.0752001 0.0556635 -0.150391
+-0.0439498 0.0556635 -0.150391
+-0.0439498 -0.0537105 -0.150391
+0.0752001 -0.0537105 -0.150391
+0.0752001 0.0556635 -0.150391
+-0.0439498 -0.165039 -0.0507812
+0.0752001 -0.0537105 -0.150391
+-0.0439498 -0.0537105 -0.150391
+-0.0439498 -0.165039 -0.0507812
+0.0752001 -0.165039 -0.0507812
+0.0752001 -0.0537105 -0.150391
+-0.0439498 -0.165039 0.0507812
+0.0752001 -0.165039 -0.0507812
+-0.0439498 -0.165039 -0.0507812
+-0.0439498 -0.165039 0.0507812
+0.0752001 -0.165039 0.0507812
+0.0752001 -0.165039 -0.0507812
+-0.0439498 -0.0537105 0.150391
+0.0752001 -0.165039 0.0507812
+-0.0439498 -0.165039 0.0507812
+-0.0439498 -0.0537105 0.150391
+0.0752001 -0.0537105 0.150391
+0.0752001 -0.165039 0.0507812
+-0.0439498 0.0556635 0.150391
+0.0752001 -0.0537105 0.150391
+-0.0439498 -0.0537105 0.150391
+-0.0439498 0.0556635 0.150391
+0.0752001 0.0556635 0.150391
+0.0752001 -0.0537105 0.150391
+-0.0439498 0.165039 0.0507812
+0.0752001 0.0556635 0.150391
+-0.0439498 0.0556635 0.150391
+-0.0439498 0.165039 0.0507812
+0.0752001 0.165039 0.0507812
+0.0752001 0.0556635 0.150391
+-0.0439498 0.165039 -0.0507812
+0.0752001 0.165039 0.0507812
+-0.0439498 0.165039 0.0507812
+-0.0439498 0.165039 -0.0507812
+0.0752001 0.165039 -0.0507812
+0.0752001 0.165039 0.0507812
+-0.13379 0.0244135 -0.0605469
+-0.0439498 0.165039 -0.0507812
+-0.13379 0.0751955 -0.0195312
+-0.13379 0.0244135 -0.0605469
+-0.0439498 0.0556635 -0.150391
+-0.0439498 0.165039 -0.0507812
+-0.13379 -0.0244145 -0.0605469
+-0.0439498 0.0556635 -0.150391
+-0.13379 0.0244135 -0.0605469
+-0.13379 -0.0244145 -0.0605469
+-0.0439498 -0.0537105 -0.150391
+-0.0439498 0.0556635 -0.150391
+-0.13379 -0.0751955 -0.0195312
+-0.0439498 -0.0537105 -0.150391
+-0.13379 -0.0244145 -0.0605469
+-0.13379 -0.0751955 -0.0195312
+-0.0439498 -0.165039 -0.0507812
+-0.0439498 -0.0537105 -0.150391
+-0.13379 -0.0751955 0.0195312
+-0.0439498 -0.165039 -0.0507812
+-0.13379 -0.0751955 -0.0195312
+-0.13379 -0.0751955 0.0195312
+-0.0439498 -0.165039 0.0507812
+-0.0439498 -0.165039 -0.0507812
+-0.13379 -0.0244145 0.0605469
+-0.0439498 -0.165039 0.0507812
+-0.13379 -0.0751955 0.0195312
+-0.13379 -0.0244145 0.0605469
+-0.0439498 -0.0537105 0.150391
+-0.0439498 -0.165039 0.0507812
+-0.13379 0.0244135 0.0605469
+-0.0439498 -0.0537105 0.150391
+-0.13379 -0.0244145 0.0605469
+-0.13379 0.0244135 0.0605469
+-0.0439498 0.0556635 0.150391
+-0.0439498 -0.0537105 0.150391
+-0.13379 0.0751955 0.0195312
+-0.0439498 0.0556635 0.150391
+-0.13379 0.0244135 0.0605469
+-0.13379 0.0751955 -0.0195312
+-0.0439498 0.165039 0.0507812
+-0.13379 0.0751955 0.0195312
+-0.13379 0.0751955 0.0195312
+-0.0439498 0.165039 0.0507812
+-0.0439498 0.0556635 0.150391
+-0.13379 0.0751955 -0.0195312
+-0.0439498 0.165039 -0.0507812
+-0.0439498 0.165039 0.0507812
+0.16504 0.0751955 -0.0195312
+0.16504 0.0244135 0.0605469
+0.16504 0.0751955 0.0195312
+0.16504 0.0751955 -0.0195312
+0.16504 -0.0244145 0.0605469
+0.16504 0.0244135 0.0605469
+0.16504 0.0751955 -0.0195312
+0.16504 -0.0751955 0.0195312
+0.16504 -0.0244145 0.0605469
+0.16504 0.0751955 -0.0195312
+0.16504 -0.0751955 -0.0195312
+0.16504 -0.0751955 0.0195312
+0.16504 0.0751955 -0.0195312
+0.16504 -0.0244145 -0.0605469
+0.16504 -0.0751955 -0.0195312
+0.16504 0.0751955 -0.0195312
+0.16504 0.0244135 -0.0605469
+0.16504 -0.0244145 -0.0605469
+-0.13379 0.0751955 0.0195312
+-0.13379 0.0244135 -0.0605469
+-0.13379 0.0751955 -0.0195312
+-0.13379 0.0751955 0.0195312
+-0.13379 -0.0244145 -0.0605469
+-0.13379 0.0244135 -0.0605469
+-0.13379 0.0751955 0.0195312
+-0.13379 -0.0751955 -0.0195312
+-0.13379 -0.0244145 -0.0605469
+-0.13379 0.0751955 0.0195312
+-0.13379 -0.0751955 0.0195312
+-0.13379 -0.0751955 -0.0195312
+-0.13379 0.0751955 0.0195312
+-0.13379 -0.0244145 0.0605469
+-0.13379 -0.0751955 0.0195312
+-0.13379 0.0751955 0.0195312
+-0.13379 0.0244135 0.0605469
+-0.13379 -0.0244145 0.0605469
+numsurf 60
+SURF 0x0
+mat 5
+refs 3
+1 0.862745 0.780392
+0 0.835294 1
+2 1 0.835294
+SURF 0x0
+mat 5
+refs 3
+4 0.788235 0.85098
+3 0.835294 1
+5 0.862745 0.780392
+SURF 0x0
+mat 5
+refs 3
+7 0.788235 0.85098
+6 0.670588 1
+8 0.835294 1
+SURF 0x0
+mat 5
+refs 3
+10 0.713726 0.85098
+9 0.670588 1
+11 0.788235 0.85098
+SURF 0x0
+mat 5
+refs 3
+13 0.713726 0.85098
+12 0.501961 0.835294
+14 0.670588 1
+SURF 0x0
+mat 5
+refs 3
+16 0.639216 0.780392
+15 0.501961 0.835294
+17 0.713726 0.85098
+SURF 0x0
+mat 5
+refs 3
+19 0.639216 0.780392
+18 0.501961 0.662745
+20 0.501961 0.835294
+SURF 0x0
+mat 5
+refs 3
+22 0.639216 0.717647
+21 0.501961 0.662745
+23 0.639216 0.780392
+SURF 0x0
+mat 5
+refs 3
+25 0.639216 0.717647
+24 0.670588 0.498039
+26 0.501961 0.662745
+SURF 0x0
+mat 5
+refs 3
+28 0.713726 0.647059
+27 0.670588 0.498039
+29 0.639216 0.717647
+SURF 0x0
+mat 5
+refs 3
+31 0.713726 0.647059
+30 0.835294 0.498039
+32 0.670588 0.498039
+SURF 0x0
+mat 5
+refs 3
+34 0.788235 0.647059
+33 0.835294 0.498039
+35 0.713726 0.647059
+SURF 0x0
+mat 5
+refs 3
+37 0.788235 0.647059
+36 1 0.662745
+38 0.835294 0.498039
+SURF 0x0
+mat 5
+refs 3
+40 0.862745 0.717647
+39 1 0.662745
+41 0.788235 0.647059
+SURF 0x0
+mat 5
+refs 3
+43 0.862745 0.717647
+42 1 0.835294
+44 1 0.662745
+SURF 0x0
+mat 5
+refs 3
+46 0.862745 0.780392
+45 1 0.835294
+47 0.862745 0.717647
+SURF 0x0
+mat 5
+refs 3
+49 1 0.835294
+48 0.835294 1
+50 1 0.835294
+SURF 0x0
+mat 5
+refs 3
+52 0.835294 1
+51 0.835294 1
+53 1 0.835294
+SURF 0x0
+mat 5
+refs 3
+55 0.835294 1
+54 0.670588 1
+56 0.835294 1
+SURF 0x0
+mat 5
+refs 3
+58 0.670588 1
+57 0.670588 1
+59 0.835294 1
+SURF 0x0
+mat 5
+refs 3
+61 0.670588 1
+60 0.501961 0.835294
+62 0.670588 1
+SURF 0x0
+mat 5
+refs 3
+64 0.501961 0.835294
+63 0.501961 0.835294
+65 0.670588 1
+SURF 0x0
+mat 5
+refs 3
+67 0.501961 0.835294
+66 0.501961 0.662745
+68 0.501961 0.835294
+SURF 0x0
+mat 5
+refs 3
+70 0.501961 0.662745
+69 0.501961 0.662745
+71 0.501961 0.835294
+SURF 0x0
+mat 5
+refs 3
+73 0.501961 0.662745
+72 0.670588 0.498039
+74 0.501961 0.662745
+SURF 0x0
+mat 5
+refs 3
+76 0.670588 0.498039
+75 0.670588 0.498039
+77 0.501961 0.662745
+SURF 0x0
+mat 5
+refs 3
+79 0.670588 0.498039
+78 0.835294 0.498039
+80 0.670588 0.498039
+SURF 0x0
+mat 5
+refs 3
+82 0.835294 0.498039
+81 0.835294 0.498039
+83 0.670588 0.498039
+SURF 0x0
+mat 5
+refs 3
+85 0.835294 0.498039
+84 1 0.662745
+86 0.835294 0.498039
+SURF 0x0
+mat 5
+refs 3
+88 1 0.662745
+87 1 0.662745
+89 0.835294 0.498039
+SURF 0x0
+mat 5
+refs 3
+91 1 0.662745
+90 1 0.835294
+92 1 0.662745
+SURF 0x0
+mat 5
+refs 3
+94 1 0.835294
+93 1 0.835294
+95 1 0.662745
+SURF 0x0
+mat 5
+refs 3
+97 0.498039 0.835294
+96 0.286275 0.85098
+98 0.360784 0.780392
+SURF 0x0
+mat 5
+refs 3
+100 0.333333 1
+99 0.286275 0.85098
+101 0.498039 0.835294
+SURF 0x0
+mat 5
+refs 3
+103 0.333333 1
+102 0.211765 0.85098
+104 0.286275 0.85098
+SURF 0x0
+mat 5
+refs 3
+106 0.168627 1
+105 0.211765 0.85098
+107 0.333333 1
+SURF 0x0
+mat 5
+refs 3
+109 0.168627 1
+108 0.137255 0.780392
+110 0.211765 0.85098
+SURF 0x0
+mat 5
+refs 3
+112 0 0.835294
+111 0.137255 0.780392
+113 0.168627 1
+SURF 0x0
+mat 5
+refs 3
+115 0 0.835294
+114 0.137255 0.717647
+116 0.137255 0.780392
+SURF 0x0
+mat 5
+refs 3
+118 0 0.662745
+117 0.137255 0.717647
+119 0 0.835294
+SURF 0x0
+mat 5
+refs 3
+121 0 0.662745
+120 0.211765 0.647059
+122 0.137255 0.717647
+SURF 0x0
+mat 5
+refs 3
+124 0.168627 0.498039
+123 0.211765 0.647059
+125 0 0.662745
+SURF 0x0
+mat 5
+refs 3
+127 0.168627 0.498039
+126 0.286275 0.647059
+128 0.211765 0.647059
+SURF 0x0
+mat 5
+refs 3
+130 0.333333 0.498039
+129 0.286275 0.647059
+131 0.168627 0.498039
+SURF 0x0
+mat 5
+refs 3
+133 0.333333 0.498039
+132 0.360784 0.717647
+134 0.286275 0.647059
+SURF 0x0
+mat 5
+refs 3
+136 0.498039 0.662745
+135 0.360784 0.780392
+137 0.360784 0.717647
+SURF 0x0
+mat 5
+refs 3
+139 0.498039 0.662745
+138 0.360784 0.717647
+140 0.333333 0.498039
+SURF 0x0
+mat 5
+refs 3
+142 0.498039 0.835294
+141 0.360784 0.780392
+143 0.498039 0.662745
+SURF 0x0
+mat 5
+refs 3
+145 0.788235 0.647059
+144 0.862745 0.780392
+146 0.862745 0.717647
+SURF 0x0
+mat 5
+refs 3
+148 0.713726 0.647059
+147 0.862745 0.780392
+149 0.788235 0.647059
+SURF 0x0
+mat 5
+refs 3
+151 0.639216 0.717647
+150 0.862745 0.780392
+152 0.713726 0.647059
+SURF 0x0
+mat 5
+refs 3
+154 0.639216 0.780392
+153 0.862745 0.780392
+155 0.639216 0.717647
+SURF 0x0
+mat 5
+refs 3
+157 0.713726 0.85098
+156 0.862745 0.780392
+158 0.639216 0.780392
+SURF 0x0
+mat 5
+refs 3
+160 0.788235 0.85098
+159 0.862745 0.780392
+161 0.713726 0.85098
+SURF 0x0
+mat 5
+refs 3
+163 0.286275 0.85098
+162 0.360784 0.717647
+164 0.360784 0.780392
+SURF 0x0
+mat 5
+refs 3
+166 0.211765 0.85098
+165 0.360784 0.717647
+167 0.286275 0.85098
+SURF 0x0
+mat 5
+refs 3
+169 0.137255 0.780392
+168 0.360784 0.717647
+170 0.211765 0.85098
+SURF 0x0
+mat 5
+refs 3
+172 0.137255 0.717647
+171 0.360784 0.717647
+173 0.137255 0.780392
+SURF 0x0
+mat 5
+refs 3
+175 0.211765 0.647059
+174 0.360784 0.717647
+176 0.137255 0.717647
+SURF 0x0
+mat 5
+refs 3
+178 0.286275 0.647059
+177 0.360784 0.717647
+179 0.211765 0.647059
+kids 0
+OBJECT poly
+name "NoName"
+loc 0.265802 -0.0955811 0
+numvert 3
+-2.76931 0.536668 -0.245566
+-2.76931 0.536668 0.243567
+-2.54239 0.599609 0.243567
+numsurf 1
+SURF 0x0
+mat 0
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+loc 0.265802 -0.0955811 0
+numvert 3
+-2.76931 0.536668 -0.245566
+-2.54239 0.599609 0.243567
+-2.54239 0.599609 -0.245566
+numsurf 1
+SURF 0x0
+mat 0
+refs 3
+1 0 0
+2 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "NoName"
+loc 0.364036 -0.0955811 0
+numvert 3
+-2.64062 0.599609 0
+-2.75977 0.599609 0
+-2.84961 0.689453 0
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+loc 0.364036 -0.0955811 0
+numvert 3
+-2.64062 0.599609 0
+-2.84961 0.689453 0
+-2.88086 0.630859 0
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+loc 0.364036 -0.0955811 0
+numvert 3
+-2.64062 0.599609 0
+-2.88086 0.630859 0
+-2.88086 0.539062 0
+numsurf 1
+SURF 0x0
+mat 9
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NoName"
+loc 0.364036 -0.0955811 0
+numvert 3
+-2.64062 0.599609 0
+-2.88086 0.630859 0
+-2.88086 0.539062 0
+numsurf 1
+SURF 0x20
+mat 9
+refs 3
+1 0 0
+0 0 0
+2 0 0
+kids 0
