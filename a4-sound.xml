@@ -12,13 +12,32 @@
    <volume>
     <property>/engines/engine/prop-thrust</property>
     <type>ln</type>
-    <factor>0.1</factor>
+    <factor>0.15</factor>
    </volume>
    <pitch>
     <property>/engines/engine/prop-thrust</property>
     <type>log</type>
-    <factor>0.15</factor>
+    <factor>0.12</factor>
     <offset>0.9</offset>
+   </pitch>
+  </engine>
+
+  <engine>
+   <name>whine</name>
+   <path>Sounds/whine.wav</path>
+   <mode>looped</mode>
+   <property>/engines/engine/running</property>
+   <volume>
+    <property>/engines/engine/prop-thrust</property>
+    <type>sqrt</type>
+    <factor>-0.004</factor>
+    <offset>0.5</offset>
+   </volume>
+   <pitch>
+    <property>/engines/engine/prop-thrust</property>
+    <type>ln</type>
+    <factor>-0.027</factor>
+    <offset>2.0</offset>
    </pitch>
   </engine>
 
@@ -45,6 +64,11 @@
    <mode>in-transit</mode>
    <path>Sounds/gear.wav</path>
    <property>/gear/gear[0]/position-norm</property>
+   <pitch>
+    <internal>dt_play</internal>
+    <offset>1.0</offset>
+    <factor>-0.001</factor>
+   </pitch>
   </gear>
 
   <gear>
@@ -53,9 +77,16 @@
    <condition>
     <greather-than>
      <property>/gear/gear[0]/position-norm</property>
-     <value>0.9</value>
+     <value>0.01</value>
     </greather-than>
+    <less-than>
+     <property>/gear/gear[0]/position-norm</property>
+     <value>0.1</value>
+    </less-than>
    </condition>
+   <volume>
+    <offset>0.3</offset>
+   </volume>
   </gear>
 
   <squeal>
@@ -71,15 +102,20 @@
    <volume>
     <property>/velocities/speed-down-fps</property>
     <factor>0.05</factor>
-    <min>0.1</min>
    </volume>
    <volume>
     <property>/velocities/airspeed-kt</property>
     <factor>0.01</factor>
-    <offset>0.4</offset>
+   </volume>
+   <volume>
+    <internal>dt_stop</internal>
+    <factor>0.05</factor>
+    <max>1.0</max>
    </volume>
    <pitch>
-    <offset>1.25</offset>
+    <property>/velocities/airspeed-kt</property>
+    <factor>0.0025</factor>
+    <offset>1.2</offset>
    </pitch>
   </squeal>
  
