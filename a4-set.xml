@@ -123,6 +123,9 @@ the flight data model, instrument panel, and external 3D model.
   </fuel>
  </consumables>
 
+ <input> 
+   <keyboard include="../../Input/Keyboard/carrier-bindings.xml"/>
+ </input> 
 </PropertyList>
 
 

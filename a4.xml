@@ -91,6 +91,29 @@
   <control-speed control="BRAKE" transition-time="2"/>
 </gear>
 
+<!--
+3.11914 -0.706683 0
+
+5deg oben
+
+1.93595 lang
+
+object 'poly'
+-->
+
+<!-- Hook -->
+<hook x="-3.12" y="0.0" z="-0.70" length="1.94" down-angle="80" up-angle="-5">
+  <control-input axis="/controls/gear/tailhook" control="HEXTEND"/>
+  <control-speed control="HEXTEND" transition-time="4"/>
+</hook>
+
+<!-- Launch-bar --> 
+<launchbar x="2.68" y="0.0" z="-1.60" length="0.85">
+  <control-input axis="/controls/gear/launchbar" control="LEXTEND"/>
+  <control-speed control="LEXTEND" transition-time="1"/>
+</launchbar>
+
+
 <!-- A4-M had 800 gallons of in-fuselage fuel capacity in three tanks,
      one in each wing and one behind the cockpit. TA-4F had "only" 100
      gallons in the fuselage due to the second seat, so the wings must
