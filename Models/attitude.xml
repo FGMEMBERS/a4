@@ -40,7 +40,7 @@
  <animation>
   <type>translate</type>
   <object-name>turnrate</object-name>
-  <property>/steam/turn-rate</property>
+  <property>/instrumentation/turn-indicator/indicated-turn-rate</property>
   <factor>0.005</factor>
   <min-m>-0.01</min-m>
   <max-m>0.01</max-m>
