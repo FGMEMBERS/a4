@@ -59,6 +59,10 @@ the flight data model, instrument panel, and external 3D model.
    <too-fast-deg>12.0</too-fast-deg>
   </aoa-indexer>
 
+  <hud>
+   <enable3d>false</enable3d>
+  </hud>
+
  </sim>
 
  <autopilot>
