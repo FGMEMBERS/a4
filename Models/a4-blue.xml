@@ -70,6 +70,46 @@
   </condition>
  </animation>
 
+ <animation>
+  <type>select</type>
+  <object-name>RightSlats</object-name>
+  <object-name>LeftSlats</object-name>
+  <condition>
+   <equals>
+    <property>/controls/slats</property>
+    <value>1</value>
+   </equals>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>LeftGear</object-name>
+  <object-name>LeftGearStrut</object-name>
+  <condition>
+   <not>
+   <equals>
+    <property>/gear/gear[1]/position-norm</property>
+    <value>0</value>
+   </equals>
+   </not>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>RightGear</object-name>
+  <object-name>RightGearStrut</object-name>
+  <condition>
+   <not>
+   <equals>
+    <property>/gear/gear[2]/position-norm</property>
+    <value>0</value>
+   </equals>
+   </not>
+  </condition>
+ </animation>
+
  <!-- Object Movement -->
 
  <animation>

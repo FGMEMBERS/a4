@@ -1,5 +1,5 @@
 AC3Db
-MATERIAL "ac3dmat12" rgb 0.266667 0.266667 0.266667  amb 0.2 0.2 0.2  emis 0 0 0  spec 0.5 0.5 0.5  shi 10  trans 0
+MATERIAL "ac3dmat1" rgb 1 1 1  amb 0.2 0.2 0.2  emis 0 0 0  spec 0.5 0.5 0.5  shi 10  trans 0
 MATERIAL "ac3dmat1" rgb 1 1 1  amb 0.2 0.2 0.2  emis 0.1 0.1 0.1  spec 0.5 0.5 0.5  shi 10  trans 0
 OBJECT world
 kids 10
@@ -1571,6 +1571,9 @@ kids 0
 OBJECT poly
 name "OuterBezel"
 loc 0.0431883 -0.000170899 0.000918925
+texture "attitude-detail.rgb"
+texrep 0.02 0.02
+texoff -0.37 -0.76
 numvert 30
 0.00080391 0.0630049 -0.0637196
 0.00080391 0.0630049 0.0637196
@@ -1606,171 +1609,171 @@ numsurf 28
 SURF 0x0
 mat 0
 refs 3
-7 0 0
-0 0 0
-14 0 0
-SURF 0x0
-mat 0
-refs 3
-14 0 0
-0 0 0
-6 0 0
-SURF 0x0
-mat 0
-refs 3
-6 0 0
-0 0 0
-1 0 0
-SURF 0x0
-mat 0
-refs 3
-6 0 0
-1 0 0
-15 0 0
-SURF 0x0
-mat 0
-refs 3
-15 0 0
-1 0 0
-16 0 0
-SURF 0x0
-mat 0
-refs 3
-16 0 0
-1 0 0
-5 0 0
-SURF 0x0
-mat 0
-refs 3
-4 0 0
-1 0 0
-2 0 0
-SURF 0x0
-mat 0
-refs 3
-4 0 0
-2 0 0
-17 0 0
-SURF 0x0
-mat 0
-refs 3
-17 0 0
-2 0 0
-18 0 0
-SURF 0x0
-mat 0
-refs 3
-18 0 0
-2 0 0
-13 0 0
-SURF 0x0
-mat 0
-refs 3
-2 0 0
-3 0 0
-12 0 0
-SURF 0x0
-mat 0
-refs 3
-12 0 0
-3 0 0
-11 0 0
-SURF 0x0
-mat 0
-refs 3
-11 0 0
-3 0 0
-10 0 0
-SURF 0x0
-mat 0
-refs 3
-10 0 0
-3 0 0
-9 0 0
-SURF 0x0
-mat 0
-refs 3
-3 0 0
-0 0 0
-8 0 0
-SURF 0x0
-mat 0
-refs 3
-4 0 0
-5 0 0
-1 0 0
-SURF 0x0
-mat 0
-refs 3
-13 0 0
-2 0 0
-12 0 0
-SURF 0x0
-mat 0
-refs 3
-9 0 0
-3 0 0
-8 0 0
-SURF 0x0
-mat 0
-refs 3
+7 0.174901 0.823572
 0 0 1
-7 1 0.367347
-21 0.625 0
+14 0.319532 0.922123
 SURF 0x0
 mat 0
 refs 3
-21 0 0
-8 0 0
-0 0 0
+14 0.319532 0.922123
+0 0 1
+6 0.490139 0.95673
+SURF 0x0
+mat 0
+refs 3
+6 0.490139 0.95673
+0 0 1
+1 1 1
+SURF 0x0
+mat 0
+refs 3
+6 0.490139 0.95673
+1 1 1
+15 0.660746 0.922123
+SURF 0x0
+mat 0
+refs 3
+15 0.660746 0.922123
+1 1 1
+16 0.805378 0.823572
+SURF 0x0
+mat 0
+refs 3
+16 0.805378 0.823572
+1 1 1
+5 0.902018 0.67608
+SURF 0x0
+mat 0
+refs 3
+4 0.935954 0.502101
+1 1 1
+2 1 0
+SURF 0x0
+mat 0
+refs 3
+4 0.935954 0.502101
+2 1 0
+17 0.902018 0.328122
+SURF 0x0
+mat 0
+refs 3
+17 0.902018 0.328122
+2 1 0
+18 0.805378 0.18063
+SURF 0x0
+mat 0
+refs 3
+18 0.805378 0.18063
+2 1 0
+13 0.660746 0.0820778
+SURF 0x0
+mat 0
+refs 3
+2 1 0
+3 0 0
+12 0.490139 0.0474726
+SURF 0x0
+mat 0
+refs 3
+12 0.490139 0.0474726
+3 0 0
+11 0.319532 0.0820778
+SURF 0x0
+mat 0
+refs 3
+11 0.319532 0.0820778
+3 0 0
+10 0.174901 0.18063
+SURF 0x0
+mat 0
+refs 3
+10 0.174901 0.18063
+3 0 0
+9 0.0782601 0.328122
+SURF 0x0
+mat 0
+refs 3
+3 0 0
+0 0 1
+8 0.0443247 0.502101
+SURF 0x0
+mat 0
+refs 3
+4 0.935954 0.502101
+5 0.902018 0.67608
+1 1 1
+SURF 0x0
+mat 0
+refs 3
+13 0.660746 0.0820778
+2 1 0
+12 0.490139 0.0474726
+SURF 0x0
+mat 0
+refs 3
+9 0.0782601 0.328122
+3 0 0
+8 0.0443247 0.502101
+SURF 0x0
+mat 0
+refs 3
+7 0.174901 0.823572
+21 0.0782601 0.67608
+0 0 1
+SURF 0x0
+mat 0
+refs 3
+21 0.0782601 0.67608
+8 0.0443247 0.502101
+0 0 1
 SURF 0x0
 mat 0
 refs 3
 25 0 0
-22 1 0
+22 0 0
 24 0 1
 SURF 0x0
 mat 0
 refs 3
-22 1 0
-23 1 1
+22 0 0
+23 0 1
 24 0 1
 SURF 0x0
 mat 0
 refs 3
-26 0 0
+26 1 0
 29 1 0
-27 0 1
+27 1 1
 SURF 0x0
 mat 0
 refs 3
 29 1 0
 28 1 1
-27 0 1
+27 1 1
 SURF 0x0
 mat 0
 refs 3
 24 0 1
-23 0 0
+23 0 1
 28 1 1
 SURF 0x0
 mat 0
 refs 3
 28 1 1
-23 0 0
-27 1 0
+23 0 1
+27 1 1
 SURF 0x0
 mat 0
 refs 3
-25 1 1
-22 1 0
-29 0 1
+25 0 0
+29 1 0
+22 0 0
 SURF 0x0
 mat 0
 refs 3
-29 0 1
-22 1 0
-26 0 0
+29 1 0
+26 1 0
+22 0 0
 kids 0
 OBJECT poly
 name "rollarrows"
