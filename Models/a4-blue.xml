@@ -113,6 +113,16 @@
  <animation>
   <type>select</type>
   <object-name>RightFlap</object-name>
+  <condition>
+   <greater-than>
+    <property>/surface-positions/flap-pos-norm</property>
+    <value>0.01</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
   <object-name>LeftFlap</object-name>
   <condition>
    <greater-than>
