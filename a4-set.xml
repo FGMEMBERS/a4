@@ -89,6 +89,22 @@ the flight data model, instrument panel, and external 3D model.
    <max-lb>1000</max-lb>
   </weight>
 
+  <help>
+   <title>Douglas A4 Skyhawk</title>
+   <key>
+     <name>C</name>
+     <desc>catapult launch command</desc>
+   </key>
+   <key>
+     <name>L</name>
+     <desc>carrier launch-bar engage</desc>
+   </key>
+   <key>
+     <name>o/O</name>
+     <desc>hook up/down</desc>
+   </key>
+  </help>
+
  </sim>
 
  <autopilot>
