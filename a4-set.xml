@@ -20,12 +20,6 @@ the flight data model, instrument panel, and external 3D model.
   <aero>a4</aero>
   <fuel-fraction>1.0</fuel-fraction>
 
-  <systems>
-   <electrical>
-    <path>Aircraft/Generic/generic-electrical.xml</path>
-   </electrical>
-  </systems> 
- 
   <sound>
    <path>Aircraft/a4/a4-sound.xml</path>
   </sound>
