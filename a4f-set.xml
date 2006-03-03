@@ -11,14 +11,14 @@ the flight data model, instrument panel, and external 3D model.
 <PropertyList>
  <sim>
 
-  <description>Douglas A4 Skyhawk (YASim)</description>
-  <author>Lewis Magruder, Dean Baunton, Jim Wilson, Andy Ross</author>
+  <description>Douglas A4F Skyhawk (YASim)</description>
+  <author>Lewis Magruder, Dean Baunton, Jim Wilson, Andy Ross, Vivian Meazza</author>
 
   <virtual-cockpit archive="y">true</virtual-cockpit>
 
   <flight-model>yasim</flight-model>
-  <aero>a4</aero>
-  <fuel-fraction>1.0</fuel-fraction>
+  <aero>a4f</aero>
+  <fuel-fraction>0.25</fuel-fraction>
 
   <sound>
    <path>Aircraft/a4/a4-sound.xml</path>
@@ -29,15 +29,19 @@ the flight data model, instrument panel, and external 3D model.
   </panel>
 
   <model>
-   <path>Aircraft/a4/Models/a4-blue.xml</path>
+   <path>Aircraft/a4/Models/a4f-blue.xml</path>
   </model>
 
+	<submodels> 
+        <serviceable type="bool">true</serviceable>
+        <path>Aircraft/a4/Models/a4-submodels.xml</path>
+	</submodels>
   <view n="0">
    <internal archive="y">true</internal>
    <config>
     <x-offset-m archive="y">0</x-offset-m>
-    <y-offset-m archive="y">0.82</y-offset-m>
-    <z-offset-m archive="y">-2.80</z-offset-m>
+    <y-offset-m archive="y">0.87</y-offset-m>
+    <z-offset-m archive="y">-2.86</z-offset-m>
     <pitch-offset-deg>-17</pitch-offset-deg>
     <default-field-of-view-deg>60</default-field-of-view-deg>
    </config>
@@ -47,17 +51,17 @@ the flight data model, instrument panel, and external 3D model.
   </current-view>
 
   <aoa-indexer>
-   <too-slow-deg>15.0</too-slow-deg>
-   <slow-deg>14.0</slow-deg>
-   <fast-deg>13.0</fast-deg>
-   <too-fast-deg>12.0</too-fast-deg>
+   <too-slow-deg>16.5</too-slow-deg>
+   <slow-deg>15.5</slow-deg>
+   <fast-deg>14.5</fast-deg>
+   <too-fast-deg>13.5</too-fast-deg>
   </aoa-indexer>
 
   <hud>
    <enable3d>false</enable3d>
   </hud>
 
-  <weight n="0">
+  <!--<weight n="0">
    <name>Left Outboard</name>
    <weight-lb>0</weight-lb>
    <max-lb>1000</max-lb>
@@ -81,10 +85,10 @@ the flight data model, instrument panel, and external 3D model.
    <name>Right Outboard</name>
    <weight-lb>0</weight-lb>
    <max-lb>1000</max-lb>
-  </weight>
+  </weight>-->
 
   <help>
-   <title>Douglas A4 Skyhawk</title>
+   <title>Douglas A4F Skyhawk</title>
    <key>
      <name>C</name>
      <desc>catapult launch command</desc>
@@ -96,6 +100,14 @@ the flight data model, instrument panel, and external 3D model.
    <key>
      <name>o/O</name>
      <desc>hook up/down</desc>
+   </key>
+	 <key>
+     <name>CRL B</name>
+     <desc>toggle airbrakes</desc>
+   </key>
+	 <key>
+     <name>CRL K</name>
+     <desc>toggle spoilers</desc>
    </key>
   </help>
 
@@ -115,20 +127,6 @@ the flight data model, instrument panel, and external 3D model.
      <max-aileron type="float">0.1</max-aileron>
    </config>
  </autopilot>
- 
- <!-- *************** set properties **********************-->
-	<!--parking brake ON -->
-	<!-- nosewheel lock OFF -->
-	<controls>
-		<gear>
-			<brake-parking>1</brake-parking>
-		</gear>
-		<engines>
-			<engine>
-				<throttle>0</throttle>
-			</engine>
-		</engines>
-	</controls>
 
  <consumables>
   <fuel>
@@ -146,10 +144,69 @@ the flight data model, instrument panel, and external 3D model.
    </tank>
   </fuel>
  </consumables>
+ 
+ <!-- *************** set properties **********************-->
+	<!--parking brake ON -->
+	<controls>
+		<gear>
+			<brake-parking>1</brake-parking>
+		</gear>
+		<engines>
+			<engine>
+				<throttle>0</throttle>
+			</engine>
+		</engines>
+		<flight>
+			<speedbrake type="bool">0</speedbrake>
+		</flight>			
+	</controls>
+
 
  <input> 
-   <keyboard include="../../Input/Keyboard/carrier-bindings.xml"/>
+	 <keyboard include="../../Input/Keyboard/carrier-bindings.xml">
+	 <!--<keyboard>-->
+	 <key n="2"> 
+          <name>Ctrl-B</name>
+          <desc>Toggle speedbrake.</desc>
+          <binding> 
+            <command>property-toggle</command>
+            <property>controls/flight/speedbrake</property>
+          </binding>
+        </key>
+	 <key n="11">
+		<name>Ctrl-K</name>
+		<desc>Toggle spoiler.</desc>
+          <binding> 
+            <command>property-toggle</command>
+            <property>controls/flight/spoiler</property>
+          </binding>
+    </key>
+		</keyboard>
+<!--	 <key n="107">
+  <name>k</name>
+  <desc>Increase spoilers.</desc>
+  <binding>
+    <command>property-assign</command>
+            <property>null</property>
+            <value type="double">0</value>
+          
+  </binding>
+ </key>-->
+ 
  </input> 
+ 
+ <!-- weights -->
+    <yasim> 
+      <weights> 
+        <pilot-lb type="double">200</pilot-lb>
+      </weights>
+    </yasim>
+ 
+ <nasal>
+		<a4>
+			<file>Aircraft/a4/Models/a4.nas</file>
+		</a4>
+	</nasal>
 </PropertyList>
 
 
