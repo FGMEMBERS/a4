@@ -312,4 +312,137 @@ headShake = func {
 headShake();
 # ======================================= end Pilot G stuff ============================
 
+# ================================== Chute Stuff ===========================================
+
+chute_control = props.globals.getNode("controls/flight/drag-chute/state", 1);
+chute_state = props.globals.getNode("surface-positions/drag-chute/state", 1);
+chute_release = props.globals.getNode("controls/flight/drag-chute/release", 1);
+chute_lever = props.globals.getNode("controls/flight/drag-chute/lever", 1);
+chute_weight = props.globals.getNode("yasim/weights/drag-chute", 1);
+aircraft_speed = props.globals.getNode("velocities/airspeed-kt", 1);
+aircraft_pitch_deg = props.globals.getNode("orientation/pitch-deg", 1);
+aircraft_roll_deg = props.globals.getNode("orientation/roll-deg", 1);
+aircraft_yaw_deg = props.globals.getNode("orientation/side-slip-deg", 1);
+chute_pitch_deg = props.globals.getNode("orientation/chute/pitch-deg", 1);
+chute_roll_deg = props.globals.getNode("orientation/chute/roll-deg", 1);
+chute_yaw_deg = props.globals.getNode("orientation/chute/yaw-deg", 1);
+
+
+chute_control.setValue("ready");
+chute_state.setValue("ready");
+chute_release.setBoolValue(0);
+chute_lever.setBoolValue(0);
+chute_pitch_deg.setDoubleValue(0);
+chute_roll_deg.setDoubleValue(0);
+chute_yaw_deg.setDoubleValue(0);
+var wait = 2;
+var chuteyawdamp = 0;
+
+
+updateControlState = func{
+	var chutelever = chute_lever.getValue();
+	
+	if (chutelever == 1) {
+		chute_control.setValue("open");
+	}
+	
+} #end func
+		
+
+updateChuteState = func {
+  var chutecontrol = chute_control.getValue();
+	var chutestate = chute_state.getValue();
+	var chuterelease = chute_release.getValue();		
+	
+#	print ("chutecontrol " , chutecontrol , " wait " , wait ," chutestate " , chutestate , " release " ,chuterelease );
+	
+	if ( chutecontrol == "open" and chutestate == "ready" ){
+			chute_state.setValue("deployed");
+			chute_weight.setDoubleValue(1); #use for weight/drag YASim implementatiom
+			settimer(updateChuteState, wait);
+			return;
+	} elsif(chutecontrol == "open" and chutestate == "deployed" ) {
+			chute_state.setValue("opened");
+			updateOverSpeed();
+			return;
+	} elsif (chutecontrol == "open" ){
+		chute_control.setValue("ready");
+		return;
+	}
+	
+	if ( chutecontrol == "jettison" and chutestate != "ready" ){
+	    chute_release.setBoolValue(1);
+			chute_state.setValue("jettisoned");
+			chute_lever.setDoubleValue(0);
+			chute_weight.setDoubleValue(0);
+			return;
+	} elsif ( chutecontrol == "jettison" ){
+			chute_control.setValue("ready");
+			return;
+	}
+	
+	if ( chutecontrol == "repack" and chutestate == "jettisoned"){
+			chute_state.setValue("ready");
+			chute_control.setValue("ready");
+			chute_release.setBoolValue(0);
+			chute_weight.setDoubleValue(0);
+			#wait = 5;
+	} elsif (chutecontrol == "repack" and 
+					( chutestate == "deployed" or chutestate == "opened") ) {
+			chute_control.setValue("open");
+			return;
+	} elsif (chutecontrol == "repack"){
+			chute_control.setValue("ready");
+	}
+		
+} # end function
+
+
+calculateChuteAngle = func{
+
+	var aircraftpitch = aircraft_pitch_deg.getValue() ;
+	var aircraftroll = aircraft_roll_deg.getValue() ;
+	var aircraftyaw = aircraft_yaw_deg.getValue() ;
+	var n = 0.01;
+	
+#	print ("acyaw " , aircraftyaw); 
+	
+	if (aircraftyaw == nil) {aircraftyaw = 0;}
+		
+	chuteyawdamp = ( aircraftyaw * n) + ( chuteyawdamp * (1 - n));
+	
+	chute_pitch_deg.setDoubleValue(aircraftpitch * -1);
+	chute_roll_deg.setDoubleValue(aircraftroll);
+	chute_yaw_deg.setDoubleValue(chuteyawdamp);
+	settimer(calculateChuteAngle, 0);
+		
+} # end func	
+
+
+updateOverSpeed = func {
+
+	var chutestate = chute_state.getValue();
+	var speed = aircraft_speed.getValue();
+	
+ #print ("acspeed " , speed); 
+ 
+	if (speed > 210 and chutestate == "opened") {# Model Shear Pin
+			chute_control.setValue("jettison");
+			return;
+	}
+	
+	settimer(updateOverSpeed, 0.3);
+	
+} # end func
+
+
+# fire it all up
+
+calculateChuteAngle();
+setlistener( chute_lever , updateControlState);	
+setlistener( chute_control , updateChuteState);	
+
+		
+# ================================== End Chute Stuff =====================================	
+
 # end 
