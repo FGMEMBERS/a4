@@ -77,6 +77,16 @@
       <z-m> 0.83</z-m>
     </top-left>
   </panel>
+	
+	<model>
+    <path>Aircraft/a4/Models/strop.xml</path>
+		<name>New-Strop</name>
+    <offsets>
+      <x-m>-0.44</x-m>
+      <y-m>0.0</y-m>
+      <z-m>-0.54</z-m>
+    </offsets>
+  </model>
 
   <!-- Object Selection -->
 
@@ -576,7 +586,7 @@
 
   <!-- ********** launchbar stuff ************* -->
 
-  <!-- lower/raise -->
+  <!-- lower/raise
   <animation>
     <type>rotate</type>
     <object-name>Strop</object-name>
@@ -618,7 +628,7 @@
         </equals>
       </not>
     </condition>
-  </animation>
+  </animation> -->
 
   <!-- lower/raise -->
   <animation>
@@ -668,7 +678,8 @@
     <object-name>NoseWheel</object-name>
     <object-name>Lower-Leg</object-name>
     <property>gear/gear/compression-norm</property>
-    <factor>0.3</factor>
+    <factor>0.6</factor>
+		<offset-m>-0.01</offset-m>
     <axis>
       <x>0</x>
       <y>0</y>
@@ -681,7 +692,8 @@
     <object-name>LeftLowerLeg</object-name>
     <object-name>LeftWheel</object-name>
     <property>gear/gear[1]/compression-norm</property>
-    <factor>0.2</factor>
+    <factor>0.6</factor>
+		<offset-m>-0.025</offset-m>
     <axis>
       <x>0</x>
       <y>0</y>
@@ -694,7 +706,8 @@
     <object-name>RightLowerLeg</object-name>
     <object-name>RightWheel</object-name>
     <property>gear/gear[2]/compression-norm</property>
-    <factor>0.2</factor>
+    <factor>0.6</factor>
+		<offset-m>-0.025</offset-m>
     <axis>
       <x>0</x>
       <y>0</y>
