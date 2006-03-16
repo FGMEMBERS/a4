@@ -130,12 +130,14 @@ Author - Vivian Meazza
     <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
   </jet>
 
-  <!-- nose  -->
+  <!-- nose   -->
   <gear x="3.32" y="0" z="-2.25" 
         retract-time="7" 
-        compression="0.3" 
-        castering="0" 
-        sfric="1.2" dfric="0.8">
+        compression="0.7" 
+        castering="0"
+        damper="3"
+        spring="0.8"
+        sfric="1" dfric="0.8">
     <control-input axis	="/controls/flight/rudder" control="STEER" square="false"
                    src0="-1" src1="1" dst0="-0.75" dst1="0.75"/>
     <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
@@ -144,11 +146,13 @@ Author - Vivian Meazza
     <control-speed control="EXTEND" transition-time="7"/>
   </gear>
 
-  <!-- left main -->
+  <!-- left main 	-->
   <gear x="-0.78" y="1.19" z="-1.99" 
         retract-time="7" 
-        compression="0.25" 
-        sfric="1.2" dfric="0.8">
+        compression="0.75"
+        spring="0.8"
+        damper="3"
+        sfric="1" dfric="0.8">
     <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
     <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
     <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
@@ -159,8 +163,10 @@ Author - Vivian Meazza
   <!-- right main -->
   <gear x="-0.78" y="-1.19" z="-1.99"
         retract-time="7"
-        compression="0.25"
-        sfric="1.2" dfric="0.8">
+        compression="0.75"
+        spring="0.8" 
+        damper="3"
+        sfric="1" dfric="0.8">
     <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
     <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
     <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
@@ -178,8 +184,8 @@ Author - Vivian Meazza
   </hook>
 
   <!-- Launch-bar -->
-  <launchbar 	x="0.38" y="0.0" z="-0.57" 
-        length="2.32" 
+  <launchbar 	x="0.44" y="0.0" z="-0.54" 
+        length="2.29" 
         down-angle="90"
         up-angle="0"
         holdback-x="-3.12" holdback-y="0.0" holdback-z="-0.70" holdback-length="7.5">
@@ -205,7 +211,7 @@ Author - Vivian Meazza
         capacity="1750"/>
 
   <!--  Ballast and Weights -->
-  <ballast x="4.45" y="0" z="-0.55" mass="1600"/>
+  <ballast x="4.49" y="0" z="-0.55" mass="1600"/>
   <!-- cockpit -->
 
   <!-- The early A-4's had five pylons.  One 3500lbs center for a tank,
