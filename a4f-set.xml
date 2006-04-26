@@ -138,7 +138,7 @@ the flight data model, instrument panel, and external 3D model.
       <zero-pitch-throttle type="float">0.60</zero-pitch-throttle>
       <zero-pitch-trim-full-throttle type="float">0.14</zero-pitch-trim-full-throttle>
       <max-roll-deg type="float">45</max-roll-deg>
-      <max-aileron type="float">0.1</max-aileron>
+      <max-aileron type="float">0.15</max-aileron>
     </config>
   </autopilot>
 
@@ -236,7 +236,18 @@ the flight data model, instrument panel, and external 3D model.
     <a4>
       <file>Aircraft/a4/Models/a4.nas</file>
     </a4>
+		<a4-fuel> 
+        <module>fuel</module>
+        <file>Aircraft/a4/Models/fuel-aar.nas</file>
+    </a4-fuel>
   </nasal>
+
+  <instrumentation>
+    <radar>
+      <range type="int" archive="y">20</range>
+      <minimized type="bool" archive="y">false</minimized>
+    </radar>
+  </instrumentation>
 </PropertyList>
 
 
