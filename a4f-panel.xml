@@ -120,7 +120,7 @@
    <h>75</h>
   </instrument>
 
-   <instrument include="../Instruments/refuel.xml">
+   <instrument include="/Instruments/refuel.xml">
      <name>Refuel Contact Light</name>
      <x>900</x>
      <y>280</y>
