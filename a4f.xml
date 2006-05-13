@@ -123,7 +123,7 @@ Author - Vivian Meazza
   </vstab>
 
   <!-- 11,200 lb thrust Pratt & Whitney J52-P408 engine. -->
-  <jet x="0.66" y="0" z="-0.15" 
+  <jet x="0.75" y="0" z="-0.15" 
        mass="2500" thrust="11200" n1-max="106"
        exhaust-speed="2000">
     <actionpt x="0.61" y="0" z="0"/>
