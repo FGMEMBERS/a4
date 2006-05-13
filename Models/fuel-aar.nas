@@ -11,12 +11,44 @@
 
 UPDATE_PERIOD = 0.3;
 
+print ("running aar");
+
 fuelUpdate = func {
     if(getprop("/sim/freeze/fuel")) { return registerTimer(); }
 
     AllEngines = props.globals.getNode("engines").getChildren("engine");
-		Refueling = props.globals.getNode("/systems/refuel/contact");
+    Refueling = props.globals.getNode("/systems/refuel/contact-YASim");
+		AllAircraft = props.globals.getNode("ai/models").getChildren("aircraft");
+		 
+#   select all tankers which are in contact. For now we assume that it must be in 
+#		contact	with us.
+				
+		selectedTankers = [];
 		
+		foreach(a; AllAircraft) {
+			contact_node = a.getNode("refuel/contact");
+			id_node = a.getNode("id");
+			tanker_node = a.getNode("tanker");
+			
+			contact = contact_node.getValue();
+			id = id_node.getValue();
+			tanker = tanker_node.getValue();
+			
+#     print ("id " , id , " contact ", contact , " tanker " , tanker );
+						
+			if (tanker and contact) {
+				append(selectedTankers, a);
+			}
+		}
+		 
+#		print ("tankers ", size(selectedTankers) );
+
+		if ( size(selectedTankers) >= 1 ){
+			Refueling.setBoolValue(1);
+		} else {
+			Refueling.setBoolValue(0);
+		}
+		 
     # Sum the consumed fuel
     total = 0;
     foreach(e; AllEngines) {
@@ -60,7 +92,7 @@ fuelUpdate = func {
     }
 
     # Subtract fuel from tanks, set auxilliary properties.  Set out-of-fuel
-    # when any one tank is dry.
+    # when all tanks are dry.
     outOfFuel = 0;
     if(size(selectedTanks) == 0) {
         outOfFuel = 1;
@@ -152,6 +184,9 @@ initialized = 0;
 initialize = func {
     AllEngines = props.globals.getNode("engines").getChildren("engine");
     AllTanks = props.globals.getNode("consumables/fuel").getChildren("tank");
+		Refueling = props.globals.getNode("/systems/refuel/contact-YASim",1);
+		
+		Refueling.setBoolValue(0);
 
     foreach(e; AllEngines) {
         e.getNode("fuel-consumed-lbs", 1).setDoubleValue(0);
