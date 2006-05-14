@@ -37,6 +37,10 @@ the flight data model, instrument panel, and external 3D model.
       <serviceable type="bool">true</serviceable>
       <path>Aircraft/a4/Models/a4-submodels.xml</path>
     </submodels>
+		
+		<!--<ai>
+			<scenario>refueling_demo_2</scenario>
+		</ai>-->
     
     <view n="0">
       <internal archive="y">true</internal>
