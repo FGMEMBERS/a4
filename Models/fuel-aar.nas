@@ -11,13 +11,18 @@
 
 UPDATE_PERIOD = 0.3;
 
+
+initialized = 0;
+enabled = 0;
+
 print ("running aar");
 
 fuelUpdate = func {
-    if(getprop("/sim/freeze/fuel")) { return registerTimer(); }
-
+    if(getprop("/sim/freeze/fuel" or !initialised)) { return registerTimer(); }
+    
     AllEngines = props.globals.getNode("engines").getChildren("engine");
-    Refueling = props.globals.getNode("/systems/refuel/contact-YASim");
+    
+		Refueling = props.globals.getNode("/systems/refuel/contact-YASim");
 		AllAircraft = props.globals.getNode("ai/models").getChildren("aircraft");
 		 
 #   select all tankers which are in contact. For now we assume that it must be in 
@@ -25,19 +30,22 @@ fuelUpdate = func {
 				
 		selectedTankers = [];
 		
-		foreach(a; AllAircraft) {
-			contact_node = a.getNode("refuel/contact");
-			id_node = a.getNode("id");
-			tanker_node = a.getNode("tanker");
-			
-			contact = contact_node.getValue();
-			id = id_node.getValue();
-			tanker = tanker_node.getValue();
-			
-#     print ("id " , id , " contact ", contact , " tanker " , tanker );
-						
-			if (tanker and contact) {
-				append(selectedTankers, a);
+		if ( enabled ) {
+			foreach(a; AllAircraft) {
+			 print(typeof(a)) ;
+				contact_node = a.getNode("refuel/contact");
+				id_node = a.getNode("id");
+				tanker_node = a.getNode("tanker");
+				
+				contact = contact_node.getValue();
+				id = id_node.getValue();
+				tanker = tanker_node.getValue();
+				
+	#     print ("id " , id , " contact ", contact , " tanker " , tanker );
+							
+				if (tanker and contact) {
+					append(selectedTankers, a);
+				}
 			}
 		}
 		 
@@ -180,14 +188,16 @@ fuelUpdate = func {
 
 # Initalize: Make sure all needed properties are present and accounted
 # for, and that they have sane default values.
-initialized = 0;
+
 initialize = func {
     AllEngines = props.globals.getNode("engines").getChildren("engine");
     AllTanks = props.globals.getNode("consumables/fuel").getChildren("tank");
+		AI_Enabled = props.globals.getNode("sim/ai/enabled");
 		Refueling = props.globals.getNode("/systems/refuel/contact-YASim",1);
-		
+			
 		Refueling.setBoolValue(0);
-
+		enabled = AI_Enabled.getValue();
+		
     foreach(e; AllEngines) {
         e.getNode("fuel-consumed-lbs", 1).setDoubleValue(0);
         e.getNode("out-of-fuel", 1).setBoolValue(0);
