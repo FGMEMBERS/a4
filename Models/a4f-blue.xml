@@ -3,7 +3,7 @@
 <PropertyList>
 
   <path>a4-blue.ac</path>
-  
+	  
   <!-- Front panel -->
   <panel>
     <path>Aircraft/a4/a4f-panel.xml</path>
@@ -24,6 +24,18 @@
       <z-m> 0.724</z-m>
     </top-left>
   </panel>
+	
+	<!-- A4F modified panel -->
+	
+	<model>
+    <path>Aircraft/a4/Models/a4f-panel.ac</path>
+    <name>A4F Panel</name>
+    <!--<offsets>
+      <x-m>-3.27</x-m>
+      <y-m> -0.059</y-m>
+      <z-m> 0.60</z-m>
+    </offsets>-->
+  </model>
 
   <!-- Cool panel toy. -->
   <model>
@@ -60,7 +72,26 @@
     </offsets>
   </model>
 
- 
+ <model>
+    <path>Aircraft/a4/Models/beacon.xml</path>
+    <name>Beacon-Top</name>
+    <offsets>
+      <x-m>0.72</x-m>
+      <y-m>0</y-m>
+      <z-m>0.80</z-m>
+    </offsets>
+  </model>
+	
+	<model>
+    <path>Aircraft/a4/Models/beacon.xml</path>
+    <name>Beacon-Bottom</name>
+    <offsets>
+			<x-m>2.70</x-m>
+      <y-m>0</y-m>
+      <z-m>-0.61</z-m>
+			<roll-deg>180</roll-deg>
+    </offsets>
+  </model>
 
   <!-- AoA Indexer "panel" -->
 
@@ -96,8 +127,19 @@
   <!-- Object Selection -->
 
   <animation>
-    <object-name>Panel</object-name>
+    <object-name>A4F Panel</object-name>
     <object-name>Blackout</object-name>
+  </animation>
+	
+	<animation>
+    <type>select</type>
+    <object-name>Panel</object-name>
+    <condition>
+        <equals>
+          <property>sim/current-view/view-number</property>
+          <value>-1</value>
+        </equals>
+     </condition>
   </animation>
 
   <animation>

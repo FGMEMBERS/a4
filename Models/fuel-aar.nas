@@ -22,60 +22,60 @@ fuelUpdate = func {
     
     AllEngines = props.globals.getNode("engines").getChildren("engine");
     
-		Refueling = props.globals.getNode("/systems/refuel/contact-YASim");
-		AllAircraft = props.globals.getNode("ai/models").getChildren("aircraft");
-		 
+        Refueling = props.globals.getNode("/systems/refuel/contact-YASim");
+        AllAircraft = props.globals.getNode("ai/models").getChildren("aircraft");
+        Aircraft = props.globals.getNode("ai/models/aircraft");
+        
 #   select all tankers which are in contact. For now we assume that it must be in 
 #		contact	with us.
-				
-		selectedTankers = [];
-		
-		if ( enabled ) {
-			foreach(a; AllAircraft) {
-			 print(typeof(a)) ;
-				contact_node = a.getNode("refuel/contact");
-				id_node = a.getNode("id");
-				tanker_node = a.getNode("tanker");
-				
-				contact = contact_node.getValue();
-				id = id_node.getValue();
-				tanker = tanker_node.getValue();
-				
-	#     print ("id " , id , " contact ", contact , " tanker " , tanker );
-							
-				if (tanker and contact) {
-					append(selectedTankers, a);
-				}
-			}
-		}
-		 
+                
+        selectedTankers = [];
+        
+        if ( enabled ) { # check that AI Modeles are enabled, otherwise don't bother
+            foreach(a; AllAircraft) {
+                contact_node = a.getNode("refuel/contact");
+                id_node = a.getNode("id");
+                tanker_node = a.getNode("tanker");
+                
+                contact = contact_node.getValue();
+                id = id_node.getValue();
+                tanker = tanker_node.getValue();
+                
+#				print ("contact ", contact , " tanker " , tanker );
+                            
+                if (tanker and contact) {
+                    append(selectedTankers, a);
+                }
+            }
+        }
+         
 #		print ("tankers ", size(selectedTankers) );
 
-		if ( size(selectedTankers) >= 1 ){
-			Refueling.setBoolValue(1);
-		} else {
-			Refueling.setBoolValue(0);
-		}
-		 
+        if ( size(selectedTankers) >= 1 ){
+            Refueling.setBoolValue(1);
+        } else {
+            Refueling.setBoolValue(0);
+        }
+         
     # Sum the consumed fuel
     total = 0;
     foreach(e; AllEngines) {
         fuel = e.getNode("fuel-consumed-lbs", 1);
         consumed = fuel.getValue();
         if(consumed == nil) { consumed = 0; }
-				total = total + consumed;
-				fuel.setDoubleValue(0);
+                total = total + consumed;
+                fuel.setDoubleValue(0);
     }
-		
-		# Calculate fuel received
-		
-		if ( Refueling.getValue() ) {
-		    # assume max flow rate is 6000 lbs/min (for KC135)
-				received = 100 * UPDATE_PERIOD; # lbs per sec
-				total = total - received;
-			# print ( "received " , received, " total ", total);
-		}
-		
+        
+        # Calculate fuel received
+        
+        if ( Refueling.getValue() ) {
+            # assume max flow rate is 6000 lbs/min (for KC135)
+                received = 100 * UPDATE_PERIOD; # lbs per sec
+                total = total - received;
+            # print ( "received " , received, " total ", total);
+        }
+        
     # Unfortunately, FDM initialization hasn't happened when we start
     # running.  Wait for the FDM to start running before we set any output
     # properties.  This also prevents us from mucking with FDMs that
@@ -91,7 +91,7 @@ fuelUpdate = func {
     # measures to ignore them here.
     selectedTanks = [];
     foreach(t; AllTanks) {
-				cap = t.getNode("capacity-gal_us", 1).getValue();
+                cap = t.getNode("capacity-gal_us", 1).getValue();
         if(cap != nil and cap > 0.01) {
             if(t.getNode("selected", 1).getBoolValue()) {
                 append(selectedTanks, t);
@@ -101,71 +101,72 @@ fuelUpdate = func {
 
     # Subtract fuel from tanks, set auxilliary properties.  Set out-of-fuel
     # when all tanks are dry.
+        
     outOfFuel = 0;
     if(size(selectedTanks) == 0) {
         outOfFuel = 1;
     } else {
-				if ( total >= 0 ) {
-						fuelPerTank = total / size(selectedTanks);
-						foreach(t; selectedTanks) {
-								ppg = t.getNode("density-ppg").getValue();
-								lbs = t.getNode("level-gal_us").getValue() * ppg;
-								lbs = lbs - fuelPerTank;
-								if(lbs < 0) {
-										lbs = 0; 
-										# Kill the engines if we're told to, otherwise simply
-										# deselect the tank.
-										if(t.getNode("kill-when-empty", 1).getBoolValue()) { outOfFuel = 1; }
-										else { t.getNode("selected", 1).setBoolValue(0); }
-								}
-				
-							gals = lbs / ppg;
-							t.getNode("level-gal_us").setDoubleValue(gals);
-							t.getNode("level-lbs").setDoubleValue(lbs);
+                if ( total >= 0 ) {
+                        fuelPerTank = total / size(selectedTanks);
+                        foreach(t; selectedTanks) {
+                                ppg = t.getNode("density-ppg").getValue();
+                                lbs = t.getNode("level-gal_us").getValue() * ppg;
+                                lbs = lbs - fuelPerTank;
+                                if(lbs < 0) {
+                                        lbs = 0; 
+                                        # Kill the engines if we're told to, otherwise simply
+                                        # deselect the tank.
+                                        if(t.getNode("kill-when-empty", 1).getBoolValue()) { outOfFuel = 1; }
+                                        else { t.getNode("selected", 1).setBoolValue(0); }
+                                }
+                
+                            gals = lbs / ppg;
+                            t.getNode("level-gal_us").setDoubleValue(gals);
+                            t.getNode("level-lbs").setDoubleValue(lbs);
         }
-			} elsif ( total < 0 ) {
-			
-					#find the number of tanks which can accept fuel
-					
-					available = 0;
-					
-					foreach(t; selectedTanks) {
-							ppg = t.getNode("density-ppg").getValue();
-							capacity = t.getNode("capacity-gal_us").getValue() * ppg;
-							lbs = t.getNode("level-gal_us").getValue()* ppg;
-							
-							if ( lbs < capacity ) {
-									available = available + 1;
-							} # endif
-					} # end foreach
-					
-					if ( available > 0 ) {
-							
-							fuelPerTank = total / available;
-							
-							# add fuel to each available tank
-							
-							foreach(t; selectedTanks) {
-									ppg = t.getNode("density-ppg").getValue();
-									capacity = t.getNode("capacity-gal_us").getValue() * ppg;
-									lbs = t.getNode("level-gal_us").getValue() * ppg;
-									
-									if ( capacity - lbs >= fuelPerTank) {
-											lbs = lbs - fuelPerTank;
-									} elsif (capacity - lbs < fuelPerTank) {
-											lbs = capacity;
-									}# endif
-									
-									gals = lbs / ppg;
-									t.getNode("level-gal_us").setDoubleValue(gals);
-									t.getNode("level-lbs").setDoubleValue(lbs);
-							} # end foreach
-											
-					# print ("available ", available , " fuelPerTank " , fuelPerTank);
-					
-					}#	endif		
-			} # end elsif
-		} #endif
+            } elsif ( total < 0 ) {
+            
+                    #find the number of tanks which can accept fuel
+                    
+                    available = 0;
+                    
+                    foreach(t; selectedTanks) {
+                            ppg = t.getNode("density-ppg").getValue();
+                            capacity = t.getNode("capacity-gal_us").getValue() * ppg;
+                            lbs = t.getNode("level-gal_us").getValue()* ppg;
+                            
+                            if ( lbs < capacity ) {
+                                    available = available + 1;
+                            } # endif
+                    } # end foreach
+                    
+                    if ( available > 0 ) {
+                            
+                            fuelPerTank = total / available;
+                            
+                            # add fuel to each available tank
+                            
+                            foreach(t; selectedTanks) {
+                                    ppg = t.getNode("density-ppg").getValue();
+                                    capacity = t.getNode("capacity-gal_us").getValue() * ppg;
+                                    lbs = t.getNode("level-gal_us").getValue() * ppg;
+                                    
+                                    if ( capacity - lbs >= fuelPerTank) {
+                                            lbs = lbs - fuelPerTank;
+                                    } elsif (capacity - lbs < fuelPerTank) {
+                                            lbs = capacity;
+                                    }# endif
+                                    
+                                    gals = lbs / ppg;
+                                    t.getNode("level-gal_us").setDoubleValue(gals);
+                                    t.getNode("level-lbs").setDoubleValue(lbs);
+                            } # end foreach
+                                            
+                    # print ("available ", available , " fuelPerTank " , fuelPerTank);
+                    
+                    }#	endif		
+            } # end elsif
+        } #endif
    
     
     # Total fuel properties
@@ -192,12 +193,12 @@ fuelUpdate = func {
 initialize = func {
     AllEngines = props.globals.getNode("engines").getChildren("engine");
     AllTanks = props.globals.getNode("consumables/fuel").getChildren("tank");
-		AI_Enabled = props.globals.getNode("sim/ai/enabled");
-		Refueling = props.globals.getNode("/systems/refuel/contact-YASim",1);
-			
-		Refueling.setBoolValue(0);
-		enabled = AI_Enabled.getValue();
-		
+        AI_Enabled = props.globals.getNode("sim/ai/enabled");
+        Refueling = props.globals.getNode("/systems/refuel/contact-YASim",1);
+            
+        Refueling.setBoolValue(0);
+        enabled = AI_Enabled.getValue();
+        
     foreach(e; AllEngines) {
         e.getNode("fuel-consumed-lbs", 1).setDoubleValue(0);
         e.getNode("out-of-fuel", 1).setBoolValue(0);
@@ -213,6 +214,7 @@ initialize = func {
             t.getNode("selected", 1).setBoolValue(1);
         }
     }
+        
     initialized = 1;
 }
 

@@ -4,15 +4,7 @@
 
  <path>a4-blue.ac</path>
 
- <!-- Cool panel toy. -->
- <model>
-  <path>Aircraft/a4/Models/attitude.xml</path>
-  <offsets>
-   <x-m>-3.25</x-m>
-   <y-m> -0.058</y-m>
-   <z-m> 0.54</z-m>
-  </offsets>
- </model>
+ 
 
  <!-- Front panel -->
  <panel>
@@ -33,6 +25,16 @@
    <z-m> 0.724</z-m>
   </top-left>
  </panel>
+ 
+ <!-- Cool panel toy. -->
+ <model>
+  <path>Aircraft/a4/Models/attitude.xml</path>
+  <offsets>
+   <x-m>-3.25</x-m>
+   <y-m> -0.058</y-m>
+   <z-m> 0.54</z-m>
+  </offsets>
+ </model>
 
  <!-- AoA Indexer "panel" -->
 
