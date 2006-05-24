@@ -18,12 +18,14 @@ enabled = 0;
 print ("running aar");
 
 fuelUpdate = func {
+#print ("fuel update running ");
     if(getprop("/sim/freeze/fuel" or !initialised)) { return registerTimer(); }
     
     AllEngines = props.globals.getNode("engines").getChildren("engine");
     
         Refueling = props.globals.getNode("/systems/refuel/contact-YASim");
         AllAircraft = props.globals.getNode("ai/models").getChildren("aircraft");
+				AllMultiplayer = props.globals.getNode("ai/models").getChildren("multiplayer");
         Aircraft = props.globals.getNode("ai/models/aircraft");
         
 #   select all tankers which are in contact. For now we assume that it must be in 
@@ -31,7 +33,7 @@ fuelUpdate = func {
                 
         selectedTankers = [];
         
-        if ( enabled ) { # check that AI Modeles are enabled, otherwise don't bother
+        if ( enabled ) { # check that AI Models are enabled, otherwise don't bother
             foreach(a; AllAircraft) {
                 contact_node = a.getNode("refuel/contact");
                 id_node = a.getNode("id");
@@ -45,6 +47,22 @@ fuelUpdate = func {
                             
                 if (tanker and contact) {
                     append(selectedTankers, a);
+                }
+            }
+						
+						foreach(m; AllMultiplayer) {
+                contact_node = m.getNode("refuel/contact");
+                id_node = m.getNode("id");
+                tanker_node = m.getNode("tanker");
+                
+                contact = contact_node.getValue();
+                id = id_node.getValue();
+                tanker = tanker_node.getValue();
+                
+#			print (" mp contact ", contact , " tanker " , tanker );
+                            
+                if (tanker and contact) {
+                    append(selectedTankers, m);
                 }
             }
         }
@@ -193,11 +211,11 @@ fuelUpdate = func {
 initialize = func {
     AllEngines = props.globals.getNode("engines").getChildren("engine");
     AllTanks = props.globals.getNode("consumables/fuel").getChildren("tank");
-        AI_Enabled = props.globals.getNode("sim/ai/enabled");
-        Refueling = props.globals.getNode("/systems/refuel/contact-YASim",1);
+    AI_Enabled = props.globals.getNode("sim/ai/enabled");
+    Refueling = props.globals.getNode("/systems/refuel/contact-YASim",1);
             
-        Refueling.setBoolValue(0);
-        enabled = AI_Enabled.getValue();
+    Refueling.setBoolValue(0);
+    enabled = AI_Enabled.getValue();
         
     foreach(e; AllEngines) {
         e.getNode("fuel-consumed-lbs", 1).setDoubleValue(0);
