@@ -445,4 +445,32 @@ setlistener( chute_control , updateChuteState);
 		
 # ================================== End Chute Stuff =====================================	
 
+# ================================== Nav-Display Stuff ===================================
+
+CONTROL_MAX = 6; # 
+CONTROL_MIN = 0;         
+
+
+range_control_node = props.globals.getNode("/instrumentation/radar/range_control", 1);
+range_node = props.globals.getNode("/instrumentation/radar/range-nm", 1);
+
+range_control_node.setIntValue(1); 
+range_node.setDoubleValue(2);  
+
+
+pow = func(v, w) { math.exp(math.ln(v) * w) }
+
+adjustRange = func{
+
+		range = range_node.getValue();
+		range_control = range_control_node.getValue();
+		
+		range = pow( 2 , range_control );       
+
+		range_node.setDoubleValue( range );
+
+
+} # end function adjustRange
+
+setlistener( range_control_node , adjustRange );	
 # end 
