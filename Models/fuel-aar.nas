@@ -23,7 +23,7 @@ fuelUpdate = func {
     
     AllEngines = props.globals.getNode("engines").getChildren("engine");
     
-        Refueling = props.globals.getNode("/systems/refuel/contact-YASim");
+        Refueling = props.globals.getNode("/systems/refuel/contact");
         AllAircraft = props.globals.getNode("ai/models").getChildren("aircraft");
 				AllMultiplayer = props.globals.getNode("ai/models").getChildren("multiplayer");
         Aircraft = props.globals.getNode("ai/models/aircraft");
@@ -212,7 +212,7 @@ initialize = func {
     AllEngines = props.globals.getNode("engines").getChildren("engine");
     AllTanks = props.globals.getNode("consumables/fuel").getChildren("tank");
     AI_Enabled = props.globals.getNode("sim/ai/enabled");
-    Refueling = props.globals.getNode("/systems/refuel/contact-YASim",1);
+    Refueling = props.globals.getNode("/systems/refuel/contact",1);
             
     Refueling.setBoolValue(0);
     enabled = AI_Enabled.getValue();
