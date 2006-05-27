@@ -14,12 +14,23 @@ the flight data model, instrument panel, and external 3D model.
     <description>Douglas A4F Skyhawk (YASim)</description>
     <author>Lewis Magruder, Dean Baunton, Jim Wilson, Andy Ross, Vivian Meazza</author>
     <status>early-production</status>
-    
+
     <virtual-cockpit archive="y">true</virtual-cockpit>
 
     <flight-model>yasim</flight-model>
     <aero>a4f</aero>
     <fuel-fraction>0.25</fuel-fraction>
+
+    <systems>
+
+      <!--   <autopilot>
+    <path>Aircraft/KC135/Systems/autopilot.xml</path>
+   </autopilot>-->
+
+      <electrical>
+        <path>Aircraft/A4/Systems/electrical.xml</path>
+      </electrical>
+    </systems>
 
     <sound>
       <path>Aircraft/a4/a4-sound.xml</path>
@@ -37,11 +48,11 @@ the flight data model, instrument panel, and external 3D model.
       <serviceable type="bool">true</serviceable>
       <path>Aircraft/a4/Models/a4-submodels.xml</path>
     </submodels>
-		
-		<!--<ai>
+
+    <!--<ai>
 			<scenario>refueling_demo_2</scenario>
 		</ai>-->
-    
+
     <view n="0">
       <internal archive="y">true</internal>
       <config>
@@ -240,18 +251,22 @@ the flight data model, instrument panel, and external 3D model.
     <a4>
       <file>Aircraft/a4/Models/a4.nas</file>
     </a4>
-		<a4-fuel> 
-        <module>fuel</module>
-        <file>Aircraft/a4/Models/fuel-aar.nas</file>
+    <a4-fuel>
+      <module>fuel</module>
+      <file>Aircraft/a4/Models/fuel-aar.nas</file>
     </a4-fuel>
   </nasal>
 
   <instrumentation>
     <radar>
-      <range type="int" archive="y">20</range>
+      <range-control type="int" archive="y">5</range-control>
       <minimized type="bool" archive="y">false</minimized>
+      <switch archive="y">ON</switch>
+      <serviceable type="bool">true</serviceable>
     </radar>
   </instrumentation>
+
+
 </PropertyList>
 
 

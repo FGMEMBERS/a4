@@ -447,30 +447,57 @@ setlistener( chute_control , updateChuteState);
 
 # ================================== Nav-Display Stuff ===================================
 
-CONTROL_MAX = 6; # 
-CONTROL_MIN = 0;         
 
+range_control_node = props.globals.getNode("/instrumentation/radar/range-control", 1);
+range_node = props.globals.getNode("/instrumentation/radar/range", 1);
+x_shift_node=  props.globals.getNode("instrumentation/tacan/display/x-shift", 1 );
+x_shift_scaled_node=  props.globals.getNode("instrumentation/tacan/display/x-shift-scaled",1);
+y_shift_node=  props.globals.getNode("instrumentation/tacan/display/y-shift", 1 );
+y_shift_scaled_node=  props.globals.getNode("instrumentation/tacan/display/y-shift-scaled",1);
+    
+range_control_node.setIntValue(5); 
+range_node.setIntValue(32); 
+x_shift_node.setDoubleValue(0);
+x_shift_scaled_node.setDoubleValue(0);
+y_shift_node.setDoubleValue(0);
+y_shift_scaled_node.setDoubleValue(0);
 
-range_control_node = props.globals.getNode("/instrumentation/radar/range_control", 1);
-range_node = props.globals.getNode("/instrumentation/radar/range-nm", 1);
+var scale = 2.55;	
 
-range_control_node.setIntValue(1); 
-range_node.setDoubleValue(2);  
+# Lib functions
+pow2 = func(e) { return e ? 2 * pow2(e - 1) : 1 } # calculates 2^e
 
-
-pow = func(v, w) { math.exp(math.ln(v) * w) }
 
 adjustRange = func{
 
 		range = range_node.getValue();
 		range_control = range_control_node.getValue();
 		
-		range = pow( 2 , range_control );       
+		range = pow2( range_control ); 
 
-		range_node.setDoubleValue( range );
+#  	print ( "range " , range);
 
+		range_node.setIntValue( range );
+		
+		scale = 1.275 * pow2 ( 6 - range_control );
+		scale = sprintf( "%2.3f" , scale );
+
+#		print ( "scale " , scale );
 
 } # end function adjustRange
+
+scaleShift = func {
+
+	x_shift_scaled_node.setDoubleValue( x_shift_node.getValue() * scale );
+	y_shift_scaled_node.setDoubleValue( y_shift_node.getValue() * scale );
+#	print ( "x-shift-scaled " , x_shift_scaled_node.getValue() );
+#	print ( "y-shift-scaled " , y_shift_scaled_node.getValue() );
+	registerTimer( scaleShift );
+						
+} # end func scaleshift
+
+
+scaleShift();	
 
 setlistener( range_control_node , adjustRange );	
 # end 
