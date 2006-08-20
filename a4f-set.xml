@@ -28,7 +28,7 @@ the flight data model, instrument panel, and external 3D model.
    </autopilot>-->
 
       <electrical>
-        <path>Aircraft/A4/Systems/electrical.xml</path>
+        <path>Aircraft/a4/Systems/electrical.xml</path>
       </electrical>
     </systems>
 
