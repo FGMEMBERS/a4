@@ -1587,7 +1587,7 @@ refs 3
 4 0.20413 0.941406
 0 0.882813 0.909826
 kids 0
-OBJECT group
+OBJECT poly
 name "LeftGearDoor"
 loc -0.0908195 -0.990237 1.24512
 texture "a4-blue-0.rgb"
@@ -1719,7 +1719,7 @@ refs 3
 8 0.645636 0.96875
 14 0.855469 0.96875
 kids 0
-OBJECT group
+OBJECT poly
 name "RightGearDoor"
 loc -0.0908195 -0.990237 -1.18554
 texture "a4-blue-0.rgb"
@@ -2546,7 +2546,7 @@ refs 3
 2 0 0
 5 0 0
 kids 0
-OBJECT group
+OBJECT poly
 name "LandingLight"
 loc -0.0908195 -0.990237 -1.18554
 numvert 8
