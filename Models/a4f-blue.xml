@@ -28,13 +28,14 @@
 	<!-- A4F modified panel -->
 	
 	<model>
-    <path>Aircraft/a4/Models/a4f-panel.ac</path>
+   <path>Aircraft/a4/Models/panel.xml</path>
+<!-- <path>Aircraft/a4/Models/attitude.xml</path>-->
     <name>A4F Panel</name>
-    <!--<offsets>
-      <x-m>-3.27</x-m>
-      <y-m> -0.059</y-m>
-      <z-m> 0.60</z-m>
-    </offsets>-->
+    <offsets>
+      <x-m>-3.24</x-m>
+      <y-m>0</y-m>
+      <z-m>0.53</z-m>
+    </offsets>
   </model>
 
   <!-- Cool panel toy. -->
@@ -47,8 +48,6 @@
       <z-m> 0.60</z-m>
     </offsets>
   </model>
-
-  
 
   <!-- G-effects -->
   <model>
@@ -78,7 +77,7 @@
     <offsets>
       <x-m>0.72</x-m>
       <y-m>0</y-m>
-      <z-m>0.80</z-m>
+      <z-m>0.83</z-m>
     </offsets>
   </model>
 	
@@ -126,10 +125,10 @@
 
   <!-- Object Selection -->
 
-  <animation>
-    <object-name>A4F Panel</object-name>
+<!--  <animation>
+    <object-name>A4F Panel</object-name>  
     <object-name>Blackout</object-name>
-  </animation>
+  </animation>-->
 	
 	<animation>
     <type>select</type>
