@@ -40,6 +40,10 @@ the flight data model, instrument panel, and external 3D model.
 			<visibility>false</visibility>
 		</panel>
 
+		<instrumentation>
+			<path>Aircraft/a4/Systems/instrumentation.xml</path>
+		</instrumentation>
+
 		<model>
 			<path>Aircraft/a4/Models/a4f-blue.xml</path>
 		</model>
