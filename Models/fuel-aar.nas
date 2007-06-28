@@ -19,17 +19,7 @@ print ("running aar");
 
 fuelUpdate = func {
 #print ("fuel update running ");
-<<<<<<< fuel-aar.nas
-    if(getprop("/sim/freeze/fuel" or !initialised)) { return registerTimer(); }
-    
-    AllEngines = props.globals.getNode("engines").getChildren("engine");
-    
-        Refueling = props.globals.getNode("/systems/refuel/contact");
-        AllAircraft = props.globals.getNode("ai/models").getChildren("tanker");
-				AllMultiplayer = props.globals.getNode("ai/models").getChildren("multiplayer");
-        Aircraft = props.globals.getNode("ai/models/aircraft");
-         
-=======
+
 	if(getprop("/sim/freeze/fuel" or !initialised)) { return registerTimer(); }
 
 	AllEngines = props.globals.getNode("engines").getChildren("engine");
@@ -38,7 +28,6 @@ fuelUpdate = func {
 	AllMultiplayer = props.globals.getNode("ai/models").getChildren("multiplayer");
 	Aircraft = props.globals.getNode("ai/models/aircraft");
 
->>>>>>> 1.7
 #   select all tankers which are in contact. For now we assume that it must be in 
 #		contact	with us.
 
