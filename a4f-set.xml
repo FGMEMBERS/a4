@@ -53,9 +53,13 @@ the flight data model, instrument panel, and external 3D model.
 			<path>Aircraft/a4/Models/a4-submodels.xml</path>
 		</submodels>
 
+<<<<<<< a4f-set.xml
+    <ai>
+=======
 		<!--<ai>
+>>>>>>> 1.8
 			<scenario>refueling_demo_2</scenario>
-		</ai>-->
+		</ai>
 
 		<view n="0">
 			<internal archive="y">true</internal>
