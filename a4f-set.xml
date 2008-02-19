@@ -256,7 +256,6 @@ the flight data model, instrument panel, and external 3D model.
 			<file>Aircraft/a4/Models/a4.nas</file>
 		</a4>
 		<a4-fuel>
-			<module>fuel</module>
 			<file>Aircraft/Generic/aar.nas</file>
 		</a4-fuel>
 		<nav-display>
