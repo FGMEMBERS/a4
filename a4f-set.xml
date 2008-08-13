@@ -178,6 +178,13 @@ the flight data model, instrument panel, and external 3D model.
 		</fuel>
 	</consumables>
 
+	<systems>
+		<refuel>
+			<system>probe</system>
+		</refuel>
+	</systems>
+
+
 	<!-- *************** set properties **********************-->
 	<controls>
 		<gear>
