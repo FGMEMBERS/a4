@@ -81,7 +81,7 @@ updateTailwheelLock = func {
 
 setlistener( launchbar_state , updateTailwheelLock );
 
-#setlistener("gear/launchbar/strop", func { print("New strop: " ~ cmdarg().getValue()) }); 
+#setlistener("gear/launchbar/strop", func(n) { print("New strop: " ~ n.getValue()) }); 
 
 
 # ======================================= end Gear stuff ============================
