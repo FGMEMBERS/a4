@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <!--
 ************************************************************************
-Douglas A4 Skyhawk simulation config. This files ties together 
-all the components used by FGFS to represent the A4. Components include 
+Douglas A4 Skyhawk simulation config. This files ties together
+all the components used by FGFS to represent the A4. Components include
 the flight data model, instrument panel, and external 3D model.
 
 ************************************************************************
@@ -11,14 +11,14 @@ the flight data model, instrument panel, and external 3D model.
 <PropertyList>
 	<sim>
 
-		<description>Douglas A4F Skyhawk (YASim)</description>
+		<description>Douglas A4F Skyhawk (YASim) Blue Angels</description>
 		<author>Lewis Magruder, Dean Baunton, Jim Wilson, Andy Ross, Vivian Meazza</author>
 		<status>early-production</status>
 
 		<virtual-cockpit archive="y">true</virtual-cockpit>
 
 		<flight-model>yasim</flight-model>
-		<aero>a4f</aero>
+		<aero>a4f-blue</aero>
 		<fuel-fraction>0.25</fuel-fraction>
 
 		<systems>
@@ -109,7 +109,7 @@ the flight data model, instrument panel, and external 3D model.
   </weight>-->
 
 		<help>
-			<title>Douglas A4F Skyhawk</title>
+			<title>Douglas A4F Skyhawk - Blue Angels</title>
 			<key>
 				<name>C</name>
 				<desc>catapult launch command</desc>

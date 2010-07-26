@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!--  Submodels are objects which can be dropped or launched from the user aircraft.
       The trigger is a boolean property, which you define, which when "true" causes
-      the submodel to be released/launched. 
+      the submodel to be released/launched.
       A submodel will create an AIBallistic object which will follow a ballistic path.
       By default one submodel will be released when the corresponding trigger is "true".
       The initial conditions (IC) define the object's starting point (relative to the
@@ -12,37 +12,37 @@
 
       <name>         The name of the submodel.
       <model>        The path to the visual model.
-      <trigger>      The property which will act as the trigger. 
+      <trigger>      The property which will act as the trigger.
       <speed>        Initial speed, in feet/sec, relative to user aircraft.
       <repeat>       Set "true" if you want multiple releases of this submodel. Defaults
 			               to false
       <delay>        Time, in seconds, between repeated releases.
       <count>        Number of submodels available for multiple release.
-      <x-offset>     Submodel's initial fore/aft position relative to user aircraft.  
+      <x-offset>     Submodel's initial fore/aft position relative to user aircraft.
                      Fore is positive. (ft)
-      <y-offset>     Submodel's initial left/right position relative to user aircraft.  
+      <y-offset>     Submodel's initial left/right position relative to user aircraft.
                      Right is positive. (ft)
-      <z-offset>     Submodel's initial up/down position relative to user aircraft.  
+      <z-offset>     Submodel's initial up/down position relative to user aircraft.
                      Up is positive. (ft)
       <yaw-offset>   Submodel's initial azimuth, in degrees, relative to user aircraft's
                      nose.  Right is positive.
       <pitch-offset> Submodel's initial elevation, in degrees, relative to user aircraft's
                      pitch.  Up is positive.
-			<buoyancy>     Submodel's upward acceleration (fps) due to buoyancy in air. 32 is 
-										 neutral (contrails),  > 32 exhaust gas, smoke. 
+			<buoyancy>     Submodel's upward acceleration (fps) due to buoyancy in air. 32 is
+										 neutral (contrails),  > 32 exhaust gas, smoke.
       <wind>	   		 If true, Submodel is affected by local wind. Defaults to false.
-			<cd>           The Coeffient of Drag. Varies with submodel shape - 0.295 for a bullet, 
+			<cd>           The Coeffient of Drag. Varies with submodel shape - 0.295 for a bullet,
 	               0.045 for an airfoil. Enter an appropriate value. Defaults to 0.295.
-			<eda>          Effective drag area (sq ft). Usually the cross-sectional area of the 
+			<eda>          Effective drag area (sq ft). Usually the cross-sectional area of the
                      submodel normal to the airflow.
-      <weight>       The weight of the submodel (lbs). Defaults to 0.25	
+      <weight>       The weight of the submodel (lbs). Defaults to 0.25
 			<aero-stabilised> If true, the submodel aligns with the local airflow. Defaults to true
-			
+
 -->
 <PropertyList>
 
   <!--Some gun stuff if anyone wants to implement the A4 cannons
-   <submodel> 
+   <submodel>
       <name>Hispano MkV P Inner</name>
       <model>Models/Geometry/tracer.ac</model>
       <trigger>ai/submodels/trigger</trigger>
@@ -61,7 +61,7 @@
 	  <eda>0.00338158219 </eda>
 	  <life>5</life>
     </submodel>
-	<submodel> 
+	<submodel>
       <name>Hispano MkV P Inner smoke</name>
       <model>Aircraft/seahawk/Models/smoke.xml</model>
       <trigger>ai/submodels/trigger</trigger>
@@ -79,7 +79,7 @@
 	  <buoyancy>33</buoyancy>
 	  <life>5</life>
     </submodel>
-	<submodel> 
+	<submodel>
       <name>Hispano MkV S Inner</name>
       <model>Models/Geometry/tracer.ac</model>
       <trigger>ai/submodels/trigger</trigger>
@@ -97,8 +97,8 @@
 	  <weight>0.286600941 </weight>
 	  <eda>0.00338158219 </eda>
 	  <life>5</life>
-    </submodel>            
-	<submodel> 
+    </submodel>
+	<submodel>
       <name>Hispano MkV S Inner smoke</name>
       <model>Aircraft/seahawk/Models/smoke.xml</model>
       <trigger>ai/submodels/trigger</trigger>
@@ -116,7 +116,7 @@
 	  <buoyancy>33</buoyancy>
 	  <life>5</life>
     </submodel>
-		<submodel> 
+		<submodel>
       <name>Hispano MkV P Outer</name>
       <model>Models/Geometry/tracer.ac</model>
       <trigger>ai/submodels/trigger</trigger>
@@ -135,7 +135,7 @@
 	  <eda>0.00338158219 </eda>
 	  <life>5</life>
     </submodel>
-	<submodel> 
+	<submodel>
       <name>Hispano MkV P Outer smoke</name>
       <model>Aircraft/seahawk/Models/smoke.xml</model>
       <trigger>ai/submodels/trigger</trigger>
@@ -153,7 +153,7 @@
 	  <buoyancy>33</buoyancy>
 	  <life>5</life>
     </submodel>
-	<submodel> 
+	<submodel>
       <name>Hispano MkV S Outer</name>
       <model>Models/Geometry/tracer.ac</model>
       <trigger>ai/submodels/trigger</trigger>
@@ -171,8 +171,8 @@
 	  <weight>0.286600941 </weight>
 	  <eda>0.00338158219 </eda>
 	  <life>5</life>
-    </submodel>            
-	<submodel> 
+    </submodel>
+	<submodel>
       <name>Hispano MkV S Outer smoke</name>
       <model>Aircraft/seahawk/Models/smoke.xml</model>
       <trigger>ai/submodels/trigger</trigger>
@@ -189,8 +189,8 @@
       <wind>true</wind>
 	  <buoyancy>33</buoyancy>
 	  <life>5</life>
-    </submodel> 
-    <submodel> 
+    </submodel>
+    <submodel>
       <name>exhaust smoke r</name>
       <model>Aircraft/Hurricane/Models/exhaust.xml</model>
       <trigger>engines/engine/cranking</trigger>
@@ -208,7 +208,7 @@
       <buoyancy>34</buoyancy>
       <wind>true</wind>
     </submodel>
-    <submodel> 
+    <submodel>
       <name>exhaust smoke l</name>
       <model>Aircraft/Hurricane/Models/exhaust.xml</model>
       <trigger>engines/engine/cranking</trigger>
@@ -243,28 +243,6 @@
     <eda>0.5</eda>
     <weight>10</weight>
     <cd>0.5</cd>
-  </submodel>
-
-  <!-- Drag Chute -->
-  <submodel>
-    <name>Braking Parachute</name>
-    <model>Aircraft/a4/Models/brake-chute-mdl.xml</model>
-    <trigger>controls/flight/drag-chute/release</trigger>
-    <speed>0</speed>
-    <repeat>false</repeat>
-    <count>-1</count>
-    <x-offset>-19.8</x-offset>
-    <y-offset>0</y-offset>
-    <z-offset>0.95</z-offset>
-    <yaw-offset>0</yaw-offset>
-    <pitch-offset>-70</pitch-offset>
-    <buoyancy>25</buoyancy>
-    <wind>true</wind>
-    <aero-stabilised>false</aero-stabilised>
-    <cd>0.9</cd>
-    <eda>62.5</eda>
-    <weight>25</weight>
-    <life>100</life>
   </submodel>
 
 </PropertyList>
