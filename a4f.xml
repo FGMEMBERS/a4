@@ -105,7 +105,7 @@
   </jet>
 
   <!-- nose   -->
-  <gear x="2.21" y="0" z="-2.19"
+  <gear x="2.21" y="0" z="-2.17"
         retract-time="7"
         compression="0.4"
         castering="0"
@@ -125,7 +125,7 @@
   </gear>
 
   <!-- left main 	-->
-  <gear x="-1.3" y="1.19" z="-1.92"
+  <gear x="-1.3" y="1.19" z="-1.85"
         retract-time="7"
         compression="0.5"
         spring="0.8"
@@ -139,7 +139,7 @@
   </gear>
 
   <!-- right main -->
-  <gear x="-1.3" y="-1.19" z="-1.92"
+  <gear x="-1.3" y="-1.19" z="-1.85"
         retract-time="7"
         compression="0.5"
         spring="0.8"

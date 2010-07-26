@@ -830,7 +830,7 @@
   <animation>
     <type>rotate</type>
     <object-name>NoseGear</object-name>
-    <object-name>NoseGearStrut</object-name>
+    <object-name>NoseGearPiston</object-name>
     <property>gear/gear[0]/steering-norm</property>
     <offset-deg>0</offset-deg>
     <factor>-45</factor>
@@ -843,6 +843,66 @@
       <x>0</x>
       <y>0</y>
       <z>1</z>
+    </axis>
+  </animation>
+
+  <!-- Wheel spin -
+
+  Wheel radius 0.236
+  Wheel circumference 1.48m.
+  Roll-speed is in m/s (/gear/gear[n]/rollspeed-ms), but spin is per _minute_
+
+  RPM = 60 * rollspeed/1.48 = rollspeed * 40.54
+  -->
+
+  <animation>
+    <type>spin</type>
+    <object-name>NoseGear</object-name>
+    <property>gear/gear[0]/rollspeed-ms</property>
+    <factor>40.54</factor>
+    <center>
+      <x-m>3.411</x-m>
+      <y-m>0.0</y-m>
+      <z-m>-1.723</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+   <animation>
+    <type>spin</type>
+    <object-name>LeftGear</object-name>
+    <property>gear/gear[1]/rollspeed-ms</property>
+    <factor>40.54</factor>
+    <center>
+      <x-m>6.895</x-m>
+      <y-m>0.0</y-m>
+      <z-m>-1.378</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+    <animation>
+    <type>spin</type>
+    <object-name>RightGear</object-name>
+    <property>gear/gear[2]/rollspeed-ms</property>
+    <factor>40.54</factor>
+    <center>
+      <x-m>6.895</x-m>
+      <y-m>0.0</y-m>
+      <z-m>-1.378</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
     </axis>
   </animation>
 
