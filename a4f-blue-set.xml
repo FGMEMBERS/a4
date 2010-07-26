@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <!--
 ************************************************************************
-Douglas A4 Skyhawk simulation config. This files ties together
-all the components used by FGFS to represent the A4. Components include
+Douglas A4 Skyhawk simulation config. This files ties together 
+all the components used by FGFS to represent the A4. Components include 
 the flight data model, instrument panel, and external 3D model.
 
 ************************************************************************
@@ -12,14 +12,14 @@ the flight data model, instrument panel, and external 3D model.
 	<sim>
 
 		<description>Douglas A4F Skyhawk (YASim)</description>
-		<author>Lewis Magruder, Dean Baunton, Jim Wilson, Andy Ross, Vivian Meazza, Stuart Buchanan</author>
+		<author>Lewis Magruder, Dean Baunton, Jim Wilson, Andy Ross, Vivian Meazza</author>
 		<status>early-production</status>
 
 		<virtual-cockpit archive="y">true</virtual-cockpit>
 
 		<flight-model>yasim</flight-model>
 		<aero>a4f</aero>
-		<fuel-fraction>0.5</fuel-fraction>
+		<fuel-fraction>0.25</fuel-fraction>
 
 		<systems>
 
@@ -45,7 +45,7 @@ the flight data model, instrument panel, and external 3D model.
 		</instrumentation>
 
 		<model>
-			<path>Aircraft/a4/Models/a4f.xml</path>
+			<path>Aircraft/a4/Models/a4f-blue.xml</path>
 		</model>
 
 		<submodels>
@@ -53,45 +53,20 @@ the flight data model, instrument panel, and external 3D model.
 			<path>Aircraft/a4/Models/a4-submodels.xml</path>
 		</submodels>
 
+		<!--<ai>
+			<scenario>refueling_demo_2</scenario>
+		</ai> -->
+
 		<view n="0">
 			<internal archive="y">true</internal>
 			<config>
-				<x-offset-m archive="y">0.00</x-offset-m>
-				<y-offset-m archive="y">0.92</y-offset-m>
-				<z-offset-m archive="y">-2.08</z-offset-m>
+				<x-offset-m archive="y">0</x-offset-m>
+				<y-offset-m archive="y">0.87</y-offset-m>
+				<z-offset-m archive="y">-2.86</z-offset-m>
 				<pitch-offset-deg>-17</pitch-offset-deg>
 				<default-field-of-view-deg>60</default-field-of-view-deg>
 			</config>
 		</view>
-
-		<view n="1">
-			<internal archive="y">false</internal>
-			<config>
-				<z-offset-m archive="y">10.00</z-offset-m>
-			</config>
-		</view>
-
-		<view n="2">
-			<internal archive="y">false</internal>
-			<config>
-				<z-offset-m archive="y">10.00</z-offset-m>
-			</config>
-		</view>
-
-		<view n="3">
-			<internal archive="y">false</internal>
-			<config>
-				<z-offset-m archive="y">10.00</z-offset-m>
-			</config>
-		</view>
-
-		<view n="4">
-			<internal archive="y">false</internal>
-			<config>
-				<z-offset-m archive="y">10.00</z-offset-m>
-			</config>
-		</view>
-
 		<current-view>
 			<field-of-view>60.0</field-of-view>
 		</current-view>
@@ -135,39 +110,7 @@ the flight data model, instrument panel, and external 3D model.
 
 		<help>
 			<title>Douglas A4F Skyhawk</title>
-			<line>SHORE BASED TAKE-OFF</line>
-			<line>- 1/2 Flaps</line>
-			<line>- Nosewheel steering ON</line>
-			<line>- Advance Throttle</line>
-			<line>- Release Brakes</line>
-			<line>- Raise nosewheel at 123 KIAS</line>
-			<line>- Take-off at 133 KIAS</line>
-			<line>- Gear Up</line>
-			<line>- Flaps up above 170 KIAS at safe altitude</line>
-			<line/>
-			<line>SHORE BASED LANDING</line>
-			<line>- Approach Break at 250-300 KIAS</line>
-			<line>- After the break, reduce throttle to 70%, extend speedbrakes</line>
-			<line>- Lower landing gear, flaps at 225 KIAS</line>
-			<line>- Approach at 125 KIAS at the abeam position, 17.5 units AOA</line>
-			<line>- On touchdown, power to idle, full foward stick, brakes as required</line>
-			<line>- Use nosewheel steering below 60 KIAS</line>
-			<line></line>
-			<line>CARRIER TAKE-OFF</line>
-			<line>- 1/2 Flaps</line>
-			<line>- 7 degrees nose-up trim</line>
-			<line>- Nosewheel steering OFF</line>
-			<line>- Engage Launch bar (L)</line>
-			<line>- 100% Throttle</line>
-			<line>- Catapult Launch (C)</line>
-			<line></line>
-			<line>CARRIER LANDING</line>
-			<line>- Approach Break at 800ft, 250 KIAS, hook down (O)</line>
-			<line>- Break past bow, reduce throttle to 70%, extend speedbrakes</line>
-			<line>- Lower landing gear and flaps at 225 KIAS</line>
-			<line>- Descend to 600ft on base</line>
-			<line>- Approach at 125 KIAS at the abeam position, 17.5 units AOA</line>
-            <key>
+			<key>
 				<name>C</name>
 				<desc>catapult launch command</desc>
 			</key>
@@ -186,6 +129,18 @@ the flight data model, instrument panel, and external 3D model.
 			<key>
 				<name>CTRL K</name>
 				<desc>toggle spoilers</desc>
+			</key>
+			<key>
+				<name>CTRL J</name>
+				<desc>deploy drag-chute</desc>
+			</key>
+			<key>
+				<name>J</name>
+				<desc>jettison drag-chute</desc>
+			</key>
+			<key>
+				<name>j</name>
+				<desc>repack drag-chute</desc>
 			</key>
 		</help>
 
@@ -262,6 +217,33 @@ the flight data model, instrument panel, and external 3D model.
 				<binding>
 					<command>property-toggle</command>
 					<property>controls/flight/spoiler</property>
+				</binding>
+			</key>
+			<key n="10">
+				<name>Ctrl-J</name>
+				<desc>Deploy drag chute.</desc>
+				<binding>
+					<command>property-assign</command>
+					<property>controls/flight/drag-chute/lever</property>
+					<value type="bool">1</value>
+				</binding>
+			</key>
+			<key n="74">
+				<name>J</name>
+				<desc>Jettison drag chute.</desc>
+				<binding>
+					<command>property-assign</command>
+					<property>controls/flight/drag-chute/state</property>
+					<value type="string">jettison</value>
+				</binding>
+			</key>
+			<key n="106">
+				<name>j</name>
+				<desc>Repack drag chute.</desc>
+				<binding>
+					<command>property-assign</command>
+					<property>controls/flight/drag-chute/state</property>
+					<value type="string">repack</value>
 				</binding>
 			</key>
 		</keyboard>

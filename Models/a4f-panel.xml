@@ -1,0 +1,270 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+ <path>a4f-panel.ac</path>
+
+
+  <animation>
+    <type>rotate</type>
+    <object-name>GearHandle</object-name>
+    <object-name>GearHandleLight</object-name>
+    <property>/controls/gear/gear-down</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind>
+        <dep>0</dep>
+      </entry>
+      <entry>
+        <ind>1</ind>
+        <dep>90</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>0.05</x-m>
+      <y-m>-3.062</y-m>
+      <z-m>0.011</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+   <type>pick</type>
+   <object-name>GearHandle</object-name>
+   <object-name>GearHandleLight</object-name>
+   <visible>true</visible>
+   <action>
+     <button>0</button>
+     <repeatable>false</repeatable>
+     <binding>
+        <command>nasal</command>
+        <script>controls.gearToggle();</script>
+     </binding>
+   </action>
+ </animation>
+
+   <animation>
+    <type>rotate</type>
+    <object-name>HookHandle</object-name>
+    <property>/controls/gear/tailhook</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind>
+        <dep>0</dep>
+      </entry>
+      <entry>
+        <ind>1</ind>
+        <dep>90</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>0.05</x-m>
+      <y-m>-3.062</y-m>
+      <z-m>0.011</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+   <type>pick</type>
+   <object-name>HookHandle</object-name>
+   <visible>true</visible>
+   <action>
+     <button>0</button>
+     <repeatable>false</repeatable>
+    <binding>
+     <command>property-toggle</command>
+     <property>controls/gear/tailhook</property>
+   </binding>
+   </action>
+ </animation>
+
+    <animation>
+    <type>rotate</type>
+    <object-name>Throttle</object-name>
+    <property>/controls/engines/engine[0]/throttle</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind>
+        <dep>45</dep>
+      </entry>
+      <entry>
+        <ind>1</ind>
+        <dep>-45</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>0.24</x-m>
+      <y-m>-3.062</y-m>
+      <z-m>-0.13</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <model>
+    <path>Aircraft/a4/Models/Instruments/gear-indicator.xml</path>
+    <name>Gear Indicator</name>
+    <offsets>
+      <x-m> 0.03</x-m>
+      <y-m>-0.28</y-m>
+      <z-m>-0.11</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/a4/Models/attitude.xml</path>
+    <name>Attitude Ball</name>
+    <offsets>
+      <x-m>-0.00</x-m>
+      <y-m>-0.06</y-m>
+      <z-m> 0.10</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/a4/Models/Instruments/aoa-indexer.xml</path>
+    <name>AOA Indexer</name>
+    <offsets>
+      <x-m> 0.0</x-m>
+      <y-m>-0.10</y-m>
+      <z-m> 0.30</z-m>
+    </offsets>
+  </model>
+
+
+  <model>
+    <path>Aircraft/A-6E/Models/accelerometer.xml</path>
+    <name>G Meter</name>
+    <offsets>
+      <x-m> 0.0</x-m>
+      <y-m>-0.11</y-m>
+      <z-m> 0.21</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-6E/Models/asi.xml</path>
+    <name>ASI</name>
+    <offsets>
+      <x-m> 0.0</x-m>
+      <y-m>-0.17</y-m>
+      <z-m> 0.14</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-6E/Models/altimeter.xml</path>
+    <name>Alt</name>
+    <offsets>
+      <x-m> 0.0</x-m>
+      <y-m>-0.2</y-m>
+      <z-m> 0.05</z-m>
+    </offsets>
+  </model>
+
+
+  <model>
+    <path>Aircraft/A-6E/Models/aoa-gauge.xml</path>
+    <name>Alt</name>
+    <offsets>
+      <x-m> 0.0</x-m>
+      <y-m>-0.28</y-m>
+      <z-m>-0.02</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-6E/Models/vsi.xml</path>
+    <name>VSI</name>
+    <offsets>
+      <x-m> 0.0</x-m>
+      <y-m>-0.2</y-m>
+      <z-m>-0.03</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-6E/Models/hsi.xml</path>
+    <name>HSI</name>
+    <offsets>
+      <x-m> 0.0</x-m>
+      <y-m>-0.1</y-m>
+      <z-m>-0.05</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/a4/Models/Instruments/standby_AI.xml</path>
+    <name>VSI</name>
+    <offsets>
+      <x-m> 0.0</x-m>
+      <y-m> 0.05</y-m>
+      <z-m>-0.05</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-6E/Models/radar-altimeter.xml</path>
+    <name>VSI</name>
+    <offsets>
+      <x-m> 0.0</x-m>
+      <y-m> 0.15</y-m>
+      <z-m>-0.02</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/a4/Models/Instruments/rpm.xml</path>
+    <name>RPM</name>
+    <offsets>
+      <x-m> 0.0</x-m>
+      <y-m> 0.15</y-m>
+      <z-m> 0.12</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/a4/Models/Instruments/fuel-flow.xml</path>
+    <name>Fuel Flow</name>
+    <offsets>
+      <x-m> 0.0</x-m>
+      <y-m> 0.20</y-m>
+      <z-m> 0.05</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/a4/Models/Instruments/fuel.xml</path>
+    <name>Fuel</name>
+    <offsets>
+      <x-m> 0.0</x-m>
+      <y-m> 0.26</y-m>
+      <z-m> 0.05</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-6E/Models/chronograph.xml</path>
+    <name>G Meter</name>
+    <offsets>
+      <x-m> 0.0</x-m>
+      <y-m> 0.10</y-m>
+      <z-m> 0.20</z-m>
+    </offsets>
+  </model>
+
+
+</PropertyList>
+
+
