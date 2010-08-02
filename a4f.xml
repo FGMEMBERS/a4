@@ -29,7 +29,7 @@
 
   <wing x="-0.8" y=".71" z="-0.3"
         taper="0.3"
-        incidence="-2.5"
+        incidence="0.0"
         twist="2.5"
         length="3.855"
         chord="4.07"
@@ -62,7 +62,7 @@
     <control-speed control="SPOILER" transition-time="2"/>
   </wing>
 
-  <hstab x="-5.37" y="0.01" z="0.93"
+  <hstab x="-5.37" y="0.01" z="1.00"
          taper="0.19"
          effectiveness="2.0"
          length="2.1"
@@ -83,7 +83,7 @@
          sweep="35"
          effectiveness="1.0">
     <stall aoa="27" width="10" peak="1.5"/>
-    <flap0 start="0" end="1" lift="1.3" drag="1.2"/>
+    <flap0 start="0.3" end="1" lift="1.3" drag="1.2"/>
     <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
     <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
     <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"
@@ -186,24 +186,33 @@
         jet="true"
         capacity="1750"/>
 
+  <!-- Optional drop tanks. 300 gallons each. 2247lbs full, 207lbs empty => 2040lbs of fuel capacity-->
+  <tank x="0.08" y="0" z="-0.45"
+        jet="true"
+        capacity="2040"/>
+  <tank x="0.08" y="-1.8" z="-0.45"
+        jet="true"
+        capacity="2040"/>
+  <tank x="0.08" y="1.8" z="-0.45"
+        jet="true"
+        capacity="2040"/>
+
+
   <!--  Ballast and Weights -->
   <ballast x="4.49" y="0" z="-0.55" mass="1600"/>
   <!-- cockpit -->
 
-  <!-- The early A-4's had five pylons.  One 3500lbs center for a tank,
-     two inboard pylons holding 2250lbs, and two 1000lbs outboard
-     pylons.
-<weight x="-1.39" y="3" z="-1.33" size="1"
-        mass-prop="/sim/weight[0]/weight-lb"/>
-<weight x="-0.79" y="2" z="-1.33" size="1"
-        mass-prop="/sim/weight[1]/weight-lb"/>
-<weight x="-0.39" y="0" z="-1.33" size="1.5"
-        mass-prop="/sim/weight[2]/weight-lb"/>
-<weight x="-0.79" y="-2" z="-1.33" size="1"
-        mass-prop="/sim/weight[3]/weight-lb"/>
-<weight x="-1.39" y="-3" z="-1.33" size="1"
-        mass-prop="/sim/weight[4]/weight-lb"/>-->
+  <!-- 5 pylons. One 3500lbs center, two inboard max 2250lbs, two outboard max 1000lbs -->
+  <weight x="-1.6" y="-3" z="-1.33" size="0.8"
+          mass-prop="/sim/weight[0]/weight-lb"/>
+  <weight x="-0.79" y="-1.8" z="-1.33" size="1"
+          mass-prop="/sim/weight[1]/weight-lb"/>
+  <weight x="-0.39" y="0" z="-0.45" size="1"
+          mass-prop="/sim/weight[2]/weight-lb"/>
+  <weight x="-0.79" y="-2" z="-0.45" size="1"
+          mass-prop="/sim/weight[3]/weight-lb"/>
+  <weight x="-1.6" y="-3" z="-0.45" size="0.8"
+          mass-prop="/sim/weight[4]/weight-lb"/>-->
   <weight x="2.76" y="0" z="-0.04" mass-prop="/yasim/weights/pilot-lb"/>
-  <!-- <weight x="-6.03" y="0" z="0.22" mass-prop="/yasim/weights/drag-chute" size="2"/>-->
 
 </airplane>

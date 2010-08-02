@@ -41,18 +41,18 @@
 -->
 <PropertyList>
 
-  <!--Some gun stuff if anyone wants to implement the A4 cannons
+<!--
    <submodel>
       <name>Hispano MkV P Inner</name>
       <model>Models/Geometry/tracer.ac</model>
-      <trigger>ai/submodels/trigger</trigger>
+      <trigger>controls/armament/trigger-cannon</trigger>
       <speed>2755.9 </speed>
       <repeat>true</repeat>
       <delay>0.4</delay>
       <count>40</count>
-      <x-offset>12.1391  </x-offset>
-      <y-offset>-0.6562  </y-offset>
-      <z-offset>-1.6732  </z-offset>
+      <x-offset>4.4</x-offset>
+      <y-offset>-0.73</y-offset>
+      <z-offset>-0.07</z-offset>
       <yaw-offset>0</yaw-offset>
       <pitch-offset>0</pitch-offset>
       <wind>false</wind>
@@ -64,14 +64,14 @@
 	<submodel>
       <name>Hispano MkV P Inner smoke</name>
       <model>Aircraft/seahawk/Models/smoke.xml</model>
-      <trigger>ai/submodels/trigger</trigger>
+      <trigger>controls/armament/trigger-cannon</trigger>
       <speed>200</speed>
       <repeat>true</repeat>
       <delay>0.08</delay>
       <count>200</count>
-      <x-offset>12.1391  </x-offset>
-      <y-offset>-2.0  </y-offset>
-      <z-offset>-1.6732  </z-offset>
+	  <x-offset>4.4</x-offset>
+      <y-offset>-0.73</y-offset>
+      <z-offset>-0.07</z-offset>
       <yaw-offset>-60</yaw-offset>
       <pitch-offset>-60</pitch-offset>
 	    <eda>10</eda>
@@ -82,14 +82,14 @@
 	<submodel>
       <name>Hispano MkV S Inner</name>
       <model>Models/Geometry/tracer.ac</model>
-      <trigger>ai/submodels/trigger</trigger>
+      <trigger>controls/armament/trigger-cannon</trigger>
       <speed>2755.9 </speed>
       <repeat>true</repeat>
       <delay>0.4</delay>
       <count>40</count>
-      <x-offset>12.1391  </x-offset>
-      <y-offset>0.6562  </y-offset>
-      <z-offset>-1.6732  </z-offset>
+      <x-offset>4.4</x-offset>
+      <y-offset>0.73</y-offset>
+      <z-offset>-0.07</z-offset>
       <yaw-offset>0</yaw-offset>
       <pitch-offset>0</pitch-offset>
       <wind>false</wind>
@@ -101,14 +101,14 @@
 	<submodel>
       <name>Hispano MkV S Inner smoke</name>
       <model>Aircraft/seahawk/Models/smoke.xml</model>
-      <trigger>ai/submodels/trigger</trigger>
+      <trigger>controls/armament/trigger-cannon</trigger>
       <speed>200</speed>
       <repeat>true</repeat>
       <delay>0.08</delay>
       <count>200</count>
-      <x-offset>12.1391  </x-offset>
-      <y-offset>2.0  </y-offset>
-      <z-offset>-1.6732  </z-offset>
+	  <x-offset>4.4</x-offset>
+      <y-offset>0.73</y-offset>
+      <z-offset>-0.07</z-offset>
       <yaw-offset>60</yaw-offset>
       <pitch-offset>-60</pitch-offset>
 	  <eda>10</eda>
@@ -116,117 +116,7 @@
 	  <buoyancy>33</buoyancy>
 	  <life>5</life>
     </submodel>
-		<submodel>
-      <name>Hispano MkV P Outer</name>
-      <model>Models/Geometry/tracer.ac</model>
-      <trigger>ai/submodels/trigger</trigger>
-      <speed>2755.9 </speed>
-      <repeat>true</repeat>
-      <delay>0.4</delay>
-      <count>40</count>
-      <x-offset>12.0079  </x-offset>
-      <y-offset>-1.2795  </y-offset>
-      <z-offset>-1.3451  </z-offset>
-      <yaw-offset>0</yaw-offset>
-      <pitch-offset>0</pitch-offset>
-      <wind>false</wind>
-	  <cd>0.193</cd>
-	  <weight>0.286600941 </weight>
-	  <eda>0.00338158219 </eda>
-	  <life>5</life>
-    </submodel>
-	<submodel>
-      <name>Hispano MkV P Outer smoke</name>
-      <model>Aircraft/seahawk/Models/smoke.xml</model>
-      <trigger>ai/submodels/trigger</trigger>
-      <speed>200</speed>
-      <repeat>true</repeat>
-      <delay>0.08</delay>
-      <count>200</count>
-      <x-offset>12.0079  </x-offset>
-      <y-offset>-2.5 </y-offset>
-      <z-offset>-1.3451  </z-offset>
-      <yaw-offset>-60</yaw-offset>
-      <pitch-offset>-60</pitch-offset>
-	    <eda>10</eda>
-      <wind>true</wind>
-	  <buoyancy>33</buoyancy>
-	  <life>5</life>
-    </submodel>
-	<submodel>
-      <name>Hispano MkV S Outer</name>
-      <model>Models/Geometry/tracer.ac</model>
-      <trigger>ai/submodels/trigger</trigger>
-      <speed>2755.9 </speed>
-      <repeat>true</repeat>
-      <delay>0.4</delay>
-      <count>40</count>
-      <x-offset>12.0079  </x-offset>
-      <y-offset>1.2795  </y-offset>
-      <z-offset>-1.3451  </z-offset>
-      <yaw-offset>0</yaw-offset>
-      <pitch-offset>0</pitch-offset>
-      <wind>false</wind>
-	  <cd>0.193</cd>
-	  <weight>0.286600941 </weight>
-	  <eda>0.00338158219 </eda>
-	  <life>5</life>
-    </submodel>
-	<submodel>
-      <name>Hispano MkV S Outer smoke</name>
-      <model>Aircraft/seahawk/Models/smoke.xml</model>
-      <trigger>ai/submodels/trigger</trigger>
-      <speed>200</speed>
-      <repeat>true</repeat>
-      <delay>0.08</delay>
-      <count>200</count>
-      <x-offset>12.0079  </x-offset>
-      <y-offset>2.5  </y-offset>
-      <z-offset>-1.3451  </z-offset>
-      <yaw-offset>60</yaw-offset>
-      <pitch-offset>-60</pitch-offset>
-	  <eda>10</eda>
-      <wind>true</wind>
-	  <buoyancy>33</buoyancy>
-	  <life>5</life>
-    </submodel>
-    <submodel>
-      <name>exhaust smoke r</name>
-      <model>Aircraft/Hurricane/Models/exhaust.xml</model>
-      <trigger>engines/engine/cranking</trigger>
-      <speed>50</speed>
-      <repeat>false</repeat>
-      <delay>0.001</delay>
-      <count>-1</count>
-      <x-offset>-4</x-offset>
-      <y-offset>2.8</y-offset>
-      <z-offset>0.5</z-offset>
-      <yaw-offset>-160</yaw-offset>
-      <pitch-offset>0.0</pitch-offset>
-      <eda>10</eda>
-      <life>1</life>
-      <buoyancy>34</buoyancy>
-      <wind>true</wind>
-    </submodel>
-    <submodel>
-      <name>exhaust smoke l</name>
-      <model>Aircraft/Hurricane/Models/exhaust.xml</model>
-      <trigger>engines/engine/cranking</trigger>
-      <speed>50</speed>
-      <repeat>false</repeat>
-      <delay>0.001</delay>
-      <count>-1</count>
-      <x-offset>-4</x-offset>
-      <y-offset>-2.8</y-offset>
-      <z-offset>0.5</z-offset>
-      <yaw-offset>160</yaw-offset>
-      <pitch-offset>0.0</pitch-offset>
-      <eda>10</eda>
-      <life>1</life>
-      <buoyancy>34</buoyancy>
-      <wind>true</wind>
-    </submodel>-->
-
+-->
   <submodel>
     <name>strop</name>
     <model>Aircraft/a4/Models/strop.ac</model>

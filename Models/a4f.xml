@@ -60,9 +60,40 @@
     <offsets>
       <x-m>5.38</x-m>
       <y-m>0.0</y-m>
-      <z-m>-0.1</z-m>
+      <z-m>-0.03</z-m>
     </offsets>
   </model>
+
+ <model>
+    <path>Aircraft/a4/Models/Submodels/droptank-300.xml</path>
+    <name>Left Droptank</name>
+    <offsets>
+      <x-m>6.8</x-m>
+      <y-m>-2.15</y-m>
+      <z-m>-0.03</z-m>
+    </offsets>
+  </model>
+
+ <model>
+    <path>Aircraft/a4/Models/Submodels/droptank-300.xml</path>
+    <name>Center Droptank</name>
+    <offsets>
+      <x-m>6.5</x-m>
+      <y-m>0.0</y-m>
+      <z-m>-0.11</z-m>
+    </offsets>
+  </model>
+
+ <model>
+    <path>Aircraft/a4/Models/Submodels/droptank-300.xml</path>
+    <name>Right Droptank</name>
+    <offsets>
+      <x-m>6.8</x-m>
+      <y-m>2.15</y-m>
+      <z-m>-0.03</z-m>
+    </offsets>
+  </model>
+
 
   <!-- Object Selection -->
 

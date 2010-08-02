@@ -107,31 +107,31 @@ the flight data model, instrument panel, and external 3D model.
 			<enable3d>false</enable3d>
 		</hud>
 
-		<!--<weight n="0">
-   <name>Left Outboard</name>
-   <weight-lb>0</weight-lb>
-   <max-lb>1000</max-lb>
-  </weight>
-  <weight n="1">
-   <name>Left Inboard</name>
-   <weight-lb>0</weight-lb>
-   <max-lb>2250</max-lb>
-  </weight>
-  <weight n="2">
-   <name>Center Pylon</name>
-   <weight-lb>0</weight-lb>
-   <max-lb>3500</max-lb>
-  </weight>
-  <weight n="3">
-   <name>Right Inboard</name>
-   <weight-lb>0</weight-lb>
-   <max-lb>2250</max-lb>
-  </weight>
-  <weight n="4">
-   <name>Right Outboard</name>
-   <weight-lb>0</weight-lb>
-   <max-lb>1000</max-lb>
-  </weight>-->
+		<weight n="0">
+			<name>Left Outboard</name>
+			<weight-lb>0</weight-lb>
+			<max-lb>1000</max-lb>
+		</weight>
+		<weight n="1">
+			<name>Left Inboard</name>
+			<weight-lb>200</weight-lb>
+			<max-lb>2250</max-lb>
+		</weight>
+		<weight n="2">
+			<name>Center Pylon</name>
+			<weight-lb>200</weight-lb>
+			<max-lb>3500</max-lb>
+		</weight>
+		<weight n="3">
+		<name>Right Inboard</name>
+			<weight-lb>200</weight-lb>
+			<max-lb>2250</max-lb>
+		</weight>
+		<weight n="4">
+			<name>Right Outboard</name>
+			<weight-lb>0</weight-lb>
+			<max-lb>1000</max-lb>
+		</weight>
 
 		<help>
 			<title>Douglas A4F Skyhawk</title>
@@ -210,7 +210,7 @@ the flight data model, instrument panel, and external 3D model.
 		<fuel>
 			<tank n="0">
 				<name>Center</name>
-				<level-gal_us>250</level-gal_us>
+				<level-gal_us>280</level-gal_us>
 			</tank>
 			<tank n="1">
 				<name>Left Wing</name>
@@ -220,6 +220,18 @@ the flight data model, instrument panel, and external 3D model.
 				<name>Right Wing</name>
 				<level-gal_us>260</level-gal_us>
 			</tank>
+			<tank n="3">
+				<name>Center Drop Tank</name>
+				<level-gal_us>300</level-gal_us>
+			</tank>
+			<tank n="4">
+				<name>Left Drop Tank</name>
+				<level-gal_us>300</level-gal_us>
+			</tank>
+			<tank n="5">
+				<name>Right Drop Tank</name>
+				<level-gal_us>300</level-gal_us>
+			</tank>
 		</fuel>
 	</consumables>
 
@@ -228,7 +240,6 @@ the flight data model, instrument panel, and external 3D model.
 			<type>probe</type>
 		</refuel>
 	</systems>
-
 
 	<!-- *************** set properties **********************-->
 	<controls>

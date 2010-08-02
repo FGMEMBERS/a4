@@ -86,7 +86,7 @@
    </action>
  </animation>
 
-    <animation>
+  <animation>
     <type>rotate</type>
     <object-name>Throttle</object-name>
     <property>/controls/engines/engine[0]/throttle</property>
@@ -112,6 +112,552 @@
     </axis>
   </animation>
 
+<!-- Panel Switches -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>GunsightSwitch</object-name>
+    <property>controls/armament/gunsight</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind>
+        <dep>0</dep>
+      </entry>
+      <entry>
+        <ind>1</ind>
+        <dep>184</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>0.009</x-m>
+      <y-m>-0.144</y-m>
+      <z-m>0.228</z-m>
+    </center>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+ <animation>
+    <type>pick</type>
+    <object-name>GunsightSwitch</object-name>
+    <visible>true</visible>
+   <action>
+     <button>0</button>
+     <repeatable>false</repeatable>
+    <binding>
+     <command>property-toggle</command>
+     <property>controls/armament/gunsight</property>
+   </binding>
+   </action>
+  </animation>
+
+ <animation>
+    <type>rotate</type>
+    <object-name>GunsightLightSwitch</object-name>
+    <property>controls/armament/gunsightlight</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind>
+        <dep>0</dep>
+      </entry>
+      <entry>
+        <ind>1</ind>
+        <dep>45</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>0.0</x-m>
+      <y-m>-0.144</y-m>
+      <z-m>0.22</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>GunsightLightSwitch</object-name>
+    <object-name>GunsightLightMount</object-name>
+    <visible>true</visible>
+   <action>
+     <button>0</button>
+     <repeatable>false</repeatable>
+    <binding>
+     <command>property-toggle</command>
+     <property>controls/armament/gunsightlight</property>
+   </binding>
+   </action>
+  </animation>
+
+
+  <!-- Main armament panel -->
+
+  <animation>
+    <type>pick</type>
+    <object-name>MasterSwitch</object-name>
+    <object-name>MasterMount</object-name>
+    <visible>true</visible>
+   <action>
+     <button>0</button>
+     <repeatable>false</repeatable>
+    <binding>
+     <command>property-toggle</command>
+     <property>controls/armament/master</property>
+   </binding>
+   </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>MasterSwitch</object-name>
+    <property>controls/armament/master</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind>
+        <dep>0</dep>
+      </entry>
+      <entry>
+        <ind>1</ind>
+        <dep>-45</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m> 0.01</x-m>
+      <y-m>-0.02</y-m>
+      <z-m>-0.18</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>GunSwitch</object-name>
+    <object-name>GunSwitchMount</object-name>
+    <visible>true</visible>
+   <action>
+     <button>0</button>
+     <repeatable>false</repeatable>
+    <binding>
+     <command>property-toggle</command>
+     <property>controls/armament/guns</property>
+   </binding>
+   </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>GunSwitch</object-name>
+    <property>controls/armament/guns</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind>
+        <dep>0</dep>
+      </entry>
+      <entry>
+        <ind>1</ind>
+        <dep>-45</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m> 0.01</x-m>
+      <y-m>-0.02</y-m>
+      <z-m>-0.11</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>NoseTailSwitch</object-name>
+    <object-name>NoseTailMount</object-name>
+    <visible>true</visible>
+   <action>
+     <button>0</button>
+     <repeatable>false</repeatable>
+    <binding>
+       <command>property-adjust</command>
+       <property>controls/armament/nose-tail</property>
+       <step>1</step>
+       <min>0</min>
+       <max>3</max>
+       <wrap>1</wrap>
+     </binding>
+   </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>NoseTailSwitch</object-name>
+    <property>controls/armament/nose-tail</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind>
+        <dep>0</dep>
+      </entry>
+      <entry>
+        <ind>1</ind>
+        <dep>-22</dep>
+      </entry>
+      <entry>
+        <ind>2</ind>
+        <dep>22</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m> 0.01</x-m>
+      <y-m>-0.02</y-m>
+      <z-m>-0.11</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+ <animation>
+    <type>pick</type>
+    <object-name>FunctionSelector</object-name>
+    <visible>true</visible>
+   <action>
+     <button>0</button>
+     <repeatable>false</repeatable>
+    <binding>
+       <command>property-adjust</command>
+       <property>controls/armament/function-select</property>
+       <step>1</step>
+       <min>0</min>
+       <max>7</max>
+       <wrap>1</wrap>
+     </binding>
+   </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>FunctionSelector</object-name>
+	<property>controls/armament/function-select</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind>
+        <dep>0</dep>
+      </entry>
+      <entry>
+        <ind>1</ind>
+        <dep>48</dep>
+      </entry>
+      <entry>
+        <ind>2</ind>
+        <dep>95</dep>
+      </entry>
+      <entry>
+        <ind>3</ind>
+        <dep>127</dep>
+      </entry>
+      <entry>
+        <ind>4</ind>
+        <dep>218</dep>
+      </entry>
+      <entry>
+        <ind>5</ind>
+        <dep>241</dep>
+      </entry>
+     <entry>
+        <ind>6</ind>
+        <dep>305</dep>
+      </entry>
+	</interpolation>
+    <center>
+      <x-m>-0.013</x-m>
+      <y-m>-0.048</y-m>
+      <z-m>-0.166</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>EmergFuncSelect</object-name>
+    <visible>true</visible>
+   <action>
+     <button>0</button>
+     <repeatable>false</repeatable>
+    <binding>
+       <command>property-adjust</command>
+       <property>controls/armament/emergency-function-select</property>
+       <step>1</step>
+       <min>0</min>
+       <max>7</max>
+       <wrap>1</wrap>
+     </binding>
+   </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>EmergFuncSelect</object-name>
+	<property>controls/armament/emergency-function-select</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind>
+        <dep>0</dep>
+      </entry>
+      <entry>
+        <ind>1</ind>
+        <dep>27</dep>
+      </entry>
+      <entry>
+        <ind>2</ind>
+        <dep>55</dep>
+      </entry>
+      <entry>
+        <ind>3</ind>
+        <dep>83</dep>
+      </entry>
+      <entry>
+        <ind>4</ind>
+        <dep>113</dep>
+      </entry>
+      <entry>
+        <ind>5</ind>
+        <dep>241</dep>
+      </entry>
+     <entry>
+        <ind>6</ind>
+        <dep>166</dep>
+      </entry>
+	</interpolation>
+    <center>
+      <x-m>-0.004</x-m>
+      <y-m>-0.104</y-m>
+      <z-m>-0.106</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <!-- Station switches -->
+   <animation>
+    <type>pick</type>
+    <object-name>StationSwitch1</object-name>
+    <object-name>StationMount1</object-name>
+    <visible>true</visible>
+   <action>
+     <button>0</button>
+     <repeatable>false</repeatable>
+    <binding>
+       <command>property-adjust</command>
+       <property>controls/armament/station/selected</property>
+       <step>1</step>
+       <min>0</min>
+       <max>3</max>
+       <wrap>1</wrap>
+     </binding>
+   </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>StationSwitch1</object-name>
+    <property>controls/armament/station/selected</property>
+    <interpolation>
+      <entry><ind>0</ind><dep>0</dep></entry>
+      <entry><ind>1</ind><dep>-22</dep></entry>
+      <entry><ind>2</ind><dep>22</dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 0.01</x-m>
+      <y-m>-0.02</y-m>
+      <z-m>-0.11</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+   <animation>
+    <type>pick</type>
+    <object-name>StationSwitch2</object-name>
+    <object-name>StationMount2</object-name>
+    <visible>true</visible>
+   <action>
+     <button>0</button>
+     <repeatable>false</repeatable>
+    <binding>
+       <command>property-adjust</command>
+       <property>controls/armament/station[1]/selected</property>
+       <step>1</step>
+       <min>0</min>
+       <max>3</max>
+       <wrap>1</wrap>
+     </binding>
+   </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>StationSwitch2</object-name>
+    <property>controls/armament/station[1]/selected</property>
+    <interpolation>
+      <entry><ind>0</ind><dep>0</dep></entry>
+      <entry><ind>1</ind><dep>-22</dep></entry>
+      <entry><ind>2</ind><dep>22</dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 0.01</x-m>
+      <y-m>-0.02</y-m>
+      <z-m>-0.11</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>StationSwitch3</object-name>
+    <object-name>StationMount3</object-name>
+    <visible>true</visible>
+   <action>
+     <button>0</button>
+     <repeatable>false</repeatable>
+    <binding>
+       <command>property-adjust</command>
+       <property>controls/armament/station[2]/selected</property>
+       <step>1</step>
+       <min>0</min>
+       <max>3</max>
+       <wrap>1</wrap>
+     </binding>
+   </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>StationSwitch3</object-name>
+    <property>controls/armament/station[2]/selected</property>
+    <interpolation>
+      <entry><ind>0</ind><dep>0</dep></entry>
+      <entry><ind>1</ind><dep>-22</dep></entry>
+      <entry><ind>2</ind><dep>22</dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 0.01</x-m>
+      <y-m>-0.02</y-m>
+      <z-m>-0.11</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+ <animation>
+    <type>pick</type>
+    <object-name>StationSwitch4</object-name>
+    <object-name>StationMount4</object-name>
+    <visible>true</visible>
+   <action>
+     <button>0</button>
+     <repeatable>false</repeatable>
+    <binding>
+       <command>property-adjust</command>
+       <property>controls/armament/station[3]/selected</property>
+       <step>1</step>
+       <min>0</min>
+       <max>3</max>
+       <wrap>1</wrap>
+     </binding>
+   </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>StationSwitch4</object-name>
+    <property>controls/armament/station[3]/selected</property>
+    <interpolation>
+      <entry><ind>0</ind><dep>0</dep></entry>
+      <entry><ind>1</ind><dep>-22</dep></entry>
+      <entry><ind>2</ind><dep>22</dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 0.01</x-m>
+      <y-m>-0.02</y-m>
+      <z-m>-0.11</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>StationSwitch5</object-name>
+    <object-name>StationMount5</object-name>
+    <visible>true</visible>
+   <action>
+     <button>0</button>
+     <repeatable>false</repeatable>
+    <binding>
+       <command>property-adjust</command>
+       <property>controls/armament/station[4]/selected</property>
+       <step>1</step>
+       <min>0</min>
+       <max>3</max>
+       <wrap>1</wrap>
+     </binding>
+   </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>StationSwitch5</object-name>
+    <property>controls/armament/station[4]/selected</property>
+    <interpolation>
+      <entry><ind>0</ind><dep>0</dep></entry>
+      <entry><ind>1</ind><dep>-22</dep></entry>
+      <entry><ind>2</ind><dep>22</dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 0.01</x-m>
+      <y-m>-0.02</y-m>
+      <z-m>-0.11</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
   <model>
     <path>Aircraft/a4/Models/Instruments/gear-indicator.xml</path>
     <name>Gear Indicator</name>
@@ -128,7 +674,7 @@
     <offsets>
       <x-m>-0.00</x-m>
       <y-m>-0.06</y-m>
-      <z-m> 0.10</z-m>
+      <z-m> 0.12</z-m>
     </offsets>
   </model>
 
@@ -142,23 +688,33 @@
     </offsets>
   </model>
 
+  <model>
+    <path>Aircraft/a4/Models/Instruments/gunsight.ac</path>
+    <name>Gunsight</name>
+    <offsets>
+      <x-m>-0.05</x-m>
+      <y-m> 0.0</y-m>
+      <z-m> 0.22</z-m>
+    </offsets>
+  </model>
+
 
   <model>
     <path>Aircraft/A-6E/Models/accelerometer.xml</path>
     <name>G Meter</name>
     <offsets>
       <x-m> 0.0</x-m>
-      <y-m>-0.11</y-m>
+      <y-m>-0.095</y-m>
       <z-m> 0.21</z-m>
     </offsets>
   </model>
 
   <model>
-    <path>Aircraft/A-6E/Models/asi.xml</path>
+    <path>Aircraft/a4/Models/Instruments/asi.xml</path>
     <name>ASI</name>
     <offsets>
       <x-m> 0.0</x-m>
-      <y-m>-0.17</y-m>
+      <y-m>-0.19</y-m>
       <z-m> 0.14</z-m>
     </offsets>
   </model>
@@ -200,7 +756,7 @@
     <offsets>
       <x-m> 0.0</x-m>
       <y-m>-0.1</y-m>
-      <z-m>-0.05</z-m>
+      <z-m>-0.02</z-m>
     </offsets>
   </model>
 
@@ -210,7 +766,7 @@
     <offsets>
       <x-m> 0.0</x-m>
       <y-m> 0.05</y-m>
-      <z-m>-0.05</z-m>
+      <z-m> 0.00</z-m>
     </offsets>
   </model>
 
