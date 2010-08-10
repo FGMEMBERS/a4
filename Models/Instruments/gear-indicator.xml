@@ -19,9 +19,9 @@
             </entry>
         </interpolation>
         <center>
-        <x-m>-0.005</x-m>
-        <y-m>0.007</y-m>
-        <z-m>-0.021</z-m>
+        <x-m>-0.004</x-m>
+        <y-m>0.019</y-m>
+        <z-m>-0.0225</z-m>
         </center>
         <axis>
             <x>0</x>

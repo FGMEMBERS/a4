@@ -184,8 +184,8 @@ the flight data model, instrument panel, and external 3D model.
 				<desc>toggle airbrakes</desc>
 			</key>
 			<key>
-				<name>CTRL K</name>
-				<desc>toggle spoilers</desc>
+				<name>k/j</name>
+				<desc>Arm/Dis-arm spoilers</desc>
 			</key>
 		</help>
 
@@ -257,26 +257,7 @@ the flight data model, instrument panel, and external 3D model.
 	</controls>
 
 	<input>
-		<keyboard include="../../Input/Keyboard/carrier-bindings.xml">
-			<!--<keyboard>-->
-			<key n="2">
-				<name>Ctrl-B</name>
-				<desc>Toggle speedbrake.</desc>
-				<binding>
-					<command>property-toggle</command>
-					<property>controls/flight/speedbrake</property>
-				</binding>
-			</key>
-			<key n="11">
-				<name>Ctrl-K</name>
-				<desc>Toggle spoiler.</desc>
-				<binding>
-					<command>property-toggle</command>
-					<property>controls/flight/spoiler</property>
-				</binding>
-			</key>
-		</keyboard>
-
+		<keyboard include="../../Input/Keyboard/carrier-bindings.xml" />
 	</input>
 
 	<!-- weights -->

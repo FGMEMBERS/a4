@@ -1,19 +1,6 @@
 
-# ==================================== timer stuff ===========================================
-
-# set the update period
-
-UPDATE_PERIOD = 0.3;
-
-# set the timer for the selected function
-
-registerTimer = func {
-
-    settimer(arg[0], UPDATE_PERIOD);
-
-} # end function
-
-# =============================== end timer stuff ===========================================
+# Update period for systems loop
+UPDATE_PERIOD = 0.2;
 
 
 # =============================== Pilot G stuff======================================
@@ -243,7 +230,7 @@ headShake();
 
 # Weapons handling
 
-# CANNON
+# Cannon
 var master = props.globals.getNode("controls/armament/master", 1);
 var gun = props.globals.getNode("controls/armament/guns", 1);
 var fire_cannon = props.globals.getNode("controls/armament/trigger-cannon", 1);
@@ -259,3 +246,75 @@ var station5 = props.globals.getNode("controls/armament/station[4]/selected", 1)
 setlistener("/controls/armament/trigger", func(n) {
   if (master.getValue() and gun.getValue()) { fire_cannon.setValue(n.getValue()); }
 });
+
+# Auto-armed spoilers
+var spoilers = props.globals.getNode("controls/flight/spoilers", 1);
+var spoilers_armed = props.globals.getNode("controls/flight/spoilers-armed", 1);
+var throttle = props.globals.getNode("controls/engines/engine[0]/throttle", 1);
+var left_main_wow = props.globals.getNode("gear/gear[1]/wow", 1);
+
+var updateSpoilers = func {
+	if (spoilers_armed.getValue() and
+		left_main_wow.getValue() and
+		(throttle.getValue() < 0.7))
+	{
+		spoilers.setValue(1);
+	} else {
+		spoilers.setValue(0);
+	}
+}
+
+var spoiler_light = props.globals.getNode("sim/alarms/spoiler", 1);
+var spoiler_pos = props.globals.getNode("surface-positions/spoiler-pos-norm", 1);
+var speedbrake_light = props.globals.getNode("sim/alarms/speedbrake", 1);
+var speedbrake_pos = props.globals.getNode("surface-positions/speedbrake-pos-norm", 1);
+var gear_light = props.globals.getNode("sim/alarms/gear", 1);
+var gear_pos = props.globals.getNode("gear/gear[0]/position-norm", 1);
+
+var updateWarningLights = func {
+	spoiler_light.setValue(spoiler_pos.getValue() > 0.0 ? 1 : 0);
+	speedbrake_light.setValue(speedbrake_pos.getValue() > 0.0 ? 1 : 0);
+
+	if ((gear_pos.getValue() > 0.01) and (gear_pos.getValue() < 0.99)) {
+		gear_light.setValue(1.0);
+	} else {
+		gear_light.getValue(0.0);
+	}
+}
+
+var main_loop = func {
+	updateSpoilers();
+	updateWarningLights();
+	settimer(main_loop, UPDATE_PERIOD);
+}
+
+settimer(main_loop, UPDATE_PERIOD);
+
+# controls.nas overrides.
+
+# No manual spoiler control. This only arms the spoilers.
+controls.stepSpoilers = func(step) {
+	if (step > 0) {
+		spoilers_armed.setValue(1);
+	} else {
+		spoilers_armed.setValue(0);
+	}
+}
+
+# Flaps have no detents.
+var flaps = props.globals.getNode("/controls/flight/flaps");
+var delta = props.globals.getNode("/sim/time/delta-realtime-sec");
+controls.flapsDown = func(step) {
+	flaps.setValue(flaps.getValue() + step * 0.33 * delta.getValue());
+}
+
+# Gear cannot be raised if wow on left main strut
+var gear_pos = props.globals.getNode("gear/gear[0]/position-norm", 1);
+controls.gearDown = func(v) {
+    if ((v < 0) and (getprop("/gear/gear[1]/wow") == 0)) {
+		setprop("/controls/gear/gear-down", 0);
+    } elsif (v > 0) {
+		setprop("/controls/gear/gear-down", 1);
+    }
+}
+

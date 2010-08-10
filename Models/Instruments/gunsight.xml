@@ -5,6 +5,7 @@
 
 
   <!-- Reflector markings not visible when gunsight switched off -->
+  <!--
   <animation>
     <type>blend</type>
     <object-name>Reflector</object-name>
@@ -12,6 +13,7 @@
     <factor>-1</factor>
     <offset>1</offset>
   </animation>
+  -->
 
   <!-- Reflector markings higher intensity in Day mode -->
   <animation>

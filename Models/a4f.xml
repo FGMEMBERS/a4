@@ -561,13 +561,34 @@
     <type>rotate</type>
     <object-name>LeftElevator</object-name>
     <object-name>RightElevator</object-name>
-    <property>surface-positions/elevator-pos-norm</property>
+    <!-- This is intentional - trim is provided by moving the entire horizontal stabilizer -->
+    <property>/controls/flight/elevator</property>
     <factor>30</factor>
     <offset-deg>0</offset-deg>
     <center>
       <x-m>11.730</x-m>
       <y-m>0.0</y-m>
       <z-m>1.25</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>LeftElevator</object-name>
+    <object-name>RightElevator</object-name>
+    <object-name>HStab</object-name>
+    <property>/controls/flight/elevator-trim</property>
+    <factor>-10</factor>
+    <offset-deg>0</offset-deg>
+    <center>
+      <x-m>10.41</x-m>
+      <y-m>0.0</y-m>
+      <z-m>1.26</z-m>
     </center>
     <axis>
       <x>0</x>
@@ -628,7 +649,7 @@
     <type>rotate</type>
     <object-name>LeftFlap</object-name>
     <property>surface-positions/flap-pos-norm</property>
-    <factor>-50</factor>
+    <factor>-40</factor>
     <offset-deg>0</offset-deg>
     <axis>
       <x1-m>7.859</x1-m>
@@ -644,7 +665,7 @@
     <type>rotate</type>
     <object-name>RightFlap</object-name>
     <property>surface-positions/flap-pos-norm</property>
-    <factor>50</factor>
+    <factor>40</factor>
     <offset-deg>0</offset-deg>
     <axis>
       <x1-m>7.859</x1-m>
