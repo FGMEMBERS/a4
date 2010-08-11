@@ -278,7 +278,7 @@ var updateWarningLights = func {
 	if ((gear_pos.getValue() > 0.01) and (gear_pos.getValue() < 0.99)) {
 		gear_light.setValue(1.0);
 	} else {
-		gear_light.getValue(0.0);
+		gear_light.setValue(0.0);
 	}
 }
 
