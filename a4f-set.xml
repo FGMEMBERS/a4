@@ -189,7 +189,7 @@ the flight data model, instrument panel, and external 3D model.
 			</key>
 			<key>
 				<name>k/j</name>
-				<desc>Arm/Dis-arm spoilers</desc>
+				<desc>Arm/Disarm spoilers</desc>
 			</key>
 		</help>
 
@@ -226,7 +226,7 @@ the flight data model, instrument panel, and external 3D model.
 			</tank>
 			<tank n="3">
 				<name>Center Drop Tank</name>
-				<level-gal_us>300</level-gal_us>
+				<level-gal_us>0</level-gal_us>
 			</tank>
 			<tank n="4">
 				<name>Left Drop Tank</name>

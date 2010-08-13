@@ -229,22 +229,54 @@ headShake();
 
 
 # Weapons handling
-
-# Cannon
 var master = props.globals.getNode("controls/armament/master", 1);
 var gun = props.globals.getNode("controls/armament/guns", 1);
 var fire_cannon = props.globals.getNode("controls/armament/trigger-cannon", 1);
 var nosetail = props.globals.getNode("controls/armament/nose-tail", 1);
 var function_select = props.globals.getNode("controls/armament/function-select", 1);
 var emergency_function_select = props.globals.getNode("controls/armament/emergency-function-select", 1);
-var station1 = props.globals.getNode("controls/armament/station[0]/selected", 1);
-var station2 = props.globals.getNode("controls/armament/station[1]/selected", 1);
-var station3 = props.globals.getNode("controls/armament/station[2]/selected", 1);
-var station4 = props.globals.getNode("controls/armament/station[3]/selected", 1);
-var station5 = props.globals.getNode("controls/armament/station[4]/selected", 1);
+var stations = props.globals.getNode("/controls/armament").getChildren("station");
+
 
 setlistener("/controls/armament/trigger", func(n) {
-  if (master.getValue() and gun.getValue()) { fire_cannon.setValue(n.getValue()); }
+  if (master.getValue()) {
+	if (gun.getValue()) { fire_cannon.setBoolValue(n.getValue()); }
+
+	if (function_select.getValue() == 1) {
+	  # Rockets armed
+	  foreach (var station; stations) {
+		if (station.getNode("selected", 1).getValue())
+		{
+		  station.getNode("release-rocket", 1).setBoolValue(n.geValue());
+		}
+	  }
+	}
+  }
+});
+
+setlistener("/controls/armament/bomb", func(n) {
+  if (master.getValue()) {
+	if ((function_select.getValue() == 5) and (nosetail.getValue() != 0)) {
+	  # Bombs armed
+	  foreach (var station; stations) {
+		if (station.getNode("selected", 1).getValue())
+		{
+		  station.getNode("release-stick", 1).setBoolValue(n.getValue());
+		}
+	  }
+	}
+  }
+});
+
+# Listeners to handle droptanks being dropped - need to set fuel contents appropriately.
+setlistener("/controls/armament/station[1]/release-stick", func(n) {
+  setprop("/consumables/fuel/tank[4]/level-gal_us", 0.0);
+  setprop("/sim/weight[1]/weight-lb", 0.0);
+});
+
+setlistener("/controls/armament/station[3]/release-stick", func(n) {
+  setprop("/consumables/fuel/tank[5]/level-gal_us", 0.0);
+  setprop("/sim/weight[3]/weight-lb", 0.0);
 });
 
 # Auto-armed spoilers
