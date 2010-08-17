@@ -852,12 +852,22 @@
   </model>
 
   <model>
-    <path>Aircraft/A-6E/Models/hsi.xml</path>
+    <path>Aircraft/a4/Models/Instruments/hsi.xml</path>
     <name>HSI</name>
     <offsets>
       <x-m> 0.0</x-m>
       <y-m>-0.1</y-m>
-      <z-m>-0.02</z-m>
+      <z-m>-0.01</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/a4/Models/Instruments/hsi-2.xml</path>
+    <name>HSI part 2</name>
+    <offsets>
+      <x-m> 0.0</x-m>
+      <y-m>-0.1</y-m>
+      <z-m>-0.01</z-m>
     </offsets>
   </model>
 

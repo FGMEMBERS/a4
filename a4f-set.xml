@@ -54,7 +54,7 @@ the flight data model, instrument panel, and external 3D model.
 
 		<submodels>
 			<serviceable type="bool">true</serviceable>
-			<path>Aircraft/a4/Models/a4-submodels.xml</path>
+			<path>Aircraft/a4/Models/Submodels/a4f-submodels.xml</path>
 		</submodels>
 
 		<view n="0">
@@ -224,15 +224,15 @@ the flight data model, instrument panel, and external 3D model.
 				<name>Right Wing</name>
 				<level-gal_us>260</level-gal_us>
 			</tank>
-			<tank n="3">
+<!--			<tank n="3">
 				<name>Center Drop Tank</name>
 				<level-gal_us>0</level-gal_us>
-			</tank>
-			<tank n="4">
+			</tank> -->
+			<tank n="3">
 				<name>Left Drop Tank</name>
 				<level-gal_us>300</level-gal_us>
 			</tank>
-			<tank n="5">
+			<tank n="4">
 				<name>Right Drop Tank</name>
 				<level-gal_us>300</level-gal_us>
 			</tank>
