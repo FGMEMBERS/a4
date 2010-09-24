@@ -38,9 +38,9 @@
     <path>Aircraft/a4/Models/a4f-panel.xml</path>
     <name>Panel</name>
     <offsets>
-      <x-m>2.63</x-m>
+      <x-m>2.73</x-m>
       <y-m>0.0</y-m>
-      <z-m>0.64</z-m>
+      <z-m>0.74</z-m>
     </offsets>
   </model>
 
@@ -74,34 +74,57 @@
     </offsets>
   </model>
 
- <model>
-    <path>Aircraft/a4/Models/Submodels/droptank-300-left.xml</path>
-    <name>Left Droptank</name>
+
+<!-- Loadout. Center droptank, 2x TER w/ MK82, 2x LAU 10/A -->
+
+  <model>
+    <path>Aircraft/a4/Models/Stores/FFAR/lau68-left.xml</path>
+    <name>LAU 68 Left</name>
     <offsets>
-      <x-m>6.6</x-m>
-      <y-m>-2.15</y-m>
-      <z-m>-0.03</z-m>
+      <x-m>6.8</x-m>
+      <y-m>-3.0</y-m>
+      <z-m>-0.2</z-m>
     </offsets>
   </model>
 
-<!-- Center droptank not used
- <model>
-    <path>Aircraft/a4/Models/Submodels/droptank-300.xml</path>
+  <model>
+    <path>Aircraft/a4/Models/Stores/Mk82/triple-MK-82-LD-left.xml</path>
+    <name>MK82 Left</name>
+    <offsets>
+      <x-m>6.5</x-m>
+      <y-m>-2.14</y-m>
+      <z-m>-0.2</z-m>
+    </offsets>
+  </model>
+
+
+  <model>
+    <path>Aircraft/a4/Models/Submodels/droptank-300-centre.xml</path>
     <name>Center Droptank</name>
     <offsets>
       <x-m>6.5</x-m>
       <y-m>0.0</y-m>
-      <z-m>-0.11</z-m>
-    </offsets>
-  </model> -->
-
- <model>
-    <path>Aircraft/a4/Models/Submodels/droptank-300-right.xml</path>
-    <name>Right Droptank</name>
-    <offsets>
-      <x-m>6.6</x-m>
-      <y-m>2.15</y-m>
       <z-m>-0.03</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/a4/Models/Stores/Mk82/triple-MK-82-LD-right.xml</path>
+    <name>MK82 Left</name>
+    <offsets>
+      <x-m>6.5</x-m>
+      <y-m>2.14</y-m>
+      <z-m>-0.2</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/a4/Models/Stores/FFAR/lau68-right.xml</path>
+    <name>LAU 68 Right</name>
+    <offsets>
+      <x-m>6.8</x-m>
+      <y-m> 3.0</y-m>
+      <z-m>-0.2</z-m>
     </offsets>
   </model>
 
@@ -231,11 +254,11 @@
         </entry>
         <entry>
             <ind>0.5</ind>
-            <dep>-90.0</dep>
+            <dep>-80.0</dep>
         </entry>
         <entry>
             <ind>1.0</ind>
-            <dep>-90.0</dep>
+            <dep>-80.0</dep>
         </entry>
     </interpolation>
     <axis>
@@ -259,11 +282,11 @@
         </entry>
         <entry>
             <ind>0.5</ind>
-            <dep>-90.0</dep>
+            <dep>-70.0</dep>
         </entry>
         <entry>
             <ind>1.0</ind>
-            <dep>-90.0</dep>
+            <dep>-70.0</dep>
         </entry>
     </interpolation>
     <axis>
@@ -352,11 +375,11 @@
         </entry>
         <entry>
             <ind>0.5</ind>
-            <dep>90.0</dep>
+            <dep>80.0</dep>
         </entry>
         <entry>
             <ind>1.0</ind>
-            <dep>90.0</dep>
+            <dep>80.0</dep>
         </entry>
     </interpolation>
     <axis>
@@ -380,11 +403,11 @@
         </entry>
         <entry>
             <ind>0.5</ind>
-            <dep>90.0</dep>
+            <dep>70.0</dep>
         </entry>
         <entry>
             <ind>1.0</ind>
-            <dep>90.0</dep>
+            <dep>70.0</dep>
         </entry>
     </interpolation>
     <axis>

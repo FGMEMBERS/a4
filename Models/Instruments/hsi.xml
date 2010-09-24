@@ -11,7 +11,7 @@
 		<property>orientation/heading-magnetic-deg</property>
 		<axis><x>1</x></axis>
 	</animation>
- 
+
 	<animation>
 		<type>select</type>
 		<object-name>bearing-tcn-needle-on</object-name>
@@ -52,16 +52,10 @@
     <type>select</type>
     <object-name>miles-flag</object-name>
     <condition>
-      <or>
         <equals>
           <property>instrumentation/tacan/in-range</property>
           <value>false</value>
         </equals>
-        <equals>
-          <property>instrumentation/tacan/switch-position</property>
-          <value>0</value>
-        </equals>
-      </or>
     </condition>
   </animation>
 
@@ -195,9 +189,9 @@
   <object-name>course-knob</object-name>
   <property>instrumentation/nav[1]/radials/selected-deg</property>
   <center>
-    <x-m>0.0075</x-m>
-    <y-m>0.0413</y-m>
-    <z-m>-0.0441</z-m>
+    <x-m>0.015</x-m>
+    <y-m>0.042</y-m>
+    <z-m>-0.035</z-m>
   </center>
   <axis>
     <x>-1</x>
@@ -206,21 +200,87 @@
   </axis>
 </animation>
 
- <!--<animation>
+<animation>
+  <type>pick</type>
+  <object-name>course-knob</object-name>
+  <action>
+    <name>small decrease (scrollwheel)</name>
+    <button>3</button>
+    <repeatable>true</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>instrumentation/nav[1]/radials/selected-deg</property>
+      <step>-1</step>
+      <min>0</min>
+      <max>360</max>
+      <wrap>1</wrap>
+    </binding>
+  </action>
+  <action>
+    <name>small increase (scrollwheel)</name>
+    <button>4</button>
+    <repeatable>true</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>instrumentation/nav[1]/radials/selected-deg</property>
+      <step>1</step>
+      <min>0</min>
+      <max>360</max>
+      <wrap>1</wrap>
+    </binding>
+  </action>
+</animation>
+
+<!--
+
+<animation>
+  <type>pick</type>
+  <object-name>heading-set-knob</object-name>
+  <action>
+    <name>small decrease (scrollwheel)</name>
+    <button>3</button>
+    <repeatable>true</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>instrumentation/heading-indicator/offset-deg</property>
+      <step>-1</step>
+      <min>0</min>
+      <max>360</max>
+      <wrap>1</wrap>
+    </binding>
+  </action>
+  <action>
+    <name>small increase (scrollwheel)</name>
+    <button>4</button>
+    <repeatable>true</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>instrumentation/heading-indicator/offset-deg</property>
+      <step>1</step>
+      <min>0</min>
+      <max>360</max>
+      <wrap>1</wrap>
+    </binding>
+  </action>
+</animation>
+
+<animation>
   <type>rotate</type>
-  <object-name>heading-knob</object-name>
+  <object-name>heading-set-knob</object-name>
   <property>orientation/heading-magnetic-deg</property>
   <center>
-    <x-m>0.0</x-m>
-    <y-m>0.0</y-m>
-    <z-m>0.0</z-m>
+    <x-m>0.015</x-m>
+    <y-m>-0.041</y-m>
+    <z-m>-0.035	</z-m>
   </center>
   <axis>
-    <x>1</x>
+    <x>-1</x>
     <y>0</y>
     <z>0</z>
   </axis>
- </animation>-->
+</animation>
+
+-->
 
 <!-- lighting -->
 
@@ -228,29 +288,29 @@
    <object-name>HSI-bkg</object-name>
    <object-name>heading-set-knob</object-name>
    <type>material</type>
-     <emission> 
+     <emission>
       <factor-prop>controls/lighting/panel-norm</factor-prop>
 			<red>0.55</red>
 			<green>0.24</green>
 			<blue>0.10</blue>
       </emission>
   </animation>
-  
+
   <animation>
    <object-name>lubber-line</object-name>
    <type>material</type>
-     <emission> 
+     <emission>
       <factor-prop>controls/lighting/panel-norm</factor-prop>
 			<red>0.55</red>
 			<green>0.24</green>
 			<blue>0.10</blue>
       </emission>
   </animation>
-  
+
   <animation>
    <object-name>course-knob</object-name>
    <type>material</type>
-     <emission> 
+     <emission>
       <factor-prop>controls/lighting/panel-norm</factor-prop>
         <red>0.44</red>
         <green>0.27</green>
@@ -261,7 +321,7 @@
   <animation>
     <object-name>HSI-compass-card</object-name>
     <type>material</type>
-    <emission> 
+    <emission>
       <factor-prop>controls/lighting/instruments-norm</factor-prop>
 			<red>0.55</red>
 			<green>0.24</green>
@@ -272,7 +332,7 @@
   <animation>
     <object-name>bearing-tcn-needle-on</object-name>
     <type>material</type>
-    <emission> 
+    <emission>
       <factor-prop>controls/lighting/instruments-norm</factor-prop>
 			<red>0.55</red>
 			<green>0.24</green>
@@ -282,7 +342,7 @@
   <animation>
     <object-name>bearing-needle-off</object-name>
     <type>material</type>
-    <emission> 
+    <emission>
       <factor-prop>controls/lighting/instruments-norm</factor-prop>
 			<red>0.55</red>
 			<green>0.24</green>
@@ -293,7 +353,7 @@
   <animation>
     <object-name>off-flag</object-name>
     <type>material</type>
-    <emission> 
+    <emission>
       <factor-prop>controls/lighting/panel-norm</factor-prop>
 			<red>0.55</red>
 			<green>0.24</green>
@@ -304,7 +364,7 @@
   <animation>
     <object-name>miles-flag</object-name>
     <type>material</type>
-    <emission> 
+    <emission>
       <factor-prop>controls/lighting/instruments-norm</factor-prop>
 			<red>0.55</red>
 			<green>0.24</green>
@@ -315,7 +375,7 @@
   <animation>
     <object-name>miles-drum-1</object-name>
     <type>material</type>
-    <emission> 
+    <emission>
       <factor-prop>controls/lighting/instruments-norm</factor-prop>
 			<red>0.55</red>
 			<green>0.24</green>
@@ -325,7 +385,7 @@
   <animation>
     <object-name>miles-drum-2</object-name>
     <type>material</type>
-    <emission> 
+    <emission>
       <factor-prop>controls/lighting/instruments-norm</factor-prop>
 			<red>0.55</red>
 			<green>0.24</green>
@@ -335,7 +395,7 @@
   <animation>
     <object-name>miles-drum-3</object-name>
     <type>material</type>
-    <emission> 
+    <emission>
       <factor-prop>controls/lighting/instruments-norm</factor-prop>
 			<red>0.55</red>
 			<green>0.24</green>
@@ -346,7 +406,7 @@
   <animation>
     <object-name>course-drum-1</object-name>
     <type>material</type>
-    <emission> 
+    <emission>
       <factor-prop>controls/lighting/instruments-norm</factor-prop>
 			<red>0.55</red>
 			<green>0.24</green>
@@ -356,7 +416,7 @@
   <animation>
     <object-name>course-drum-2</object-name>
     <type>material</type>
-    <emission> 
+    <emission>
       <factor-prop>controls/lighting/instruments-norm</factor-prop>
 			<red>0.55</red>
 			<green>0.24</green>
@@ -366,7 +426,7 @@
   <animation>
     <object-name>course-drum-3</object-name>
     <type>material</type>
-    <emission> 
+    <emission>
       <factor-prop>controls/lighting/instruments-norm</factor-prop>
 			<red>0.55</red>
 			<green>0.24</green>

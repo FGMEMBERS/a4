@@ -193,31 +193,31 @@
 
   <!-- Optional drop tanks. 300 gallons each. 2247lbs full, 207lbs empty => 2040lbs of fuel capacity-->
 
-  <!-- Center tank not used
   <tank x="0.08" y="0" z="-0.45"
         jet="true"
         capacity="2040"/>
-  -->
+
+<!-- Left and right tanks not currently used
   <tank x="0.08" y="-1.8" z="-0.45"
         jet="true"
         capacity="2040"/>
   <tank x="0.08" y="1.8" z="-0.45"
         jet="true"
         capacity="2040"/>
-
+-->
 
   <!--  Ballast and Weights -->
   <ballast x="4.49" y="0" z="-0.55" mass="1600"/>
   <!-- cockpit -->
 
   <!-- 5 pylons. One 3500lbs center, two inboard max 2250lbs, two outboard max 1000lbs -->
-  <weight x="-1.6" y="-3" z="-1.33" size="0.8"
+  <weight x="-1.6" y="3" z="-1.33" size="0.8"
           mass-prop="/sim/weight[0]/weight-lb"/>
-  <weight x="-0.79" y="-1.8" z="-1.33" size="1"
+  <weight x="-0.79" y="1.8" z="-1.33" size="1"
           mass-prop="/sim/weight[1]/weight-lb"/>
   <weight x="-0.39" y="0" z="-0.45" size="1"
           mass-prop="/sim/weight[2]/weight-lb"/>
-  <weight x="-0.79" y="-2" z="-0.45" size="1"
+  <weight x="-0.79" y="-1.8" z="-0.45" size="1"
           mass-prop="/sim/weight[3]/weight-lb"/>
   <weight x="-1.6" y="-3" z="-0.45" size="0.8"
           mass-prop="/sim/weight[4]/weight-lb"/>-->

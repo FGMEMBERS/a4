@@ -61,10 +61,10 @@ the flight data model, instrument panel, and external 3D model.
 			<internal archive="y">true</internal>
 			<config>
 				<x-offset-m archive="y">0.00</x-offset-m>
-				<y-offset-m archive="y">0.92</y-offset-m>
-				<z-offset-m archive="y">-2.2</z-offset-m>
-				<pitch-offset-deg>-17</pitch-offset-deg>
-				<default-field-of-view-deg>60</default-field-of-view-deg>
+				<y-offset-m archive="y">0.85</y-offset-m>
+				<z-offset-m archive="y">-2.35</z-offset-m>
+				<pitch-offset-deg>-10</pitch-offset-deg>
+				<!-- <default-field-of-view-deg>60</default-field-of-view-deg> -->
 			</config>
 		</view>
 
@@ -118,17 +118,20 @@ the flight data model, instrument panel, and external 3D model.
 		</weight>
 		<weight n="1">
 			<name>Left Inboard</name>
-			<weight-lb>200</weight-lb>
+			<!-- 3 Mk 82 bombs + TER mount-->
+			<weight-lb>1644</weight-lb>
 			<max-lb>2250</max-lb>
 		</weight>
 		<weight n="2">
 			<name>Center Pylon</name>
-			<weight-lb>200</weight-lb>
+			<!-- 300 gallon droptank. Fuel weight handled separately -->
+			<weight-lb>207</weight-lb>
 			<max-lb>3500</max-lb>
 		</weight>
 		<weight n="3">
 		<name>Right Inboard</name>
-			<weight-lb>200</weight-lb>
+			<!-- 3 Mk 82 bombs + TER mount-->
+			<weight-lb>1644</weight-lb>
 			<max-lb>2250</max-lb>
 		</weight>
 		<weight n="4">
@@ -171,6 +174,17 @@ the flight data model, instrument panel, and external 3D model.
 			<line>- Lower landing gear and flaps at 225 KIAS</line>
 			<line>- Descend to 600ft on base</line>
 			<line>- Approach at 125 KIAS at the abeam position, 17.5 units AOA</line>
+			<line></line>
+			<line>STORES</line>
+			<line>- Colt Mk 12 Cannon. Master:ON Guns:READY Trigger to fire</line>
+			<line>- LAU68 Rockets (stations 1 and 5). Master:ON. Selector:ROCKETS. Station:READY. Trigger to fire</line>
+			<line>- Mk 82 Bombs (stations 2 and 4). Master:ON. Arm: NOSE &amp; TAIL. Selector:BOMBS &amp; GM ARM. Station:READY. Bomb(b) to drop</line>
+			<line>- 300 gallon drop tank (station 3). Master:ON. Arm: NOSE &amp; TAIL. Selector:BOMBS &amp; GM ARM. Station:READY. Bomb(b) to jettison</line>
+
+            <key>
+				<name>b</name>
+				<desc>Trigger bomb</desc>
+			</key>
             <key>
 				<name>C</name>
 				<desc>catapult launch command</desc>
@@ -189,7 +203,7 @@ the flight data model, instrument panel, and external 3D model.
 			</key>
 			<key>
 				<name>k/j</name>
-				<desc>Arm/Disarm spoilers</desc>
+				<desc>Arm/Disarm auto-deploy spoilers</desc>
 			</key>
 		</help>
 
@@ -224,18 +238,21 @@ the flight data model, instrument panel, and external 3D model.
 				<name>Right Wing</name>
 				<level-gal_us>260</level-gal_us>
 			</tank>
-<!--			<tank n="3">
-				<name>Center Drop Tank</name>
-				<level-gal_us>0</level-gal_us>
-			</tank> -->
 			<tank n="3">
+				<name>Center Drop Tank</name>
+				<level-gal_us>300</level-gal_us>
+			</tank>
+
+<!-- Left and right droptanks not used in current configuration
+			<tank n="4">
 				<name>Left Drop Tank</name>
 				<level-gal_us>300</level-gal_us>
 			</tank>
-			<tank n="4">
+			<tank n="5">
 				<name>Right Drop Tank</name>
 				<level-gal_us>300</level-gal_us>
 			</tank>
+-->
 		</fuel>
 	</consumables>
 
@@ -261,7 +278,16 @@ the flight data model, instrument panel, and external 3D model.
 	</controls>
 
 	<input>
-		<keyboard include="../../Input/Keyboard/carrier-bindings.xml" />
+		<keyboard include="../../Input/Keyboard/carrier-bindings.xml">
+			<key n="98">
+				<name>b</name>
+				<desc>Trigger Bomb</desc>
+				<binding>
+					<command>property-toggle</command>
+					<property>/controls/armament/bomb</property>
+				</binding>
+			</key>
+		</keyboard>
 	</input>
 
 	<!-- weights -->

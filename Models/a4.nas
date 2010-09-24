@@ -240,14 +240,16 @@ var stations = props.globals.getNode("/controls/armament").getChildren("station"
 
 setlistener("/controls/armament/trigger", func(n) {
   if (master.getValue()) {
-	if (gun.getValue()) { fire_cannon.setBoolValue(n.getValue()); }
+	if (gun.getValue()) {
+	  fire_cannon.setBoolValue(n.getValue());
+	}
 
 	if (function_select.getValue() == 1) {
 	  # Rockets armed
 	  foreach (var station; stations) {
-		if (station.getNode("selected", 1).getValue())
+		if (station.getNode("selected", 1).getValue() == 1)
 		{
-		  station.getNode("release-rocket", 1).setBoolValue(n.geValue());
+		  station.getNode("release-rocket", 1).setBoolValue(n.getValue());
 		}
 	  }
 	}
@@ -259,7 +261,7 @@ setlistener("/controls/armament/bomb", func(n) {
 	if ((function_select.getValue() == 5) and (nosetail.getValue() != 0)) {
 	  # Bombs armed
 	  foreach (var station; stations) {
-		if (station.getNode("selected", 1).getValue())
+		if (station.getNode("selected", 1).getValue() == 1)
 		{
 		  station.getNode("release-stick", 1).setBoolValue(n.getValue());
 		}
@@ -268,15 +270,37 @@ setlistener("/controls/armament/bomb", func(n) {
   }
 });
 
-# Listeners to handle droptanks being dropped - need to set fuel contents appropriately.
-setlistener("/controls/armament/station[1]/release-stick", func(n) {
-  setprop("/consumables/fuel/tank[4]/level-gal_us", 0.0);
-  setprop("/sim/weight[1]/weight-lb", 0.0);
+# Listeners for TER carrying 3 Mk82 bombs, which are released individually.
+setlistener("controls/armament/station[1]/release-stick", func(n) {
+  if (getprop("controls/armament/station[1]/release-stick-1") == 0) {
+		setprop("controls/armament/station[1]/release-stick-1", 1);
+		setprop("/sim/weight[1]/weight-lb", 531 + 531 + 105);
+  } else if (getprop("controls/armament/station[1]/release-stick-2") == 0) {
+		setprop("controls/armament/station[1]/release-stick-2", 1);
+		setprop("/sim/weight[1]/weight-lb", 531 + 105);
+  } else if (getprop("controls/armament/station[1]/release-stick-3") == 0) {
+		setprop("controls/armament/station[1]/release-stick-3", 1);
+		setprop("/sim/weight[1]/weight-lb", 105);
+  }
 });
 
-setlistener("/controls/armament/station[3]/release-stick", func(n) {
-  setprop("/consumables/fuel/tank[5]/level-gal_us", 0.0);
-  setprop("/sim/weight[3]/weight-lb", 0.0);
+setlistener("controls/armament/station[3]/release-stick", func(n) {
+  if (getprop("controls/armament/station[3]/release-stick-1") == 0) {
+		setprop("controls/armament/station[3]/release-stick-1", 1);
+		setprop("/sim/weight[3]/weight-lb", 531 + 531 + 105);
+  } else if (getprop("controls/armament/station[3]/release-stick-2") == 0) {
+		setprop("controls/armament/station[3]/release-stick-2", 1);
+		setprop("/sim/weight[3]/weight-lb", 531 + 105);
+  } else if (getprop("controls/armament/station[3]/release-stick-3") == 0) {
+		setprop("controls/armament/station[3]/release-stick-3", 1);
+		setprop("/sim/weight[3]/weight-lb", 105);
+  }
+});
+
+# Listeners to handle droptanks being dropped - need to set fuel contents appropriately.
+setlistener("/controls/armament/station[2]/release-stick", func(n) {
+  setprop("/consumables/fuel/tank[3]/level-gal_us", 0.0);
+  setprop("/sim/weight[2]/weight-lb", 0.0);
 });
 
 # Auto-armed spoilers
