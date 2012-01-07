@@ -702,7 +702,7 @@
     </axis>
   </animation>
 
-<animation>
+  <animation>
     <type>pick</type>
     <object-name>SteeringSwitch</object-name>
     <object-name>SteeringMount</object-name>
@@ -734,6 +734,40 @@
       <x>0</x><y>1</y><z>0</z>
     </axis>
   </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>APCSwitch</object-name>
+    <object-name>APCMount</object-name>
+    <visible>true</visible>
+	<action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/engines/engine/apc</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>APCSwitch</object-name>
+    <property>controls/engines/engine/apc</property>
+    <interpolation>
+      <entry><ind>0</ind><dep>-22</dep></entry>
+      <entry><ind>1</ind><dep>-45</dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 0.213</x-m>
+      <y-m>-0.01</y-m>
+      <z-m>-0.082</z-m>
+    </center>
+    <axis>
+      <x>0</x><y>1</y><z>0</z>
+    </axis>
+  </animation>
+
 
   <!-- Warning lights -->
 

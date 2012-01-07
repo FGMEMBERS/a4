@@ -322,6 +322,7 @@ var updateSpoilers = func {
 
 var spoiler_light = props.globals.getNode("sim/alarms/spoiler", 1);
 var spoiler_pos = props.globals.getNode("surface-positions/spoiler-pos-norm", 1);
+
 var speedbrake_light = props.globals.getNode("sim/alarms/speedbrake", 1);
 var speedbrake_pos = props.globals.getNode("surface-positions/speedbrake-pos-norm", 1);
 var gear_light = props.globals.getNode("sim/alarms/gear", 1);
@@ -338,9 +339,55 @@ var updateWarningLights = func {
 	}
 }
 
+# APC should adjust throttle depending on the AoA. This is a much simpler
+# system than (say) the F-14b, so no need for a proper PID.
+
+var APCState = props.globals.getNode("/controls/engines/engine[0]/apc",1);
+var AOASlow = props.globals.getNode("sim/aoa-indexer/slow-deg", 1);
+var AOAFast = props.globals.getNode("sim/aoa-indexer/fast-deg", 1);
+var AOA = props.globals.getNode("orientation/alpha-deg",1);
+var throttleProp = props.globals.getNode("/controls/engines/engine/throttle");
+var thrustProp = props.globals.getNode("engines/engine/n2");
+var wow = props.globals.getNode("gear/gear[1]/wow");
+
+# Throttle adjustment rate per second.
+var THROTTLE_RATE = 0.1;
+
+var updateAPC = func {
+	if (APCState.getValue()) {
+		# Disengage if:
+		# - weight on the main gear
+		# - rpm < 70%
+		# - Over-ride of 25-30lbs force (simulated as 100% throttle)
+		if ((wow.getBoolValue())            or
+		    (thrustProp.getValue() < 0.7) or
+		    (throttleProp.getValue() > 0.98)  ) {
+			APCState.setBoolValue(0);
+			return;
+		}
+
+		var throttle = throttleProp.getValue();
+
+		if (AOA.getValue() > AOASlow.getValue()) {
+			# Reduce throttle
+			throttle = throttle + THROTTLE_RATE * UPDATE_PERIOD;
+		}
+
+		if (AOA.getValue() < AOAFast.getValue()) {
+			# Increase throttle
+			throttle = throttle - THROTTLE_RATE * UPDATE_PERIOD;
+		}
+
+		# Limit throttle travel to ensure we don't go out of bounds
+		if (throttle > 0.98) { throttle = 0.97; }
+
+		throttleProp.setValue(throttle);
+	}	
+}
 var main_loop = func {
 	updateSpoilers();
 	updateWarningLights();
+	updateAPC();
 	settimer(main_loop, UPDATE_PERIOD);
 }
 

@@ -173,6 +173,7 @@ the flight data model, instrument panel, and external 3D model.
 			<line>- Break past bow, reduce throttle to 70%, extend speedbrakes</line>
 			<line>- Lower landing gear and flaps at 225 KIAS</line>
 			<line>- Descend to 600ft on base</line>
+			<line>- APC on (a) (APC light with extinguish)</line>
 			<line>- Approach at 125 KIAS at the abeam position, 17.5 units AOA</line>
 			<line></line>
 			<line>STORES</line>
@@ -181,11 +182,15 @@ the flight data model, instrument panel, and external 3D model.
 			<line>- Mk 82 Bombs (stations 2 and 4). Master:ON. Arm: NOSE &amp; TAIL. Selector:BOMBS &amp; GM ARM. Station:READY. Bomb(b) to drop</line>
 			<line>- 300 gallon drop tank (station 3). Master:ON. Arm: NOSE &amp; TAIL. Selector:BOMBS &amp; GM ARM. Station:READY. Bomb(b) to jettison</line>
 
-            <key>
+			<key>
+				<name>a</name>
+ 				<desc>Toggle Approach Power Compensator</desc>
+			</key>
+			<key>
 				<name>b</name>
 				<desc>Trigger bomb</desc>
 			</key>
-            <key>
+			<key>
 				<name>C</name>
 				<desc>catapult launch command</desc>
 			</key>
@@ -270,6 +275,7 @@ the flight data model, instrument panel, and external 3D model.
 		<engines>
 			<engine>
 				<throttle>0</throttle>
+				<apc>false</apc>
 			</engine>
 		</engines>
 		<flight>
@@ -279,6 +285,15 @@ the flight data model, instrument panel, and external 3D model.
 
 	<input>
 		<keyboard include="../../Input/Keyboard/carrier-bindings.xml">
+			<key n="97">
+				<name>a</name>
+				<desc>Toggle APC</desc>
+				<binding>
+					<command>property-toggle</command>
+					<property>/controls/engines/engine[0]/apc</property>
+				</binding>
+			</key>
+
 			<key n="98">
 				<name>b</name>
 				<desc>Trigger Bomb</desc>

@@ -14,7 +14,7 @@
 			</greater-than>-->
 			<greater-than>
 				<property>orientation/alpha-deg</property>
-			<property>sim/aoa-indexer/too-slow-deg</property>
+				<property>sim/aoa-indexer/too-slow-deg</property>
 			</greater-than>
 			<equals>
 				<property>gear/gear[0]/position-norm</property>
@@ -112,13 +112,46 @@
 	</animation>
 
 
-	<!-- lighting -->
+	<animation>
+		<type>select</type>
+		<!-- Note that as per the NATOPS manual, the APC is LIT when the APC is OFF! -->
+		<object-name>apc-off</object-name>
+		<condition>
+			<equals>
+				<property>controls/engines/engine/apc</property>
+				<value>false</value>
+			</equals>
+			<equals>
+				<property>gear/gear[0]/position-norm</property>
+				<value>1</value>
+			</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>apc-on</object-name>
+		<condition>
+			<equals>
+				<property>controls/engines/engine/apc</property>
+				<value>true</value>
+			</equals>
+			<equals>
+				<property>gear/gear[0]/position-norm</property>
+				<value>1</value>
+			</equals>
+		</condition>
+	</animation>
+
+<!-- lighting -->
 	<animation>
 		<object-name>aoa-too-slow</object-name>
 		<object-name>aoa-slow</object-name>
 		<object-name>aoa-on-speed</object-name>
 		<object-name>aoa-fast</object-name>
 		<object-name>aoa-too-fast</object-name>
+		<object-name>apc-off</object-name>
+		<object-name>apc-on</object-name>
 		<type>material</type>
 		<emission>
 			<factor-prop>sim/model/a4/controls/lighting/index-norm</factor-prop>
