@@ -128,18 +128,27 @@
 		</condition>
 	</animation>
 
+	<!-- APC is not lit when, a) APC is on, b) gear is not down -->
 	<animation>
 		<type>select</type>
 		<object-name>apc-on</object-name>
 		<condition>
-			<equals>
-				<property>controls/engines/engine/apc</property>
-				<value>true</value>
-			</equals>
-			<equals>
-				<property>gear/gear[0]/position-norm</property>
-				<value>1</value>
-			</equals>
+			<or>	
+				<and>
+					<equals>
+						<property>controls/engines/engine/apc</property>
+						<value>true</value>
+					</equals>
+					<equals>
+						<property>gear/gear[0]/position-norm</property>
+						<value>1</value>
+					</equals>
+				</and>
+				<less-than>
+					<property>gear/gear[0]/position-norm</property>
+					<value>1</value>
+				</less-than>	
+			</or>
 		</condition>
 	</animation>
 
