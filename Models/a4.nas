@@ -411,6 +411,32 @@ controls.flapsDown = func(step) {
 	flaps.setValue(flaps.getValue() + step * 0.33 * delta.getValue());
 }
 
+# But should be repeatable
+var keys = props.globals.getNode("/input/keyboard").getChildren("key");
+foreach (var key; keys) {
+	var script = key.getNode("binding/script");
+	if ((script != nil) and 
+            ((script.getValue() == "controls.flapsDown(1)") or
+             (script.getValue() == "controls.flapsDown(-1)")  ))
+	{
+		key.getNode("repeatable", 1).setValue("true");
+	}
+}
+
+var sticks = props.globals.getNode("/input/joysticks").getChildren("js");
+foreach (var js; sticks) {
+	var buttons = js.getChildren("button");
+	foreach (var button; buttons) {
+		var script = button.getNode("binding/script");
+		if ((script != nil) and 
+        	    ((script.getValue() == "controls.flapsDown(1)") or
+	             (script.getValue() == "controls.flapsDown(-1)")  ))
+		{
+			button.getNode("repeatable", 1).setValue("true");
+		}
+	}
+}
+
 # Gear cannot be raised if wow on left main strut
 var gear_pos = props.globals.getNode("gear/gear[0]/position-norm", 1);
 controls.gearDown = func(v) {
