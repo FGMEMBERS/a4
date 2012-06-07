@@ -3,9 +3,15 @@
 
  <path>gunsight.ac</path>
 
+ <!-- Transparent Surfaces for Rembrandt rendering -->
+ <effect>
+   <inherits-from>Effects/model-transparent</inherits-from>
+   <object-name>Reflector</object-name>
+ </effect>
+
 
   <!-- Reflector markings not visible when gunsight switched off -->
-  <!--
+<!--
   <animation>
     <type>blend</type>
     <object-name>Reflector</object-name>
@@ -13,9 +19,7 @@
     <factor>-1</factor>
     <offset>1</offset>
   </animation>
-  -->
-
-  <!-- Reflector markings higher intensity in Day mode -->
+-->
   <animation>
     <type>materials</type>
     <object-name>Reflector</object-name>

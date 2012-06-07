@@ -7,6 +7,14 @@
     <x-m>-5.61</x-m>
     <z-m>-0.25</z-m>
   </offsets>
+
+<!-- Transparent Surfaces for Rembrandt rendering -->
+ <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>FixedCanopyGlass</object-name>
+    <object-name>Canopy_1</object-name>
+ </effect>
+
    <!-- Normal shader effect. Separate effects required for each normal map texture -->
 
  <effect>
