@@ -50,7 +50,7 @@
   </model>
 
   <!-- G-effects -->
-  <model>
+  <!--<model>
     <path>Aircraft/a4/Models/blackout.xml</path>
     <name>Blackout</name>
     <offsets>
@@ -58,7 +58,7 @@
       <y-m>0</y-m>
       <z-m>0.87</z-m>
     </offsets>
-  </model>
+  </model>-->
 
   <!-- brake chute-->
   <model>
