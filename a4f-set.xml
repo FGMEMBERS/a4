@@ -140,47 +140,16 @@ the flight data model, instrument panel, and external 3D model.
 			<max-lb>1000</max-lb>
 		</weight>
 
+		<checklists include="a4f-checklists.xml"/>
+
 		<help>
 			<title>Douglas A4F Skyhawk</title>
-			<line>SHORE BASED TAKE-OFF</line>
-			<line>- 1/2 Flaps</line>
-			<line>- Nosewheel steering ON</line>
-			<line>- Advance Throttle</line>
-			<line>- Release Brakes</line>
-			<line>- Raise nosewheel at 123 KIAS</line>
-			<line>- Take-off at 133 KIAS</line>
-			<line>- Gear Up</line>
-			<line>- Flaps up above 170 KIAS at safe altitude</line>
-			<line/>
-			<line>SHORE BASED LANDING</line>
-			<line>- Approach Break at 250-300 KIAS</line>
-			<line>- After the break, reduce throttle to 70%, extend speedbrakes</line>
-			<line>- Lower landing gear, flaps at 225 KIAS</line>
-			<line>- Approach at 125 KIAS at the abeam position, 17.5 units AOA</line>
-			<line>- On touchdown, power to idle, full foward stick, brakes as required</line>
-			<line>- Use nosewheel steering below 60 KIAS</line>
-			<line></line>
-			<line>CARRIER TAKE-OFF</line>
-			<line>- 1/2 Flaps</line>
-			<line>- 7 degrees nose-up trim</line>
-			<line>- Nosewheel steering OFF</line>
-			<line>- Engage Launch bar (L)</line>
-			<line>- 100% Throttle</line>
-			<line>- Catapult Launch (C)</line>
-			<line></line>
-			<line>CARRIER LANDING</line>
-			<line>- Approach Break at 800ft, 250 KIAS, hook down (O)</line>
-			<line>- Break past bow, reduce throttle to 70%, extend speedbrakes</line>
-			<line>- Lower landing gear and flaps at 225 KIAS</line>
-			<line>- Descend to 600ft on base</line>
-			<line>- APC on (a) (APC light with extinguish)</line>
-			<line>- Approach at 125 KIAS at the abeam position, 17.5 units AOA</line>
-			<line></line>
+			<line>See Help-Checklists for checklists</line>			
 			<line>STORES</line>
-			<line>- Colt Mk 12 Cannon. Master:ON Guns:READY Trigger to fire</line>
-			<line>- LAU68 Rockets (stations 1 and 5). Master:ON. Selector:ROCKETS. Station:READY. Trigger to fire</line>
-			<line>- Mk 82 Bombs (stations 2 and 4). Master:ON. Arm: NOSE &amp; TAIL. Selector:BOMBS &amp; GM ARM. Station:READY. Bomb(b) to drop</line>
-			<line>- 300 gallon drop tank (station 3). Master:ON. Arm: NOSE &amp; TAIL. Selector:BOMBS &amp; GM ARM. Station:READY. Bomb(b) to jettison</line>
+			<line>- Colt Mk 12 Cannon</line>
+			<line>- LAU68 Rockets (stations 1 and 5)</line>
+			<line>- Mk 82 Bombs (stations 2 and 4)</line>
+			<line>- 300 gallon drop tank (station 3)</line>
 
 			<key>
 				<name>a</name>
