@@ -61,7 +61,7 @@ the flight data model, instrument panel, and external 3D model.
 			<internal archive="y">true</internal>
 			<config>
 				<x-offset-m archive="y">0.00</x-offset-m>
-				<y-offset-m archive="y">0.85</y-offset-m>
+				<y-offset-m archive="y">0.9</y-offset-m>
 				<z-offset-m archive="y">-2.35</z-offset-m>
 				<pitch-offset-deg>-10</pitch-offset-deg>
 				<!-- <default-field-of-view-deg>60</default-field-of-view-deg> -->
@@ -101,10 +101,10 @@ the flight data model, instrument panel, and external 3D model.
 		</current-view>
 
 		<aoa-indexer>
-			<too-slow-deg>16.5</too-slow-deg>
-			<slow-deg>15.5</slow-deg>
-			<fast-deg>14.5</fast-deg>
-			<too-fast-deg>13.5</too-fast-deg>
+			<too-slow-deg>12.5</too-slow-deg>
+			<slow-deg>11.5</slow-deg>
+			<fast-deg>9.5</fast-deg>
+			<too-fast-deg>8.5</too-fast-deg>
 		</aoa-indexer>
 
 		<hud>
@@ -298,7 +298,7 @@ the flight data model, instrument panel, and external 3D model.
 					</condition>
 					<command>property-assign</command>
 					<property>sim/current-view/y-offset-m</property>
-					<value type="double">0.85</value>
+					<value type="double">0.9</value>
 				</binding>
 			</key>
 
@@ -309,8 +309,8 @@ the flight data model, instrument panel, and external 3D model.
 					<command>property-adjust</command>
 					<property>/controls/seat/vertical-adjust</property>
 					<step type="double">-0.01</step>
-					<min type="double">0.0</min>
-					<max type="double">0.1</max>
+					<min type="double">-0.05</min>
+					<max type="double">0.05</max>
 				</binding>
 				<binding>
 					<condition>
@@ -334,8 +334,8 @@ the flight data model, instrument panel, and external 3D model.
 					<command>property-adjust</command>
 					<property>controls/seat/vertical-adjust</property>
 					<step type="double">0.01</step>
-					<min type="double">0</min>
-					<max type="double">0.1</max>
+					<min type="double">-0.05</min>
+					<max type="double">0.05</max>
 				</binding>
 				<binding>
 					<condition>
