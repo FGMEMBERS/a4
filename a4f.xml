@@ -4,8 +4,8 @@
 <airplane mass="10448">
 
   <!-- Approach configuration -->
-  <approach speed="110" aoa="10" fuel="0.4">
-    <control-setting axis="/controls/engines/engine[0]/throttle" value="1.0"/>
+  <approach speed="110" aoa="12" fuel="0.4">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.6"/>
     <control-setting axis="/controls/flight/flaps" value="1.0"/>
     <control-setting axis="/controls/gear/gear-down" value="1.0"/>
     <control-setting axis="/controls/flight/speedbrake" value="1.0"/>
@@ -43,12 +43,12 @@
   
   <wing x="-0.8" y=".71" z="-0.3"
         taper="0.27"
-        incidence="3.0"
+        incidence="0"
         twist="-3"
         length="3.855"
         chord="4.07"
         sweep="22"
-        dihedral="0">
+        dihedral="2.68">
         
     <!-- 
      According to XFLR5, the critical AoA without the slats
@@ -56,10 +56,10 @@
      to Gary, the value given as the AoA is the point at which
      the stall region begins, so aoa value below should be
      reduced by width/4.  -->
-    <stall aoa="7" width="9" peak="1.5"/>
+    <stall aoa="11" width="9" peak="1.5"/>
     
     <!-- Flaps are "split" type, which produces very little lift -->
-    <flap0 start="0.0" end="0.5" lift="1.2" drag="2.0"/>
+    <flap0 start="0.0" end="0.5" lift="1.2" drag="3.0"/>
     <control-input axis="/controls/flight/flaps" control="FLAP0"/>
     <control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"/>
     <control-speed control="FLAP0" transition-time="5"/>
@@ -131,7 +131,11 @@
 
   <!-- 11,200 lb thrust Pratt & Whitney J52-P408 engine. -->
   <jet x="0.75" y="0" z="0.5"
-       mass="2200" thrust="11200" n1-max="106"
+       mass="2200" 
+       thrust="11200" 
+			 n1-idle="55"
+			 n1-max="100"
+			 n2-idle="55"
        tsfc="0.89"
        exhaust-speed="2000" spool-time="1.0">
     <actionpt x="-1.61" y="0" z="0"/>
