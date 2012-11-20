@@ -246,9 +246,6 @@ the flight data model, instrument panel, and external 3D model.
 
 	<!-- *************** set properties **********************-->
 	<controls>
-		<gear>
-			<brake-parking>1</brake-parking>
-		</gear>
 		<engines>
 			<engine>
 				<throttle>0</throttle>
@@ -364,6 +361,9 @@ the flight data model, instrument panel, and external 3D model.
 	</yasim>
 
 	<nasal>
+    <radar>
+      <file>Aircraft/a4/Nasal/radar.nas</file>
+    </radar>    
 		<a4>
 			<file>Aircraft/a4/Models/a4.nas</file>
 		</a4>

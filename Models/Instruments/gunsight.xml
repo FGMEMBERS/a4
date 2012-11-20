@@ -21,7 +21,7 @@
   </animation>
 -->
   <animation>
-    <type>materials</type>
+    <type>material</type>
     <object-name>Reflector</object-name>
     <property>controls/armament/gunsight</property>
     <emission>

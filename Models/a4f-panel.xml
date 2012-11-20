@@ -667,7 +667,48 @@
       <z>0</z>
     </axis>
   </animation>
+  
+  <!-- Radar Control Switches (main panel) -->
+  <animation>
+    <type>pick</type>
+    <object-name>RadarRangeSwitchShort</object-name>
+    <object-name>RadarRangeSwitchLong</object-name>
+    <object-name>RadarRangeSwitchMount</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>radar.toggleRange();</script>
+      </binding>
+    </action>
+  </animation>
 
+  <animation>
+    <type>select</type>
+    <object-name>RadarRangeSwitchShort</object-name>
+    <condition>
+      <equals>
+        <property>/controls/radar/range</property>
+        <value>10</value>
+      </equals>
+    </condition>
+  </animation>
+
+
+  <animation>
+    <type>select</type>
+    <object-name>RadarRangeSwitchLong</object-name>
+    <condition>
+      <equals>
+        <property>/controls/radar/range</property>
+        <value>20</value>
+      </equals>
+    </condition>
+  </animation>
+  
+  
   <!-- Flap Mount Switches -->
   <animation>
     <type>pick</type>
@@ -814,6 +855,16 @@
   </model>
 
   <model>
+    <path>Aircraft/a4/Models/Instruments/radarscope.xml</path>
+    <name>Radar Scope</name>
+    <offsets>
+      <x-m>-0.00</x-m>
+      <y-m> 0.06</y-m>
+      <z-m> 0.09</z-m>
+    </offsets>
+  </model>
+
+  <model>
     <path>Aircraft/a4/Models/Instruments/aoa-indexer.xml</path>
     <name>AOA Indexer</name>
     <offsets>
@@ -910,8 +961,8 @@
     <name>VSI</name>
     <offsets>
       <x-m> 0.0</x-m>
-      <y-m> 0.05</y-m>
-      <z-m> 0.00</z-m>
+      <y-m> 0.03</y-m>
+      <z-m>-0.01</z-m>
     </offsets>
   </model>
 
@@ -920,7 +971,7 @@
     <name>VSI</name>
     <offsets>
       <x-m> 0.0</x-m>
-      <y-m> 0.15</y-m>
+      <y-m> 0.18</y-m>
       <z-m>-0.02</z-m>
     </offsets>
   </model>
@@ -941,7 +992,7 @@
     <offsets>
       <x-m> 0.0</x-m>
       <y-m> 0.20</y-m>
-      <z-m> 0.05</z-m>
+      <z-m> 0.06</z-m>
     </offsets>
   </model>
 
