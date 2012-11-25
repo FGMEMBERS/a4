@@ -1015,7 +1015,11 @@
       <z-m> 0.20</z-m>
     </offsets>
   </model>
-
+  
+  <model>
+    <path>Aircraft/a4/Models/Instruments/panel-rh.xml</path>
+    <name>RHPanel</name>
+  </model>
 
 </PropertyList>
 

@@ -255,6 +255,29 @@ the flight data model, instrument panel, and external 3D model.
 		<flight>
 			<speedbrake type="bool">0</speedbrake>
 		</flight>
+		<instrumentation>
+		  <drift-indicator-mode type="int">0</drift-indicator-mode>
+		  <ins>
+		    <!-- Inertial Navigation System -->
+		    <mode type="int">0</mode>
+		    <magvar-deg type="float">-3.0</magvar-deg>
+		    <wind-speed-kts type="int">0</wind-speed-kts>
+		    <wind-dir-deg type="int">0</wind-dir-deg>
+		    <current-destination>
+		      <latitude-deg>-34.67</latitude-deg>
+		      <longitude-deg>-117.67</longitude-deg>
+        </current-destination>
+        <d1>
+		      <latitude-deg>-34.67</latitude-deg>
+		      <longitude-deg>-117.67</longitude-deg>
+        </d1>
+        <d2>
+		      <latitude-deg>-34.67</latitude-deg>
+		      <longitude-deg>-117.67</longitude-deg>
+        </d2>
+      </ins>
+		  
+    </instrumentation>
 	</controls>
 
 	<input>
@@ -364,6 +387,9 @@ the flight data model, instrument panel, and external 3D model.
     <radar>
       <file>Aircraft/a4/Nasal/radar.nas</file>
     </radar>    
+    <a4_instruments>
+      <file>Aircraft/a4/Nasal/instruments.nas</file>
+    </a4_instruments>
 		<a4>
 			<file>Aircraft/a4/Models/a4.nas</file>
 		</a4>
@@ -374,35 +400,6 @@ the flight data model, instrument panel, and external 3D model.
 			<file>Aircraft/a4/Models/radar.nas</file>
 		</nav-display>
 	</nasal>
-
-	<instrumentation>
-		<radar>
-			<switch type="string"
-							archive="y">ON</switch>
-			<mode-control type="int"
-										archive="y">1</mode-control>
-			<display-controls>
-				<WX type="bool"
-						archive="y">false</WX>
-				<data type="bool"
-							archive="y">false</data>
-				<pos type="bool"
-						 archive="y">false</pos>
-			</display-controls>
-			<serviceable type="bool">true</serviceable>
-			<range type="int"
-						 archive="y">40</range>
-			<mode type="string"
-						archive="y">WX</mode>
-			<lightning type="bool"
-								 archive="y">false</lightning>
-			<display-mode type="string"
-										archive="y">plan</display-mode>
-			<minimized type="bool"
-								 archive="y">false</minimized>
-		</radar>
-	</instrumentation>
-
 </PropertyList>
 
 
