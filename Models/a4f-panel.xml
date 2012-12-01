@@ -1017,7 +1017,7 @@
   </model>
   
   <model>
-    <path>Aircraft/a4/Models/Instruments/panel-rh.xml</path>
+    <path>Aircraft/a4/Models/Instruments/a4f-panel-rh.xml</path>
     <name>RHPanel</name>
   </model>
 

@@ -276,6 +276,12 @@ the flight data model, instrument panel, and external 3D model.
 		      <longitude-deg>-117.67</longitude-deg>
         </d2>
       </ins>
+      
+      <uhf>
+        <preset-channel type="int">0</preset-channel>
+        <freq-select type="int">0</freq-select>
+        <mode type="int">0</mode>
+      </uhf>
 		  
     </instrumentation>
 	</controls>
