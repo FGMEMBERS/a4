@@ -405,6 +405,9 @@ the flight data model, instrument panel, and external 3D model.
 		<nav-display>
 			<file>Aircraft/a4/Models/radar.nas</file>
 		</nav-display>
+		<chronograph>
+			<file>Aircraft/Instruments-3d/chronograph/chronograph.nas</file>
+		</chronograph>		
 	</nasal>
 </PropertyList>
 

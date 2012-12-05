@@ -1007,7 +1007,7 @@
   </model>
 
   <model>
-    <path>Aircraft/A-6E/Models/chronograph.xml</path>
+    <path>Aircraft/Instruments-3d/chronograph/chronograph.xml</path>
     <name>G Meter</name>
     <offsets>
       <x-m> 0.0</x-m>
