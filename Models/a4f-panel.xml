@@ -845,12 +845,12 @@
   </model>
 
   <model>
-    <path>Aircraft/a4/Models/attitude.xml</path>
+    <path>Aircraft/a4/Models/Instruments/attitude.xml</path>
     <name>Attitude Ball</name>
     <offsets>
-      <x-m>-0.00</x-m>
-      <y-m>-0.06</y-m>
-      <z-m> 0.12</z-m>
+      <x-m>-0.03</x-m>
+      <y-m>-0.065</y-m>
+      <z-m> 0.115</z-m>
     </offsets>
   </model>
 

@@ -100,8 +100,8 @@
     <name>MK82 Left</name>
     <offsets>
       <x-m>6.5</x-m>
-      <y-m>-2.14</y-m>
-      <z-m>-0.2</z-m>
+      <y-m>-2.24</y-m>
+      <z-m>-0.05</z-m>
     </offsets>
   </model>
 
@@ -121,8 +121,8 @@
     <name>MK82 Left</name>
     <offsets>
       <x-m>6.5</x-m>
-      <y-m>2.14</y-m>
-      <z-m>-0.2</z-m>
+      <y-m>2.24</y-m>
+      <z-m>-0.05</z-m>
     </offsets>
   </model>
 
@@ -196,7 +196,7 @@
     <object-name>LeftGearPiston</object-name>
     <property>gear/gear[1]/position-norm</property>
     <interpolation>
-        <entry>4
+        <entry>
             <ind>0</ind>
             <dep>88</dep>
         </entry>
@@ -220,7 +220,39 @@
       <z>0</z>
     </axis>
   </animation>
-
+  
+  <!-- Gear rotates so the wheel is flush with the wing -->
+  <animation>
+    <type>rotate</type>
+    <object-name>LeftGear</object-name>
+    <object-name>LeftGearPiston</object-name>
+    <property>gear/gear[1]/position-norm</property>
+    <interpolation>
+        <entry>
+            <ind>0</ind>
+            <dep>-90</dep>
+        </entry>
+        <entry>
+            <ind>0.6</ind>
+            <dep>-90</dep>
+        </entry>
+        <entry>
+            <ind>0.95</ind>
+            <dep>0.0</dep>
+        </entry>
+    </interpolation>
+    <center>
+      <x-m>6.907</x-m>
+      <y-m>-1.178</y-m>
+      <z-m>-0.1</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+  
  <animation>
     <type>rotate</type>
     <object-name>LeftGearStrut</object-name>
@@ -290,11 +322,11 @@
         </entry>
         <entry>
             <ind>0.5</ind>
-            <dep>-70.0</dep>
+            <dep>-80.0</dep>
         </entry>
         <entry>
             <ind>1.0</ind>
-            <dep>-70.0</dep>
+            <dep>-80.0</dep>
         </entry>
     </interpolation>
     <axis>
@@ -341,6 +373,39 @@
       <z>0</z>
     </axis>
   </animation>
+  
+  <!-- Gear rotates so it is flush with wing -->
+  <animation>
+    <type>rotate</type>
+    <object-name>RightGear</object-name>
+    <object-name>RightGearPiston</object-name>
+    <property>gear/gear[2]/position-norm</property>
+    <interpolation>
+        <entry>
+            <ind>0</ind>
+            <dep>90</dep>
+        </entry>
+        <entry>
+            <ind>0.6</ind>
+            <dep>90</dep>
+        </entry>
+        <entry>
+            <ind>0.95</ind>
+            <dep>0.0</dep>
+        </entry>
+    </interpolation>
+    <center>
+      <x-m>6.907</x-m>
+      <y-m>1.178</y-m>
+      <z-m>-0.1</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+  
 
  <animation>
     <type>rotate</type>
@@ -411,11 +476,11 @@
         </entry>
         <entry>
             <ind>0.5</ind>
-            <dep>70.0</dep>
+            <dep>80.0</dep>
         </entry>
         <entry>
             <ind>1.0</ind>
-            <dep>70.0</dep>
+            <dep>80.0</dep>
         </entry>
     </interpolation>
     <axis>
