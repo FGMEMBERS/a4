@@ -12,70 +12,122 @@
 		<axis><x>1</x></axis>
 	</animation>
 
-	<animation>
-		<type>select</type>
-		<object-name>bearing-tcn-needle-on</object-name>
-		<condition>
-			<property>instrumentation/tacan/in-range</property>
-		</condition>
-	</animation>
+  <!-- Single point needle - rotates if in ADF or NAVCMPTR mode -->	
 	<animation>
 		<type>rotate</type>
-		<object-name>bearing-tcn-needle-on</object-name>
+		<object-name>needle1</object-name>
+		<condition>
+		  <or>		  
+		    <equals>
+		      <!-- ADF mode -->
+		      <property>controls/instrumentation/uhf/mode</property>
+		      <value>3</value>
+        </equals>
+        <greater-than>
+          <property>controls/instrumentation/ins/mode</property>
+          <value>1</value>
+        </greater-than>
+      </or>
+    </condition>
 		<property>orientation/heading-magnetic-deg</property>
 		<axis><x>1</x></axis>
 	</animation>
+
+	<!-- Single point needle - ADF mode -->
 	<animation>
+	  <!-- ADF only available if the UHF is set to ADF mode -->
 		<type>rotate</type>
-		<object-name>bearing-tcn-needle-on</object-name>
-		<property>instrumentation/tacan/indicated-mag-bearing-deg</property>
+		<object-name>needle1</object-name>
+		<condition>
+		  <property>controls/instrumentation/uhf/mode</property>
+		  <value>3</value>
+    </condition>
+		<property>instrumentation/adf/indicated-bearing-deg</property>
 		<axis><x>-1</x></axis>
 	</animation>
 
 	<animation>
-		<type>select</type>
-		<object-name>bearing-needle-off</object-name>
+		<type>rotate</type>
+		<object-name>needle2</object-name>
+		<!-- INS bearing is displayed if the BHDI switch is set AND the INS is set
+         to D1 or D2 -->
 		<condition>
-			<not>
-				<property>instrumentation/tacan/in-range</property>
-			</not>
-		</condition>
+		  <and>
+		    <equals>
+		      <property>controls/instrumentation/bhdi-mode</property>
+          <value>0</value>
+        </equals>
+		    <greater-than>
+          <property>controls/instrumentation/ins/mode</property>
+          <value>1</value>
+        </greater-than>
+      </and>        
+    </condition>
+		<property>instrumentation/ins/set-course-deg</property>
+		<axis><x>-1</x></axis>
 	</animation>
+	
 	<animation>
 		<type>rotate</type>
-		<object-name>bearing-needle-off</object-name>
-		<property>orientation/heading-magnetic-deg</property>
+		<object-name>needle2</object-name>
+		<property>orientation/heading-deg</property>
 		<axis><x>1</x></axis>
+	</animation>	
+  <!-- Double needle - TACAN bearing mode -->
+	<animation>
+		<type>rotate</type>
+		<object-name>needle2</object-name>
+		<!-- TACAN displayed if the BHDI switch is on TACAN, AND the TACAN
+         panel is not OFF -->
+		<condition>
+		  <and>
+		    <equals>
+          <property>controls/instrumentation/bhdi-mode</property>
+          <value>1</value>
+        </equals>
+		    <greater-than>
+          <property>controls/instrumentation/tacan-mode</property>
+          <value>0</value>
+        </greater-than>
+      </and>
+    </condition>
+		<property>instrumentation/tacan/indicated-bearing-true-deg</property>
+		<axis><x>-1</x></axis>
+	</animation>
+	
+	<!-- Double needle - INS Mode -->
+	<animation>
+		<type>rotate</type>
+		<object-name>needle2</object-name>
+		<!-- Drift angle is displayed if the BHDI switch is set AND the INS is set
+         to D1 or D2, AND the drift indicator is switched on -->
+		<condition>
+		  <and>
+		    <equals>
+		      <property>controls/instrumentation/bhdi-mode</property>
+          <value>0</value>
+        </equals>
+		    <greater-than>
+          <property>controls/instrumentation/ins/mode</property>
+          <value>1</value>
+        </greater-than>
+		    <greater-than>
+          <property>/controls/instrumentation/drift-indicator-mode</property>
+          <value>1</value>
+        </greater-than>
+      </and>        
+    </condition>
+		<property>orientation/track-deg</property>
+		<axis><x>-1</x></axis>
 	</animation>
 
-  <animation>
-    <type>select</type>
-    <object-name>miles-flag</object-name>
-    <condition>
-        <equals>
-          <property>instrumentation/tacan/in-range</property>
-          <value>false</value>
-        </equals>
-    </condition>
-  </animation>
-
-  <animation>
-    <type>select</type>
-    <object-name>off-flag</object-name>
-    <condition>
-      <less-than>
-        <property>systems/electrical/outputs/hsi</property>
-        <value>24</value>
-      </less-than>
-    </condition>
-  </animation>
-
-<!-- tacan distance digital display -->
+  <!-- tacan distance digital display -->
   <animation>
     <type>textranslate</type>
     <object-name>miles-drum-1</object-name>
-    <property>instrumentation/tacan/indicated-distance-nm</property>
+    <property>instrumentation/bhdi/dist-nm</property>
     <factor>0.1</factor>
+    <step>1</step>
     <offset>-1</offset>
     <center>
       <x-m>0</x-m>
@@ -91,11 +143,10 @@
   <animation>
     <type>textranslate</type>
     <object-name>miles-drum-2</object-name>
-    <property>instrumentation/tacan/indicated-distance-nm</property>
+    <property>instrumentation/bhdi/dist-nm</property>
     <factor>0.01</factor>
     <offset>-10</offset>
     <step>10</step>
-    <scroll>0.5</scroll>
     <center>
       <x-m>0</x-m>
       <y-m>0</y-m>
@@ -110,11 +161,10 @@
   <animation>
     <type>textranslate</type>
     <object-name>miles-drum-3</object-name>
-    <property>instrumentation/tacan/indicated-distance-nm</property>
+    <property>instrumentation/bhdi/dist-nm</property>
     <factor>0.001</factor>
     <offset>-100</offset>
     <step>100</step>
-    <scroll>0.5</scroll>
     <center>
       <x-m>0</x-m>
       <y-m>0</y-m>
@@ -126,195 +176,17 @@
       <z>0</z>
     </axis>
   </animation>
-
-<!-- course digital display -->
-  <animation>
-    <type>textranslate</type>
-    <object-name>course-drum-1</object-name>
-    <property>instrumentation/nav[1]/radials/selected-deg</property>
-    <factor>0.1</factor>
-    <offset>-1</offset>
-    <center>
-      <x-m>0</x-m>
-      <y-m>0</y-m>
-      <z-m>0</z-m>
-    </center>
-    <axis>
-      <x>0</x>
-      <y>-1</y>
-      <z>0</z>
-    </axis>
-  </animation>
-  <animation>
-    <type>textranslate</type>
-    <object-name>course-drum-2</object-name>
-    <property>instrumentation/nav[1]/radials/selected-deg</property>
-    <factor>0.01</factor>
-    <offset>-10</offset>
-    <step>10</step>
-    <scroll>0.5</scroll>
-    <center>
-      <x-m>0</x-m>
-      <y-m>0</y-m>
-      <z-m>0</z-m>
-    </center>
-    <axis>
-      <x>0</x>
-      <y>-1</y>
-      <z>0</z>
-    </axis>
-  </animation>
-  <animation>
-    <type>textranslate</type>
-    <object-name>course-drum-3</object-name>
-    <property>instrumentation/nav[1]/radials/selected-deg</property>
-    <factor>0.001</factor>
-    <offset>-100</offset>
-    <step>100</step>
-    <scroll>0.5</scroll>
-    <center>
-      <x-m>0</x-m>
-      <y-m>0</y-m>
-      <z-m>0</z-m>
-    </center>
-    <axis>
-      <x>0</x>
-      <y>-1</y>
-      <z>0</z>
-    </axis>
-  </animation>
-
-<animation>
-  <type>rotate</type>
-  <object-name>course-knob</object-name>
-  <property>instrumentation/nav[1]/radials/selected-deg</property>
-  <center>
-    <x-m>0.015</x-m>
-    <y-m>0.042</y-m>
-    <z-m>-0.035</z-m>
-  </center>
-  <axis>
-    <x>-1</x>
-    <y>0</y>
-    <z>0</z>
-  </axis>
-</animation>
-
-<animation>
-  <type>pick</type>
-  <object-name>course-knob</object-name>
-  <action>
-    <name>small decrease (scrollwheel)</name>
-    <button>3</button>
-    <repeatable>true</repeatable>
-    <binding>
-      <command>property-adjust</command>
-      <property>instrumentation/nav[1]/radials/selected-deg</property>
-      <step>-1</step>
-      <min>0</min>
-      <max>360</max>
-      <wrap>1</wrap>
-    </binding>
-  </action>
-  <action>
-    <name>small increase (scrollwheel)</name>
-    <button>4</button>
-    <repeatable>true</repeatable>
-    <binding>
-      <command>property-adjust</command>
-      <property>instrumentation/nav[1]/radials/selected-deg</property>
-      <step>1</step>
-      <min>0</min>
-      <max>360</max>
-      <wrap>1</wrap>
-    </binding>
-  </action>
-</animation>
-
-<!--
-
-<animation>
-  <type>pick</type>
-  <object-name>heading-set-knob</object-name>
-  <action>
-    <name>small decrease (scrollwheel)</name>
-    <button>3</button>
-    <repeatable>true</repeatable>
-    <binding>
-      <command>property-adjust</command>
-      <property>instrumentation/heading-indicator/offset-deg</property>
-      <step>-1</step>
-      <min>0</min>
-      <max>360</max>
-      <wrap>1</wrap>
-    </binding>
-  </action>
-  <action>
-    <name>small increase (scrollwheel)</name>
-    <button>4</button>
-    <repeatable>true</repeatable>
-    <binding>
-      <command>property-adjust</command>
-      <property>instrumentation/heading-indicator/offset-deg</property>
-      <step>1</step>
-      <min>0</min>
-      <max>360</max>
-      <wrap>1</wrap>
-    </binding>
-  </action>
-</animation>
-
-<animation>
-  <type>rotate</type>
-  <object-name>heading-set-knob</object-name>
-  <property>orientation/heading-magnetic-deg</property>
-  <center>
-    <x-m>0.015</x-m>
-    <y-m>-0.041</y-m>
-    <z-m>-0.035	</z-m>
-  </center>
-  <axis>
-    <x>-1</x>
-    <y>0</y>
-    <z>0</z>
-  </axis>
-</animation>
-
--->
 
 <!-- lighting -->
 
   <animation>
    <object-name>HSI-bkg</object-name>
-   <object-name>heading-set-knob</object-name>
    <type>material</type>
      <emission>
       <factor-prop>controls/lighting/panel-norm</factor-prop>
 			<red>0.55</red>
 			<green>0.24</green>
 			<blue>0.10</blue>
-      </emission>
-  </animation>
-
-  <animation>
-   <object-name>lubber-line</object-name>
-   <type>material</type>
-     <emission>
-      <factor-prop>controls/lighting/panel-norm</factor-prop>
-			<red>0.55</red>
-			<green>0.24</green>
-			<blue>0.10</blue>
-      </emission>
-  </animation>
-
-  <animation>
-   <object-name>course-knob</object-name>
-   <type>material</type>
-     <emission>
-      <factor-prop>controls/lighting/panel-norm</factor-prop>
-        <red>0.44</red>
-        <green>0.27</green>
-        <blue>0.15</blue>
       </emission>
   </animation>
 
@@ -330,39 +202,8 @@
   </animation>
 
   <animation>
-    <object-name>bearing-tcn-needle-on</object-name>
-    <type>material</type>
-    <emission>
-      <factor-prop>controls/lighting/instruments-norm</factor-prop>
-			<red>0.55</red>
-			<green>0.24</green>
-			<blue>0.10</blue>
-    </emission>
-  </animation>
-  <animation>
-    <object-name>bearing-needle-off</object-name>
-    <type>material</type>
-    <emission>
-      <factor-prop>controls/lighting/instruments-norm</factor-prop>
-			<red>0.55</red>
-			<green>0.24</green>
-			<blue>0.10</blue>
-    </emission>
-  </animation>
-
-  <animation>
-    <object-name>off-flag</object-name>
-    <type>material</type>
-    <emission>
-      <factor-prop>controls/lighting/panel-norm</factor-prop>
-			<red>0.55</red>
-			<green>0.24</green>
-			<blue>0.10</blue>
-    </emission>
-  </animation>
-
-  <animation>
-    <object-name>miles-flag</object-name>
+    <object-name>needle1</object-name>
+    <object-name>needle2</object-name>
     <type>material</type>
     <emission>
       <factor-prop>controls/lighting/instruments-norm</factor-prop>
@@ -394,37 +235,6 @@
   </animation>
   <animation>
     <object-name>miles-drum-3</object-name>
-    <type>material</type>
-    <emission>
-      <factor-prop>controls/lighting/instruments-norm</factor-prop>
-			<red>0.55</red>
-			<green>0.24</green>
-			<blue>0.10</blue>
-    </emission>
-  </animation>
-
-  <animation>
-    <object-name>course-drum-1</object-name>
-    <type>material</type>
-    <emission>
-      <factor-prop>controls/lighting/instruments-norm</factor-prop>
-			<red>0.55</red>
-			<green>0.24</green>
-			<blue>0.10</blue>
-    </emission>
-  </animation>
-  <animation>
-    <object-name>course-drum-2</object-name>
-    <type>material</type>
-    <emission>
-      <factor-prop>controls/lighting/instruments-norm</factor-prop>
-			<red>0.55</red>
-			<green>0.24</green>
-			<blue>0.10</blue>
-    </emission>
-  </animation>
-  <animation>
-    <object-name>course-drum-3</object-name>
     <type>material</type>
     <emission>
       <factor-prop>controls/lighting/instruments-norm</factor-prop>
@@ -443,7 +253,7 @@
   <animation>
     <type>range</type>
     <min-m>0</min-m>
-    <max-m>35</max-m>
+    <max-m>5</max-m>
   </animation>
 
 </PropertyList>

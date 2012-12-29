@@ -9,10 +9,21 @@ var VLENGTH = 20; # Length of the tick-marks
 var GAP =  256;  # Gap in the middle of the display
 var STEPS = 20;  # Number of points to draw in radar trace
 
+# Radar Modes
+var RADAR_MODE_OFF  = 0;
+var RADAR_MODE_STBY = 1;
+var RADAR_MODE_SRCH = 2;
+var RADAR_MODE_TC   = 3;
+var RADAR_MODE_AG   = 4;
+
+# Radar orientation
+var RADAR_ORIENT_PLAN = 0;
+var RADAR_ORIENT_PROFILE = 1;
+
 # Global variables
 var mark_intensity = 0.5;   # Mark brightness;
 var trace_intensity = 1.0;  # Trace brightness
-var range_mode = 20; # Range mode - either 10nm or 20nm
+var range_mode = 10; # Range mode - either 10nm or 20nm
 
 var my_canvas = canvas.new({
   "name": "RadarScope",   # The name is optional but allow for easier identification
@@ -148,6 +159,11 @@ group.createChild("text", "-15")
     .setColor(mark_intensity,mark_intensity,mark_intensity)             # Text color
     .setText("-15")
 ];
+
+# Initially hidden as the radar is switched off
+if (getprop("controls/radar/mode") == RADAR_MODE_OFF) {
+  group.hide();
+}
     
 # Map a given distance and height value to a y location on the scope.
 # Distance and height must be in the same units.    
@@ -200,6 +216,15 @@ for (var i = 1; i < (STEPS + 1); i+=1) {
 }
                     
 thousand20nm.setData(c, p);
+
+if (getprop("controls/radar/range") == 10) {
+  thousand10nm.show();    
+  thousand20nm.hide();
+} else {
+  thousand10nm.hide();
+  thousand20nm.show();
+}
+
     
 #  Trace line itself
 var trace = 
@@ -210,52 +235,64 @@ var trace =
 # We want a series of distances from the aircraft to mimic the angular
 # movement of a radar head.  All values in nm.
 var sweep = func {
-  var hdg = getprop("/orientation/heading-deg");
-  var height = getprop("/position/altitude-ft");
-  
-  # Vertical sweep is -15 degrees to + 10 degrees.  
-  # Follow a scan-line for 10nm or 20nm depending on range set.
-  var dx = 10 /  STEPS;
-  if (range_mode > 10) {
-    dx = 20 / STEPS;  
+  if ((getprop("/controls/radar/mode") == RADAR_MODE_TC) and 
+      (getprop("/controls/radar/orientation") == RADAR_ORIENT_PROFILE))
+  {  
+    var hdg = getprop("/orientation/heading-deg");
+    var height = getprop("/position/altitude-ft");
+    
+    # Vertical sweep is -15 degrees to + 10 degrees.  
+    # Follow a scan-line for 10nm or 20nm depending on range set.
+    var dx = 10 /  STEPS;
+    if (range_mode > 10) {
+      dx = 20 / STEPS;  
+    }
+    
+    var p = geo.aircraft_position();
+    var alt = height * 0.3048;
+    var a = -0.268;
+    p = p.apply_course_distance(hdg, dx * 1852);
+    var cmds = [canvas.Path.VG_MOVE_TO];
+    var x = BORDER;
+    var y = SIZE - BORDER;
+    var pts = [x, y];
+      
+    setprop("/sim/alarms/obst", 0.0);      
+    
+    for (var i = 1; i < STEPS; i+=1) {
+      var h =  geo.elevation(p.lat(), p.lon());
+      
+      # Cover calls before the scenery is initialized
+      if (h == nil) { h = alt; }
+      
+      # Display the OBST light if we''ve got less than 1000ft
+      # clearance.
+      if ((alt - h) < 305) {
+        setprop("/sim/alarms/obst", 1.0);
+      }
+      
+      # Work out the angle from the aircraft.  All units in meters
+      var t = - (alt - h) / (i * dx * 1852);
+
+      if ((i == 1) or (t < -0.268) or (t < a)) {
+        # point is the first trace, out of range, or obscured by earlier terrain,
+        # so ignore.
+        append(cmds, canvas.Path.VG_MOVE_TO);    
+      } else {
+        append(cmds, canvas.Path.VG_LINE_TO); 
+      }       
+            
+      append(pts, map_x(i/STEPS));
+      append(pts, map_y((i * dx * 1852), alt - h));
+      
+      p.apply_course_distance(hdg, dx * 1852);    
+      
+      #  Set the minimum angle, below which terrain is obscured by previous returns
+      a = math.max(a, t);
+    }  
+
+    trace.setData(cmds, pts);
   }
-  
-  var p = geo.aircraft_position();
-  var alt = height * 0.3048;
-  var a = -0.268;
-  p = p.apply_course_distance(hdg, dx * 1852);
-  var cmds = [canvas.Path.VG_MOVE_TO];
-  var x = BORDER;
-  var y = SIZE - BORDER;
-  var pts = [x, y];
-    
-  for (var i = 1; i < STEPS; i+=1) {
-    var h =  geo.elevation(p.lat(), p.lon());
-    
-    # Cover calls before the scenery is initialized
-    if (h == nil) { h = alt; }
-    
-    # Work out the angle from the aircraft.  All units in meters
-    var t = - (alt - h) / (i * dx * 1852);
-
-    if ((i == 1) or (t < -0.268) or (t < a)) {
-      # point is the first trace, out of range, or obscured by earlier terrain,
-      # so ignore.
-      append(cmds, canvas.Path.VG_MOVE_TO);    
-    } else {
-      append(cmds, canvas.Path.VG_LINE_TO); 
-    }       
-          
-    append(pts, map_x(i/STEPS));
-    append(pts, map_y((i * dx * 1852), alt - h));
-    
-    p.apply_course_distance(hdg, dx * 1852);    
-    
-    #  Set the minimum angle, below which terrain is obscured by previous returns
-    a = math.max(a, t);
-  }  
-
-  trace.setData(cmds, pts);
   
   settimer(sweep, 1);
 }
@@ -302,8 +339,25 @@ setlistener("/controls/radar/brightness-norm", func(n) {
   thousand20nm.setColor(i,i,i);
 });
 
-# Initialization
-setprop("/controls/radar/range", 10);
-setprop("/controls/radar/reticle-norm", 0.3);
-setprop("/controls/radar/brightness-norm", 0.5);
-setprop("/controls/radar/mode", "vertical");
+
+setlistener("/controls/radar/mode", func(n) {
+  var i = n.getValue();
+  # Switch the radar on/off as appropriate.
+  if (i == RADAR_MODE_OFF) {
+    group.hide();
+  } else {
+    group.show();  
+  }
+  
+  # Display the trace line only if we're in TC mode
+  if (i == RADAR_MODE_TC) {
+    trace.show();  
+  } else {
+    trace.hide(); 
+  }  
+  
+  # Rest the OBST light - it will get switched on again
+  # if required.
+  setprop("sim/alarms/obst", 0);
+  
+});

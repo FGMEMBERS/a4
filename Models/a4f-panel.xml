@@ -108,13 +108,13 @@
       </entry>
       <entry>
         <ind>1</ind>
-        <dep>-45</dep>
+        <dep>-30</dep>
       </entry>
     </interpolation>
     <center>
-      <x-m>0.24</x-m>
+      <x-m>0.178</x-m>
       <y-m>-3.062</y-m>
-      <z-m>-0.13</z-m>
+      <z-m>-0.137</z-m>
     </center>
     <axis>
       <x>0</x>
@@ -696,7 +696,6 @@
     </condition>
   </animation>
 
-
   <animation>
     <type>select</type>
     <object-name>RadarRangeSwitchLong</object-name>
@@ -708,11 +707,66 @@
     </condition>
   </animation>
   
+  <!-- BHDI Mode switch -->
+  <animation>
+    <type>pick</type>
+    <object-name>BHDIModeSwitchTACAN</object-name>
+    <object-name>BHDIModeSwitchNAVCMPTR</object-name>
+    <object-name>BHDIModeSwitchNAVPAC</object-name>
+    <object-name>BHDIModeSwitchMount</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/instrumentation/bhdi-mode</property>
+        <step>1</step>
+        <min>0</min>
+        <max>3</max>        
+        <wrap>true</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>BHDIModeSwitchNAVCMPTR</object-name>
+    <condition>
+      <equals>
+        <property>controls/instrumentation/bhdi-mode</property>
+        <value>0</value>
+      </equals>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>BHDIModeSwitchTACAN</object-name>
+    <condition>
+      <equals>
+        <property>controls/instrumentation/bhdi-mode</property>
+        <value>1</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>BHDIModeSwitchNAVPAC</object-name>
+    <condition>
+      <equals>
+        <property>controls/instrumentation/bhdi-mode</property>
+        <value>2</value>
+      </equals>
+    </condition>
+  </animation>
   
   <!-- Flap Mount Switches -->
   <animation>
     <type>pick</type>
-    <object-name>SpoilerSwitch</object-name>
+    <object-name>SpoilerSwitchOff</object-name>
+    <object-name>SpoilerSwitchArm</object-name>
     <object-name>SpoilerMount</object-name>
     <visible>true</visible>
 	<action>
@@ -726,29 +780,34 @@
   </animation>
 
   <animation>
-    <type>rotate</type>
-    <object-name>SpoilerSwitch</object-name>
-    <property>controls/flight/spoilers-armed</property>
-    <interpolation>
-      <entry><ind>0</ind><dep>0</dep></entry>
-      <entry><ind>1</ind><dep>-45</dep></entry>
-    </interpolation>
-    <center>
-      <x-m> 0.247</x-m>
-      <y-m>-0.01</y-m>
-      <z-m>-0.082</z-m>
-    </center>
-    <axis>
-      <x>0</x><y>1</y><z>0</z>
-    </axis>
+    <type>select</type>
+    <object-name>SpoilerSwitchOff</object-name>
+    <condition>
+      <equals>
+        <property>controls/flight/spoilers-armed</property>
+        <value>0</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>SpoilerSwitchArm</object-name>
+    <condition>
+      <equals>
+        <property>controls/flight/spoilers-armed</property>
+        <value>1</value>
+      </equals>
+    </condition>
   </animation>
 
   <animation>
     <type>pick</type>
-    <object-name>SteeringSwitch</object-name>
+    <object-name>SteeringSwitchOff</object-name>
+    <object-name>SteeringSwitchOn</object-name>
     <object-name>SteeringMount</object-name>
     <visible>true</visible>
-	<action>
+    <action>
       <button>0</button>
       <repeatable>false</repeatable>
       <binding>
@@ -759,29 +818,35 @@
   </animation>
 
   <animation>
-    <type>rotate</type>
-    <object-name>SteeringSwitch</object-name>
-    <property>controls/flight/steering-power</property>
-    <interpolation>
-      <entry><ind>0</ind><dep>0</dep></entry>
-      <entry><ind>1</ind><dep>-45</dep></entry>
-    </interpolation>
-    <center>
-      <x-m> 0.234</x-m>
-      <y-m>-0.01</y-m>
-      <z-m>-0.082</z-m>
-    </center>
-    <axis>
-      <x>0</x><y>1</y><z>0</z>
-    </axis>
+    <type>select</type>
+    <object-name>SteeringSwitchOff</object-name>
+    <condition>
+      <equals>
+        <property>controls/steering/steering-power</property>
+        <value>0</value>
+      </equals>
+    </condition>
   </animation>
 
   <animation>
+    <type>select</type>
+    <object-name>SteeringSwitchOn</object-name>
+    <condition>
+      <equals>
+        <property>controls/steering/steering-power</property>
+        <value>1</value>
+      </equals>
+    </condition>
+  </animation>
+
+
+  <animation>
     <type>pick</type>
-    <object-name>APCSwitch</object-name>
+    <object-name>APCSwitchOff</object-name>
+    <object-name>APCSwitchOn</object-name>
     <object-name>APCMount</object-name>
     <visible>true</visible>
-	<action>
+    <action>
       <button>0</button>
       <repeatable>false</repeatable>
       <binding>
@@ -792,23 +857,58 @@
   </animation>
 
   <animation>
-    <type>rotate</type>
-    <object-name>APCSwitch</object-name>
-    <property>controls/engines/engine/apc</property>
-    <interpolation>
-      <entry><ind>0</ind><dep>-22</dep></entry>
-      <entry><ind>1</ind><dep>-45</dep></entry>
-    </interpolation>
-    <center>
-      <x-m> 0.213</x-m>
-      <y-m>-0.01</y-m>
-      <z-m>-0.082</z-m>
-    </center>
-    <axis>
-      <x>0</x><y>1</y><z>0</z>
-    </axis>
+    <type>select</type>
+    <object-name>APCSwitchOff</object-name>
+    <condition>
+      <equals>
+        <property>controls/engines/engine/apc</property>
+        <value>0</value>
+      </equals>
+    </condition>
   </animation>
 
+  <animation>
+    <type>select</type>
+    <object-name>APCSwitchOn</object-name>
+    <condition>
+      <equals>
+        <property>controls/engines/engine/apc</property>
+        <value>1</value>
+      </equals>
+    </condition>
+  </animation>
+  
+  <!-- Trim Controls -->
+  <animation>
+    <type>rotate</type>
+    <object-name>RudderTrim</object-name> 
+    <property>controls/flight/rudder-trim</property>
+    <factor>360</factor>
+    <center>
+      <x-m>0.233</x-m>
+      <y-m>-0.244</y-m>
+      <z-m>-0.129</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>-1</z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>ElevatorTrim</object-name>
+    <property>controls/flight/elevator-trim</property>
+    <factor>0.01</factor>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+  
 
   <!-- Warning lights -->
 
@@ -833,14 +933,27 @@
 		<factor-prop>sim/alarms/spoiler</factor-prop>
 	</emission>
   </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>OBSTLight</object-name>
+    <emission>
+		<red>1.0</red>
+		<green>1.7</green>
+		<blue>0.7</blue>
+		<factor-prop>sim/alarms/obst</factor-prop>
+	</emission>
+  </animation>
+  
 
   <model>
     <path>Aircraft/a4/Models/Instruments/gear-indicator.xml</path>
     <name>Gear Indicator</name>
     <offsets>
-      <x-m> 0.03</x-m>
-      <y-m>-0.28</y-m>
-      <z-m>-0.11</z-m>
+      <x-m> 0.055</x-m>
+      <y-m>-0.2655</y-m>
+      <z-m>-0.119</z-m>
+      <pitch-deg>5</pitch-deg>
     </offsets>
   </model>
 
@@ -900,8 +1013,8 @@
     <name>ASI</name>
     <offsets>
       <x-m> 0.0</x-m>
-      <y-m>-0.19</y-m>
-      <z-m> 0.14</z-m>
+      <y-m>-0.18</y-m>
+      <z-m> 0.15</z-m>
     </offsets>
   </model>
 
@@ -910,7 +1023,7 @@
     <name>Alt</name>
     <offsets>
       <x-m> 0.0</x-m>
-      <y-m>-0.2</y-m>
+      <y-m>-0.18</y-m>
       <z-m> 0.05</z-m>
     </offsets>
   </model>
@@ -921,7 +1034,7 @@
     <name>Alt</name>
     <offsets>
       <x-m> 0.0</x-m>
-      <y-m>-0.28</y-m>
+      <y-m>-0.26</y-m>
       <z-m>-0.02</z-m>
     </offsets>
   </model>
@@ -931,8 +1044,8 @@
     <name>VSI</name>
     <offsets>
       <x-m> 0.0</x-m>
-      <y-m>-0.2</y-m>
-      <z-m>-0.03</z-m>
+      <y-m>-0.18</y-m>
+      <z-m>-0.035</z-m>
     </offsets>
   </model>
 
@@ -941,18 +1054,8 @@
     <name>HSI</name>
     <offsets>
       <x-m> 0.0</x-m>
-      <y-m>-0.1</y-m>
-      <z-m>-0.01</z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/a4/Models/Instruments/hsi-2.xml</path>
-    <name>HSI part 2</name>
-    <offsets>
-      <x-m> 0.0</x-m>
-      <y-m>-0.1</y-m>
-      <z-m>-0.01</z-m>
+      <y-m>-0.088</y-m>
+      <z-m>-0.018</z-m>
     </offsets>
   </model>
 

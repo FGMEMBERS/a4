@@ -12,9 +12,13 @@
           <property>controls/radar/range</property>
           <value>10</value>
         </equals>
-        <equals>
+        <greater-than>
           <property>controls/radar/mode</property>
-          <value>vertical</value>
+          <value>0</value>
+        </greater-than>
+        <equals>
+          <property>controls/radar/orientation</property>
+          <value>1</value>
         </equals>
       </and>
     </condition>
@@ -34,9 +38,13 @@
           <property>controls/radar/range</property>
           <value>20</value>
         </equals>
-        <equals>
+        <greater-than>
           <property>controls/radar/mode</property>
-          <value>vertical</value>
+          <value>0</value>
+        </greater-than>
+        <equals>
+          <property>controls/radar/orientation</property>
+          <value>1</value>
         </equals>
       </and>
     </condition>
@@ -56,9 +64,13 @@
           <property>controls/radar/range</property>
           <value>10</value>
         </equals>
-        <equals>
+        <greater-than>
           <property>controls/radar/mode</property>
-          <value>horizontal</value>
+          <value>0</value>
+        </greater-than>
+        <equals>
+          <property>controls/radar/orientation</property>
+          <value>0</value>
         </equals>
       </and>
     </condition>
@@ -78,9 +90,13 @@
           <property>controls/radar/range</property>
           <value>20</value>
         </equals>
-        <equals>
+        <greater-than>
           <property>controls/radar/mode</property>
-          <value>horizontal</value>
+          <value>0</value>
+        </greater-than>
+        <equals>
+          <property>controls/radar/orientation</property>
+          <value>0</value>
         </equals>
       </and>
     </condition>
@@ -100,9 +116,13 @@
           <property>controls/radar/range</property>
           <value>40</value>
         </equals>
-        <equals>
+        <greater-than>
           <property>controls/radar/mode</property>
-          <value>horizontal</value>
+          <value>0</value>
+        </greater-than>
+        <equals>
+          <property>controls/radar/orientation</property>
+          <value>0</value>
         </equals>
       </and>
     </condition>
