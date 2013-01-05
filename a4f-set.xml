@@ -113,31 +113,98 @@ the flight data model, instrument panel, and external 3D model.
 
 		<weight n="0">
 			<name>Left Outboard</name>
-			<weight-lb>0</weight-lb>
-			<max-lb>1000</max-lb>
+			<opt>
+			  <name>NONE</name>
+        <lbs>0</lbs>
+      </opt>            
+			<opt>
+			  <name>LAU-68</name>
+			  <lbs>430</lbs>			  
+      </opt>      
+			<selected>NONE</selected>
 		</weight>
+		
 		<weight n="1">
 			<name>Left Inboard</name>
-			<!-- 3 Mk 82 bombs + TER mount-->
-			<weight-lb>1644</weight-lb>
-			<max-lb>2250</max-lb>
+      <tank>3</tank>			
+			<opt>
+			  <name>NONE</name>
+        <lbs>0</lbs>
+      </opt>          
+			<opt>
+			  <name>LAU-68</name>
+			  <lbs>430</lbs>			  
+      </opt>
+			<opt>
+			  <name>TER-MK82-LD</name>
+			  <lbs>1644</lbs>			  
+      </opt>
+			<opt>
+			  <name>DROP-300</name>
+			  <lbs>207</lbs>			  
+			  <gals>300</gals>
+      </opt>
+			<selected>NONE</selected>
 		</weight>
+		
 		<weight n="2">
 			<name>Center Pylon</name>
-			<!-- 300 gallon droptank. Fuel weight handled separately -->
-			<weight-lb>207</weight-lb>
-			<max-lb>3500</max-lb>
+      <tank>4</tank>			
+			<opt>
+			  <name>NONE</name>
+        <lbs>0</lbs>
+      </opt>            
+			<opt>
+			  <name>LAU-68</name>
+			  <lbs>430</lbs>			  
+      </opt>
+			<opt>
+			  <name>TER-MK82-LD</name>
+			  <lbs>1644</lbs>			  
+      </opt>
+			<opt>
+			  <name>DROP-300</name>
+			  <lbs>207</lbs>			  
+			  <gals>300</gals>
+      </opt>
+			<selected>NONE</selected>
 		</weight>
+		
 		<weight n="3">
 		<name>Right Inboard</name>
-			<!-- 3 Mk 82 bombs + TER mount-->
-			<weight-lb>1644</weight-lb>
 			<max-lb>2250</max-lb>
+      <tank>5</tank>			  			
+			<opt>
+			  <name>NONE</name>
+        <lbs>0</lbs>
+      </opt>
+			<opt>
+			  <name>LAU-68</name>
+			  <lbs>430</lbs>			  
+      </opt>
+			<opt>
+			  <name>TER-MK82-LD</name>
+			  <lbs>1644</lbs>			  
+      </opt>
+			<opt>
+			  <name>DROP-300</name>
+			  <lbs>207</lbs>			  
+			  <gals>300</gals>
+      </opt>      
+			<selected>NONE</selected>
 		</weight>
+		
 		<weight n="4">
 			<name>Right Outboard</name>
-			<weight-lb>0</weight-lb>
-			<max-lb>1000</max-lb>
+			<opt>
+			  <name>NONE</name>
+        <lbs>0</lbs>
+      </opt>
+			<opt>
+			  <name>LAU-68</name>
+			  <lbs>430</lbs>			  
+      </opt>
+			<selected>NONE</selected>
 		</weight>
 
 		<checklists include="a4f-checklists.xml"/>
@@ -202,7 +269,7 @@ the flight data model, instrument panel, and external 3D model.
 			<zero-pitch-throttle type="float">0.60</zero-pitch-throttle>
 			<zero-pitch-trim-full-throttle type="float">0.14</zero-pitch-trim-full-throttle>
 			<max-roll-deg type="float">45</max-roll-deg>
-			<max-aileron type="float">0.15</max-aileron>
+			<max-aileron type="float">0.05</max-aileron>
 		</config>
 	</autopilot>
 
@@ -221,20 +288,17 @@ the flight data model, instrument panel, and external 3D model.
 				<level-gal_us>260</level-gal_us>
 			</tank>
 			<tank n="3">
-				<name>Center Drop Tank</name>
+				<name>Left Drop Tank</name>
 				<level-gal_us>300</level-gal_us>
 			</tank>
-
-<!-- Left and right droptanks not used in current configuration
 			<tank n="4">
-				<name>Left Drop Tank</name>
+				<name>Center Drop Tank</name>
 				<level-gal_us>300</level-gal_us>
 			</tank>
 			<tank n="5">
 				<name>Right Drop Tank</name>
 				<level-gal_us>300</level-gal_us>
 			</tank>
--->
 		</fuel>
 	</consumables>
 
@@ -345,9 +409,17 @@ the flight data model, instrument panel, and external 3D model.
 				<name>b</name>
 				<desc>Trigger Bomb</desc>
 				<binding>
-					<command>property-toggle</command>
+					<command>property-assign</command>
 					<property>/controls/armament/bomb</property>
+					<value>1</value>
 				</binding>
+        <mod-up>
+          <binding>
+            <command>property-assign</command>
+            <property>/controls/armament/bomb</property>
+            <value>0</value>
+          </binding>
+        </mod-up>
 			</key>
 
 			<!-- map keys for seat vertical adjust -->
@@ -432,6 +504,48 @@ the flight data model, instrument panel, and external 3D model.
 			<drag-chute type="double">0</drag-chute>
 		</weights>
 	</yasim>
+	
+	<armament>	
+	
+	  <templates>
+	    <NONE>
+	      <weight-lb>0</weight-lb>
+	      <rocket-count>0</rocket-count>
+	      <rocket-load-mass-lb>0</rocket-load-mass-lb>
+        <bomb-count>0</bomb-count>
+        <bomb-load-mass-lb>0</bomb-load-mass-lb>
+      </NONE>
+	  
+	    <LAU-68>
+        <weight-lb>430</weight-lb>
+	      <!-- 19 rockets in pack -->
+        <rocket-count>19</rocket-count>
+        <rocket-load-mass-lb>18.5</rocket-load-mass-lb>        
+        <!-- using the bomb trigger drops the pack itself -->
+        <bomb-count>1</bomb-count>
+        <bomb-load-mass-lb>430</bomb-load-mass-lb>
+      </LAU-68>
+      
+      <TER-MK82-LD>
+        <weight-lb>1698</weight-lb>
+        <rocket-count>0</rocket-count>
+        <rocket-load-mass-lb>0</rocket-load-mass-lb>
+        <bomb-count>3</bomb-count>
+        <bomb-load-mass-lb>531</bomb-load-mass-lb>
+      </TER-MK82-LD>
+      
+      <DROP-300>
+        <!-- 6.8lb/gal, 2247lb total store mass: 2247 - (300 * 6.8) = 207lbs -->      
+        <weight-lb>207</weight-lb>
+        <rocket-count>0</rocket-count>
+        <rocket-load-mass-lb>0</rocket-load-mass-lb>
+        <bomb-count>1</bomb-count>
+        <bomb-load-mass-lb>207</bomb-load-mass-lb>
+      </DROP-300>
+      
+	  </templates>
+  </armament>
+	  
 
 	<nasal>
     <radar>
@@ -446,9 +560,6 @@ the flight data model, instrument panel, and external 3D model.
 		<a4-fuel>
 			<file>Aircraft/Generic/aar.nas</file>
 		</a4-fuel>
-		<nav-display>
-			<file>Aircraft/a4/Models/radar.nas</file>
-		</nav-display>
 		<chronograph>
 			<file>Aircraft/Instruments-3d/chronograph/chronograph.nas</file>
 		</chronograph>		

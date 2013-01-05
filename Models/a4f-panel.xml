@@ -478,7 +478,7 @@
      <repeatable>false</repeatable>
     <binding>
        <command>property-adjust</command>
-       <property>controls/armament/station/selected</property>
+       <property>sim/weight/enabled</property>
        <step>1</step>
        <min>0</min>
        <max>3</max>
@@ -490,7 +490,7 @@
   <animation>
     <type>rotate</type>
     <object-name>StationSwitch1</object-name>
-    <property>controls/armament/station/selected</property>
+    <property>sim/weight/enabled</property>
     <interpolation>
       <entry><ind>0</ind><dep>0</dep></entry>
       <entry><ind>1</ind><dep>-22</dep></entry>
@@ -518,7 +518,7 @@
      <repeatable>false</repeatable>
     <binding>
        <command>property-adjust</command>
-       <property>controls/armament/station[1]/selected</property>
+       <property>sim/weight[1]/enabled</property>
        <step>1</step>
        <min>0</min>
        <max>3</max>
@@ -530,7 +530,7 @@
   <animation>
     <type>rotate</type>
     <object-name>StationSwitch2</object-name>
-    <property>controls/armament/station[1]/selected</property>
+    <property>sim/weight[1]/enabled</property>
     <interpolation>
       <entry><ind>0</ind><dep>0</dep></entry>
       <entry><ind>1</ind><dep>-22</dep></entry>
@@ -558,7 +558,7 @@
      <repeatable>false</repeatable>
     <binding>
        <command>property-adjust</command>
-       <property>controls/armament/station[2]/selected</property>
+       <property>sim/weight[2]/enabled</property>
        <step>1</step>
        <min>0</min>
        <max>3</max>
@@ -570,7 +570,7 @@
   <animation>
     <type>rotate</type>
     <object-name>StationSwitch3</object-name>
-    <property>controls/armament/station[2]/selected</property>
+    <property>sim/weight[2]/enabled</property>
     <interpolation>
       <entry><ind>0</ind><dep>0</dep></entry>
       <entry><ind>1</ind><dep>-22</dep></entry>
@@ -598,7 +598,7 @@
      <repeatable>false</repeatable>
     <binding>
        <command>property-adjust</command>
-       <property>controls/armament/station[3]/selected</property>
+       <property>sim/weight[3]/enabled</property>
        <step>1</step>
        <min>0</min>
        <max>3</max>
@@ -610,7 +610,7 @@
   <animation>
     <type>rotate</type>
     <object-name>StationSwitch4</object-name>
-    <property>controls/armament/station[3]/selected</property>
+    <property>sim/weight[3]/enabled</property>
     <interpolation>
       <entry><ind>0</ind><dep>0</dep></entry>
       <entry><ind>1</ind><dep>-22</dep></entry>
@@ -638,7 +638,7 @@
      <repeatable>false</repeatable>
     <binding>
        <command>property-adjust</command>
-       <property>controls/armament/station[4]/selected</property>
+       <property>sim/weight[4]/enabled</property>
        <step>1</step>
        <min>0</min>
        <max>3</max>
@@ -650,7 +650,7 @@
   <animation>
     <type>rotate</type>
     <object-name>StationSwitch5</object-name>
-    <property>controls/armament/station[4]/selected</property>
+    <property>sim/weight[4]/enabled</property>
     <interpolation>
       <entry><ind>0</ind><dep>0</dep></entry>
       <entry><ind>1</ind><dep>-22</dep></entry>
@@ -907,8 +907,6 @@
       <z>0</z>
     </axis>
   </animation>
-  
-  
 
   <!-- Warning lights -->
 

@@ -46,7 +46,7 @@
     <path>Aircraft/a4/Models/a4f-panel.xml</path>
     <name>Panel</name>
     <offsets>
-      <x-m>2.73</x-m>
+      <x-m>2.76</x-m>
       <y-m>0.0</y-m>
       <z-m>0.74</z-m>
     </offsets>
@@ -82,57 +82,54 @@
     </offsets>
   </model>
 
-
-<!-- Loadout. Center droptank, 2x TER w/ MK82, 2x LAU 10/A -->
-
   <model>
-    <path>Aircraft/a4/Models/Stores/FFAR/lau68-left.xml</path>
-    <name>LAU 68 Left</name>
+    <path>Aircraft/a4/Models/Stores/station1.xml</path>
+    <name>Station 1</name>
     <offsets>
-      <x-m>6.8</x-m>
+      <x-m>7.5</x-m>
       <y-m>-3.0</y-m>
-      <z-m>-0.2</z-m>
+      <z-m>0.0</z-m>
     </offsets>
   </model>
 
   <model>
-    <path>Aircraft/a4/Models/Stores/Mk82/triple-MK-82-LD-left.xml</path>
-    <name>MK82 Left</name>
+    <path>Aircraft/a4/Models/Stores/station2.xml</path>
+    <name>Station 2</name>
     <offsets>
-      <x-m>6.5</x-m>
+      <x-m>6.9</x-m>
       <y-m>-2.24</y-m>
-      <z-m>-0.05</z-m>
+      <z-m>0.0</z-m>
     </offsets>
   </model>
 
 
   <model>
-    <path>Aircraft/a4/Models/Submodels/droptank-300-centre.xml</path>
-    <name>Center Droptank</name>
+    <path>Aircraft/a4/Models/Stores/station3.xml</path>
+    <name>Station 3</name>
     <offsets>
       <x-m>6.5</x-m>
       <y-m>0.0</y-m>
-      <z-m>-0.03</z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/a4/Models/Stores/Mk82/triple-MK-82-LD-right.xml</path>
-    <name>MK82 Left</name>
-    <offsets>
-      <x-m>6.5</x-m>
-      <y-m>2.24</y-m>
-      <z-m>-0.05</z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/a4/Models/Stores/FFAR/lau68-right.xml</path>
-    <name>LAU 68 Right</name>
-    <offsets>
-      <x-m>6.8</x-m>
-      <y-m> 3.0</y-m>
       <z-m>-0.2</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/a4/Models/Stores/station4.xml</path>
+    <name>Station 4</name>
+    <offsets>
+      <x-m>6.9</x-m>
+      <y-m>2.24</y-m>
+      <z-m>0.0</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/a4/Models/Stores/station5.xml</path>
+    <name>Station 5</name>
+    <offsets>
+      <x-m>7.5</x-m>
+      <y-m> 3.0</y-m>
+      <z-m>0.0</z-m>
     </offsets>
   </model>
 
@@ -738,7 +735,7 @@
     <type>rotate</type>
     <object-name>LeftFlap</object-name>
     <property>surface-positions/flap-pos-norm</property>
-    <factor>-50</factor>
+    <factor>-30</factor>
     <offset-deg>0</offset-deg>
     <axis>
       <x1-m>7.859</x1-m>
@@ -754,7 +751,7 @@
     <type>rotate</type>
     <object-name>RightFlap</object-name>
     <property>surface-positions/flap-pos-norm</property>
-    <factor>50</factor>
+    <factor>30</factor>
     <offset-deg>0</offset-deg>
     <axis>
       <x1-m>7.859</x1-m>
@@ -770,7 +767,7 @@
     <type>rotate</type>
     <object-name>RightSpoiler</object-name>
     <property>surface-positions/spoiler-pos-norm</property>
-    <factor>-60</factor>
+    <factor>-50</factor>
     <!-- check -->
     <offset-deg>0</offset-deg>
     <axis>
@@ -787,7 +784,7 @@
     <type>rotate</type>
     <object-name>LeftSpoiler</object-name>
     <property>surface-positions/spoiler-pos-norm</property>
-    <factor>-60</factor>
+    <factor>-50</factor>
     <offset-deg>0</offset-deg>
     <axis>
       <x1-m>7.879</x1-m>

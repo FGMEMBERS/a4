@@ -235,7 +235,7 @@ var fire_cannon = props.globals.getNode("controls/armament/trigger-cannon", 1);
 var nosetail = props.globals.getNode("controls/armament/nose-tail", 1);
 var function_select = props.globals.getNode("controls/armament/function-select", 1);
 var emergency_function_select = props.globals.getNode("controls/armament/emergency-function-select", 1);
-var stations = props.globals.getNode("/controls/armament").getChildren("station");
+var stations = props.globals.getNode("/sim").getChildren("weight");
 
 
 setlistener("/controls/armament/trigger", func(n) {
@@ -247,9 +247,9 @@ setlistener("/controls/armament/trigger", func(n) {
 	if (function_select.getValue() == 1) {
 	  # Rockets armed
 	  foreach (var station; stations) {
-		if (station.getNode("selected", 1).getValue() == 1)
+		if (station.getNode("enabled", 1).getValue() == 1)
 		{
-		  station.getNode("release-rocket", 1).setBoolValue(n.getValue());
+		  station.getNode("trigger-rocket", 1).setBoolValue(n.getValue());
 		}
 	  }
 	}
@@ -261,47 +261,75 @@ setlistener("/controls/armament/bomb", func(n) {
 	if ((function_select.getValue() == 5) and (nosetail.getValue() != 0)) {
 	  # Bombs armed
 	  foreach (var station; stations) {
-		if (station.getNode("selected", 1).getValue() == 1)
+		if (station.getNode("enabled", 1).getValue() == 1)
 		{
-		  station.getNode("release-stick", 1).setBoolValue(n.getValue());
+		  station.getNode("trigger-bomb", 1).setBoolValue(n.getValue());
 		}
 	  }
 	}
   }
 });
 
-# Listeners for TER carrying 3 Mk82 bombs, which are released individually.
-setlistener("controls/armament/station[1]/release-stick", func(n) {
-  if (getprop("controls/armament/station[1]/release-stick-1") == 0) {
-		setprop("controls/armament/station[1]/release-stick-1", 1);
-		setprop("/sim/weight[1]/weight-lb", 531 + 531 + 105);
-  } else if (getprop("controls/armament/station[1]/release-stick-2") == 0) {
-		setprop("controls/armament/station[1]/release-stick-2", 1);
-		setprop("/sim/weight[1]/weight-lb", 531 + 105);
-  } else if (getprop("controls/armament/station[1]/release-stick-3") == 0) {
-		setprop("controls/armament/station[1]/release-stick-3", 1);
-		setprop("/sim/weight[1]/weight-lb", 105);
-  }
-});
+var station_handler = func(n) {
+  var isBomb = (n.getName() == "trigger-bomb") ? 1 : 0;
+  var station = n.getParent();
+  var type = station.getChild("selected").getValue();
+  var mass = station.getChild("weight-lb");
+  var trigger = nil;
+  var count = nil;
+  var load_mass = nil;
 
-setlistener("controls/armament/station[3]/release-stick", func(n) {
-  if (getprop("controls/armament/station[3]/release-stick-1") == 0) {
-		setprop("controls/armament/station[3]/release-stick-1", 1);
-		setprop("/sim/weight[3]/weight-lb", 531 + 531 + 105);
-  } else if (getprop("controls/armament/station[3]/release-stick-2") == 0) {
-		setprop("controls/armament/station[3]/release-stick-2", 1);
-		setprop("/sim/weight[3]/weight-lb", 531 + 105);
-  } else if (getprop("controls/armament/station[3]/release-stick-3") == 0) {
-		setprop("controls/armament/station[3]/release-stick-3", 1);
-		setprop("/sim/weight[3]/weight-lb", 105);
+  
+  if (isBomb) {
+    trigger = station.getNode(type, 1).getChild("trigger-bomb");
+    count = station.getNode("bomb-count",1);
+    load_mass = station.getNode("bomb-load-mass-lb",1).getValue();
+  } else {
+    trigger = station.getNode(type, 1).getNode("trigger-rocket", 1);
+    count = station.getNode("rocket-count", 1);
+    load_mass = station.getNode("rocket-load-mass-lb", 1).getValue();  
   }
-});
+    
+  if ((n.getValue() == 1) and (count != nil) and (count.getValue() > 0)) {
+    # Trigger attempt with at least one left
+    count.setIntValue(count.getValue() - 1);
+    mass.setValue(math.max(mass.getValue() - load_mass, 0));
+    trigger.setValue(1);  
+  }  
+  else if (! n.getValue())  {
+    # Trigger release
+    trigger.setValue(0);  
+  }  
+}
 
-# Listeners to handle droptanks being dropped - need to set fuel contents appropriately.
-setlistener("/controls/armament/station[2]/release-stick", func(n) {
-  setprop("/consumables/fuel/tank[3]/level-gal_us", 0.0);
-  setprop("/sim/weight[2]/weight-lb", 0.0);
-});
+setlistener("/sim/weight[0]/trigger-bomb", station_handler);
+setlistener("/sim/weight[1]/trigger-bomb", station_handler);
+setlistener("/sim/weight[2]/trigger-bomb", station_handler);
+setlistener("/sim/weight[3]/trigger-bomb", station_handler);
+setlistener("/sim/weight[4]/trigger-bomb", station_handler);
+
+setlistener("/sim/weight[0]/trigger-rocket", station_handler);
+setlistener("/sim/weight[1]/trigger-rocket", station_handler);
+setlistener("/sim/weight[2]/trigger-rocket", station_handler);
+setlistener("/sim/weight[3]/trigger-rocket", station_handler);
+setlistener("/sim/weight[4]/trigger-rocket", station_handler);
+
+
+var loadout_handler = func(n) {
+  var type = n.getValue();
+  var station = n.getParent();
+  var template = props.globals.getNode("/armament/templates").getChild(type);
+  
+  if (template != nil) {
+    props.copy(template, station, 1);  
+  }
+}
+
+setlistener("/sim/weight[0]/selected", loadout_handler);
+setlistener("/sim/weight[1]/selected", loadout_handler);
+setlistener("/sim/weight[2]/selected", loadout_handler);
+setlistener("/sim/weight[3]/selected", loadout_handler);
+setlistener("/sim/weight[4]/selected", loadout_handler);
 
 # Auto-armed spoilers
 var spoilers = props.globals.getNode("controls/flight/spoilers", 1);

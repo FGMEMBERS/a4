@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <PropertyList>
 
-     <MK-82-LD>
+  <MK-82-LD>
 		<model>Aircraft/a4/Models/Stores/Mk82/mk82.xml</model>
 		<speed>0</speed>
 		<repeat>false</repeat>
 		<delay>1</delay>
-		<count>5</count>
+		<count>-1</count>
 		<x-offset>-6.6</x-offset>
 		<yaw-offset>0</yaw-offset>
 		<pitch-offset>-2</pitch-offset>
@@ -30,13 +30,13 @@
 		<speed>3200.0</speed>
 		<repeat>true</repeat>
 		<delay>0.3</delay>
-		<count>7</count>
+		<count>-1</count>
 		<x-offset> -18</x-offset>
 		<y-offset>-13.7</y-offset>
 		<z-offset> -0.5</z-offset>
 		<yaw-offset>0.0</yaw-offset>
 		<pitch-offset>-5</pitch-offset>
-		<weight>60</weight>
+		<weight>18.5</weight>
 		<fuse-range>2.2</fuse-range>
 		<eda>0.01</eda>
 		<life>50</life>
@@ -50,17 +50,74 @@
 		<submodel-path>Aircraft/a4/Models/Stores/FFAR/rocket-submodel.xml</submodel-path>
    </LAU68>
 
+	 <DROP-300>
+		<name>300 gallon drop-tank</name>
+		<model>Aircraft/a4/Models/Submodels/droptank-300-dropped.xml</model>
+		<trigger>controls/sim/weight[2]/release-stick</trigger>
+		<contents>/consumables/fuel/tank[3]/level-gal_us</contents>
+		<trigger-once>true</trigger-once>
+		<speed>0.0</speed>
+		<count>-1</count>
+		<x-offset>20</x-offset>
+		<y-offset>0</y-offset>
+		<z-offset>-1</z-offset>
+		<yaw-offset>0.0</yaw-offset>
+		<pitch-offset>0.0</pitch-offset>
+		<eda>2.0</eda>
+		<weight>200.0</weight>
+		<cd>0.3</cd>
+		<collision>false</collision>
+		<impact>false</impact>
+	</DROP-300>
+   
+   <!-- All offsets are in feet. -->
+   
+   <!-- Port outboard station -->
+   <station n="0">
+     <x-offset>-18</x-offset>
+     <y-offset>-10</y-offset>
+     <z-offset>-0.5</z-offset>
+   </station>
+
+   <!-- Port inboard station -->
+   <station n="1">
+     <x-offset>-6.6</x-offset>
+     <y-offset>-8</y-offset>
+     <z-offset>-0.5</z-offset>
+   </station>
+
+   <!-- Center station -->
+   <station n="2">
+     <x-offset>20</x-offset>
+     <y-offset>0</y-offset>
+     <z-offset>-1</z-offset>
+   </station>
+
+   <!-- Starboard inboard station  -->
+   <station n="3">
+     <x-offset>-6.6</x-offset>
+     <y-offset>8</y-offset>
+     <z-offset>-0.5</z-offset>
+   </station>
+   
+   <!-- Starboard outboard station -->
+   <station n="4">
+     <x-offset>-18</x-offset>
+     <y-offset>10</y-offset>
+     <z-offset>-0.5</z-offset>
+   </station>     
+
 	<submodel>
-		<name>Left LAU 68</name>
+		<name>Store 0 LAU 68</name>
 		<model alias="../../LAU68/model"/>
-		<trigger>controls/armament/station[0]/release-rocket</trigger>
+		<trigger>/sim/weight[0]/LAU-68/trigger-rocket</trigger>
 		<speed alias="../../LAU68/speed"/>
 		<repeat alias="../../LAU68/repeat"/>
 		<delay alias="../../LAU68/delay"/>
 		<count alias="../../LAU68/count"/>
-		<x-offset alias="../../LAU68/x-offset"/>
-		<y-offset>-10</y-offset>
-		<z-offset>-0.5</z-offset>
+		<x-offset alias="../../station[0]/x-offset"/>
+		<y-offset alias="../../station[0]/y-offset"/>
+		<z-offset alias="../../station[0]/z-offset"/>
 		<yaw-offset alias="../../LAU68/yaw-offset"/>
 		<pitch-offset alias="../../LAU68/pitch-offset"/>
 		<cd alias="../../LAU68/cd"/>
@@ -78,16 +135,124 @@
 	</submodel>
 
 	<submodel>
-		<name>Left TER w/ 3 Mk82 pos 1</name>
+		<name>Store 1 LAU 68</name>
+		<model alias="../../LAU68/model"/>
+		<trigger>/sim/weight[1]/LAU-68/trigger-rocket</trigger>
+		<speed alias="../../LAU68/speed"/>
+		<repeat alias="../../LAU68/repeat"/>
+		<delay alias="../../LAU68/delay"/>
+		<count alias="../../LAU68/count"/>
+		<x-offset alias="../../station[1]/x-offset"/>
+		<y-offset alias="../../station[1]/y-offset"/>
+		<z-offset alias="../../station[1]/z-offset"/>
+		<yaw-offset alias="../../LAU68/yaw-offset"/>
+		<pitch-offset alias="../../LAU68/pitch-offset"/>
+		<cd alias="../../LAU68/cd"/>
+		<weight alias="../../LAU68/weight"/>
+		<fuse-range alias="../../LAU68/fuse-range"/>
+		<eda alias="../../LAU68/eda"/>
+		<life alias="../../LAU68/life"/>
+		<buoyancy alias="../../LAU68/buoyancy"/>
+		<aero-stabilised alias="../../LAU68/aero-stabilised"/>
+		<wind alias="../../LAU68/wind"/>
+		<collision alias="../../LAU68/collision"/>
+		<impact alias="../../LAU68/impact"/>
+		<impact-reports alias="../../LAU68/impact-reports"/>
+		<submodel-path alias="../../LAU68/submodel-path"/>
+	</submodel>
+
+	<submodel>
+		<name>Store 2 LAU 68</name>
+		<model alias="../../LAU68/model"/>
+		<trigger>/sim/weight[2]/LAU-68/trigger-rocket</trigger>
+		<speed alias="../../LAU68/speed"/>
+		<repeat alias="../../LAU68/repeat"/>
+		<delay alias="../../LAU68/delay"/>
+		<count alias="../../LAU68/count"/>
+		<x-offset alias="../../station[2]/x-offset"/>
+		<y-offset alias="../../station[2]/y-offset"/>
+		<z-offset alias="../../station[2]/z-offset"/>
+		<yaw-offset alias="../../LAU68/yaw-offset"/>
+		<pitch-offset alias="../../LAU68/pitch-offset"/>
+		<cd alias="../../LAU68/cd"/>
+		<weight alias="../../LAU68/weight"/>
+		<fuse-range alias="../../LAU68/fuse-range"/>
+		<eda alias="../../LAU68/eda"/>
+		<life alias="../../LAU68/life"/>
+		<buoyancy alias="../../LAU68/buoyancy"/>
+		<aero-stabilised alias="../../LAU68/aero-stabilised"/>
+		<wind alias="../../LAU68/wind"/>
+		<collision alias="../../LAU68/collision"/>
+		<impact alias="../../LAU68/impact"/>
+		<impact-reports alias="../../LAU68/impact-reports"/>
+		<submodel-path alias="../../LAU68/submodel-path"/>
+	</submodel>
+
+	<submodel>
+		<name>Store 3 LAU 68</name>
+		<model alias="../../LAU68/model"/>
+		<trigger>/sim/weight[3]/LAU-68/trigger-rocket</trigger>
+		<speed alias="../../LAU68/speed"/>
+		<repeat alias="../../LAU68/repeat"/>
+		<delay alias="../../LAU68/delay"/>
+		<count alias="../../LAU68/count"/>
+		<x-offset alias="../../station[3]/x-offset"/>
+		<y-offset alias="../../station[3]/y-offset"/>
+		<z-offset alias="../../station[3]/z-offset"/>
+		<yaw-offset alias="../../LAU68/yaw-offset"/>
+		<pitch-offset alias="../../LAU68/pitch-offset"/>
+		<cd alias="../../LAU68/cd"/>
+		<weight alias="../../LAU68/weight"/>
+		<fuse-range alias="../../LAU68/fuse-range"/>
+		<eda alias="../../LAU68/eda"/>
+		<life alias="../../LAU68/life"/>
+		<buoyancy alias="../../LAU68/buoyancy"/>
+		<aero-stabilised alias="../../LAU68/aero-stabilised"/>
+		<wind alias="../../LAU68/wind"/>
+		<collision alias="../../LAU68/collision"/>
+		<impact alias="../../LAU68/impact"/>
+		<impact-reports alias="../../LAU68/impact-reports"/>
+		<submodel-path alias="../../LAU68/submodel-path"/>
+	</submodel>
+
+	<submodel>
+		<name>Store 4 LAU 68</name>
+		<model alias="../../LAU68/model"/>
+		<trigger>/sim/weight[4]/LAU-68/trigger-rocket</trigger>
+		<speed alias="../../LAU68/speed"/>
+		<repeat alias="../../LAU68/repeat"/>
+		<delay alias="../../LAU68/delay"/>
+		<count alias="../../LAU68/count"/>
+		<x-offset alias="../../station[4]/x-offset"/>
+		<y-offset alias="../../station[4]/y-offset"/>
+		<z-offset alias="../../station[4]/z-offset"/>
+		<yaw-offset alias="../../LAU68/yaw-offset"/>
+		<pitch-offset alias="../../LAU68/pitch-offset"/>
+		<cd alias="../../LAU68/cd"/>
+		<weight alias="../../LAU68/weight"/>
+		<fuse-range alias="../../LAU68/fuse-range"/>
+		<eda alias="../../LAU68/eda"/>
+		<life alias="../../LAU68/life"/>
+		<buoyancy alias="../../LAU68/buoyancy"/>
+		<aero-stabilised alias="../../LAU68/aero-stabilised"/>
+		<wind alias="../../LAU68/wind"/>
+		<collision alias="../../LAU68/collision"/>
+		<impact alias="../../LAU68/impact"/>
+		<impact-reports alias="../../LAU68/impact-reports"/>
+		<submodel-path alias="../../LAU68/submodel-path"/>
+	</submodel>
+
+	<submodel>
+		<name>Store 0 TER Mk82 LD</name>
 		<model alias="../../MK-82-LD/model"/>
-		<trigger>controls/armament/station[1]/release-stick-1</trigger>
+		<trigger>/sim/weight[0]/TER-MK82-LD/trigger-bomb</trigger>
 		<speed alias="../../MK-82-LD/speed"/>
 		<repeat alias="../../MK-82-LD/repeat"/>
 		<delay alias="../../MK-82-LD/delay"/>
 		<count alias="../../MK-82-LD/count"/>
-		<x-offset alias="../../MK-82-LD/x-offset"/>
-		<y-offset>-8</y-offset>
-		<z-offset>-0.5</z-offset>
+		<x-offset alias="../../station[0]/x-offset"/>
+		<y-offset alias="../../station[0]/y-offset"/>
+		<z-offset alias="../../station[0]/z-offset"/>
 		<yaw-offset alias="../../MK-82-LD/yaw-offset"/>
 		<pitch-offset alias="../../MK-82-LD/pitch-offset"/>
 		<cd alias="../../MK-82-LD/cd"/>
@@ -105,16 +270,16 @@
 	</submodel>
 
 	<submodel>
-		<name>Left TER w/ 3 Mk82 pos 2</name>
+		<name>Store 1 TER Mk82 LD</name>
 		<model alias="../../MK-82-LD/model"/>
-		<trigger>controls/armament/station[1]/release-stick-2</trigger>
+		<trigger>/sim/weight[1]/TER-MK82-LD/trigger-bomb</trigger>
 		<speed alias="../../MK-82-LD/speed"/>
 		<repeat alias="../../MK-82-LD/repeat"/>
 		<delay alias="../../MK-82-LD/delay"/>
 		<count alias="../../MK-82-LD/count"/>
-		<x-offset alias="../../MK-82-LD/x-offset"/>
-		<y-offset>-8</y-offset>
-		<z-offset>-0.5</z-offset>
+		<x-offset alias="../../station[1]/x-offset"/>
+		<y-offset alias="../../station[1]/y-offset"/>
+		<z-offset alias="../../station[1]/z-offset"/>
 		<yaw-offset alias="../../MK-82-LD/yaw-offset"/>
 		<pitch-offset alias="../../MK-82-LD/pitch-offset"/>
 		<cd alias="../../MK-82-LD/cd"/>
@@ -124,6 +289,7 @@
 		<life alias="../../MK-82-LD/life"/>
 		<buoyancy alias="../../MK-82-LD/buoyancy"/>
 		<aero-stabilised alias="../../MK-82-LD/aero-stabilised"/>
+		<wind alias="../../MK-82-LD/wind"/>
 		<collision alias="../../MK-82-LD/collision"/>
 		<impact alias="../../MK-82-LD/impact"/>
 		<impact-reports alias="../../MK-82-LD/impact-reports"/>
@@ -131,16 +297,16 @@
 	</submodel>
 
 	<submodel>
-		<name>Left TER w/ 3 Mk82 pos 3</name>
+		<name>Store 2 TER Mk82 LD</name>
 		<model alias="../../MK-82-LD/model"/>
-		<trigger>controls/armament/station[1]/release-stick-3</trigger>
+		<trigger>/sim/weight[2]/TER-MK82-LD/trigger-bomb</trigger>
 		<speed alias="../../MK-82-LD/speed"/>
 		<repeat alias="../../MK-82-LD/repeat"/>
 		<delay alias="../../MK-82-LD/delay"/>
 		<count alias="../../MK-82-LD/count"/>
-		<x-offset alias="../../MK-82-LD/x-offset"/>
-		<y-offset>-8</y-offset>
-		<z-offset>-0.5</z-offset>
+		<x-offset alias="../../station[2]/x-offset"/>
+		<y-offset alias="../../station[2]/y-offset"/>
+		<z-offset alias="../../station[2]/z-offset"/>
 		<yaw-offset alias="../../MK-82-LD/yaw-offset"/>
 		<pitch-offset alias="../../MK-82-LD/pitch-offset"/>
 		<cd alias="../../MK-82-LD/cd"/>
@@ -150,6 +316,7 @@
 		<life alias="../../MK-82-LD/life"/>
 		<buoyancy alias="../../MK-82-LD/buoyancy"/>
 		<aero-stabilised alias="../../MK-82-LD/aero-stabilised"/>
+		<wind alias="../../MK-82-LD/wind"/>
 		<collision alias="../../MK-82-LD/collision"/>
 		<impact alias="../../MK-82-LD/impact"/>
 		<impact-reports alias="../../MK-82-LD/impact-reports"/>
@@ -157,36 +324,16 @@
 	</submodel>
 
 	<submodel>
-		<name>Center drop tank</name>
-		<model>Aircraft/a4/Models/Submodels/droptank-300-dropped.xml</model>
-		<trigger>controls/armament/station[2]/release-stick</trigger>
-		<contents>/consumables/fuel/tank[3]/level-gal_us</contents>
-		<trigger-once>true</trigger-once>
-		<speed>0.0</speed>
-		<count>1</count>
-		<x-offset>20</x-offset>
-		<y-offset>0</y-offset>
-		<z-offset>-1</z-offset>
-		<yaw-offset>0.0</yaw-offset>
-		<pitch-offset>0.0</pitch-offset>
-		<eda>2.0</eda>
-		<weight>200.0</weight>
-		<cd>0.3</cd>
-		<collision>false</collision>
-		<impact>false</impact>
-	</submodel>
-
-	<submodel>
-		<name>Right TER w/ 3 Mk82 pos 1</name>
+		<name>Store 3 TER Mk82 LD</name>
 		<model alias="../../MK-82-LD/model"/>
-		<trigger>controls/armament/station[3]/release-stick-1</trigger>
+		<trigger>/sim/weight[3]/TER-MK82-LD/trigger-bomb</trigger>
 		<speed alias="../../MK-82-LD/speed"/>
 		<repeat alias="../../MK-82-LD/repeat"/>
 		<delay alias="../../MK-82-LD/delay"/>
 		<count alias="../../MK-82-LD/count"/>
-		<x-offset alias="../../MK-82-LD/x-offset"/>
-		<y-offset> 2.15</y-offset>
-		<z-offset>-0.5</z-offset>
+		<x-offset alias="../../station[3]/x-offset"/>
+		<y-offset alias="../../station[3]/y-offset"/>
+		<z-offset alias="../../station[3]/z-offset"/>
 		<yaw-offset alias="../../MK-82-LD/yaw-offset"/>
 		<pitch-offset alias="../../MK-82-LD/pitch-offset"/>
 		<cd alias="../../MK-82-LD/cd"/>
@@ -196,6 +343,7 @@
 		<life alias="../../MK-82-LD/life"/>
 		<buoyancy alias="../../MK-82-LD/buoyancy"/>
 		<aero-stabilised alias="../../MK-82-LD/aero-stabilised"/>
+		<wind alias="../../MK-82-LD/wind"/>
 		<collision alias="../../MK-82-LD/collision"/>
 		<impact alias="../../MK-82-LD/impact"/>
 		<impact-reports alias="../../MK-82-LD/impact-reports"/>
@@ -203,16 +351,16 @@
 	</submodel>
 
 	<submodel>
-		<name>Right TER w/ 3 Mk82 pos 2</name>
+		<name>Store 4 TER Mk82 LD</name>
 		<model alias="../../MK-82-LD/model"/>
-		<trigger>controls/armament/station[3]/release-stick-2</trigger>
+		<trigger>/sim/weight[4]/TER-MK82-LD/trigger-bomb</trigger>
 		<speed alias="../../MK-82-LD/speed"/>
 		<repeat alias="../../MK-82-LD/repeat"/>
 		<delay alias="../../MK-82-LD/delay"/>
 		<count alias="../../MK-82-LD/count"/>
-		<x-offset alias="../../MK-82-LD/x-offset"/>
-		<y-offset> 2.15</y-offset>
-		<z-offset>-0.5</z-offset>
+		<x-offset alias="../../station[4]/x-offset"/>
+		<y-offset alias="../../station[4]/y-offset"/>
+		<z-offset alias="../../station[4]/z-offset"/>
 		<yaw-offset alias="../../MK-82-LD/yaw-offset"/>
 		<pitch-offset alias="../../MK-82-LD/pitch-offset"/>
 		<cd alias="../../MK-82-LD/cd"/>
@@ -222,65 +370,148 @@
 		<life alias="../../MK-82-LD/life"/>
 		<buoyancy alias="../../MK-82-LD/buoyancy"/>
 		<aero-stabilised alias="../../MK-82-LD/aero-stabilised"/>
+		<wind alias="../../MK-82-LD/wind"/>
 		<collision alias="../../MK-82-LD/collision"/>
 		<impact alias="../../MK-82-LD/impact"/>
 		<impact-reports alias="../../MK-82-LD/impact-reports"/>
 		<submodel-path alias="../../MK-82-LD/submodel-path"/>
 	</submodel>
-
+	
 	<submodel>
-		<name>Right TER w/ 3 Mk82 pos 3</name>
-		<model alias="../../MK-82-LD/model"/>
-		<trigger>controls/armament/station[3]/release-stick-3</trigger>
-		<speed alias="../../MK-82-LD/speed"/>
-		<repeat alias="../../MK-82-LD/repeat"/>
-		<delay alias="../../MK-82-LD/delay"/>
-		<count alias="../../MK-82-LD/count"/>
-		<x-offset alias="../../MK-82-LD/x-offset"/>
-		<y-offset> 2.15</y-offset>
-		<z-offset>-0.5</z-offset>
-		<yaw-offset alias="../../MK-82-LD/yaw-offset"/>
-		<pitch-offset alias="../../MK-82-LD/pitch-offset"/>
-		<cd alias="../../MK-82-LD/cd"/>
-		<weight alias="../../MK-82-LD/weight"/>
-		<fuse-range alias="../../MK-82-LD/fuse-range"/>
-		<eda alias="../../MK-82-LD/eda"/>
-		<life alias="../../MK-82-LD/life"/>
-		<buoyancy alias="../../MK-82-LD/buoyancy"/>
-		<aero-stabilised alias="../../MK-82-LD/aero-stabilised"/>
-		<collision alias="../../MK-82-LD/collision"/>
-		<impact alias="../../MK-82-LD/impact"/>
-		<impact-reports alias="../../MK-82-LD/impact-reports"/>
-		<submodel-path alias="../../MK-82-LD/submodel-path"/>
+		<name>Store 0 300 gallon droptank</name>
+		<model alias="../../DROP-300/model"/>
+		<trigger>/sim/weight[0]/DROP-300/trigger-bomb</trigger>
+		<speed alias="../../DROP-300/speed"/>
+		<repeat alias="../../DROP-300/repeat"/>
+		<delay alias="../../DROP-300/delay"/>
+		<count alias="../../DROP-300/count"/>
+		<x-offset alias="../../station[0]/x-offset"/>
+		<y-offset alias="../../station[0]/y-offset"/>
+		<z-offset alias="../../station[0]/z-offset"/>
+		<yaw-offset alias="../../DROP-300/yaw-offset"/>
+		<pitch-offset alias="../../DROP-300/pitch-offset"/>
+		<cd alias="../../DROP-300/cd"/>
+		<weight alias="../../DROP-300/weight"/>
+		<fuse-range alias="../../DROP-300/fuse-range"/>
+		<eda alias="../../DROP-300/eda"/>
+		<life alias="../../DROP-300/life"/>
+		<buoyancy alias="../../DROP-300/buoyancy"/>
+		<aero-stabilised alias="../../DROP-300/aero-stabilised"/>
+		<wind alias="../../DROP-300/wind"/>
+		<collision alias="../../DROP-300/collision"/>
+		<impact alias="../../DROP-300/impact"/>
+		<impact-reports alias="../../DROP-300/impact-reports"/>
+		<submodel-path alias="../../DROP-300/submodel-path"/>
 	</submodel>
 
 	<submodel>
-		<name>Right LAU 68</name>
-		<model alias="../../LAU68/model"/>
-		<trigger>controls/armament/station[4]/release-rocket</trigger>
-		<speed alias="../../LAU68/speed"/>
-		<repeat alias="../../LAU68/repeat"/>
-		<delay alias="../../LAU68/delay"/>
-		<count alias="../../LAU68/count"/>
-		<x-offset alias="../../LAU68/x-offset"/>
-		<y-offset>10</y-offset>
-		<z-offset>-0.5</z-offset>
-		<yaw-offset alias="../../LAU68/yaw-offset"/>
-		<pitch-offset alias="../../LAU68/pitch-offset"/>
-		<cd alias="../../LAU68/cd"/>
-		<weight alias="../../LAU68/weight"/>
-		<fuse-range alias="../../LAU68/fuse-range"/>
-		<eda alias="../../LAU68/eda"/>
-		<life alias="../../LAU68/life"/>
-		<buoyancy alias="../../LAU68/buoyancy"/>
-		<aero-stabilised alias="../../LAU68/aero-stabilised"/>
-		<wind alias="../../LAU68/wind"/>
-		<collision alias="../../LAU68/collision"/>
-		<impact alias="../../LAU68/impact"/>
-		<impact-reports alias="../../LAU68/impact-reports"/>
-		<submodel-path alias="../../LAU68/submodel-path"/>
+		<name>Store 1 300 gallon droptank</name>
+		<model alias="../../DROP-300/model"/>
+		<trigger>/sim/weight[1]/DROP-300/trigger-bomb</trigger>
+		<speed alias="../../DROP-300/speed"/>
+		<repeat alias="../../DROP-300/repeat"/>
+		<delay alias="../../DROP-300/delay"/>
+		<count alias="../../DROP-300/count"/>
+		<x-offset alias="../../station[1]/x-offset"/>
+		<y-offset alias="../../station[1]/y-offset"/>
+		<z-offset alias="../../station[1]/z-offset"/>
+		<yaw-offset alias="../../DROP-300/yaw-offset"/>
+		<pitch-offset alias="../../DROP-300/pitch-offset"/>
+		<cd alias="../../DROP-300/cd"/>
+		<weight alias="../../DROP-300/weight"/>
+		<fuse-range alias="../../DROP-300/fuse-range"/>
+		<eda alias="../../DROP-300/eda"/>
+		<life alias="../../DROP-300/life"/>
+		<buoyancy alias="../../DROP-300/buoyancy"/>
+		<aero-stabilised alias="../../DROP-300/aero-stabilised"/>
+		<wind alias="../../DROP-300/wind"/>
+		<collision alias="../../DROP-300/collision"/>
+		<impact alias="../../DROP-300/impact"/>
+		<impact-reports alias="../../DROP-300/impact-reports"/>
+		<submodel-path alias="../../DROP-300/submodel-path"/>
 	</submodel>
 
+	<submodel>
+		<name>Store 2 300 gallon droptank</name>
+		<model alias="../../DROP-300/model"/>
+		<trigger>/sim/weight[2]/DROP-300/trigger-bomb</trigger>
+		<speed alias="../../DROP-300/speed"/>
+		<repeat alias="../../DROP-300/repeat"/>
+		<delay alias="../../DROP-300/delay"/>
+		<count alias="../../DROP-300/count"/>
+		<x-offset alias="../../station[2]/x-offset"/>
+		<y-offset alias="../../station[2]/y-offset"/>
+		<z-offset alias="../../station[2]/z-offset"/>
+		<yaw-offset alias="../../DROP-300/yaw-offset"/>
+		<pitch-offset alias="../../DROP-300/pitch-offset"/>
+		<cd alias="../../DROP-300/cd"/>
+		<weight alias="../../DROP-300/weight"/>
+		<fuse-range alias="../../DROP-300/fuse-range"/>
+		<eda alias="../../DROP-300/eda"/>
+		<life alias="../../DROP-300/life"/>
+		<buoyancy alias="../../DROP-300/buoyancy"/>
+		<aero-stabilised alias="../../DROP-300/aero-stabilised"/>
+		<wind alias="../../DROP-300/wind"/>
+		<collision alias="../../DROP-300/collision"/>
+		<impact alias="../../DROP-300/impact"/>
+		<impact-reports alias="../../DROP-300/impact-reports"/>
+		<submodel-path alias="../../DROP-300/submodel-path"/>
+	</submodel>
+
+	<submodel>
+		<name>Store 3 300 gallon droptank</name>
+		<model alias="../../DROP-300/model"/>
+		<trigger>/sim/weight[3]/DROP-300/trigger-bomb</trigger>
+		<speed alias="../../DROP-300/speed"/>
+		<repeat alias="../../DROP-300/repeat"/>
+		<delay alias="../../DROP-300/delay"/>
+		<count alias="../../DROP-300/count"/>
+		<x-offset alias="../../station[3]/x-offset"/>
+		<y-offset alias="../../station[3]/y-offset"/>
+		<z-offset alias="../../station[3]/z-offset"/>
+		<yaw-offset alias="../../DROP-300/yaw-offset"/>
+		<pitch-offset alias="../../DROP-300/pitch-offset"/>
+		<cd alias="../../DROP-300/cd"/>
+		<weight alias="../../DROP-300/weight"/>
+		<fuse-range alias="../../DROP-300/fuse-range"/>
+		<eda alias="../../DROP-300/eda"/>
+		<life alias="../../DROP-300/life"/>
+		<buoyancy alias="../../DROP-300/buoyancy"/>
+		<aero-stabilised alias="../../DROP-300/aero-stabilised"/>
+		<wind alias="../../DROP-300/wind"/>
+		<collision alias="../../DROP-300/collision"/>
+		<impact alias="../../DROP-300/impact"/>
+		<impact-reports alias="../../DROP-300/impact-reports"/>
+		<submodel-path alias="../../DROP-300/submodel-path"/>
+	</submodel>
+
+	<submodel>
+		<name>Store 4 300 gallon droptank</name>
+		<model alias="../../DROP-300/model"/>
+		<trigger>/sim/weight[4]/DROP-300/trigger-bomb</trigger>
+		<speed alias="../../DROP-300/speed"/>
+		<repeat alias="../../DROP-300/repeat"/>
+		<delay alias="../../DROP-300/delay"/>
+		<count alias="../../DROP-300/count"/>
+		<x-offset alias="../../station[4]/x-offset"/>
+		<y-offset alias="../../station[4]/y-offset"/>
+		<z-offset alias="../../station[4]/z-offset"/>
+		<yaw-offset alias="../../DROP-300/yaw-offset"/>
+		<pitch-offset alias="../../DROP-300/pitch-offset"/>
+		<cd alias="../../DROP-300/cd"/>
+		<weight alias="../../DROP-300/weight"/>
+		<fuse-range alias="../../DROP-300/fuse-range"/>
+		<eda alias="../../DROP-300/eda"/>
+		<life alias="../../DROP-300/life"/>
+		<buoyancy alias="../../DROP-300/buoyancy"/>
+		<aero-stabilised alias="../../DROP-300/aero-stabilised"/>
+		<wind alias="../../DROP-300/wind"/>
+		<collision alias="../../DROP-300/collision"/>
+		<impact alias="../../DROP-300/impact"/>
+		<impact-reports alias="../../DROP-300/impact-reports"/>
+		<submodel-path alias="../../DROP-300/submodel-path"/>
+	</submodel>
+	
   <submodel>
       <name>Colt Mk12 Cannon Left</name>
       <model>Aircraft/a4/Models/Stores/guns/tracer.xml</model>

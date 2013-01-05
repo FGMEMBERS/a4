@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+
+<!-- Full set of A-4F stores - Left outboard (station 0) -->
+
+<PropertyList>
+  <path>stores.ac</path>
+
+  <!-- LAU-68 -->
+  <animation>
+    <type>select</type>
+    <object-name>lau68</object-name>
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[1]/selected</property>
+          <value>LAU-68</value>
+        </equals>
+        <equals>
+          <property>sim/weight[1]/bomb-count</property>
+          <value>1</value>
+        </equals>
+      </and>
+    </condition>
+  </animation>
+
+
+  <!-- TER w/ 3x Mk82 -->
+  <animation>
+    <type>select</type>
+    <object-name>ter</object-name>
+    <object-name>ter_0</object-name>
+    <condition>
+      <equals>
+        <property>sim/weight[1]/selected</property>
+        <value>TER-MK82-LD</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>mk82-1</object-name>
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[1]/selected</property>
+          <value>TER-MK82-LD</value>
+        </equals>
+        <greater-than>
+          <property>sim/weight[1]/bomb-count</property>
+          <value>2</value>
+        </greater-than>
+      </and>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>mk82-1</object-name>
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[1]/selected</property>
+          <value>TER-MK82-LD</value>
+        </equals>
+        <greater-than>
+          <property>sim/weight[1]/bomb-count</property>
+          <value>2</value>
+        </greater-than>
+      </and>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>mk82-2</object-name>
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[1]/selected</property>
+          <value>TER-MK82-LD</value>
+        </equals>
+        <greater-than>
+          <property>sim/weight[1]/bomb-count</property>
+          <value>1</value>
+        </greater-than>
+      </and>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>mk82-3</object-name>
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[1]/selected</property>
+          <value>TER-MK82-LD</value>
+        </equals>
+        <greater-than>
+          <property>sim/weight[1]/bomb-count</property>
+          <value>0</value>
+        </greater-than>
+      </and>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>DropTank300</object-name>
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[1]/selected</property>
+          <value>DROP-300</value>
+        </equals>
+        <greater-than>
+          <property>sim/weight[1]/bomb-count</property>
+          <value>0</value>
+        </greater-than>
+      </and>
+    </condition>
+  </animation>
+  
+  <!-- *** LoD *** -->
+  <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>4000</max-m>
+  </animation>
+
+</PropertyList>
