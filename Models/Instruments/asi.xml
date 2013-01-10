@@ -97,7 +97,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>safe-speed-bug</object-name>
-		<property>sim/model/A-6E/instrumentation/airspeed-indicator/safe-speed-limit-bug</property>
+		<property>sim/model/a4/instrumentation/airspeed-indicator/safe-speed-limit-bug</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
 			<entry><ind>10</ind><dep>1.5</dep></entry>
@@ -135,9 +135,9 @@
 			<interval-sec>0.2</interval-sec>
 			<binding>
 				<command>property-adjust</command>
-				<property>sim/model/A-6E/instrumentation/airspeed-indicator/safe-speed-limit-bug</property>
+				<property>sim/model/a4/instrumentation/airspeed-indicator/safe-speed-limit-bug</property>
 				<step>-10</step>
-				<min>180</min>
+				<min>100</min>
 			</binding>
 		</action>
 	</animation>
@@ -152,9 +152,9 @@
 			<interval-sec>0.2</interval-sec>
 			<binding>
 				<command>property-adjust</command>
-				<property>sim/model/A-6E/instrumentation/airspeed-indicator/safe-speed-limit-bug</property>
+				<property>sim/model/a4/instrumentation/airspeed-indicator/safe-speed-limit-bug</property>
 				<step>-50</step>
-				<min>180</min>
+				<min>100</min>
 			</binding>
 		</action>
 	</animation>
@@ -170,7 +170,7 @@
 			<interval-sec>0.2</interval-sec>
 			<binding>
 				<command>property-adjust</command>
-				<property>sim/model/A-6E/instrumentation/airspeed-indicator/safe-speed-limit-bug</property>
+				<property>sim/model/a4/instrumentation/airspeed-indicator/safe-speed-limit-bug</property>
 				<step>10</step>
 				<max>560</max>
 			</binding>
@@ -187,8 +187,33 @@
 			<interval-sec>0.2</interval-sec>
 			<binding>
 				<command>property-adjust</command>
-				<property>sim/model/A-6E/instrumentation/airspeed-indicator/safe-speed-limit-bug</property>
+				<property>sim/model/a4/instrumentation/airspeed-indicator/safe-speed-limit-bug</property>
 				<step>50</step>
+				<max>560</max>
+			</binding>
+		</action>
+	</animation>
+
+	<animation>
+		<type>pick</type>
+		<visible>true</visible>
+		<object-name>asi-bug-left</object-name>
+		<object-name>asi-bug-right</object-name>
+		<action>
+			<button>3</button>
+			<binding>
+				<command>property-adjust</command>
+				<property>sim/model/a4/instrumentation/airspeed-indicator/safe-speed-limit-bug</property>
+				<step>-10</step>
+				<min>100</min>
+			</binding>
+		</action>
+		<action>
+			<button>4</button>
+			<binding>
+				<command>property-adjust</command>
+				<property>sim/model/a4/instrumentation/airspeed-indicator/safe-speed-limit-bug</property>
+				<step>10</step>
 				<max>560</max>
 			</binding>
 		</action>

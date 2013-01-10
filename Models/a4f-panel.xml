@@ -997,7 +997,7 @@
 
 
   <model>
-    <path>Aircraft/A-6E/Models/accelerometer.xml</path>
+    <path>Aircraft/a4/Models/Instruments/accelerometer.xml</path>
     <name>G Meter</name>
     <offsets>
       <x-m> 0.0</x-m>
@@ -1017,7 +1017,7 @@
   </model>
 
   <model>
-    <path>Aircraft/A-6E/Models/altimeter.xml</path>
+    <path>Aircraft/a4/Models/Instruments/altimeter.xml</path>
     <name>Alt</name>
     <offsets>
       <x-m> 0.0</x-m>
@@ -1028,7 +1028,7 @@
 
 
   <model>
-    <path>Aircraft/A-6E/Models/aoa-gauge.xml</path>
+    <path>Aircraft/a4/Models/Instruments/aoa-gauge.xml</path>
     <name>Alt</name>
     <offsets>
       <x-m> 0.0</x-m>
@@ -1038,7 +1038,7 @@
   </model>
 
   <model>
-    <path>Aircraft/A-6E/Models/vsi.xml</path>
+    <path>Aircraft/a4/Models/Instruments/vsi.xml</path>
     <name>VSI</name>
     <offsets>
       <x-m> 0.0</x-m>
@@ -1068,7 +1068,7 @@
   </model>
 
   <model>
-    <path>Aircraft/A-6E/Models/radar-altimeter.xml</path>
+    <path>Aircraft/a4/Models/Instruments/radar-altimeter.xml</path>
     <name>VSI</name>
     <offsets>
       <x-m> 0.0</x-m>

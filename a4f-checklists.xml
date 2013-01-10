@@ -20,7 +20,7 @@
    </item>
    <item>
      <name>Speedbrakes</name>
-     <value>CLOSED</value>
+     <value>CLOSED (Ctrl-B)</value>
    </item>
    <item>
      <name>Spoilers</name>
@@ -79,7 +79,7 @@
    </item>
    <item>
      <name>Spoilers</name>
-     <value>OFF</value>
+     <value>OFF (j)</value>
    </item>
  </checklist>
  <checklist>
@@ -92,7 +92,7 @@
    <item><name>BREAK</name></item>
    <item>
      <name>Speedbrakes</name>
-     <value>EXTENDED</value>
+     <value>EXTENDED (Ctrl-B)</value>
    </item>
    <item>
      <name>Throttle</name>
@@ -117,7 +117,7 @@
    </item>
    <item>
      <name>Spoilers</name>
-     <value>ARMED</value>
+     <value>ARMED (k)</value>
    </item>
    <item>
      <name>Harness</name>
@@ -165,7 +165,7 @@
    </item>
    <item>
      <name>Speedbrakes</name>
-     <value>EXTENDED</value>
+     <value>EXTENDED (Ctrl-B)</value>
    </item>
    <item>
      <name>Throttle</name>
@@ -194,7 +194,7 @@
    </item>
    <item>
      <name>Spoilers</name>
-     <value>ARMED</value>
+     <value>ARMED (k)</value>
    </item>
    <item>
      <name>Harness</name>
@@ -233,7 +233,7 @@
    </item>   
    <item>
      <name>Speedbrakes</name>
-     <value>RETRACT</value>
+     <value>RETRACT (Ctrl-B)</value>
    </item>   
    <item>
      <name>Climb</name>
@@ -245,7 +245,7 @@
    </item>   
    <item>
      <name>Speedbrakes</name>
-     <value>EXTEND on downwind</value>
+     <value>EXTEND on downwind (Ctrl-B)</value>
    </item>   
   </checklist>  
   <checklist>
@@ -269,7 +269,7 @@
    </item>
    <item>
      <name>Speedbrakes</name>
-     <value>CLOSED</value>
+     <value>CLOSED (Ctrl-B)</value>
    </item>
    <item>
      <name>Spoilers</name>
@@ -332,12 +332,12 @@
    </item>
    <item>
      <name>Hook</name>
-     <value>DOWN</value>
+     <value>DOWN (O)</value>
    </item>
    <item><name>BREAK</name></item>
    <item>
      <name>Speedbrakes</name>
-     <value>EXTENDED</value>
+     <value>EXTENDED (Ctrl-B)</value>
    </item>
    <item>
      <name>Throttle</name>
@@ -429,7 +429,7 @@
    </item>
    <item>
      <name>Station</name>
-     <value>READY (1 &amp; 5)</value>
+     <value>READY</value>
    </item>
    <item>
      <name>Trigger</name>
@@ -450,7 +450,7 @@
    </item>
    <item>
      <name>Station</name>
-     <value>READY (2 &amp; 4)</value>
+     <value>READY</value>
    </item>
    <item>
      <name>Bomb</name>
@@ -471,7 +471,7 @@
    </item>
    <item>
      <name>Station</name>
-     <value>READY (2 &amp; 4)</value>
+     <value>READY</value>
    </item>
    <item>
      <name>Bomb</name>
