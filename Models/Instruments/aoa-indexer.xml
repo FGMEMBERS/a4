@@ -16,10 +16,10 @@
 				<property>orientation/alpha-deg</property>
 				<property>sim/aoa-indexer/too-slow-deg</property>
 			</greater-than>
-			<equals>
+			<not-equals>
 				<property>gear/gear[0]/position-norm</property>
-				<value>1</value>
-			</equals>
+				<value>0</value>
+			</not-equals>
 		</condition>
 	</animation>
 
@@ -39,10 +39,10 @@
 				<property>orientation/alpha-deg</property>
 				<property>sim/aoa-indexer/slow-deg</property>
 			</greater-than>
-			<equals>
+			<not-equals>
 				<property>gear/gear[0]/position-norm</property>
-				<value>1</value>
-			</equals>
+				<value>0</value>
+			</not-equals>
 		</condition>
 	</animation>
 
@@ -62,10 +62,10 @@
 				<property>orientation/alpha-deg</property>
 				<property>sim/aoa-indexer/fast-deg</property>
 			</greater-than>
-			<equals>
+			<not-equals>
 				<property>gear/gear[0]/position-norm</property>
-				<value>1</value>
-			</equals>
+				<value>0</value>
+			</not-equals>
 		</condition>
 	</animation>
 
@@ -85,10 +85,10 @@
 				<property>orientation/alpha-deg</property>
 				<property>sim/aoa-indexer/too-fast-deg</property>
 			</greater-than>
-			<equals>
+			<not-equals>
 				<property>gear/gear[0]/position-norm</property>
-				<value>1</value>
-			</equals>
+				<value>0</value>
+			</not-equals>
 		</condition>
 	</animation>
 
@@ -104,10 +104,10 @@
 				<property>orientation/alpha-deg</property>
 				<property>sim/aoa-indexer/too-fast-deg</property>
 			</less-than>
-			<equals>
+			<not-equals>
 				<property>gear/gear[0]/position-norm</property>
-				<value>1</value>
-			</equals>
+				<value>0</value>
+			</not-equals>
 		</condition>
 	</animation>
 
@@ -121,10 +121,10 @@
 				<property>controls/engines/engine/apc</property>
 				<value>false</value>
 			</equals>
-			<equals>
+			<not-equals>
 				<property>gear/gear[0]/position-norm</property>
-				<value>1</value>
-			</equals>
+				<value>0</value>
+			</not-equals>
 		</condition>
 	</animation>
 

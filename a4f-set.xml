@@ -22,10 +22,9 @@ the flight data model, instrument panel, and external 3D model.
 		<fuel-fraction>0.5</fuel-fraction>
 
 		<systems>
-
-			<!--   <autopilot>
-    <path>Aircraft/KC135/Systems/autopilot.xml</path>
-   </autopilot>-->
+      <autopilot>
+        <path>Aircraft/a4/Systems/autopilot.xml</path>
+      </autopilot>
 
 			<electrical>
 				<path>Aircraft/a4/Systems/electrical.xml</path>
@@ -100,11 +99,21 @@ the flight data model, instrument panel, and external 3D model.
 			<field-of-view>60.0</field-of-view>
 		</current-view>
 
+<!--
 		<aoa-indexer>
-			<too-slow-deg>12.5</too-slow-deg>
-			<slow-deg>11.5</slow-deg>
-			<fast-deg>9.5</fast-deg>
-			<too-fast-deg>8.5</too-fast-deg>
+			<too-slow-deg>9</too-slow-deg>
+			<slow-deg>8</slow-deg>
+			<fast-deg>7</fast-deg>
+			<too-fast-deg>6</too-fast-deg>
+		</aoa-indexer>
+-->		
+
+		<aoa-indexer>
+			<too-slow-deg>14.5</too-slow-deg>
+			<slow-deg>13.5</slow-deg>
+			<target-deg>13.0</target-deg>
+			<fast-deg>12.5</fast-deg>
+			<too-fast-deg>11.5</too-fast-deg>
 		</aoa-indexer>
 
 		<hud>
@@ -212,11 +221,6 @@ the flight data model, instrument panel, and external 3D model.
 		<help>
 			<title>Douglas A4F Skyhawk</title>
 			<line>See Help-Checklists for checklists</line>			
-			<line>STORES</line>
-			<line>- Colt Mk 12 Cannon</line>
-			<line>- LAU68 Rockets (stations 1 and 5)</line>
-			<line>- Mk 82 Bombs (stations 2 and 4)</line>
-			<line>- 300 gallon drop tank (station 3)</line>
 
 			<key>
 				<name>a</name>
@@ -313,12 +317,12 @@ the flight data model, instrument panel, and external 3D model.
 		<engines>
 			<engine>
 				<throttle>0</throttle>
-				<apc type="bool">0</apc>
+				<apc type="bool">false</apc>
 			</engine>
 		</engines>
 		<flight>
-			<speedbrake type="bool">0</speedbrake>
-			<spoilers-armed type="bool">0</spoilers-armed>
+			<speedbrake type="bool">false</speedbrake>
+			<spoilers-armed type="bool">false</spoilers-armed>
 		</flight>
 		<instrumentation>
 		  <bhdi-mode type="int">0</bhdi-mode>
