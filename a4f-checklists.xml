@@ -478,6 +478,101 @@
      <value>JETTISON (b)</value>
    </item>   
  </checklist>
+ <checklist>
+   <title>Terrain Clearance Radar</title>  
+   <item>
+     <name>Radar Mode (Bottom RH console)</name>
+     <value>TC</value>
+   </item>
+   <item>
+     <name>Long/Short (Center of panel)</name>
+     <value>As required (10nm/20nm range)</value>
+   </item>
+   <item>
+     <name>Brightness (BRT knob on display)</name>
+     <value>As required</value>
+   </item>
+   <item>
+     <name>Reticle (RET knob on display)</name>
+     <value>As required</value>
+   </item>
+   <item>
+     <name>OBST light will illuminate when terrain &lt; 1000ft.</name>
+   </item>
+ </checklist>
+ <checklist>
+   <title>Inertial Navigation Computer</title>  
+   <item>
+     <name>Doppler Radar (Top RH console marked NAV)</name>
+     <value>LAND/SEA</value>
+   </item>
+   <item>
+     <name>Destination Lat/Lon</name>
+     <value>SET</value>
+   </item>
+   <item>
+     <name>NAV Mode (RH console marked NAV)</name>
+     <value>D1</value>
+   </item>
+   <item>
+     <name>BHDI mode (center panel)</name>
+     <value>NAV CMPTR</value>
+   </item>
+   <item>
+     <name>Bearing</name>
+     <value>Single BHDI needle</value>
+   </item>
+   <item>
+     <name>Drift</name>
+     <value>Double BHDI needle</value>
+   </item>
+   <item>
+     <name>Distance (NM)</name>
+     <value>Displayed in BHDI</value>
+   </item>
+ </checklist>
+ <checklist>
+   <title>UHF Radio</title>  
+   <item>
+     <name>UHF Mode (RH Console)</name>
+     <value>T/R</value>
+   </item>
+   <item>
+     <name>UHF Channel Mode (RH Consiole)</name>
+     <value>MAN</value>
+   </item>
+   <item>
+     <name>Frequency</name>
+     <value>Set using controls in console</value>
+   </item>
+   <item>
+     <name>Volume</name>
+     <value>Set using controls in console</value>
+   </item>
+ </checklist>
+ <checklist>
+   <title>TACAN</title>  
+   <item>
+     <name>TACAN mode (RH console)</name>
+     <value>T/R</value>
+   </item>
+   <item>
+     <name>TACAN CHAN (RH console)</name>
+     <value>SET</value>
+   </item>
+   <item>
+     <name>BHDI mode (center panel)</name>
+     <value>TACAN</value>
+   </item>
+   <item>
+     <name>Bearing</name>
+     <value>Single BHDI needle</value>
+   </item>
+   <item>
+     <name>Distance (NM)</name>
+     <value>Displayed in BHDI</value>
+   </item>
+ </checklist>
 </PropertyList>
 
 

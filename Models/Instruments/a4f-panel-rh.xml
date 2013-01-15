@@ -1637,7 +1637,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>UHFFreq1</object-name>
-    <property>instrumentation/comm/frequencies/selected-mhz</property>
+    <property>controls/instrumentation/uhf/manual-channel</property>
     <factor>-0.001</factor>
     <step>100</step>
     <axis>
@@ -1650,7 +1650,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>UHFFreq2</object-name>
-    <property>instrumentation/comm/frequencies/selected-mhz</property>
+    <property>controls/instrumentation/uhf/manual-channel</property>
     <factor>-0.01</factor>
     <step>10</step>
     <axis>
@@ -1663,7 +1663,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>UHFFreq3</object-name>
-    <property>instrumentation/comm/frequencies/selected-mhz</property>
+    <property>controls/instrumentation/uhf/manual-channel</property>
     <factor>-0.1</factor>
     <step>1</step>
     <axis>
@@ -1676,7 +1676,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>UHFFreq4</object-name>
-    <property>instrumentation/comm/frequencies/selected-mhz</property>
+    <property>controls/instrumentation/uhf/manual-channel</property>
     <factor>-1</factor>
     <step>0.1</step>
     <axis>
@@ -1689,7 +1689,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>UHFFreq5</object-name>
-    <property>instrumentation/comm/frequencies/selected-mhz</property>
+    <property>controls/instrumentation/uhf/manual-channel</property>
     <factor>-10</factor>
     <step>0.01</step>
     <axis>

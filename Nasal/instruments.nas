@@ -78,10 +78,9 @@ setlistener("/controls/instrumentation/uhf/preset-channel", func(n) {
 setlistener("/instrumentation/comm/frequencies/selected-mhz", func(n) {
   var i = n.getValue();
   
-  # If we're in the Preset mode, then change the current COMM1 active
-  # channel to the preset value.
   if (getprop("/controls/instrumentation/uhf/mode") == UHF_MODE_ADF) {
-    setprop("/instrumentation/adffrequencies/selected-khz", i * 1000);  
+    #  We assume that the value is scaled by a factor of 1000.
+    setprop("/instrumentation/adffrequencies/selected-khz", i);  
   }
 });
 
@@ -94,7 +93,22 @@ setlistener("/controls/instrumentation/uhf/freq-select", func(n) {
     var freq = getprop(p);
     setprop("/instrumentation/comm/frequencies/selected-mhz", freq);  
   }
+
+  if (i == UHF_FREQ_MANUAL) {
+    var freq = getprop("/controls/instrumentation/uhf/manual-channel");
+    setprop("/instrumentation/comm/frequencies/selected-mhz", freq);  
+  }
+
 });
+
+setlistener("/controls/instrumentation/uhf/manual-channel", func(n) {
+  var freq = n.getValue();
+
+  if (getprop("/controls/instrumentation/uhf/freq-select") == UHF_FREQ_MANUAL) {
+    setprop("/instrumentation/comm/frequencies/selected-mhz", freq);  
+  }
+});
+
 
 # INS Destination Controls
 setlistener("/controls/instrumentation/ins/mode", func(n) {
@@ -137,3 +151,10 @@ setlistener("/controls/instrumentation/ins/current-destination/longitude-deg", f
 
 instrumentLoop();
 insLoop();
+
+# GUI over-rides for the radio, and to add an INS option.
+var radio_dialog = gui.Dialog.new("/sim/gui/dialogs/a4/radio/dialog",
+				  "Aircraft/a4/Dialogs/radios.xml");
+
+gui.menuBind("radio", "a4_instruments.radio_dialog.toggle();");
+

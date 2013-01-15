@@ -3,6 +3,17 @@
 
  <path>attitude.ac</path>
 
+<animation>
+  <type>rotate</type>
+  <object-name>Ball</object-name>
+  <property>/controls/instrumentation/attitude/pitch</property>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
  <animation>
   <type>rotate</type>
   <object-name>Ball</object-name>
@@ -51,17 +62,6 @@
   </axis>
  </animation>
  
- <animation>
-  <type>rotate</type>
-  <object-name>Ball</object-name>
-  <property>/controls/instrumentation/attitude/pitch</property>
-  <axis>
-   <x>0</x>
-   <y>1</y>
-   <z>0</z>
-  </axis>
- </animation>
-
  <animation>
   <type>rotate</type>
   <object-name>Knob</object-name>

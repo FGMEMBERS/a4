@@ -39,8 +39,16 @@
 		<type>rotate</type>
 		<object-name>needle1</object-name>
 		<condition>
-		  <property>controls/instrumentation/uhf/mode</property>
-		  <value>3</value>
+		  <and>
+        <equals>
+          <property>controls/instrumentation/bhdi-mode</property>
+          <value>2</value>
+        </equals>
+        <equals>
+          <property>controls/instrumentation/uhf/mode</property>
+          <value>3</value>
+        </equals>
+      </and>
     </condition>
 		<property>instrumentation/adf/indicated-bearing-deg</property>
 		<axis><x>-1</x></axis>
@@ -48,7 +56,7 @@
 
 	<animation>
 		<type>rotate</type>
-		<object-name>needle2</object-name>
+		<object-name>needle1</object-name>
 		<!-- INS bearing is displayed if the BHDI switch is set AND the INS is set
          to D1 or D2 -->
 		<condition>

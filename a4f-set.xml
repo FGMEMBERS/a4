@@ -338,43 +338,42 @@ the flight data model, instrument panel, and external 3D model.
 		      <longitude-deg>-117.67</longitude-deg>
         </current-destination>
         <d1>
-		      <latitude-deg>-34.67</latitude-deg>
-		      <longitude-deg>-117.67</longitude-deg>
+		      <latitude-deg userarchive="y">-34.67</latitude-deg>
+		      <longitude-deg userarchive="y">-117.67</longitude-deg>
         </d1>
         <d2>
-		      <latitude-deg>-34.67</latitude-deg>
-		      <longitude-deg>-117.67</longitude-deg>
+		      <latitude-deg userarchive="y">-34.67</latitude-deg>
+		      <longitude-deg userarchive="y">-117.67</longitude-deg>
         </d2>
-        <set-course-deg>0.0</set-course-deg>
-        <set-dist-nm>0.0</set-dist-nm>
       </ins>
       
       <uhf>
-        <preset-channel type="int">0</preset-channel>
+        <preset-channel type="int" userarchive="y">0</preset-channel>
         <freq-select type="int">0</freq-select>
         <mode type="int">0</mode>
         <preset-channels>
-          <channel n="0">120.500</channel>
-          <channel n="1">118.850</channel>
-          <channel n="2">118.300</channel>
-          <channel n="3">133.775</channel>
-          <channel n="4">133.775</channel>
-          <channel n="5">133.775</channel>
-          <channel n="6">133.775</channel>
-          <channel n="7">133.775</channel>
-          <channel n="8">133.775</channel>
-          <channel n="9">133.775</channel>
-          <channel n="10">133.775</channel>
-          <channel n="11">133.775</channel>
-          <channel n="12">133.775</channel>
-          <channel n="13">133.775</channel>
-          <channel n="14">133.775</channel>
-          <channel n="15">133.775</channel>
-          <channel n="16">133.775</channel>
-          <channel n="17">133.775</channel>
-          <channel n="18">133.775</channel>
-          <channel n="19">133.775</channel>        
+          <channel n="0" userarchive="y">120.500</channel>
+          <channel n="1" userarchive="y">118.850</channel>
+          <channel n="2" userarchive="y">118.300</channel>
+          <channel n="3" userarchive="y">133.775</channel>
+          <channel n="4" userarchive="y">133.775</channel>
+          <channel n="5" userarchive="y">133.775</channel>
+          <channel n="6" userarchive="y">133.775</channel>
+          <channel n="7" userarchive="y">133.775</channel>
+          <channel n="8" userarchive="y">133.775</channel>
+          <channel n="9" userarchive="y">133.775</channel>
+          <channel n="10" userarchive="y">133.775</channel>
+          <channel n="11" userarchive="y">133.775</channel>
+          <channel n="12" userarchive="y">133.775</channel>
+          <channel n="13" userarchive="y">133.775</channel>
+          <channel n="14" userarchive="y">133.775</channel>
+          <channel n="15" userarchive="y">133.775</channel>
+          <channel n="16" userarchive="y">133.775</channel>
+          <channel n="17" userarchive="y">133.775</channel>
+          <channel n="18" userarchive="y">133.775</channel>
+          <channel n="19" userarchive="y">133.775</channel>        
         </preset-channels>
+        <manual-channel userarchive="y">120.500</manual-channel>
       </uhf>
       <tacan-mode type="int">0</tacan-mode>		  
     </instrumentation>
