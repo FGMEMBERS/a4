@@ -332,6 +332,7 @@ setlistener("/sim/weight[3]/selected", loadout_handler);
 setlistener("/sim/weight[4]/selected", loadout_handler);
 
 # controls.nas overrides.
+var spoilers_armed = props.globals.getNode("controls/flight/spoilers-armed", 1);
 
 # No manual spoiler control. This only arms the spoilers.
 controls.stepSpoilers = func(step) {

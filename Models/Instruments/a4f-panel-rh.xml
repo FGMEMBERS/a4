@@ -171,7 +171,7 @@
     <condition>
       <equals>
         <property>/controls/instrumentation/ins/mode</property>
-        <value>-1</value>
+        <value>0</value>
       </equals>
     </condition>
   </animation>
@@ -182,7 +182,7 @@
     <condition>
       <equals>
         <property>/controls/instrumentation/ins/mode</property>
-        <value>0</value>
+        <value>1</value>
       </equals>
     </condition>
   </animation>
@@ -193,7 +193,7 @@
     <condition>
       <equals>
         <property>/controls/instrumentation/ins/mode</property>
-        <value>1</value>
+        <value>2</value>
       </equals>
     </condition>
   </animation>
@@ -204,7 +204,7 @@
     <condition>
       <equals>
         <property>/controls/instrumentation/ins/mode</property>
-        <value>2</value>
+        <value>3</value>
       </equals>
     </condition>
   </animation>
@@ -215,7 +215,7 @@
     <condition>
       <equals>
         <property>/controls/instrumentation/ins/mode</property>
-        <value>3</value>
+        <value>4</value>
       </equals>
     </condition>
   </animation>
@@ -234,8 +234,8 @@
         <command>property-adjust</command>
         <property>/controls/instrumentation/ins/mode</property>
         <step>1</step>
-        <min>-1</min>
-        <max>3</max>        
+        <min>0</min>
+        <max>4</max>        
       </binding>
     </action>
     <action>
@@ -245,8 +245,8 @@
         <command>property-adjust</command>
         <property>/controls/instrumentation/ins/mode</property>
         <step>-1</step>
-        <min>-1</min>
-        <max>3</max>        
+        <min>0</min>
+        <max>4</max>        
       </binding>
     </action>
     <action>
@@ -257,8 +257,8 @@
         <command>property-adjust</command>
         <property>/controls/instrumentation/ins/mode</property>
         <step>1</step>
-        <min>-1</min>
-        <max>3</max>        
+        <min>0</min>
+        <max>4</max>        
       </binding>
     </action>
     <action>
@@ -269,8 +269,8 @@
         <command>property-adjust</command>
         <property>/controls/instrumentation/ins/mode</property>
         <step>-1</step>
-        <min>-1</min>
-        <max>3</max>        
+        <min>0</min>
+        <max>4</max>        
       </binding>
     </action>        
   </animation>

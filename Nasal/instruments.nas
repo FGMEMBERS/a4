@@ -1,11 +1,11 @@
 # Instrumentation Nasal
 
 # INS mode switch constants
-var INS_MODE_TEST = -1;
-var INS_MODE_OFF = 0;
-var INS_MODE_STBY = 1;
-var INS_MODE_D1 = 2;
-var INS_MODE_D2 = 3;
+var INS_MODE_TEST = 0;
+var INS_MODE_OFF = 1;
+var INS_MODE_STBY = 2;
+var INS_MODE_D1 = 3;
+var INS_MODE_D2 = 4;
 
 # UHF frequency select constants
 var UHF_FREQ_PRESET = 0;
@@ -152,9 +152,8 @@ setlistener("/controls/instrumentation/ins/current-destination/longitude-deg", f
 instrumentLoop();
 insLoop();
 
-# GUI over-rides for the radio, and to add an INS option.
+# GUI over-rides for the radio dialog.
 var radio_dialog = gui.Dialog.new("/sim/gui/dialogs/a4/radio/dialog",
 				  "Aircraft/a4/Dialogs/radios.xml");
 
-gui.menuBind("radio", "a4_instruments.radio_dialog.toggle();");
-
+gui.menuBind("radio", "a4_instruments.radio_dialog.open();");

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <default>
+    <menu n="10">
+      <label>Douglas A-4F</label>
+      <enabled type="bool">true</enabled>
+      <item>
+        <name>NavigationComputer</name>
+        <label>Navigation Computer</label>
+        <binding>
+          <command>nasal</command>
+          <script>a4_instruments.radio_dialog.open();</script>
+        </binding>
+      </item>
+    </menu>
+  </default>
+
+</PropertyList>
+

@@ -260,6 +260,8 @@ the flight data model, instrument panel, and external 3D model.
 			</key>
 		</help>
 
+    <menubar include="Dialogs/a4f-menu.xml"/>
+
 	</sim>
 
 	<autopilot>
@@ -329,7 +331,7 @@ the flight data model, instrument panel, and external 3D model.
 		  <drift-indicator-mode type="int">0</drift-indicator-mode>
 		  <ins>
 		    <!-- Inertial Navigation System -->
-		    <mode type="int">0</mode>
+		    <mode type="int">1</mode>
 		    <magvar-deg type="float">-3.0</magvar-deg>
 		    <wind-speed-kts type="int">0</wind-speed-kts>
 		    <wind-dir-deg type="int">0</wind-dir-deg>
