@@ -550,7 +550,14 @@ the flight data model, instrument panel, and external 3D model.
       
 	  </templates>
   </armament>
-	  
+  
+  <limits>
+    <mass-and-balance>
+      <maximum-takeoff-mass-lbs>24500</maximum-takeoff-mass-lbs>      
+      <maximum-landing-mass-lbs>16000</maximum-landing-mass-lbs>      
+      <maximum-arrested-landing-mass-lbs>14500</maximum-arrested-landing-mass-lbs>    
+    </mass-and-balance>
+  </limits>
 
 	<nasal>
     <radar>
