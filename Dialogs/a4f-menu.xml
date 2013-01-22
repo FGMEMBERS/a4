@@ -11,7 +11,7 @@
         <label>Navigation Computer</label>
         <binding>
           <command>nasal</command>
-          <script>a4_instruments.radio_dialog.open();</script>
+          <script>a4_instruments.ins_dialog.open();</script>
         </binding>
       </item>
     </menu>
