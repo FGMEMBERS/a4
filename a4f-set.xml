@@ -61,9 +61,9 @@ the flight data model, instrument panel, and external 3D model.
 			<config>
 				<x-offset-m archive="y">0.00</x-offset-m>
 				<y-offset-m archive="y">0.9</y-offset-m>
-				<z-offset-m archive="y">-2.35</z-offset-m>
+				<z-offset-m archive="y">-2.52</z-offset-m>
 				<pitch-offset-deg>-10</pitch-offset-deg>
-				<!-- <default-field-of-view-deg>60</default-field-of-view-deg> -->
+				<default-field-of-view-deg>70.0</default-field-of-view-deg>
 			</config>
 		</view>
 
@@ -96,17 +96,11 @@ the flight data model, instrument panel, and external 3D model.
 		</view>
 
 		<current-view>
-			<field-of-view>60.0</field-of-view>
+			<field-of-view>70.0</field-of-view>
+			<config>
+			  <default-field-of-view-deg>70.0</default-field-of-view-deg>			
+			</config>
 		</current-view>
-
-<!--
-		<aoa-indexer>
-			<too-slow-deg>9</too-slow-deg>
-			<slow-deg>8</slow-deg>
-			<fast-deg>7</fast-deg>
-			<too-fast-deg>6</too-fast-deg>
-		</aoa-indexer>
--->		
 
 		<aoa-indexer>
 			<too-slow-deg>14.5</too-slow-deg>
@@ -396,6 +390,10 @@ the flight data model, instrument panel, and external 3D model.
       <set-course-deg>0.0</set-course-deg>
       <set-dist-nm type="int">0</set-dist-nm>
 	  </ins>	
+	  <g-meter>
+	    <g-min>1.0</g-min>
+	    <g-max>1.0</g-max>
+    </g-meter>
 	</instrumentation>
 
 
