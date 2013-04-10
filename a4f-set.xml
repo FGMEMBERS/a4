@@ -311,6 +311,9 @@ the flight data model, instrument panel, and external 3D model.
 	<systems>
 		<refuel>
 			<type>probe</type>
+			<offset-x-m>-0.57</offset-x-m>
+			<offset-y-m>0.56</offset-y-m>
+			<offset-z-m>0.13</offset-z-m>			
 		</refuel>
 	</systems>
 
