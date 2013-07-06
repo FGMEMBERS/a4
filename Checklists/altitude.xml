@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- Altitude check -->
+<PropertyList>
+	<condition>
+		<and>
+			<greater-than>
+				<property>/instrumentation/altimeter/indicated-altitude-ft</property>
+				<value alias="../../../../min-altitude-ft"/>
+			</greater-than>
+			<less-than>
+				<property>/instrumentation/altimeter/indicated-altitude-ft</property>
+				<value alias="../../../../max-altitude-ft"/>
+			</less-than>
+		</and>
+	</condition>
+	<marker>
+    <x-m>2.7850</x-m>
+    <y-m>-0.1617</y-m>
+    <z-m>0.8275</z-m>
+    <scale>3.7167</scale>
+	</marker>
+</PropertyList>

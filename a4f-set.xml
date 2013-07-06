@@ -104,7 +104,7 @@ the flight data model, instrument panel, and external 3D model.
 		<current-view>
 			<field-of-view>70.0</field-of-view>
 			<config>
-			  <default-field-of-view-deg>70.0</default-field-of-view-deg>			
+			  <default-field-of-view-deg>70.0</default-field-of-view-deg>
 			</config>
 		</current-view>
 
@@ -125,84 +125,84 @@ the flight data model, instrument panel, and external 3D model.
 			<opt>
 			  <name>NONE</name>
         <lbs>0</lbs>
-      </opt>            
+      </opt>
 			<opt>
 			  <name>LAU-68</name>
-			  <lbs>430</lbs>			  
-      </opt>      
+			  <lbs>430</lbs>
+      </opt>
 			<selected>NONE</selected>
 		</weight>
-		
+
 		<weight n="1">
 			<name>Left Inboard</name>
-      <tank>3</tank>			
+      <tank>3</tank>
 			<opt>
 			  <name>NONE</name>
         <lbs>0</lbs>
-      </opt>          
+      </opt>
 			<opt>
 			  <name>LAU-68</name>
-			  <lbs>430</lbs>			  
+			  <lbs>430</lbs>
       </opt>
 			<opt>
 			  <name>TER-MK82-LD</name>
-			  <lbs>1644</lbs>			  
+			  <lbs>1644</lbs>
       </opt>
 			<opt>
 			  <name>DROP-300</name>
-			  <lbs>207</lbs>			  
+			  <lbs>207</lbs>
 			  <gals>300</gals>
       </opt>
 			<selected>NONE</selected>
 		</weight>
-		
+
 		<weight n="2">
 			<name>Center Pylon</name>
-      <tank>4</tank>			
+      <tank>4</tank>
 			<opt>
 			  <name>NONE</name>
         <lbs>0</lbs>
-      </opt>            
+      </opt>
 			<opt>
 			  <name>LAU-68</name>
-			  <lbs>430</lbs>			  
+			  <lbs>430</lbs>
       </opt>
 			<opt>
 			  <name>TER-MK82-LD</name>
-			  <lbs>1644</lbs>			  
+			  <lbs>1644</lbs>
       </opt>
 			<opt>
 			  <name>DROP-300</name>
-			  <lbs>207</lbs>			  
+			  <lbs>207</lbs>
 			  <gals>300</gals>
       </opt>
 			<selected>NONE</selected>
 		</weight>
-		
+
 		<weight n="3">
 		<name>Right Inboard</name>
 			<max-lb>2250</max-lb>
-      <tank>5</tank>			  			
+      <tank>5</tank>
 			<opt>
 			  <name>NONE</name>
         <lbs>0</lbs>
       </opt>
 			<opt>
 			  <name>LAU-68</name>
-			  <lbs>430</lbs>			  
+			  <lbs>430</lbs>
       </opt>
 			<opt>
 			  <name>TER-MK82-LD</name>
-			  <lbs>1644</lbs>			  
+			  <lbs>1644</lbs>
       </opt>
 			<opt>
 			  <name>DROP-300</name>
-			  <lbs>207</lbs>			  
+			  <lbs>207</lbs>
 			  <gals>300</gals>
-      </opt>      
+      </opt>
 			<selected>NONE</selected>
 		</weight>
-		
+
 		<weight n="4">
 			<name>Right Outboard</name>
 			<opt>
@@ -211,16 +211,16 @@ the flight data model, instrument panel, and external 3D model.
       </opt>
 			<opt>
 			  <name>LAU-68</name>
-			  <lbs>430</lbs>			  
+			  <lbs>430</lbs>
       </opt>
 			<selected>NONE</selected>
 		</weight>
 
-		<checklists include="a4f-checklists.xml"/>
+		<checklists include="Checklists/a4f-checklists.xml"/>
 
 		<help>
 			<title>Douglas A4F Skyhawk</title>
-			<line>See Help-Checklists for checklists</line>			
+			<line>See Help-Checklists for checklists</line>
 
 			<key>
 				<name>a</name>
@@ -313,12 +313,15 @@ the flight data model, instrument panel, and external 3D model.
 			<type>probe</type>
 			<offset-x-m>-0.57</offset-x-m>
 			<offset-y-m>0.56</offset-y-m>
-			<offset-z-m>0.13</offset-z-m>			
+			<offset-z-m>0.13</offset-z-m>
 		</refuel>
 	</systems>
 
 	<!-- *************** set properties **********************-->
 	<controls>
+		<armament>
+			<master>false</master>
+		</armament>
 		<engines>
 			<engine>
 				<throttle>0</throttle>
@@ -351,7 +354,7 @@ the flight data model, instrument panel, and external 3D model.
 		      <longitude-deg userarchive="y">-117.67</longitude-deg>
         </d2>
       </ins>
-      
+
       <uhf>
         <preset-channel type="int" userarchive="y">0</preset-channel>
         <freq-select type="int">0</freq-select>
@@ -376,11 +379,11 @@ the flight data model, instrument panel, and external 3D model.
           <channel n="16" userarchive="y">133.775</channel>
           <channel n="17" userarchive="y">133.775</channel>
           <channel n="18" userarchive="y">133.775</channel>
-          <channel n="19" userarchive="y">133.775</channel>        
+          <channel n="19" userarchive="y">133.775</channel>
         </preset-channels>
         <manual-channel userarchive="y">120.500</manual-channel>
       </uhf>
-      <tacan-mode type="int">0</tacan-mode>		  
+      <tacan-mode type="int">0</tacan-mode>
     </instrumentation>
     <radar>
       <mode type="int">0</mode>
@@ -393,12 +396,12 @@ the flight data model, instrument panel, and external 3D model.
       <steering-power type="bool">0</steering-power>
     </steering>
 	</controls>
-	
+
 	<instrumentation>
 	  <ins>
       <set-course-deg>0.0</set-course-deg>
       <set-dist-nm type="int">0</set-dist-nm>
-	  </ins>	
+	  </ins>
 	  <g-meter>
 	    <g-min>1.0</g-min>
 	    <g-max>1.0</g-max>
@@ -516,9 +519,9 @@ the flight data model, instrument panel, and external 3D model.
 			<drag-chute type="double">0</drag-chute>
 		</weights>
 	</yasim>
-	
-	<armament>	
-	
+
+	<armament>
+
 	  <templates>
 	    <NONE>
 	      <weight-lb>0</weight-lb>
@@ -527,17 +530,17 @@ the flight data model, instrument panel, and external 3D model.
         <bomb-count>0</bomb-count>
         <bomb-load-mass-lb>0</bomb-load-mass-lb>
       </NONE>
-	  
+
 	    <LAU-68>
         <weight-lb>430</weight-lb>
 	      <!-- 19 rockets in pack -->
         <rocket-count>19</rocket-count>
-        <rocket-load-mass-lb>18.5</rocket-load-mass-lb>        
+        <rocket-load-mass-lb>18.5</rocket-load-mass-lb>
         <!-- using the bomb trigger drops the pack itself -->
         <bomb-count>1</bomb-count>
         <bomb-load-mass-lb>430</bomb-load-mass-lb>
       </LAU-68>
-      
+
       <TER-MK82-LD>
         <weight-lb>1698</weight-lb>
         <rocket-count>0</rocket-count>
@@ -545,31 +548,31 @@ the flight data model, instrument panel, and external 3D model.
         <bomb-count>3</bomb-count>
         <bomb-load-mass-lb>531</bomb-load-mass-lb>
       </TER-MK82-LD>
-      
+
       <DROP-300>
-        <!-- 6.8lb/gal, 2247lb total store mass: 2247 - (300 * 6.8) = 207lbs -->      
+        <!-- 6.8lb/gal, 2247lb total store mass: 2247 - (300 * 6.8) = 207lbs -->
         <weight-lb>207</weight-lb>
         <rocket-count>0</rocket-count>
         <rocket-load-mass-lb>0</rocket-load-mass-lb>
         <bomb-count>1</bomb-count>
         <bomb-load-mass-lb>207</bomb-load-mass-lb>
       </DROP-300>
-      
+
 	  </templates>
   </armament>
-  
+
   <limits>
     <mass-and-balance>
-      <maximum-takeoff-mass-lbs>24500</maximum-takeoff-mass-lbs>      
-      <maximum-landing-mass-lbs>16000</maximum-landing-mass-lbs>      
-      <maximum-arrested-landing-mass-lbs>14500</maximum-arrested-landing-mass-lbs>    
+      <maximum-takeoff-mass-lbs>24500</maximum-takeoff-mass-lbs>
+      <maximum-landing-mass-lbs>16000</maximum-landing-mass-lbs>
+      <maximum-arrested-landing-mass-lbs>14500</maximum-arrested-landing-mass-lbs>
     </mass-and-balance>
   </limits>
 
 	<nasal>
     <radar>
       <file>Aircraft/a4/Nasal/radar.nas</file>
-    </radar>    
+    </radar>
     <a4_instruments>
       <file>Aircraft/a4/Nasal/instruments.nas</file>
     </a4_instruments>
@@ -581,7 +584,7 @@ the flight data model, instrument panel, and external 3D model.
 		</a4-fuel>
 		<chronograph>
 			<file>Aircraft/Instruments-3d/chronograph/chronograph.nas</file>
-		</chronograph>		
+		</chronograph>
 	</nasal>
 </PropertyList>
 

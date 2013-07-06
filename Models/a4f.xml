@@ -8,6 +8,12 @@
     <z-m>-0.25</z-m>
   </offsets>
 
+  <!-- Tutorial marker for checklists -->
+	<model>
+		<path>Models/Aircraft/marker.xml</path>
+	</model>
+
+
 <!-- Transparent Surfaces for Rembrandt rendering -->
  <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
@@ -217,7 +223,7 @@
       <z>0</z>
     </axis>
   </animation>
-  
+
   <!-- Gear rotates so the wheel is flush with the wing -->
   <animation>
     <type>rotate</type>
@@ -249,7 +255,7 @@
       <z>1</z>
     </axis>
   </animation>
-  
+
  <animation>
     <type>rotate</type>
     <object-name>LeftGearStrut</object-name>
@@ -370,7 +376,7 @@
       <z>0</z>
     </axis>
   </animation>
-  
+
   <!-- Gear rotates so it is flush with wing -->
   <animation>
     <type>rotate</type>
@@ -402,7 +408,7 @@
       <z>1</z>
     </axis>
   </animation>
-  
+
 
  <animation>
     <type>rotate</type>

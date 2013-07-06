@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- Flaps Up -->
+<PropertyList>
+	<condition>
+		<equals>
+			<property>/controls/flight/flaps</property>
+			<value>0.0</value>
+		</equals>
+	</condition>
+	<binding>
+		<command>property-assign</command>
+		<property>/controls/flight/flaps</property>
+		<value>0</value>
+	</binding>
+	<marker>
+		<x-m>2.8100</x-m>
+		<y-m>-0.2433</y-m>
+		<z-m>0.6342</z-m>
+		<scale>1.5167</scale>
+	</marker>
+</PropertyList>

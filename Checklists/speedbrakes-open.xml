@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- Speedbrakes Open -->
+<PropertyList>
+	<condition>
+		<equals>
+			<property>/controls/flight/speedbrake</property>
+			<value>1</value>
+		</equals>
+	</condition>
+	<binding>
+		<command>property-assign</command>
+		<property>/controls/flight/speedbrake</property>
+		<value>1</value>
+	</binding>
+	<marker>
+		<x-m>2.7608</x-m>
+		<y-m>-0.2542</y-m>
+		<z-m>0.7833</z-m>
+		<scale>1.8667</scale>
+	</marker>
+</PropertyList>
