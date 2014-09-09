@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- Spoilers On (armed) -->
+<PropertyList>
+	<condition>
+		<equals>
+			<property>/controls/flight/spoilers-armed</property>
+			<value>true</value>
+		</equals>
+	</condition>
+	<binding>
+		<command>property-assign</command>
+		<property>/controls/flight/spoilers-armed</property>
+		<value>true</value>
+	</binding>
+  <marker>
+		<x-m>2.9633</x-m>
+		<y-m>-0.2975</y-m>
+		<z-m>0.6350</z-m>
+		<scale>1.5667</scale>
+	</marker>
+</PropertyList>

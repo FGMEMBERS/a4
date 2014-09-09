@@ -1,0 +1,291 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <name>ins</name>
+ <width>550</width>
+ <modal>false</modal>
+ <layout>vbox</layout>
+ 
+  <nasal>
+    <open>
+    
+      var insmodes = ["TEST", "OFF", "STBY", "D1", "D2"];
+      var insmode = getprop("/controls/instrumentation/ins/mode");
+      
+      if (insmode != nil) {
+        setprop("/sim/gui/dialogs/a4/ins/ins-mode", insmodes[insmode]);
+      }
+      
+      var driftmodes = ["OFF", "STBY", "LAND", "SEA"];
+      var driftmode = getprop("/controls/instrumentation/drift-indicator-mode");
+
+      if (driftmode != nil) {
+        setprop("/sim/gui/dialogs/a4/ins/drift-mode", driftmodes[driftmode]);
+      }
+      
+    </open>
+  </nasal>
+ 
+
+  <group>
+    <layout>hbox</layout>
+	  <empty><stretch>1</stretch></empty>
+
+    <text>
+      <label>A4 Inertial Navigation Computer Panel</label>
+    </text>
+
+	  <empty><stretch>1</stretch></empty>
+
+    <button>
+      <pref-width>16</pref-width>
+      <pref-height>16</pref-height>
+      <legend></legend>
+      <keynum>27</keynum>
+      <border>2</border>
+      <binding>
+        <command>dialog-close</command>
+      </binding>
+    </button>
+  </group>
+
+  <hrule/>
+
+  <text>
+    <halign>left</halign>      
+    <label>Inertial Navigation System (INS) provides current position in latitude and longitude.</label>
+  </text>
+  
+  <text>
+    <halign>left</halign>      
+    <label>Nav computer can provide distancde and bearing to two destinations.</label>
+  </text>
+
+  <text>
+    <halign>left</halign>      
+    <label>A doppler radar provides drift angle and speed.</label>
+  </text>
+
+  <text>
+    <halign>left</halign>      
+    <label>See checklists for usage.</label>
+  </text>
+
+  <hrule/>
+  
+  <group>  
+    <layout>table</layout>
+    <halign>center</halign>
+    
+    <text>
+      <row>0</row>
+      <col>0</col>
+      <halign>right</halign>
+      <label>Drift Mode</label>
+    </text>
+    
+    <combo>
+      <row>0</row>
+      <col>1</col>
+      <name>preset-channel</name>
+      <property>/sim/gui/dialogs/a4/ins/drift-mode</property>
+      <live>true</live>
+      <value>OFF</value>
+      <value>STBY</value>
+      <value>LAND</value>
+      <value>SEA</value>
+      <pref-width>200</pref-width>
+      <binding>
+        <command>dialog-apply</command>
+      </binding>
+      <binding>
+          <command>nasal</command>        
+          <script>
+            var mtext = getprop("/sim/gui/dialogs/a4/ins/drift-mode");
+            var m = 0;
+            
+            forindex(m; driftmodes) {
+              if (mtext == driftmodes[m]) {
+                setprop("/controls/instrumentation/drift-indicator-mode", m);
+              }
+            }
+            
+          </script>
+      </binding>
+
+    </combo>
+
+    <text>
+      <row>1</row>
+      <col>0</col>
+      <halign>right</halign>
+      <label>Navigation Mode</label>
+    </text>
+    
+    <combo>
+      <row>1</row>
+      <col>1</col>
+      <name>preset-channel</name>
+      <property>/sim/gui/dialogs/a4/ins/ins-mode</property>
+      <live>true</live>
+      <value>TEST</value>
+      <value>OFF</value>
+      <value>STBY</value>
+      <value>D1</value>
+      <value>D2</value>
+      <pref-width>200</pref-width>
+      <binding>
+        <command>dialog-apply</command>
+      </binding>
+      <binding>
+          <command>nasal</command>        
+          <script>
+            var mtext = getprop("/sim/gui/dialogs/a4/ins/ins-mode");
+            var m = 0;
+            
+            forindex(m; insmodes) {
+              if (mtext == insmodes[m]) {
+                setprop("/controls/instrumentation/ins/mode", m);
+              }
+            }            
+          </script>
+      </binding>
+    </combo>
+  </group>
+
+  <hrule/>
+
+  <group>
+    <layout>table</layout>
+    <halign>center</halign>
+    
+    <text>
+      <row>0</row>
+      <col>0</col>
+      <label>D1</label>
+    </text>
+
+    <text>
+      <row>0</row>
+      <col>1</col>
+      <halign>right</halign>
+      <label>Lat:</label>
+    </text>
+    
+    <input>
+      <row>0</row>
+      <col>2</col>
+      <halign>left</halign>
+      <property>/controls/instrumentation/ins/d1/latitude-deg</property>
+      <binding>
+        <command>dialog-apply</command>
+      </binding>
+    </input>
+
+    <text>
+      <row>0</row>
+      <col>3</col>
+      <halign>right</halign>
+      <label>Lon:</label>
+    </text>
+    
+    <input>
+      <row>0</row>
+      <col>4</col>
+      <halign>left</halign>
+      <property>/controls/instrumentation/ins/d1/longitude-deg</property>
+      <binding>
+        <command>dialog-apply</command>
+      </binding>
+    </input>
+
+    <text>
+      <row>1</row>
+      <col>0</col>
+      <label>D2</label>
+    </text>
+
+    <text>
+      <row>1</row>
+      <col>1</col>
+      <halign>right</halign>
+      <label>Lat:</label>
+    </text>
+    
+    <input>
+      <row>1</row>
+      <col>2</col>
+      <halign>left</halign>
+      <property>/controls/instrumentation/ins/d2/latitude-deg</property>
+      <binding>
+        <command>dialog-apply</command>
+      </binding>
+    </input>
+
+    <text>
+      <row>1</row>
+      <col>3</col>
+      <halign>right</halign>
+      <label>Lon:</label>
+    </text>
+    
+    <input>
+      <row>1</row>
+      <col>4</col>
+      <halign>left</halign>
+      <property>/controls/instrumentation/ins/d2/longitude-deg</property>
+      <binding>
+        <command>dialog-apply</command>
+      </binding>
+    </input>
+      
+  </group>
+
+
+ <hrule/>
+
+ 	<group>
+		<layout>hbox</layout>
+		<default-padding>6</default-padding>
+		
+		<empty>
+			<stretch>true</stretch>
+		</empty>
+
+		<button>
+			<legend>OK</legend>
+			<default>true</default>
+			<equal>true</equal>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<binding>
+				<command>dialog-close</command>
+			</binding>
+		</button>
+
+		<button>
+			<legend>Apply</legend>
+			<equal>true</equal>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+		</button>
+
+		<button>
+			<legend>Close</legend>
+			<equal>true</equal>
+			<key>Esc</key>
+			<binding>
+				<command>dialog-close</command>
+			</binding>
+		</button>
+
+		<empty>
+			<stretch>true</stretch>
+		</empty>
+	</group>
+
+
+</PropertyList>

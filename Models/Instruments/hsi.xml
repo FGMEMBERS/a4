@@ -1,0 +1,267 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<!-- horizontal situation indicator -->
+	<name>HSI</name>
+	<path>hsi.ac</path>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>HSI-compass-card</object-name>
+		<property>orientation/heading-magnetic-deg</property>
+		<axis><x>1</x></axis>
+	</animation>
+
+  <!-- Single point needle - rotates if in ADF or NAVCMPTR mode -->	
+	<animation>
+		<type>rotate</type>
+		<object-name>needle1</object-name>
+		<condition>
+		  <or>		  
+		    <equals>
+		      <!-- ADF mode -->
+		      <property>controls/instrumentation/uhf/mode</property>
+		      <value>3</value>
+        </equals>
+        <greater-than>
+          <property>controls/instrumentation/ins/mode</property>
+          <value>1</value>
+        </greater-than>
+      </or>
+    </condition>
+		<property>orientation/heading-magnetic-deg</property>
+		<axis><x>1</x></axis>
+	</animation>
+
+	<!-- Single point needle - ADF mode -->
+	<animation>
+	  <!-- ADF only available if the UHF is set to ADF mode -->
+		<type>rotate</type>
+		<object-name>needle1</object-name>
+		<condition>
+		  <and>
+        <equals>
+          <property>controls/instrumentation/bhdi-mode</property>
+          <value>2</value>
+        </equals>
+        <equals>
+          <property>controls/instrumentation/uhf/mode</property>
+          <value>3</value>
+        </equals>
+      </and>
+    </condition>
+		<property>instrumentation/adf/indicated-bearing-deg</property>
+		<axis><x>-1</x></axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>needle1</object-name>
+		<!-- INS bearing is displayed if the BHDI switch is set AND the INS is set
+         to D1 or D2 -->
+		<condition>
+		  <and>
+		    <equals>
+		      <property>controls/instrumentation/bhdi-mode</property>
+          <value>0</value>
+        </equals>
+		    <greater-than>
+          <property>controls/instrumentation/ins/mode</property>
+          <value>1</value>
+        </greater-than>
+      </and>        
+    </condition>
+		<property>instrumentation/ins/set-course-deg</property>
+		<axis><x>-1</x></axis>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>needle2</object-name>
+		<property>orientation/heading-deg</property>
+		<axis><x>1</x></axis>
+	</animation>	
+  <!-- Double needle - TACAN bearing mode -->
+	<animation>
+		<type>rotate</type>
+		<object-name>needle2</object-name>
+		<!-- TACAN displayed if the BHDI switch is on TACAN, AND the TACAN
+         panel is not OFF -->
+		<condition>
+		  <and>
+		    <equals>
+          <property>controls/instrumentation/bhdi-mode</property>
+          <value>1</value>
+        </equals>
+		    <greater-than>
+          <property>controls/instrumentation/tacan-mode</property>
+          <value>0</value>
+        </greater-than>
+      </and>
+    </condition>
+		<property>instrumentation/tacan/indicated-bearing-true-deg</property>
+		<axis><x>-1</x></axis>
+	</animation>
+	
+	<!-- Double needle - INS Mode -->
+	<animation>
+		<type>rotate</type>
+		<object-name>needle2</object-name>
+		<!-- Drift angle is displayed if the BHDI switch is set AND the INS is set
+         to D1 or D2, AND the drift indicator is switched on -->
+		<condition>
+		  <and>
+		    <equals>
+		      <property>controls/instrumentation/bhdi-mode</property>
+          <value>0</value>
+        </equals>
+		    <greater-than>
+          <property>controls/instrumentation/ins/mode</property>
+          <value>1</value>
+        </greater-than>
+		    <greater-than>
+          <property>/controls/instrumentation/drift-indicator-mode</property>
+          <value>1</value>
+        </greater-than>
+      </and>        
+    </condition>
+		<property>orientation/track-deg</property>
+		<axis><x>-1</x></axis>
+	</animation>
+
+  <!-- tacan distance digital display -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>miles-drum-1</object-name>
+    <property>instrumentation/bhdi/dist-nm</property>
+    <factor>0.1</factor>
+    <step>1</step>
+    <offset>-1</offset>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>miles-drum-2</object-name>
+    <property>instrumentation/bhdi/dist-nm</property>
+    <factor>0.01</factor>
+    <offset>-10</offset>
+    <step>10</step>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>miles-drum-3</object-name>
+    <property>instrumentation/bhdi/dist-nm</property>
+    <factor>0.001</factor>
+    <offset>-100</offset>
+    <step>100</step>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+<!-- lighting -->
+
+  <animation>
+   <object-name>HSI-bkg</object-name>
+   <type>material</type>
+     <emission>
+      <factor-prop>controls/lighting/panel-norm</factor-prop>
+			<red>0.55</red>
+			<green>0.24</green>
+			<blue>0.10</blue>
+      </emission>
+  </animation>
+
+  <animation>
+    <object-name>HSI-compass-card</object-name>
+    <type>material</type>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+			<red>0.55</red>
+			<green>0.24</green>
+			<blue>0.10</blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <object-name>needle1</object-name>
+    <object-name>needle2</object-name>
+    <type>material</type>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+			<red>0.55</red>
+			<green>0.24</green>
+			<blue>0.10</blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <object-name>miles-drum-1</object-name>
+    <type>material</type>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+			<red>0.55</red>
+			<green>0.24</green>
+			<blue>0.10</blue>
+    </emission>
+  </animation>
+  <animation>
+    <object-name>miles-drum-2</object-name>
+    <type>material</type>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+			<red>0.55</red>
+			<green>0.24</green>
+			<blue>0.10</blue>
+    </emission>
+  </animation>
+  <animation>
+    <object-name>miles-drum-3</object-name>
+    <type>material</type>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+			<red>0.55</red>
+			<green>0.24</green>
+			<blue>0.10</blue>
+    </emission>
+  </animation>
+
+	<animation>
+		<object-name>hsi</object-name>
+		<type>noshadow</type>
+	</animation>
+
+
+  <animation>
+    <type>range</type>
+    <min-m>0</min-m>
+    <max-m>5</max-m>
+  </animation>
+
+</PropertyList>
