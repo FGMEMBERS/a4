@@ -1,0 +1,759 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <name>radios</name>
+ <width>550</width>
+ <modal>false</modal>
+ <layout>vbox</layout>
+ 
+  <nasal>
+    <open>
+    
+      var modes = ["OFF", "Transmit / Receive", "Transmit / Receive + Ground", "ADF"];
+      var mode = getprop("/controls/instrumentation/uhf/mode");
+      
+      if (mode != nil) {
+        setprop("/sim/gui/dialogs/a4/radio/uhf-mode", modes[mode]);
+      }
+
+      var tacanmodes = ["OFF", "Receive", "Transmit / Receive", "Air / Air"];
+      var tacanmode = getprop("/controls/instrumentation/tacan-mode");
+      
+      if (tacanmode != nil) {
+        setprop("/sim/gui/dialogs/a4/radio/tacan-mode", tacanmodes[tacanmode]);
+      }
+      
+      setprop("/sim/gui/dialogs/a4/radio/preset-channel", getprop("/controls/instrumentation/uhf/preset-channel") + 1);
+      
+      var freq =  getprop("/controls/instrumentation/uhf/freq-select");
+      
+      setprop("/sim/gui/dialogs/a4/radio/freq-select-preset", freq == 0);
+      setprop("/sim/gui/dialogs/a4/radio/freq-select-manual", freq == 1);
+      setprop("/sim/gui/dialogs/a4/radio/freq-select-goxmit", freq == 2);        
+
+    </open>
+  </nasal>
+ 
+
+  <group>
+    <layout>hbox</layout>
+	  <empty><stretch>1</stretch></empty>
+
+    <text>
+      <label>A4 Radio Panel</label>
+    </text>
+
+	  <empty><stretch>1</stretch></empty>
+
+    <button>
+      <pref-width>16</pref-width>
+      <pref-height>16</pref-height>
+      <legend></legend>
+      <keynum>27</keynum>
+      <border>2</border>
+      <binding>
+        <command>dialog-close</command>
+      </binding>
+    </button>
+  </group>
+
+  <hrule/>
+  
+  <text><halign>left</halign><label>Radio has 20 preset channels, plus a single manually set channel</label></text>
+
+  <hrule/>
+  
+  <group>  
+    <layout>hbox</layout>
+    <text><label>UHF Mode</label></text>
+    
+    <combo>
+      <name>preset-channel</name>
+      <property>/sim/gui/dialogs/a4/radio/uhf-mode</property>
+      <live>true</live>
+      <value>OFF</value>
+      <value>Transmit / Receive</value>
+      <value>Transmit / Receive + Ground</value>
+      <value>ADF</value>
+      <pref-width>200</pref-width>
+      <binding>
+        <command>dialog-apply</command>
+      </binding>
+      <binding>
+          <command>nasal</command>        
+          <script>
+            var mtext = getprop("/sim/gui/dialogs/a4/radio/uhf-mode");
+            var m = 0;
+            
+            forindex(m; modes) {
+              if (mtext == modes[m]) {
+                setprop("/controls/instrumentation/uhf/mode", m);
+              }
+            }
+            
+          </script>
+      </binding>
+
+    </combo>
+
+	  <empty><stretch>1</stretch></empty>
+        
+</group>
+
+<hrule/>
+
+<group>
+  <layout>hbox</layout>
+
+  <text>
+    <label>Active UHF Frequency</label>
+  </text>
+
+  <text>
+   <name>com1-selected</name>
+   <live>true</live>
+   <property>/instrumentation/comm[0]/frequencies/selected-mhz</property>
+   <format>%.3f MHz</format>
+  </text>
+
+  <empty><stretch>1</stretch></empty>
+
+  <button>
+    <legend>ATC Services in range</legend>
+    <binding>
+      <command>ATC-freq-search</command>
+    </binding>
+  </button>
+
+</group>
+
+<hrule/>
+
+<group>
+  <layout>hbox</layout>
+  <valign>top</valign>
+  <halign>left</halign>
+
+  <text>
+    <pref-width>100</pref-width>
+    <label>Channel Mode</label>
+  </text>
+
+  <group>
+    <layout>table</layout>
+    <halign>center</halign>  
+
+    <radio>
+      <row>1</row>
+      <col>0</col>
+      <halign>left</halign>
+      <label>Preset</label>
+      <property>/sim/gui/dialogs/a4/radio/freq-select-preset</property>
+      <live>true</live>
+      <binding>
+          <command>nasal</command>        
+          <script>
+            setprop("/controls/instrumentation/uhf/freq-select", 0);
+            setprop("/sim/gui/dialogs/a4/radio/freq-select-preset", 1);
+            setprop("/sim/gui/dialogs/a4/radio/freq-select-manual", 0);
+            setprop("/sim/gui/dialogs/a4/radio/freq-select-goxmit", 0);        
+          </script>
+      </binding>
+    </radio>
+    
+    <combo>
+      <name>preset-channel</name>
+      <row>1</row>
+      <col>1</col>
+      <label>Preset Channel</label>
+      <property>/sim/gui/dialogs/a4/radio/preset-channel</property>
+      <live>true</live>
+      <value>1</value>
+      <value>2</value>
+      <value>3</value>
+      <value>4</value>
+      <value>5</value>
+      <value>6</value>
+      <value>7</value>
+      <value>8</value>
+      <value>9</value>
+      <value>10</value>
+      <value>11</value>
+      <value>12</value>
+      <value>13</value>
+      <value>14</value>
+      <value>15</value>
+      <value>16</value>
+      <value>17</value>
+      <value>18</value>
+      <value>19</value>
+      <value>20</value>
+      <binding>
+        <command>dialog-apply</command>
+      </binding>
+      <binding>
+          <command>nasal</command>        
+          <script>
+            var channel = getprop("/sim/gui/dialogs/a4/radio/preset-channel");
+            setprop("/controls/instrumentation/uhf/preset-channel", channel - 1);
+          </script>
+      </binding>
+    </combo>
+      
+    <radio>
+      <row>2</row>
+      <col>0</col>
+      <halign>left</halign>
+      <label>Manual</label>
+      <property>/sim/gui/dialogs/a4/radio/freq-select-manual</property>
+      <live>true</live>
+      <binding>
+          <command>nasal</command>        
+          <script>
+            setprop("/controls/instrumentation/uhf/freq-select", 1);
+            setprop("/sim/gui/dialogs/a4/radio/freq-select-preset", 0);
+            setprop("/sim/gui/dialogs/a4/radio/freq-select-manual", 1);
+            setprop("/sim/gui/dialogs/a4/radio/freq-select-goxmit", 0);        
+          </script>
+      </binding>
+    </radio>
+    
+    <input>
+     <name>manual-frequency</name>
+     <row>2</row>
+     <col>1</col>
+     <label>MHz</label>
+     <live>true</live>
+     <property>/controls/instrumentation/uhf/manual-channel</property>
+      <binding>
+        <command>dialog-apply</command>
+      </binding>
+    </input>
+    
+    <radio>
+      <row>3</row>
+      <col>0</col>
+      <halign>left</halign>
+      <label>GO XMIT</label>
+      <property>/sim/gui/dialogs/a4/radio/freq-select-goxmit</property>
+      <live>true</live>
+      <binding>
+          <command>nasal</command>        
+          <script>
+            setprop("/controls/instrumentation/uhf/freq-select", 2);
+            setprop("/sim/gui/dialogs/a4/radio/freq-select-preset", 0);
+            setprop("/sim/gui/dialogs/a4/radio/freq-select-manual", 0);
+            setprop("/sim/gui/dialogs/a4/radio/freq-select-goxmit", 1);        
+          </script>
+      </binding>
+    </radio>
+    
+  </group>
+</group>
+
+<hrule/>
+
+<text>
+ <halign>left</halign>
+ <label>Preset Channels</label>
+</text>
+
+<group>
+  <layout>table</layout>
+  
+  <text>
+   <row>0</row>
+   <col>0</col>
+   <halign>right</halign>
+   <label>1:</label>
+  </text>
+    
+  <input>
+   <row>0</row>
+   <col>1</col>
+   <halign>left</halign>
+   <property>controls/instrumentation/uhf/preset-channels/channel[0]</property>
+    <binding>
+      <command>dialog-apply</command>
+    </binding>
+  </input>
+
+  <text>
+   <row>1</row>
+   <col>0</col>
+   <halign>right</halign>
+   <label>2:</label>
+  </text>
+    
+  <input>
+   <row>1</row>
+   <col>1</col>
+   <halign>left</halign>
+   <property>controls/instrumentation/uhf/preset-channels/channel[1]</property>
+    <binding>
+      <command>dialog-apply</command>
+    </binding>
+  </input>
+
+  <text>
+   <row>2</row>
+   <col>0</col>
+   <halign>right</halign>
+   <label>3:</label>
+  </text>
+    
+  <input>
+   <row>2</row>
+   <col>1</col>
+   <halign>left</halign>
+   <property>controls/instrumentation/uhf/preset-channels/channel[2]</property>
+    <binding>
+      <command>dialog-apply</command>
+    </binding>
+  </input>
+  
+  <text>
+   <row>3</row>
+   <col>0</col>
+   <halign>right</halign>
+   <label>4:</label>
+  </text>
+    
+  <input>
+   <row>3</row>
+   <col>1</col>
+   <halign>left</halign>
+   <property>controls/instrumentation/uhf/preset-channels/channel[3]</property>
+    <binding>
+      <command>dialog-apply</command>
+    </binding>
+  </input>
+
+  <text>
+   <row>4</row>
+   <col>0</col>
+   <halign>right</halign>
+   <label>5:</label>
+  </text>
+    
+  <input>
+   <row>4</row>
+   <col>1</col>
+   <halign>left</halign>
+   <property>controls/instrumentation/uhf/preset-channels/channel[4]</property>
+    <binding>
+      <command>dialog-apply</command>
+    </binding>
+  </input>
+
+  <text>
+   <row>0</row>
+   <col>2</col>
+   <halign>right</halign>
+   <label>6:</label>
+  </text>
+    
+  <input>
+   <row>0</row>
+   <col>3</col>
+   <halign>left</halign>
+   <property>controls/instrumentation/uhf/preset-channels/channel[5]</property>
+    <binding>
+      <command>dialog-apply</command>
+    </binding>
+  </input>
+
+  <text>
+   <row>1</row>
+   <col>2</col>
+   <halign>right</halign>
+   <label>7:</label>
+  </text>
+    
+  <input>
+   <row>1</row>
+   <col>3</col>
+   <halign>left</halign>
+   <property>controls/instrumentation/uhf/preset-channels/channel[6]</property>
+    <binding>
+      <command>dialog-apply</command>
+    </binding>
+  </input>
+
+  <text>
+   <row>2</row>
+   <col>2</col>
+   <halign>right</halign>
+   <label>8:</label>
+  </text>
+    
+  <input>
+   <row>2</row>
+   <col>3</col>
+   <halign>left</halign>
+   <property>controls/instrumentation/uhf/preset-channels/channel[7]</property>
+    <binding>
+      <command>dialog-apply</command>
+    </binding>
+  </input>
+  
+  <text>
+   <row>3</row>
+   <col>2</col>
+   <halign>right</halign>
+   <label>9:</label>
+  </text>
+    
+  <input>
+   <row>3</row>
+   <col>3</col>
+   <halign>left</halign>
+   <property>controls/instrumentation/uhf/preset-channels/channel[8]</property>
+    <binding>
+      <command>dialog-apply</command>
+    </binding>
+  </input>
+
+  <text>
+   <row>4</row>
+   <col>2</col>
+   <halign>right</halign>
+   <label>10:</label>
+  </text>
+    
+  <input>
+   <row>4</row>
+   <col>3</col>
+   <halign>left</halign>
+   <property>controls/instrumentation/uhf/preset-channels/channel[9]</property>
+    <binding>
+      <command>dialog-apply</command>
+    </binding>
+  </input>
+  
+  <text>
+   <row>0</row>
+   <col>4</col>
+   <halign>right</halign>
+   <label>11:</label>
+  </text>
+    
+  <input>
+   <row>0</row>
+   <col>5</col>
+   <halign>left</halign>
+   <property>controls/instrumentation/uhf/preset-channels/channel[10]</property>
+    <binding>
+      <command>dialog-apply</command>
+    </binding>
+  </input>
+
+  <text>
+   <row>1</row>
+   <col>4</col>
+   <halign>right</halign>
+   <label>12:</label>
+  </text>
+    
+  <input>
+   <row>1</row>
+   <col>5</col>
+   <halign>left</halign>
+   <property>controls/instrumentation/uhf/preset-channels/channel[11]</property>
+    <binding>
+      <command>dialog-apply</command>
+    </binding>
+  </input>
+
+  <text>
+   <row>2</row>
+   <col>4</col>
+   <halign>right</halign>
+   <label>13:</label>
+  </text>
+    
+  <input>
+   <row>2</row>
+   <col>5</col>
+   <halign>left</halign>
+   <property>controls/instrumentation/uhf/preset-channels/channel[12]</property>
+    <binding>
+      <command>dialog-apply</command>
+    </binding>
+  </input>
+  
+  <text>
+   <row>3</row>
+   <col>4</col>
+   <halign>right</halign>
+   <label>14:</label>
+  </text>
+    
+  <input>
+   <row>3</row>
+   <col>5</col>
+   <halign>left</halign>
+   <property>controls/instrumentation/uhf/preset-channels/channel[13]</property>
+    <binding>
+      <command>dialog-apply</command>
+    </binding>
+  </input>
+
+  <text>
+   <row>4</row>
+   <col>4</col>
+   <halign>right</halign>
+   <label>15:</label>
+  </text>
+    
+  <input>
+   <row>4</row>
+   <col>5</col>
+   <halign>left</halign>
+   <property>controls/instrumentation/uhf/preset-channels/channel[14]</property>
+    <binding>
+      <command>dialog-apply</command>
+    </binding>
+  </input>
+
+  <text>
+   <row>0</row>
+   <col>6</col>
+   <halign>right</halign>
+   <label>16:</label>
+  </text>
+    
+  <input>
+   <row>0</row>
+   <col>7</col>
+   <halign>left</halign>
+   <property>controls/instrumentation/uhf/preset-channels/channel[15]</property>
+    <binding>
+      <command>dialog-apply</command>
+    </binding>
+  </input>
+
+  <text>
+   <row>1</row>
+   <col>6</col>
+   <halign>right</halign>
+   <label>17:</label>
+  </text>
+    
+  <input>
+   <row>1</row>
+   <col>7</col>
+   <halign>left</halign>
+   <property>controls/instrumentation/uhf/preset-channels/channel[16]</property>
+    <binding>
+      <command>dialog-apply</command>
+    </binding>
+  </input>
+
+  <text>
+   <row>2</row>
+   <col>6</col>
+   <halign>right</halign>
+   <label>18:</label>
+  </text>
+    
+  <input>
+   <row>2</row>
+   <col>7</col>
+   <halign>left</halign>
+   <property>controls/instrumentation/uhf/preset-channels/channel[17]</property>
+    <binding>
+      <command>dialog-apply</command>
+    </binding>
+  </input>
+  
+  <text>
+   <row>3</row>
+   <col>6</col>
+   <halign>right</halign>
+   <label>19:</label>
+  </text>
+    
+  <input>
+   <row>3</row>
+   <col>7</col>
+   <halign>left</halign>
+   <property>controls/instrumentation/uhf/preset-channels/channel[18]</property>
+    <binding>
+      <command>dialog-apply</command>
+    </binding>
+  </input>
+
+  <text>
+   <row>4</row>
+   <col>6</col>
+   <halign>right</halign>
+   <label>20:</label>
+  </text>
+    
+  <input>
+   <row>4</row>
+   <col>7</col>
+   <halign>left</halign>
+   <property>controls/instrumentation/uhf/preset-channels/channel[19]</property>
+  <binding>
+    <command>dialog-apply</command>
+  </binding>
+  </input>
+
+</group>
+
+<hrule/>
+
+<group>
+  <layout>table</layout>
+  <halign>left</halign>
+
+  <text>
+    <row>0</row>
+    <col>0</col>
+    <halign>right</halign>
+    <label>TACAN Mode</label>
+  </text>
+
+  <combo>
+    <row>0</row>
+    <col>1</col>
+    <halign>left</halign>
+    <name>preset-channel</name>
+    <property>/sim/gui/dialogs/a4/radio/tacan-mode</property>
+    <live>true</live>
+    <value>OFF</value>
+    <value>Receive</value>
+    <value>Transmit / Receive</value>
+    <value>Air / Air</value>
+    <pref-width>200</pref-width>
+    <binding>
+      <command>dialog-apply</command>
+    </binding>
+    <binding>
+        <command>nasal</command>        
+        <script>
+          var mtext = getprop("/sim/gui/dialogs/a4/radio/tacan-mode");
+          var m = 0;
+          
+          forindex(m; tacanmodes) {
+            if (mtext == tacanmodes[m]) {
+              setprop("/controls/instrumentation/tacan-mode", m);
+            }
+          }
+          
+        </script>
+    </binding>
+  </combo>
+
+  <text>
+    <row>1</row>
+    <col>0</col>
+    <halign>right</halign>
+    <label>Channel</label>
+  </text>
+
+  <group>
+    <layout>hbox</layout>
+    <row>1</row>
+    <col>1</col>
+    <halign>left</halign>
+
+    <combo>
+     <pref-width>45</pref-width>
+     <pref-height>25</pref-height>
+     <property>/instrumentation/tacan/frequencies/selected-channel[1]</property>
+     <value>0</value>
+     <value>1</value>
+     <value>2</value>
+     <value>3</value>
+     <value>4</value>
+     <value>5</value>
+     <value>6</value>
+     <value>7</value>
+     <value>8</value>
+     <value>9</value>
+     <binding>
+       <command>dialog-apply</command>
+     </binding>
+    </combo>
+  <!---->
+    <combo>
+     <pref-width>45</pref-width>
+     <pref-height>25</pref-height>
+     <property>/instrumentation/tacan/frequencies/selected-channel[2]</property>
+     <value>0</value>
+     <value>1</value>
+     <value>2</value>
+     <value>3</value>
+     <value>4</value>
+     <value>5</value>
+     <value>6</value>
+     <value>7</value>
+     <value>8</value>
+     <value>9</value>
+     <binding>
+       <command>dialog-apply</command>
+     </binding>
+    </combo>
+
+    <combo>
+     <pref-width>45</pref-width>
+     <pref-height>25</pref-height>
+     <property>/instrumentation/tacan/frequencies/selected-channel[3]</property>
+     <value>0</value>
+     <value>1</value>
+     <value>2</value>
+     <value>3</value>
+     <value>4</value>
+     <value>5</value>
+     <value>6</value>
+     <value>7</value>
+     <value>8</value>
+     <value>9</value>
+     <binding>
+       <command>dialog-apply</command>
+     </binding>
+    </combo>
+
+    <combo>
+     <pref-width>45</pref-width>
+     <pref-height>25</pref-height>
+     <property>/instrumentation/tacan/frequencies/selected-channel[4]</property>
+     <value>X</value>
+     <value>Y</value>
+     <binding>
+       <command>dialog-apply</command>
+     </binding>
+    </combo>
+  </group>
+</group>
+ <hrule/>
+
+ 	<group>
+		<layout>hbox</layout>
+		<default-padding>6</default-padding>
+		
+		<empty>
+			<stretch>true</stretch>
+		</empty>
+
+		<button>
+			<legend>Close</legend>
+			<default>true</default>
+			<equal>true</equal>
+			<key>Esc</key>
+			<binding>
+				<command>dialog-close</command>
+			</binding>
+		</button>
+
+		<empty>
+			<stretch>true</stretch>
+		</empty>
+	</group>
+
+
+</PropertyList>

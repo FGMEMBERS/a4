@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- Throttle check -->
+<PropertyList>
+		<condition>
+			<greater-than-equals>
+				<property>/controls/engines/engine/throttle</property>
+				<value>0.98</value>
+			</greater-than-equals>
+		</condition>
+</PropertyList>

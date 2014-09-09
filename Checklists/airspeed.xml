@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- Airspeed check -->
+<PropertyList>
+	<condition>
+		<and>
+			<greater-than>
+				<property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+				<value alias="../../../../min-airspeed-kt"/>
+			</greater-than>
+			<less-than>
+				<property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+				<value alias="../../../../max-airspeed-kt"/>
+			</less-than>
+		</and>
+	</condition>
+	<marker>
+		<x-m>2.8000</x-m>
+    <y-m>-0.1492</y-m>
+    <z-m>0.9217</z-m>
+    <scale>3.9667</scale>
+	</marker>
+</PropertyList>

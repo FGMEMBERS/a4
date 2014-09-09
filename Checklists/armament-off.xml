@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- Armament switches off-->
+<PropertyList>
+	<condition>
+		<equals>
+			<property>/controls/armament/master</property>
+			<value>false</value>
+		</equals>
+	</condition>
+	<binding>
+		<command>property-assign</command>
+		<property>/controls/armament/master</property>
+		<value>false</value>
+	</binding>
+	<marker>
+		<x-m>2.7942</x-m>
+		<y-m>0.0150</y-m>
+		<z-m>0.5992</z-m>
+		<scale>1.4667</scale>
+	</marker>
+</PropertyList>

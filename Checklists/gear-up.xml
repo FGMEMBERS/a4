@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- Gear Up -->
+<PropertyList>
+	<condition>
+		<equals>
+			<property>/controls/gear/gear-down</property>
+			<value>false</value>
+		</equals>
+	</condition>
+	<binding>
+		<command>property-assign</command>
+		<property>/controls/gear/gear-down</property>
+		<value>false</value>
+	</binding>
+	<marker>
+		<x-m>2.8000</x-m>
+		<y-m>-0.2975</y-m>
+		<z-m>0.7017</z-m>
+		<scale>3.4667</scale>
+	</marker>
+</PropertyList>

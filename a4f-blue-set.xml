@@ -1,0 +1,307 @@
+<?xml version="1.0"?>
+<!--
+************************************************************************
+Douglas A4 Skyhawk simulation config. This files ties together
+all the components used by FGFS to represent the A4. Components include
+the flight data model, instrument panel, and external 3D model.
+
+************************************************************************
+-->
+
+<PropertyList>
+	<sim>
+
+		<description>Douglas A4F Skyhawk (YASim) Blue Angels</description>
+		<author>Lewis Magruder, Dean Baunton, Jim Wilson, Andy Ross, Vivian Meazza</author>
+		<status>early-production</status>
+
+		<virtual-cockpit archive="y">true</virtual-cockpit>
+
+		<flight-model>yasim</flight-model>
+		<aero>a4f-blue</aero>
+		<fuel-fraction>0.25</fuel-fraction>
+
+		<systems>
+
+			<!--   <autopilot>
+    <path>Aircraft/KC135/Systems/autopilot.xml</path>
+   </autopilot>-->
+
+			<electrical>
+				<path>Aircraft/a4/Systems/electrical.xml</path>
+			</electrical>
+		</systems>
+
+		<sound>
+			<path>Aircraft/a4/a4-sound.xml</path>
+		</sound>
+
+		<panel>
+			<visibility>false</visibility>
+		</panel>
+
+		<instrumentation>
+			<path>Aircraft/a4/Systems/instrumentation.xml</path>
+		</instrumentation>
+
+		<model>
+			<path>Aircraft/a4/Models/a4f-blue.xml</path>
+		</model>
+
+		<submodels>
+			<serviceable type="bool">true</serviceable>
+			<path>Aircraft/a4/Models/a4-submodels.xml</path>
+		</submodels>
+
+		<!--<ai>
+			<scenario>refueling_demo_2</scenario>
+		</ai> -->
+
+		<view n="0">
+			<internal archive="y">true</internal>
+			<config>
+				<x-offset-m archive="y">0</x-offset-m>
+				<y-offset-m archive="y">0.87</y-offset-m>
+				<z-offset-m archive="y">-2.86</z-offset-m>
+				<pitch-offset-deg>-17</pitch-offset-deg>
+				<default-field-of-view-deg>60</default-field-of-view-deg>
+			</config>
+		</view>
+		<current-view>
+			<field-of-view>60.0</field-of-view>
+		</current-view>
+
+		<aoa-indexer>
+			<too-slow-deg>16.5</too-slow-deg>
+			<slow-deg>15.5</slow-deg>
+			<fast-deg>14.5</fast-deg>
+			<too-fast-deg>13.5</too-fast-deg>
+		</aoa-indexer>
+
+		<hud>
+			<enable3d>false</enable3d>
+		</hud>
+
+		<!--<weight n="0">
+   <name>Left Outboard</name>
+   <weight-lb>0</weight-lb>
+   <max-lb>1000</max-lb>
+  </weight>
+  <weight n="1">
+   <name>Left Inboard</name>
+   <weight-lb>0</weight-lb>
+   <max-lb>2250</max-lb>
+  </weight>
+  <weight n="2">
+   <name>Center Pylon</name>
+   <weight-lb>0</weight-lb>
+   <max-lb>3500</max-lb>
+  </weight>
+  <weight n="3">
+   <name>Right Inboard</name>
+   <weight-lb>0</weight-lb>
+   <max-lb>2250</max-lb>
+  </weight>
+  <weight n="4">
+   <name>Right Outboard</name>
+   <weight-lb>0</weight-lb>
+   <max-lb>1000</max-lb>
+  </weight>-->
+
+		<help>
+			<title>Douglas A4F Skyhawk - Blue Angels</title>
+			<key>
+				<name>C</name>
+				<desc>catapult launch command</desc>
+			</key>
+			<key>
+				<name>L</name>
+				<desc>carrier launch-bar engage</desc>
+			</key>
+			<key>
+				<name>o/O</name>
+				<desc>hook up/down</desc>
+			</key>
+			<key>
+				<name>CTRL B</name>
+				<desc>toggle airbrakes</desc>
+			</key>
+			<key>
+				<name>CTRL K</name>
+				<desc>toggle spoilers</desc>
+			</key>
+			<key>
+				<name>CTRL J</name>
+				<desc>deploy drag-chute</desc>
+			</key>
+			<key>
+				<name>J</name>
+				<desc>jettison drag-chute</desc>
+			</key>
+			<key>
+				<name>j</name>
+				<desc>repack drag-chute</desc>
+			</key>
+		</help>
+
+	</sim>
+
+	<autopilot>
+		<config>
+			<min-climb-speed-kt type="float">200.0</min-climb-speed-kt>
+			<best-climb-speed-kt type="float">300.0</best-climb-speed-kt>
+			<target-climb-rate-fpm type="float">3000.0</target-climb-rate-fpm>
+			<target-descent-rate-fpm type="float">1500.0</target-descent-rate-fpm>
+			<elevator-adj-factor type="float">5500.0</elevator-adj-factor>
+			<integral-contribution type="float">0.007</integral-contribution>
+			<zero-pitch-throttle type="float">0.60</zero-pitch-throttle>
+			<zero-pitch-trim-full-throttle type="float">0.14</zero-pitch-trim-full-throttle>
+			<max-roll-deg type="float">45</max-roll-deg>
+			<max-aileron type="float">0.15</max-aileron>
+		</config>
+	</autopilot>
+
+	<consumables>
+		<fuel>
+			<tank n="0">
+				<name>Center</name>
+				<level-gal_us>250</level-gal_us>
+			</tank>
+			<tank n="1">
+				<name>Left Wing</name>
+				<level-gal_us>260</level-gal_us>
+			</tank>
+			<tank n="2">
+				<name>Right Wing</name>
+				<level-gal_us>260</level-gal_us>
+			</tank>
+		</fuel>
+	</consumables>
+
+	<systems>
+		<refuel>
+			<type>probe</type>
+			<offset-x-m>-5.46</offset-x-m>
+			<offset-y-m>0.78</offset-y-m>
+			<offset-z-m>-0.05</offset-z-m>
+		</refuel>
+	</systems>
+
+
+	<!-- *************** set properties **********************-->
+	<controls>
+		<gear>
+			<brake-parking>1</brake-parking>
+		</gear>
+		<engines>
+			<engine>
+				<throttle>0</throttle>
+			</engine>
+		</engines>
+		<flight>
+			<speedbrake type="bool">0</speedbrake>
+		</flight>
+	</controls>
+
+	<input>
+		<keyboard include="../../Input/Keyboard/carrier-bindings.xml">
+			<!--<keyboard>-->
+			<key n="2">
+				<name>Ctrl-B</name>
+				<desc>Toggle speedbrake.</desc>
+				<binding>
+					<command>property-toggle</command>
+					<property>controls/flight/speedbrake</property>
+				</binding>
+			</key>
+			<key n="11">
+				<name>Ctrl-K</name>
+				<desc>Toggle spoiler.</desc>
+				<binding>
+					<command>property-toggle</command>
+					<property>controls/flight/spoiler</property>
+				</binding>
+			</key>
+			<key n="10">
+				<name>Ctrl-J</name>
+				<desc>Deploy drag chute.</desc>
+				<binding>
+					<command>property-assign</command>
+					<property>controls/flight/drag-chute/lever</property>
+					<value type="bool">1</value>
+				</binding>
+			</key>
+			<key n="74">
+				<name>J</name>
+				<desc>Jettison drag chute.</desc>
+				<binding>
+					<command>property-assign</command>
+					<property>controls/flight/drag-chute/state</property>
+					<value type="string">jettison</value>
+				</binding>
+			</key>
+			<key n="106">
+				<name>j</name>
+				<desc>Repack drag chute.</desc>
+				<binding>
+					<command>property-assign</command>
+					<property>controls/flight/drag-chute/state</property>
+					<value type="string">repack</value>
+				</binding>
+			</key>
+		</keyboard>
+
+	</input>
+
+	<!-- weights -->
+	<yasim>
+		<weights>
+			<pilot-lb type="double">200</pilot-lb>
+			<drag-chute type="double">0</drag-chute>
+		</weights>
+	</yasim>
+
+	<nasal>
+		<a4>
+			<file>Aircraft/a4/Models/a4.nas</file>
+		</a4>
+		<a4-fuel>
+			<file>Aircraft/Generic/aar.nas</file>
+		</a4-fuel>
+		<nav-display>
+			<file>Aircraft/a4/Models/radar.nas</file>
+		</nav-display>
+	</nasal>
+
+	<instrumentation>
+		<radar>
+			<switch type="string"
+							archive="y">ON</switch>
+			<mode-control type="int"
+										archive="y">1</mode-control>
+			<display-controls>
+				<WX type="bool"
+						archive="y">false</WX>
+				<data type="bool"
+							archive="y">false</data>
+				<pos type="bool"
+						 archive="y">false</pos>
+			</display-controls>
+			<serviceable type="bool">true</serviceable>
+			<range type="int"
+						 archive="y">40</range>
+			<mode type="string"
+						archive="y">WX</mode>
+			<lightning type="bool"
+								 archive="y">false</lightning>
+			<display-mode type="string"
+										archive="y">plan</display-mode>
+			<minimized type="bool"
+								 archive="y">false</minimized>
+		</radar>
+	</instrumentation>
+
+</PropertyList>
+
+
+
