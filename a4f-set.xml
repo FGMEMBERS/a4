@@ -410,7 +410,7 @@ the flight data model, instrument panel, and external 3D model.
 
 
 	<input>
-		<keyboard include="../../Input/Keyboard/carrier-bindings.xml">
+		<keyboard include="Input/Keyboard/carrier-bindings.xml">
 			<key n="97">
 				<name>a</name>
 				<desc>Toggle APC</desc>
