@@ -156,8 +156,4 @@ insLoop();
 var radio_dialog = gui.Dialog.new("/sim/gui/dialogs/a4/radio/dialog",
 				  "Aircraft/a4/Dialogs/radios.xml");
 
-# GUI over-rides for the radio dialog.
-var ins_dialog = gui.Dialog.new("/sim/gui/dialogs/a4/ins/dialog",
-				  "Aircraft/a4/Dialogs/ins.xml");
-
 gui.menuBind("radio", "a4_instruments.radio_dialog.open();");

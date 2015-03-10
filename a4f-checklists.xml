@@ -1,0 +1,578 @@
+<PropertyList>
+ <checklist>
+   <title>Shore pre-takeoff</title>  
+   <item>
+     <name>Elevator Trim</name>
+     <value>8 DEGREES UP</value>
+   </item>
+   <item>
+     <name>Harness</name>
+     <value>SHOULDER HARDNESS LOCKED</value>
+   </item>
+   <item>
+     <name>Canopy</name>
+     <value>HANDLE OVER-CENTER</value>
+     <value>CANOPY HOOKS ENGAGED IN ROLLERS</value>
+   </item>
+   <item>
+     <name>Flaps</name>
+     <value>SET AT 1/2</value>
+   </item>
+   <item>
+     <name>Speedbrakes</name>
+     <value>CLOSED (Ctrl-B)</value>
+   </item>
+   <item>
+     <name>Spoilers</name>
+     <value>AS DESIRED</value>
+   </item>
+   <item>
+     <name>Armament</name>
+     <value>All switches OFF</value>
+   </item>
+ </checklist>
+ <checklist>
+   <title>Shore takeoff</title>  
+   <item>
+     <name>Flaps</name>
+     <value>CHECK 1/2</value>
+   </item>
+   <item>
+     <name>Spoilers</name>
+     <value>CHECK</value>
+   </item>
+   <item>
+     <name>Throttle</name>
+     <value>100%</value>
+   </item>
+   <item>
+     <name>Brakes</name>
+     <value>RELEASE</value>
+   </item>
+   <item>
+     <name>EPR/EGT/RPM</name>
+     <value>CHECK</value>
+   </item>
+   <item>
+     <name>Nosewheel lift-off</name>
+     <value>123 KIAS</value>
+   </item>
+   <item>
+     <name>Linespeed at 2000'</name>
+     <value>126 KIAS</value>
+   </item>
+   <item>
+     <name>Takeoff</name>
+     <value>133 KIAS</value>
+   </item>
+   <item>
+     <name>Gear</name>
+     <value>UP</value>
+   </item>
+   <item>
+     <name>Flaps</name>
+     <value>UP (170 KIAS, safe altitude)</value>
+   </item>
+   <item>
+     <name>Speed</name>
+     <value>ACCELERATE TO CLIMB SPEED</value>
+   </item>
+   <item>
+     <name>Spoilers</name>
+     <value>OFF (j)</value>
+   </item>
+ </checklist>
+ <checklist>
+   <title>Shore landing</title>  
+   <item><name>INITIAL</name></item>
+   <item>
+     <name>Speed</name>
+     <value>250 - 300 KIAS</value>
+   </item>
+   <item><name>BREAK</name></item>
+   <item>
+     <name>Speedbrakes</name>
+     <value>EXTENDED (Ctrl-B)</value>
+   </item>
+   <item>
+     <name>Throttle</name>
+     <value>70%</value>
+   </item>
+   <item>
+     <name>Gear</name>
+     <value>DOWN (below 225 KIAS)</value>
+   </item>
+   <item>
+     <name>Flaps</name>
+     <value>FULL DOWN (below 225 KIAS)</value>
+   </item>
+   <item><name>DOWNWIND</name></item>
+   <item>
+     <name>Speed</name>
+     <value>170 KIAS</value>
+   </item>
+   <item>
+     <name>Armament</name>
+     <value>All switches OFF</value>
+   </item>
+   <item>
+     <name>Spoilers</name>
+     <value>ARMED (k)</value>
+   </item>
+   <item>
+     <name>Harness</name>
+     <value>CHECK SECURE</value>
+   </item>
+   <item>
+     <name>Gear</name>
+     <value>CHECK DOWN</value>
+   </item>
+   <item>
+     <name>Flaps</name>
+     <value>CHECK DOWN</value>
+   </item>
+   <item>
+     <name>Brakes</name>
+     <value>CHECK</value>
+   </item>
+   <item><name>FINAL</name></item>
+   <item>
+     <name>AOA</name>
+     <value>17.5</value>
+   </item>
+   <item>
+     <name>Speed</name>
+     <value>125 KIAS @ 14,000lbs</value>
+     <value>+5 KIAS for each 1,000lbs over</value>
+   </item>
+  </checklist>
+  
+ <checklist>
+   <title>Field Carrier Landing Practise</title>  
+   <item><name>APPROACH</name></item>
+   <item>
+     <name>Altitude</name>
+     <value>800ft AGL</value>
+   </item>
+   <item>
+     <name>Speed</name>
+     <value>250 - 300 KIAS</value>
+   </item>
+   <item><name>BREAK</name></item>
+   <item>
+     <name>Bank</name>
+     <value>45 DEGREES</value>
+   </item>
+   <item>
+     <name>Speedbrakes</name>
+     <value>EXTENDED (Ctrl-B)</value>
+   </item>
+   <item>
+     <name>Throttle</name>
+     <value>70%</value>
+   </item>
+   <item>
+     <name>Gear</name>
+     <value>DOWN (below 225 KIAS)</value>
+   </item>
+   <item>
+     <name>Flaps</name>
+     <value>FULL DOWN (below 225 KIAS)</value>
+   </item>
+   <item><name>DOWNWIND</name></item>
+   <item>
+     <name>Altitude</name>
+     <value>600ft AGL</value>
+   </item>
+   <item>
+     <name>Speed</name>
+     <value>150 KIAS</value>
+   </item>
+   <item>
+     <name>Armament</name>
+     <value>All switches OFF</value>
+   </item>
+   <item>
+     <name>Spoilers</name>
+     <value>ARMED (k)</value>
+   </item>
+   <item>
+     <name>Harness</name>
+     <value>CHECK SECURE</value>
+   </item>
+   <item>
+     <name>Gear</name>
+     <value>CHECK DOWN</value>
+   </item>
+   <item>
+     <name>Flaps</name>
+     <value>CHECK DOWN</value>
+   </item>
+   <item>
+     <name>Brakes</name>
+     <value>CHECK</value>
+   </item>
+   <item><name>FINAL</name></item>
+   <item>
+     <name>Altitude</name>
+     <value>600ft AGL until glideslope</value>
+   </item>   
+   <item>
+     <name>AOA</name>
+     <value>17.5</value>
+   </item>
+   <item>
+     <name>Speed</name>
+     <value>125 KIAS @ 14,000lbs</value>
+     <value>+5 KIAS for each 1,000lbs over</value>
+   </item>
+   <item><name>LANDING</name></item>
+   <item>
+     <name>Throttle</name>
+     <value>FULL</value>
+   </item>   
+   <item>
+     <name>Speedbrakes</name>
+     <value>RETRACT (Ctrl-B)</value>
+   </item>   
+   <item>
+     <name>Climb</name>
+     <value>300ft AGL 150 KIAS</value>
+   </item>   
+   <item>
+     <name>Bank</name>
+     <value>30 degrees to downwind</value>
+   </item>   
+   <item>
+     <name>Speedbrakes</name>
+     <value>EXTEND on downwind (Ctrl-B)</value>
+   </item>   
+  </checklist>  
+  <checklist>
+   <title>Carrier pre-takeoff</title>  
+   <item>
+     <name>Elevator Trim</name>
+     <value>7 DEGREES UP</value>
+   </item>
+   <item>
+     <name>Harness</name>
+     <value>SHOULDER HARDNESS LOCKED</value>
+   </item>
+   <item>
+     <name>Canopy</name>
+     <value>HANDLE OVER-CENTER</value>
+     <value>CANOPY HOOKS ENGAGED IN ROLLERS</value>
+   </item>
+   <item>
+     <name>Flaps</name>
+     <value>1/2</value>
+   </item>
+   <item>
+     <name>Speedbrakes</name>
+     <value>CLOSED (Ctrl-B)</value>
+   </item>
+   <item>
+     <name>Spoilers</name>
+     <value>OFF</value>
+   </item>
+   <item>
+     <name>Armament</name>
+     <value>All switches OFF</value>
+   </item>
+   <item>
+     <name>Catapult</name>
+     <value>ENGAGE (Shift-L)</value>
+   </item>
+ </checklist>
+ <checklist>
+   <title>Carrier takeoff</title>  
+   <item>
+     <name>Throttle</name>
+     <value>MILITARY POWER (100%)</value>
+   </item>
+   <item>
+     <name>Attitude Indicator</name>
+     <value>CHECK</value>
+   </item>
+   <item>
+     <name>Engine Instruments</name>
+     <value>CHECK AND STABLE</value>
+   </item>
+   <item>
+     <name>Flaps</name>
+     <value>CHECK 1/2</value>
+   </item>
+   <item>
+     <name>Elevator Trim</name>
+     <value>CHECK 7 DEGREES UP</value>
+   </item>
+   <item>
+     <name>Head</name>
+     <value>Against headrest</value>
+   </item>
+   <item>
+     <name>Left Hand</name>
+     <value>Firm grip on throttle and catapult handgrip</value>
+   </item>
+   <item>
+     <name>Right Hand</name>
+     <value>Salute and wait for launch (Shift-C)</value>
+   </item>
+ </checklist>
+ <checklist>
+   <title>Carrier landing</title>  
+   <item><name>APPROACH</name></item>
+    <item>
+     <name>Altitude</name>
+     <value>800ft</value>
+   </item>
+   <item>
+     <name>Speed</name>
+     <value>250 KIAS</value>
+   </item>
+   <item>
+     <name>Hook</name>
+     <value>DOWN (O)</value>
+   </item>
+   <item><name>BREAK</name></item>
+   <item>
+     <name>Speedbrakes</name>
+     <value>EXTENDED (Ctrl-B)</value>
+   </item>
+   <item>
+     <name>Throttle</name>
+     <value>70%</value>
+   </item>
+   <item>
+     <name>Gear</name>
+     <value>DOWN (below 225 KIAS)</value>
+   </item>
+   <item>
+     <name>Flaps</name>
+     <value>FULL DOWN (below 225 KIAS)</value>
+   </item>
+   <item><name>DOWNWIND</name></item>
+   <item>
+     <name>Altitude</name>
+     <value>600ft</value>
+   </item>
+   <item>
+     <name>Speed</name>
+     <value>150 KIAS</value>
+   </item>
+   <item>
+     <name>AOA</name>
+     <value>17.5</value>
+   </item>
+   <item>
+     <name>Armament</name>
+     <value>All switches OFF</value>
+   </item>
+   <item>
+     <name>Spoilers</name>
+     <value>ARMED</value>
+   </item>
+   <item>
+     <name>Harness</name>
+     <value>CHECK SECURE</value>
+   </item>
+   <item>
+     <name>Gear</name>
+     <value>CHECK DOWN</value>
+   </item>
+   <item>
+     <name>Flaps</name>
+     <value>CHECK DOWN</value>
+   </item>
+   <item>
+     <name>Brakes</name>
+     <value>CHECK</value>
+   </item>
+   <item><name>FINAL</name></item>
+   <item>
+     <name>Altitude</name>
+     <value>600ft AGL until glideslope</value>
+   </item>   
+   <item>
+     <name>AOA</name>
+     <value>17.5</value>
+   </item>
+   <item>
+     <name>Speed</name>
+     <value>125 KIAS @ 14,000lbs</value>
+     <value>+5 KIAS for each 1,000lbs over</value>
+   </item>
+ </checklist>
+ <checklist>
+   <title>Stores</title>  
+   <item><name>Cannon</name></item>
+    <item>
+     <name>Master</name>
+     <value>ON</value>
+   </item>
+   <item>
+     <name>Guns</name>
+     <value>READY</value>
+   </item>
+   <item>
+     <name>Trigger</name>
+     <value>FIRE</value>
+   </item>   
+   <item><name>LAU68 Rockets</name></item>
+   <item>
+     <name>Master</name>
+     <value>ON</value>
+   </item>
+   <item>
+     <name>Selector</name>
+     <value>ROCKETS</value>
+   </item>
+   <item>
+     <name>Station</name>
+     <value>READY</value>
+   </item>
+   <item>
+     <name>Trigger</name>
+     <value>FIRE</value>
+   </item>   
+   <item><name>Mk 82 Bombs</name></item>
+   <item>
+     <name>Master</name>
+     <value>ON</value>
+   </item>
+   <item>
+     <name>Arm</name>
+     <value>NOSE &amp; TAIL</value>
+   </item>
+   <item>
+     <name>Selector</name>
+     <value>BOMBS &amp; GM ARM</value>
+   </item>
+   <item>
+     <name>Station</name>
+     <value>READY</value>
+   </item>
+   <item>
+     <name>Bomb</name>
+     <value>DROP (b)</value>
+   </item>   
+   <item><name>300 gallon drop tank</name></item>
+   <item>
+     <name>Master</name>
+     <value>ON</value>
+   </item>
+   <item>
+     <name>Arm</name>
+     <value>NOSE &amp; TAIL</value>
+   </item>
+   <item>
+     <name>Selector</name>
+     <value>BOMBS &amp; GM ARM</value>
+   </item>
+   <item>
+     <name>Station</name>
+     <value>READY</value>
+   </item>
+   <item>
+     <name>Bomb</name>
+     <value>JETTISON (b)</value>
+   </item>   
+ </checklist>
+ <checklist>
+   <title>Terrain Clearance Radar</title>  
+   <item>
+     <name>Radar Mode (Bottom RH console)</name>
+     <value>TC</value>
+   </item>
+   <item>
+     <name>Long/Short (Center of panel)</name>
+     <value>As required (10nm/20nm range)</value>
+   </item>
+   <item>
+     <name>Brightness (BRT knob on display)</name>
+     <value>As required</value>
+   </item>
+   <item>
+     <name>Reticle (RET knob on display)</name>
+     <value>As required</value>
+   </item>
+   <item>
+     <name>OBST light will illuminate when terrain &lt; 1000ft.</name>
+   </item>
+ </checklist>
+ <checklist>
+   <title>Inertial Navigation Computer</title>  
+   <item>
+     <name>Doppler Radar (Top RH console marked NAV)</name>
+     <value>LAND/SEA</value>
+   </item>
+   <item>
+     <name>Destination Lat/Lon</name>
+     <value>SET</value>
+   </item>
+   <item>
+     <name>NAV Mode (RH console marked NAV)</name>
+     <value>D1</value>
+   </item>
+   <item>
+     <name>BHDI mode (center panel)</name>
+     <value>NAV CMPTR</value>
+   </item>
+   <item>
+     <name>Bearing</name>
+     <value>Single BHDI needle</value>
+   </item>
+   <item>
+     <name>Drift</name>
+     <value>Double BHDI needle</value>
+   </item>
+   <item>
+     <name>Distance (NM)</name>
+     <value>Displayed in BHDI</value>
+   </item>
+ </checklist>
+ <checklist>
+   <title>UHF Radio</title>  
+   <item>
+     <name>UHF Mode (RH Console)</name>
+     <value>T/R</value>
+   </item>
+   <item>
+     <name>UHF Channel Mode (RH Consiole)</name>
+     <value>MAN</value>
+   </item>
+   <item>
+     <name>Frequency</name>
+     <value>Set using controls in console</value>
+   </item>
+   <item>
+     <name>Volume</name>
+     <value>Set using controls in console</value>
+   </item>
+ </checklist>
+ <checklist>
+   <title>TACAN</title>  
+   <item>
+     <name>TACAN mode (RH console)</name>
+     <value>T/R</value>
+   </item>
+   <item>
+     <name>TACAN CHAN (RH console)</name>
+     <value>SET</value>
+   </item>
+   <item>
+     <name>BHDI mode (center panel)</name>
+     <value>TACAN</value>
+   </item>
+   <item>
+     <name>Bearing</name>
+     <value>Single BHDI needle</value>
+   </item>
+   <item>
+     <name>Distance (NM)</name>
+     <value>Displayed in BHDI</value>
+   </item>
+ </checklist>
+</PropertyList>
+
+

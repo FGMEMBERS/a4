@@ -82,40 +82,6 @@
   <output>sim/alarms/gear</output>
 </logic>
 
-
-<!-- min/max acceleration -->
-<filter>
-  <type>gain</type>
-  <enable>
-    <condition>
-      <greater-than>
-        <property>/accelerations/pilot-g</property>
-        <property>/instrumentation/g-meter/g-max</property>
-      </greater-than>
-    </condition>
-  </enable>
-  <input>/accelerations/pilot-g</input>
-  <output>/instrumentation/g-meter/g-max</output>
-  <min>-5</min>
-  <max>10</max>
-</filter>
-
-<filter>
-  <type>gain</type>
-  <enable>
-    <condition>
-      <less-than>
-        <property>/accelerations/pilot-g</property>
-        <property>/instrumentation/g-meter/g-min</property>
-      </less-than>
-    </condition>
-  </enable>
-  <input>/accelerations/pilot-g</input>
-  <output>/instrumentation/g-meter/g-min</output>
-  <min>-5</min>
-  <max>10</max>
-</filter>
-
 <logic>
   <!-- Engage/disengage logic for APC -->
   <input>

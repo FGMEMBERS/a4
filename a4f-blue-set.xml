@@ -181,9 +181,6 @@ the flight data model, instrument panel, and external 3D model.
 	<systems>
 		<refuel>
 			<type>probe</type>
-			<offset-x-m>-5.46</offset-x-m>
-			<offset-y-m>0.78</offset-y-m>
-			<offset-z-m>-0.05</offset-z-m>
 		</refuel>
 	</systems>
 
@@ -204,7 +201,7 @@ the flight data model, instrument panel, and external 3D model.
 	</controls>
 
 	<input>
-		<keyboard include="Input/Keyboard/carrier-bindings.xml">
+		<keyboard include="../../Input/Keyboard/carrier-bindings.xml">
 			<!--<keyboard>-->
 			<key n="2">
 				<name>Ctrl-B</name>

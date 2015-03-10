@@ -8,12 +8,6 @@
     <z-m>-0.25</z-m>
   </offsets>
 
-  <!-- Tutorial marker for checklists -->
-	<model>
-		<path>Models/Aircraft/marker.xml</path>
-	</model>
-
-
 <!-- Transparent Surfaces for Rembrandt rendering -->
  <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
@@ -68,16 +62,7 @@
 	</offsets>
   </model>
 
- <model>
-    <path>Aircraft/a4/Models/beacon.xml</path>
-    <name>Beacon-Top</name>
-    <offsets>
-      <x-m>4.92</x-m>
-      <y-m>0</y-m>
-      <z-m>1.83</z-m>
-    </offsets>
-  </model>
-
+ 
 	<model>
     <path>Aircraft/a4/Models/strop.xml</path>
 	<name>New-Strop</name>
@@ -223,7 +208,7 @@
       <z>0</z>
     </axis>
   </animation>
-
+  
   <!-- Gear rotates so the wheel is flush with the wing -->
   <animation>
     <type>rotate</type>
@@ -255,7 +240,7 @@
       <z>1</z>
     </axis>
   </animation>
-
+  
  <animation>
     <type>rotate</type>
     <object-name>LeftGearStrut</object-name>
@@ -376,7 +361,7 @@
       <z>0</z>
     </axis>
   </animation>
-
+  
   <!-- Gear rotates so it is flush with wing -->
   <animation>
     <type>rotate</type>
@@ -408,7 +393,7 @@
       <z>1</z>
     </axis>
   </animation>
-
+  
 
  <animation>
     <type>rotate</type>
@@ -1049,6 +1034,132 @@
       <z>0</z>
     </axis>
   </animation>
+
+<!--Contrails-->
+
+<model>
+    <path>Aircraft/a4/Models/Effects/contrail.xml</path>
+    <offsets>
+     <x-m> 12.5</x-m>
+     <y-m>0</y-m>
+     <z-m>.4</z-m>
+    </offsets>
+  </model>
+
+<!-- Smoke Trail -->
+  <model>
+    <path>Aircraft/a4/Models/Effects/smoke/smokeL.xml</path>
+    <offsets>
+      <x-m>  12.5 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> .4 </z-m>
+    </offsets>
+  </model>
+
+<!-- Tiptrail -->
+  <!-- Gauche -->
+  <model>
+    <path>Aircraft/a4/Models/Effects/tiptrail/tiptrail.xml</path>
+    <offsets>
+      <x-m>  8.624 </x-m>
+      <y-m> -4.25</y-m>
+      <z-m>0.1 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Droite -->
+  <model>
+    <path>Aircraft/a4/Models/Effects/tiptrail/tiptrail.xml</path>
+    <offsets>
+      <x-m>  8.624 </x-m>
+      <y-m>  4.25</y-m>
+      <z-m>0.1</z-m>
+    </offsets>
+  </model>
+
+  <!-- Trail -->
+  <model>
+    <path>Aircraft/a4/Models/Effects/tiptrail/tiptrail.xml</path>
+    <offsets>
+      <x-m> 12.025 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> 3.30</z-m>
+    </offsets>
+  </model>
+
+<!-- Taxi light cone -->  
+  
+<model>
+<path>Aircraft/a4/Models/Lights/light-cone.xml</path>
+<name>StarboardLandinglight</name>     
+<condition>
+ <equals>
+<property>gear/gear[0]/position-norm</property>
+<value type="bool">true</value>
+ </equals>
+  </condition>
+
+<offsets>
+<x-m>3.250</x-m>
+<y-m>0.000</y-m>
+<z-m>-0.500 </z-m>
+<pitch-deg>-9.000 </pitch-deg>
+<heading-deg>0.000 </heading-deg>     
+</offsets>
+</model>
+
+
+<!-- Landing Lights -->  
+  
+<model>
+<path>Aircraft/a4/Models/Lights/landinglight.xml</path>
+<name>PortLandinglight</name>     
+<condition>
+ <equals>
+<property>gear/gear[0]/position-norm</property>
+<value type="bool">true</value>
+ </equals>
+  </condition>
+
+<offsets>
+<x-m>3.250</x-m>
+<y-m>0.000 </y-m>
+<z-m>-0.500 </z-m>
+<pitch-deg>-9</pitch-deg>
+<heading-deg>0</heading-deg>     
+</offsets>
+</model>
+
+
+<!-- nav lights -->
+  
+  <model>
+    <path>Aircraft/a4/Models/Lights/RedLight.xml</path>
+    <offsets>
+      <x-m>7.70</x-m>
+      <y-m>-4.20</y-m>
+      <z-m> 0.10</z-m>
+    </offsets>
+  </model>
+
+
+  <model>
+    <path>Aircraft/a4/Models/Lights/GreenLight.xml</path>
+    <offsets>
+      <x-m>7.70</x-m>
+      <y-m>4.20</y-m>
+      <z-m> 0.10</z-m>
+    </offsets>
+  </model>
+
+<model>
+    <path>Aircraft/a4/Models/Lights/Red-beacon/StrobeRed.xml</path>
+    <offsets>
+      <x-m> 6.66</x-m>
+     <y-m> 0.000 </y-m> 
+	<z-m> 1.655</z-m> 
+   </offsets>
+  </model>
 
 </PropertyList>
 
