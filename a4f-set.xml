@@ -20,7 +20,6 @@ the flight data model, instrument panel, and external 3D model.
 			<cockpit type="int">4</cockpit>
 			<model type="int">3</model>
 		</rating>
-
 		<virtual-cockpit archive="y">true</virtual-cockpit>
 
 		<flight-model>yasim</flight-model>
