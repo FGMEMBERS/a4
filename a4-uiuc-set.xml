@@ -21,6 +21,7 @@ May 18, 2003 Michael Selig, http://www.uiuc.edu/~m-selig
   <author>Michael Selig (FDM)</author>
   <uiuc-type>uiuc-jet</uiuc-type>
   <aircraft-dir>Aircraft/UIUC/a4-v1-nl</aircraft-dir>
+  <variant-of>a4f</variant-of>
 
   <sound>
    <path>Aircraft/a4/Sounds/uiuc/a4-sound-uiuc.xml</path>
