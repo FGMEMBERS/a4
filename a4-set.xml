@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <!--
 ************************************************************************
-Douglas A4 Skyhawk simulation config. This files ties together 
-all the components used by FGFS to represent the A4. Components include 
+Douglas A4 Skyhawk simulation config. This files ties together
+all the components used by FGFS to represent the A4. Components include
 the flight data model, instrument panel, and external 3D model.
 
 ************************************************************************
@@ -19,6 +19,8 @@ the flight data model, instrument panel, and external 3D model.
   <flight-model>yasim</flight-model>
   <aero>a4</aero>
   <fuel-fraction>1.0</fuel-fraction>
+
+  <variant-of>a4f</variant-of>
 
   <sound>
    <path>Aircraft/a4/a4-sound.xml</path>
@@ -115,7 +117,7 @@ the flight data model, instrument panel, and external 3D model.
      <max-aileron type="float">0.1</max-aileron>
    </config>
  </autopilot>
- 
+
  <!-- *************** set properties **********************-->
 	<!--parking brake ON -->
 	<!-- nosewheel lock OFF -->
@@ -147,9 +149,9 @@ the flight data model, instrument panel, and external 3D model.
   </fuel>
  </consumables>
 
- <input> 
+ <input>
    <keyboard include="Input/Keyboard/carrier-bindings.xml"/>
- </input> 
+ </input>
 </PropertyList>
 
 

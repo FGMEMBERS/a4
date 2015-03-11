@@ -16,7 +16,7 @@ the flight data model, instrument panel, and external 3D model.
 		<status>early-production</status>
 
 		<virtual-cockpit archive="y">true</virtual-cockpit>
-
+        <variant-of>a4f</variant-of>
 		<flight-model>yasim</flight-model>
 		<aero>a4f-blue</aero>
 		<fuel-fraction>0.25</fuel-fraction>
