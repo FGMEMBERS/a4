@@ -1,0 +1,280 @@
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+# Aircraft:
+#
+# A-4D Skyhawk
+# Attack Bomber
+#
+# File
+# a4-v1-nl (version 1, non-linear model)
+#
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+# Authors:
+#
+# Michael Selig
+# http://www.uiuc.edu/~m-selig
+#
+# 2002/12/14   Initial workup
+# 2003/05/22   First post to FlightGear base package
+#
+#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+# Notes:
+#
+# [1] This file is setup for the sea level, subsonic M = 0.4, trim case
+#     (no Mach effects are included)
+#
+# [2] To approximate the CSS (control stick steering mode) of the AFCS
+#     of the A4, a SAS has been included in this model.
+#
+# - Additional models and updates 
+#   http://www.aae.uiuc.edu/m-selig/apasim.html
+#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+# Specs
+#
+#  - Max roll rate is approximately 400 deg/sec
+#    http://www.airbum.com/pireps/PirepA4.html
+#  - 6g max load for trainer
+#    http://www.airwarbirds.com/ta-4j_specs.htm
+#  - Maximum speed: 586 knots (with a 4,000 pound bomb load)
+#    presumably @ max gross weight and sea level
+#  - Initial climb rate: 8,440 ft/min
+#
+# Information Sources
+#
+# [1] Robert C. Nelson, Flight Stability and Automatic Control, 2nd ed.
+#     McGraw-Hill, 1998
+# [2] NATOPS Flight Manual, Navy Model A-4C/L Aircraft
+#     NAVAIR 01-40AVE-1, Jan 1973
+# [3] http://www.aerospaceweb.org/aircraft/attack/index.shtml
+# [4] http://www.airbum.com/pireps/PirepA4.html
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# todo
+# [] update the gear gear_rate line when we do re-org in input file reader
+# [] update downwash terms
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# various "init" settings
+init use_V_rel_wind_2U    
+init use_dyn_on_speed_curve1    
+init dyn_on_speed  2    
+init dyn_on_speed_zero 1    
+init use_Alpha_dot_on_speed 7    # [ft/sec] speed below which Alpha_dot is set to zero    
+init use_gamma_horiz_on_speed 15 # [ft/sec] speed above which gamma-horiz-deg is used in chase view
+
+# geometry
+geometry bw   27.5       # [ft]   [x] Ref [1]
+geometry cbar 10.8       # [ft]   [x] Ref [1]
+geometry Sw  260         # [ft^2] [x] Ref [1]
+
+# control surface deflections
+# Horizontal stab deflection information from Roskam Part III
+# Stab deflection:      +4 deg (nose up), -12 deg (nose down)
+# Elevator deflection:  +25.5  (nose up), -15.5   (nose down)
+# Vertical stab:       +-24.5
+controlSurface de 25.5 15.5 # [deg] [x] See above
+controlSurface da 25 25     # [deg] [x] See above
+controlSurface dr 24.5 24.5 # [deg] [x] See above
+
+controlSurface flap_max  50 # [deg] [x] From POH Ref [2]
+controlSurface flap_rate 10 # [deg/sec] rate of flap deflection movement once commanded to move
+
+# SAS data
+controlSurface use_aileron_sas_type1
+controlSurface aileron_sas_KP 0.3
+controlSurface aileron_sas_max 7       # [deg]
+
+controlSurface use_elevator_sas_type1
+controlSurface elevator_sas_KQ 0.25
+controlSurface elevator_sas_max   5    # [deg]
+controlSurface elevator_sas_min  -5    # [deg]
+
+controlSurface use_rudder_sas_type1
+controlSurface rudder_sas_KR  3
+
+# mass and moment of inertia data
+mass Weight   17578        # [lb]        [x] Ref [1]
+mass I_xx      8090        # [slug-ft^2] [x] Ref [1]
+mass I_yy     25900        # [slug-ft^2] [x] Ref [1]
+mass I_zz     29200        # [slug-ft^2] [x] Ref [1]
+mass I_xz      1300        # [slug-ft^2] [x] Ref [1]
+
+# Wright J65-W-20 8300 lb static thrust, turbojet
+#engine simpleSingleModel  8500 -31 920   # [lb]  [lb/fps] [ft/sec] 
+#engine simpleSingleModel 11500 -31 920   # [lb]  [lb/fps] [ft/sec]
+engine simpleSingleModel 13000 -31 1120   # [lb]  [lb/fps] [ft/sec] 
+# where token3 - static thrust in [lb]
+#       token4 - slope dT/dV at the speed at which thrust goes to zero [lb/fps]
+#       token5 - speed at which thrust goes to zero [ft/sec]
+
+init downwashMode 100    
+init downwashCoef 0.040  # [1/ft] [ ] Needs update
+
+######################
+# Longitudinal terms #
+######################
+
+# Lift data
+#CL CLo  0.28           # [/rad] [x] Ref [1]
+#CL CL_a 3.45           # [/rad] [x] Ref [1]
+CL CLfa CLfa.dat 0 1    # [x] see a4 notes p 2, replaces CLo and Cl_a above
+CL CL_adot  0.72        # [/rad] [x] lift due to alfa_dot, Ref [1]
+CL CL_q     0.12        # [/rad] [x] lift due to pitch rate, based on Marchetti jet trainer
+CL CL_de    0.36        # [/rad] [x] lift due to elevator deflection, Ref [1]
+CL CL_df    0.4         #        [ ] estimate
+
+# parasite drag polar from +-180 deg for wing and tail
+CD CDo 0.015            # []  zero lift parasite drag, based partly on CD_a, see a4 notes 021215
+CD CD_de  0.0002        # []  estimate (is too small)
+
+# Induced drag
+#CD CD_a 0.3             # [-]    [x] drag due to angle of attack, Ref [1]
+CD CDK 0.144             # [-]    [x] See A4 notes p 2 021215, replaces CD_a above
+CD CD_df    0.010        # [/rad] [ ] estimate
+CD CD_dg    0.005        # [-]    [ ] estimate
+
+# wing/fuse moment curve from +-180 deg
+#Cm Cm_a      .1326             # [/rad]  [x] fuselage and wing contribution, Ref [1]
+#Cm Cm_de    -0.5               # [/rad]  [x] moment due to elevator deflection, Ref [1]
+Cm Cmo      -.0115              # [-]     [x] trim condition
+Cm Cmfa   Cmfa.dat    0 1       # [-]     [x] trim condition
+Cm Cmfade Cmfade.dat  0 1 1     # [-]     [x] relaces Cm_a and Cm_de above
+Cm Cm_q     -3.6                # [/rad]  [x] moment due to pitch rate, Ref [1]
+Cm Cm_adot  -1.1                # [/rad]  [x] moment due to alfa_dot, Ref [1]
+
+###########################
+# Lateral Direction terms #
+###########################
+
+# rudder dr terms
+# convention: positive for trailing edge left (nose left)
+# this is same as Ref [1]
+CY CY_dr     0.17       # [/rad] [x] side force  due to rudder deflection, Ref [1]
+#Cl Cl_dr    -0.105     # [/rad] [x] roll moment due to rudder deflection, Ref [1] is buggy
+Cl Cl_dr     0.02       # [/rad] [x] roll moment due to rudder deflection, fixes Ref [1]
+#Cn Cn_dr    -.032      # [/rad] [x] yaw moment  due to rudder deflection, Ref [1] is buggy
+Cn Cn_dr     -.11       # [/rad] [x] yaw moment  due to rudder deflection, fixes Ref [1]
+
+# yaw rate r terms
+CY CY_r      0.028      # [/rad] []  side force due to yaw rate, placeholder based on Marchetti
+Cl Cl_r      0.14       # [/rad] [x] roll moment due to yaw rate,           Ref [1]
+Cn Cn_r     -0.35       # [/rad] [x] yaw moment due to yaw rate (damping),  Ref [1]
+
+# beta terms
+CY CY_beta  -0.98       # [/rad] [x] side force due to yaw,  Ref [1]
+Cl Cl_beta  -0.12       # [/rad] [x] roll moment due to yaw, Ref [1]
+Cn Cn_beta   0.25       # [/rad] [x] yaw moment due to yaw,  Ref [1]
+
+# aileron da terms
+# convention: positive for right aileron trailing edge down, left aileron trailing edge up (bank left)
+# this is opposite Ref [1]
+#CY CY_da     0.0       # [/rad] nothing given in Ref [1]
+Cl Cl_da    -0.08       # [/rad] [x] roll moment due to aileron, Ref [1]
+Cn Cn_da    -0.06       # [/rad] [x] yaw moment due to aileron,  Ref [1]
+
+# roll rate p terms
+#CY CY_p     0.0        # [/rad] nothing given in Ref [1]
+Cl Cl_p     -0.26       # [/rad] [x] roll moment due to roll rate (damping), Ref [1]
+Cn Cn_p     0.022       # [/rad] [x] yaw moment due to roll rate,            Ref [1]
+
+#gear gear_max 1
+gear gear_rate .333   # [unit-norm/sec] retracts gear in 3 sec
+
+# nose wheel (must be position 0 if present)
+gear Dx_gear     0    10.2      # x-offset from CG [ft]
+gear Dy_gear     0     0        # y-offset from CG [ft]
+gear Dz_gear     0     8.2      # z-offset from CG [ft]
+gear cgear       0  2000        # damping [lbs/ft/sec]
+gear kgear       0  4000        # springiness [lbs/ft]
+gear muGear      0     0.01     # rolling coefficient
+gear strutLength 0     -.5      # gear travel [ft] (not yet used)
+
+# right gear (must be position 1 if present)
+gear Dx_gear     1    -3.       # [ft]
+gear Dy_gear     1     5.       # [ft]
+gear Dz_gear     1     7.3      # [ft]
+gear cgear       1  4000        # [lbs/ft/sec]
+gear kgear       1  8000        # [lbs/ft]
+gear muGear      1     0.01     # rolling coefficient
+gear strutLength 1     -.5      # gear travel [ft] (not yet used)
+
+# left gear (must be position 2 if present)
+gear Dx_gear     2    -3.       # [ft]
+gear Dy_gear     2    -5.       # [ft]
+gear Dz_gear     2     7.3      # [ft]
+gear cgear       2  4000        # [lbs/ft/sec]
+gear kgear       2  8000        # [lbs/ft]
+gear muGear      2     0.01     # rolling coefficient
+gear strutLength 2     -.5      # gear travel [ft] (not yet used)
+
+# right wing
+gear Dx_gear     3    -1.       # [ft]
+gear Dy_gear     3    14.       # [ft]
+gear Dz_gear     3     2.2      # [ft]
+gear cgear       3  2500        # [lbs/ft/sec]
+gear kgear       3  5000        # [lbs/ft]
+gear muGear      3     0.01     # rolling coefficient
+gear strutLength 3     -.5      # gear travel [ft] (not yet used)
+
+# left  wing
+gear Dx_gear     4    -1.       # [ft]
+gear Dy_gear     4   -14.       # [ft]
+gear Dz_gear     4     2.2      # [ft]
+gear cgear       4  2500        # [lbs/ft/sec]
+gear kgear       4  5000        # [lbs/ft]
+gear muGear      4     0.01     # rolling coefficient
+gear strutLength 4     -.5      # gear travel [ft] (not yet used)
+
+# ahead and above nose
+gear Dx_gear     5    13.       # [ft]
+gear Dy_gear     5     0.       # [ft]
+gear Dz_gear     5    -6.       # [ft]
+gear cgear       5  1000        # [lbs/ft/sec]
+gear kgear       5  2000        # [lbs/ft]
+gear muGear      5     0.01     # rolling coefficient
+gear strutLength 5     -.5      # gear travel [ft] (not yet used)
+
+# nose                
+gear Dx_gear     6    13.       # [ft]
+gear Dy_gear     6     0.       # [ft]
+gear Dz_gear     6     4.       # [ft]
+gear cgear       6  1500        # [lbs/ft/sec]
+gear kgear       6  3000        # [lbs/ft]
+gear muGear      6     0.01     # rolling coefficient
+gear strutLength 6     -.5      # gear travel [ft] (not yet used)
+
+# tail skid
+gear Dx_gear     7   -18.       # [ft]
+gear Dy_gear     7     0.       # [ft]
+gear Dz_gear     7     2.5      # [ft]
+gear cgear       7  1500        # [lbs/ft/sec]
+gear kgear       7  3000        # [lbs/ft]
+gear muGear      7     0.01     # rolling coefficient
+gear strutLength 7     -.5      # gear travel [ft] (not yet used)
+
+# ahead of left  wing
+gear Dx_gear     8    18.       # [ft]
+gear Dy_gear     8    14.       # [ft]
+gear Dz_gear     8     1.2      # [ft]
+gear cgear       8   500        # [lbs/ft/sec]
+gear kgear       8  1000        # [lbs/ft]
+gear muGear      8     0.01     # rolling coefficient
+gear strutLength 8     -.5      # gear travel [ft] (not yet used)
+
+# ahead of right wing
+gear Dx_gear     9    18.       # [ft]
+gear Dy_gear     9    14.       # [ft]
+gear Dz_gear     9     1.2      # [ft]
+gear cgear       9   500        # [lbs/ft/sec]
+gear kgear       9  1000        # [lbs/ft]
+gear muGear      9     0.01     # rolling coefficient
+gear strutLength 9     -.5      # gear travel [ft] (not yet used)
+
+record debug5
+
+*
