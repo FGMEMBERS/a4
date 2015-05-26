@@ -24,7 +24,7 @@ the flight data model, instrument panel, and external 3D model.
 		<systems>
 
 			<!--   <autopilot>
-    <path>Aircraft/KC135/Systems/autopilot.xml</path>
+    <path>Aircraft/a4/Systems/KC135.autopilot.xml</path>
    </autopilot>-->
 
 			<electrical>
