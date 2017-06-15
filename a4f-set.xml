@@ -22,6 +22,47 @@ the flight data model, instrument panel, and external 3D model.
 		</rating>
 		<virtual-cockpit archive="y">true</virtual-cockpit>
 
+		<tags>
+			<tag>bomber</tag>
+			<tag>carrier</tag>
+			<tag>douglas</tag>
+			<tag>1960s</tag>
+			<tag>1970s</tag>
+			<tag>1980s</tag>
+			<tag>coldwar</tag>
+			<tag>vietnam</tag>
+			<tag>retractable-gear</tag>
+			<tag>refuel</tag>
+			<tag>tail-hook</tag>
+			<tag>tricycle</tag>
+			<tag>jet</tag>
+			<tag>single-engine</tag>
+		</tags>
+
+		<previews>
+	    <preview>
+	      <type>exterior</type>
+	      <splash type="bool">true</splash>
+	      <path>exterior1.jpg</path>
+	    </preview>
+	    <preview>
+	      <type>exterior</type>
+	      <splash type="bool">true</splash>
+	      <path>exterior2.jpg</path>
+	    </preview>
+			<preview>
+	      <type>exterior</type>
+	      <splash type="bool">true</splash>
+	      <path>exterior3.jpg</path>
+	    </preview>
+	    <preview>
+	      <type>panel</type>
+	      <splash type="bool">false</splash>
+	      <path>cockpit.jpg</path>
+	    </preview>
+	  </previews>
+
+
 		<flight-model>yasim</flight-model>
 		<aero>a4f</aero>
 		<fuel-fraction>0.5</fuel-fraction>
@@ -586,6 +627,3 @@ the flight data model, instrument panel, and external 3D model.
 		</chronograph>
 	</nasal>
 </PropertyList>
-
-
-

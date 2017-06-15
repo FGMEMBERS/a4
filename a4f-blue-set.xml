@@ -20,6 +20,7 @@ the flight data model, instrument panel, and external 3D model.
 		<flight-model>yasim</flight-model>
 		<aero>a4f-blue</aero>
 		<fuel-fraction>0.25</fuel-fraction>
+		<variant-of>a4f</variant-of>		
 
 		<systems>
 
@@ -302,6 +303,3 @@ the flight data model, instrument panel, and external 3D model.
 	</instrumentation>
 
 </PropertyList>
-
-
-
