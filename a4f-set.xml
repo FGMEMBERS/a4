@@ -14,6 +14,14 @@ the flight data model, instrument panel, and external 3D model.
 		<description>Douglas A4F Skyhawk (YASim)</description>
 		<author>Lewis Magruder, Dean Baunton, Jim Wilson, Andy Ross, Vivian Meazza, Stuart Buchanan</author>
 		<status>early-production</status>
+		<long-description>The Douglas A-4 Skyhawk was a light naval attack aircraft,
+			originally designed to deliver nuclear bombs from aircraft carriers.  In
+			comparison with most other aircraft of the era, it was small and light.
+			It served the US Navy in Vietnam, and subsequently was used at TOPGUN, and
+			by the Blue Angels.  The A4-F was the final attack variant used by the
+			US Navy, with an uprated engine, speedbrakes, ECM suite and various other
+			improvements.
+		</long-description>
 		<rating>
 			<FDM type="int">2</FDM>
 			<systems type="int">1</systems>

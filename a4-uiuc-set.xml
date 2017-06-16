@@ -21,6 +21,37 @@ May 18, 2003 Michael Selig, http://www.uiuc.edu/~m-selig
   <author>Michael Selig (FDM)</author>
   <uiuc-type>uiuc-jet</uiuc-type>
   <variant-of>a4f</variant-of>
+  <long-description>The Douglas A-4 Skyhawk was a light naval attack aircraft,
+    originally designed to deliver nuclear bombs from aircraft carriers.  In
+    comparison with most other aircraft of the era, it was small and light.
+    It served the US Navy in Vietnam, and subsequently was used at TOPGUN, and
+    by the Blue Angels.  The A4D (A4-C) was the first widely deployed variant,
+    which saw extensive service in the early years of the Vietnam conflict.
+  </long-description>
+
+  <rating>
+    <FDM type="int">3</FDM>
+    <systems type="int">1</systems>
+    <cockpit type="int">2</cockpit>
+    <model type="int">2</model>
+  </rating>
+
+  <tags>
+    <tag>bomber</tag>
+    <tag>carrier</tag>
+    <tag>douglas</tag>
+    <tag>1950s</tag>
+    <tag>1960s</tag>
+    <tag>1970s</tag>
+    <tag>coldwar</tag>
+    <tag>vietnam</tag>
+    <tag>retractable-gear</tag>
+    <tag>refuel</tag>
+    <tag>tail-hook</tag>
+    <tag>tricycle</tag>
+    <tag>jet</tag>
+    <tag>single-engine</tag>
+  </tags>
 
   <sound>
    <path>Aircraft/a4/Sounds/uiuc/a4-sound-uiuc.xml</path>
