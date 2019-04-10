@@ -99,6 +99,7 @@ the flight data model, instrument panel, and external 3D model.
 
 		<model>
 			<path>Aircraft/a4/Models/a4f.xml</path>
+      <fallback-model-index type="int">524</fallback-model-index>
 		</model>
 
 		<startup>

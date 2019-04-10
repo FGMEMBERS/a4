@@ -88,7 +88,8 @@ May 18, 2003 Michael Selig, http://www.uiuc.edu/~m-selig
    </view>
 
   <model>
-   <path>Aircraft/a4/Models/a4-blue-uiuc.xml</path>
+    <fallback-model-index type="int">524</fallback-model-index>
+    <path>Aircraft/a4/Models/a4-blue-uiuc.xml</path>
   </model>
 
   <view n="1">
