@@ -14,6 +14,37 @@ the flight data model, instrument panel, and external 3D model.
 		<description>Douglas A4F Skyhawk (YASim) Blue Angels</description>
 		<author>Lewis Magruder, Dean Baunton, Jim Wilson, Andy Ross, Vivian Meazza</author>
 		<status>early-production</status>
+		<variant-of>a4f</variant-of>
+		<long-description>The Douglas A-4 Skyhawk was a light naval attack aircraft,
+			originally designed to deliver nuclear bombs from aircraft carriers.  In
+			comparison with most other aircraft of the era, it was small and light.
+			It served the US Navy in Vietnam, and subsequently was used at TOPGUN, and
+			by the Blue Angels.  This A4-F was used by the US Navy display team, the
+			Blue Angels.
+		</long-description>
+		<rating>
+			<FDM type="int">2</FDM>
+			<systems type="int">1</systems>
+			<cockpit type="int">2</cockpit>
+			<model type="int">2</model>
+		</rating>
+
+		<tags>
+			<tag>bomber</tag>
+			<tag>carrier</tag>
+			<tag>douglas</tag>
+			<tag>1960s</tag>
+			<tag>1970s</tag>
+			<tag>1980s</tag>
+			<tag>coldwar</tag>
+			<tag>vietnam</tag>
+			<tag>retractable-gear</tag>
+			<tag>refuel</tag>
+			<tag>tail-hook</tag>
+			<tag>tricycle</tag>
+			<tag>jet</tag>
+			<tag>single-engine</tag>
+		</tags>
 
 		<virtual-cockpit archive="y">true</virtual-cockpit>
         <variant-of>a4f</variant-of>
@@ -45,7 +76,8 @@ the flight data model, instrument panel, and external 3D model.
 		</instrumentation>
 
 		<model>
-			<path>Aircraft/a4/Models/a4f-blue.xml</path>
+      <fallback-model-index type="int">524</fallback-model-index>
+      <path>Aircraft/a4/Models/a4f-blue.xml</path>
 		</model>
 
 		<submodels>
@@ -302,6 +334,3 @@ the flight data model, instrument panel, and external 3D model.
 	</instrumentation>
 
 </PropertyList>
-
-
-

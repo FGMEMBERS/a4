@@ -14,6 +14,14 @@ the flight data model, instrument panel, and external 3D model.
 		<description>Douglas A4F Skyhawk (YASim)</description>
 		<author>Lewis Magruder, Dean Baunton, Jim Wilson, Andy Ross, Vivian Meazza, Stuart Buchanan</author>
 		<status>early-production</status>
+		<long-description>The Douglas A-4 Skyhawk was a light naval attack aircraft,
+			originally designed to deliver nuclear bombs from aircraft carriers.  In
+			comparison with most other aircraft of the era, it was small and light.
+			It served the US Navy in Vietnam, and subsequently was used at TOPGUN, and
+			by the Blue Angels.  The A4-F was the final attack variant used by the
+			US Navy, with an uprated engine, speedbrakes, ECM suite and various other
+			improvements.
+		</long-description>
 		<rating>
 			<FDM type="int">2</FDM>
 			<systems type="int">1</systems>
@@ -21,6 +29,47 @@ the flight data model, instrument panel, and external 3D model.
 			<model type="int">3</model>
 		</rating>
 		<virtual-cockpit archive="y">true</virtual-cockpit>
+
+		<tags>
+			<tag>bomber</tag>
+			<tag>carrier</tag>
+			<tag>douglas</tag>
+			<tag>1960s</tag>
+			<tag>1970s</tag>
+			<tag>1980s</tag>
+			<tag>coldwar</tag>
+			<tag>vietnam</tag>
+			<tag>retractable-gear</tag>
+			<tag>refuel</tag>
+			<tag>tail-hook</tag>
+			<tag>tricycle</tag>
+			<tag>jet</tag>
+			<tag>single-engine</tag>
+		</tags>
+
+		<previews>
+	    <preview>
+	      <type>exterior</type>
+	      <splash type="bool">true</splash>
+	      <path>exterior1.jpg</path>
+	    </preview>
+	    <preview>
+	      <type>exterior</type>
+	      <splash type="bool">true</splash>
+	      <path>exterior2.jpg</path>
+	    </preview>
+			<preview>
+	      <type>exterior</type>
+	      <splash type="bool">true</splash>
+	      <path>exterior3.jpg</path>
+	    </preview>
+	    <preview>
+	      <type>panel</type>
+	      <splash type="bool">false</splash>
+	      <path>cockpit.jpg</path>
+	    </preview>
+	  </previews>
+
 
 		<flight-model>yasim</flight-model>
 		<aero>a4f</aero>
@@ -50,6 +99,7 @@ the flight data model, instrument panel, and external 3D model.
 
 		<model>
 			<path>Aircraft/a4/Models/a4f.xml</path>
+      <fallback-model-index type="int">524</fallback-model-index>
 		</model>
 
 		<startup>
@@ -586,6 +636,3 @@ the flight data model, instrument panel, and external 3D model.
 		</chronograph>
 	</nasal>
 </PropertyList>
-
-
-
